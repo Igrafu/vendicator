@@ -59,7 +59,7 @@ injuries/news interpretation, tactical summaries, personalised previews,
 | Core language | Python 3.9 (venv) | live |
 | Data processing | pandas now; Polars + DuckDB when volume demands | planned swap |
 | Baseline | Elo + Dixon-Coles | **live** |
-| Tabular ML | CatBoost + HistGBM live; LightGBM/XGBoost pending libomp | **live/partial** |
+| Tabular ML | LightGBM + XGBoost + CatBoost + HistGBM | **live** |
 | Uncertainty | Hierarchical Gamma-Poisson (PyMC upgrade path) | **live** |
 | Live prediction | Analytic InPlayEngine; temporal Transformer | **live** / Phase 2 |
 | Player/team graph | GNN | Phase 2 (needs event data) |
@@ -89,7 +89,7 @@ stacking → calibration → Monte Carlo — never one giant network.
 | Stacked (no market input) | 0.6035 | 1.0086 |
 | Dixon-Coles | 0.6271 | 1.0415 |
 | Bayesian | 0.6366 | 1.0583 |
-| Tabular (2 members) | 0.6998 | 1.1780 |
+| Tabular (4 members) | 0.7082 | 1.2132 |
 
 Reading: the market is the hardest benchmark (as expected — beating the
 closing line is the long game). The ensemble already beats every non-market

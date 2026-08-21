@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21T07:08:40.979823+00:00",
+  "generated": "2026-08-21T07:11:41.110529+00:00",
   "league": "E0",
   "fixture": "Arsenal vs Chelsea",
   "expected_goals": {
@@ -7,9 +7,9 @@
     "away": 0.84
   },
   "final_calibrated": {
-    "home": 54.8,
-    "draw": 24.2,
-    "away": 21.1
+    "home": 54.7,
+    "draw": 24.3,
+    "away": 21.0
   },
   "markets_dixon_coles": {
     "1x2": {
@@ -109,9 +109,9 @@
   "explanation_context": {
     "fixture": "Arsenal vs Chelsea",
     "final_calibrated_probs_pct": {
-      "home": 54.8,
-      "draw": 24.2,
-      "away": 21.1
+      "home": 54.7,
+      "draw": 24.3,
+      "away": 21.0
     },
     "base_model_probs_pct": {
       "elo": {
@@ -131,10 +131,10 @@
       }
     },
     "meta_model_trust": {
-      "bayesian": 0.2451827248378884,
-      "dixon_coles": 0.29046493307662,
-      "elo": 0.3619613428798691,
-      "tabular": 0.21091402439534393
+      "bayesian": 0.2431018645555184,
+      "dixon_coles": 0.2906171692866994,
+      "elo": 0.3625113600438061,
+      "tabular": 0.19949627135243095
     },
     "market_probs_pct": null,
     "uncertainty": 0.007036680569522818,
