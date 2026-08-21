@@ -1,5 +1,15 @@
 # Records
 
+## exports/records.xlsx (read-only view)
+Generated from the two source files below by `model/src/export_records.py`.
+Categorised sheets — Users, Rewards, Invoices, Predictions, Results, Model
+Performance — with filters and frozen headers; every sheet is protected so the
+workbook is viewable but not editable. Regenerate after any record change:
+
+```
+.venv/bin/python model/src/export_records.py
+```
+
 ## accounts.json
 Master local copy of site users, points, rewards and invoices. Synced down from
 WordPress via REST API. WordPress is the source of truth for live balances; this

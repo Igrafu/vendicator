@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+openpyxl
+requests
+python-dotenv
+# optional, for the ML model layer (heavy):
+# lightgbm
+# scikit-learn

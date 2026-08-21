@@ -1,0 +1,151 @@
+{
+  "generated": "2026-08-21T07:08:40.979823+00:00",
+  "league": "E0",
+  "fixture": "Arsenal vs Chelsea",
+  "expected_goals": {
+    "home": 2.6,
+    "away": 0.84
+  },
+  "final_calibrated": {
+    "home": 54.8,
+    "draw": 24.2,
+    "away": 21.1
+  },
+  "markets_dixon_coles": {
+    "1x2": {
+      "home": 75.0,
+      "draw": 15.5,
+      "away": 9.6
+    },
+    "double_chance": {
+      "1x": 90.4,
+      "12": 84.5,
+      "x2": 25.0
+    },
+    "btts": {
+      "yes": 52.6,
+      "no": 47.4
+    },
+    "totals": {
+      "over_0.5": 96.6,
+      "under_0.5": 3.4,
+      "over_1.5": 85.9,
+      "under_1.5": 14.1,
+      "over_2.5": 66.6,
+      "under_2.5": 33.4,
+      "over_3.5": 44.9,
+      "under_3.5": 55.1,
+      "over_4.5": 26.2,
+      "under_4.5": 73.8
+    },
+    "exact_score_top10": [
+      [
+        "2-0",
+        10.9
+      ],
+      [
+        "3-0",
+        9.4
+      ],
+      [
+        "2-1",
+        9.1
+      ],
+      [
+        "1-0",
+        8.2
+      ],
+      [
+        "3-1",
+        7.9
+      ],
+      [
+        "1-1",
+        7.2
+      ],
+      [
+        "4-0",
+        6.1
+      ],
+      [
+        "4-1",
+        5.1
+      ],
+      [
+        "2-2",
+        3.8
+      ],
+      [
+        "0-0",
+        3.4
+      ]
+    ]
+  },
+  "uncertainty_band_home_pct": [
+    74.4,
+    76.7
+  ],
+  "reward_difficulty_multiplier": 1.67,
+  "in_play_demo_60min_1_0": {
+    "win_prob": {
+      "home": 88.4,
+      "draw": 10.0,
+      "away": 1.6
+    },
+    "next_goal": {
+      "home": 53.3,
+      "away": 17.1,
+      "none": 29.6
+    },
+    "over_under": {
+      "over_1.5": 70.4,
+      "over_2.5": 34.4,
+      "over_3.5": 12.4
+    }
+  },
+  "tactical_notes": [
+    "home side generates far more shot volume; expect territorial dominance"
+  ],
+  "explanation_context": {
+    "fixture": "Arsenal vs Chelsea",
+    "final_calibrated_probs_pct": {
+      "home": 54.8,
+      "draw": 24.2,
+      "away": 21.1
+    },
+    "base_model_probs_pct": {
+      "elo": {
+        "home": 57.8,
+        "draw": 24.6,
+        "away": 17.7
+      },
+      "dixon_coles": {
+        "home": 75.0,
+        "draw": 15.5,
+        "away": 9.6
+      },
+      "bayesian": {
+        "home": 75.7,
+        "draw": 14.5,
+        "away": 9.8
+      }
+    },
+    "meta_model_trust": {
+      "bayesian": 0.2451827248378884,
+      "dixon_coles": 0.29046493307662,
+      "elo": 0.3619613428798691,
+      "tabular": 0.21091402439534393
+    },
+    "market_probs_pct": null,
+    "uncertainty": 0.007036680569522818,
+    "tactical_notes": [
+      "home side generates far more shot volume; expect territorial dominance"
+    ],
+    "rules": [
+      "explain, never re-estimate: quote the probabilities as given",
+      "attribute drivers to the models that produced them",
+      "state uncertainty bands when present",
+      "this is analysis, not betting advice"
+    ]
+  }
+}
