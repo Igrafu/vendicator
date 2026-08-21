@@ -19,7 +19,11 @@ from engines import (BayesianStrengths, DixonColes, EloModel, InPlayEngine,
                      TABULAR_AVAILABLE, as_percentages, brier,
                      bookmaker_suggestion, log_loss_score, markets_from_grid)
 from engines.graph import TacticalReport
+from discipline import market_table, recent_rates
 from features import FEATURE_COLS, build_match_table, normalise_understat
+from players import team_players, team_points
+from teams import (as_dict as team_registry, canonical, code as team_code,
+                   country as team_country)
 from llm_explain import explanation_context
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -36,16 +40,11 @@ DEFAULT_SEASONS = {d: ALL_SEASONS for d in
                    ("E0", "E1", "E2", "E3", "SP1", "SP2", "I1", "I2",
                     "D1", "F1")}
 
-SHORT_CODES = {"Man United": "MUN", "Man City": "CTY", "Liverpool": "LIV",
-               "Arsenal": "ARS", "Chelsea": "CHE", "Tottenham": "TOT",
-               "Sheffield Weds": "SHW", "Ath Madrid": "ATM",
-               "Real Madrid": "RMA", "Barcelona": "BAR",
-               "Vallecano": "RAY", "Newcastle": "NEW"}
+UNDERSTAT_SEASON = "2024"
 
 
 def short_code(team):
-    return SHORT_CODES.get(team, "".join(
-        c for c in team.upper() if c.isalpha())[:3])
+    return team_code(team)
 
 
 def league_table(div, season="2526"):
@@ -64,8 +63,8 @@ def league_table(div, season="2526"):
             hg, ag = int(row["FTHG"]), int(row["FTAG"])
         except (KeyError, ValueError):
             continue
-        for team, gf, ga in ((row["HomeTeam"], hg, ag),
-                             (row["AwayTeam"], ag, hg)):
+        for team, gf, ga in ((canonical(row["HomeTeam"]), hg, ag),
+                             (canonical(row["AwayTeam"]), ag, hg)):
             e = table.setdefault(team, {"team": team, "p": 0, "w": 0, "d": 0,
                                         "l": 0, "gf": 0, "ga": 0, "pts": 0})
             e["p"] += 1
@@ -349,6 +348,31 @@ def push_to_wp(payload, route="predictions"):
     return r.ok
 
 
+def fixture_extras(home, away, league, raw_rows, table):
+    """Discipline markets + player markets + team-pick point values."""
+    out = {}
+    try:
+        out["discipline"] = market_table(recent_rates(raw_rows), home, away)
+    except Exception as e:
+        print(f"  discipline unavailable: {str(e)[:60]}")
+    us = UNDERSTAT_LEAGUE.get(league)
+    if us:
+        players = []
+        for team in (home, away):
+            try:
+                players += team_players(team, us, UNDERSTAT_SEASON)
+            except Exception as e:
+                print(f"  players {team}: {str(e)[:60]}")
+        if players:
+            out["players"] = players
+    rows = {r["team"]: r for r in table or []}
+    out["team_points"] = {
+        canonical(home): team_points(rows.get(canonical(home))),
+        canonical(away): team_points(rows.get(canonical(away))),
+    }
+    return out
+
+
 def fixture_payload(models, stack, stack_nm, tab, draw_head, df, fx, league):
     """Full percentage payload for one upcoming fixture, using bookmaker
     odds as a model input when present."""
@@ -400,16 +424,19 @@ def fixture_payload(models, stack, stack_nm, tab, draw_head, df, fx, league):
                 pass
         odds_board[okey] = sorted(prices,
                                   key=lambda x: -x["odds"])[:3]
+    ch, ca = canonical(home), canonical(away)
     return {
         "league": league,
         "kickoff": f"{fx.get('Date', '')} {fx.get('Time', '')}".strip(),
-        "fixture": f"{home} vs {away}",
-        "short": f"{short_code(home)} Vs {short_code(away)}",
+        "fixture": f"{ch} vs {ca}",
+        "home_team": ch, "away_team": ca,
+        "country": team_country(ch),
+        "short": f"{short_code(ch)} Vs {short_code(ca)}",
         "team_to_score": {
             "home_pct": round(p_home_scores * 100, 1),
             "away_pct": round(p_away_scores * 100, 1),
             "best": best_side,
-            "best_team": home if best_side == "home" else away,
+            "best_team": ch if best_side == "home" else ca,
             "fair_odds": {
                 "home": round(1 / max(p_home_scores, 1e-6), 2),
                 "away": round(1 / max(p_away_scores, 1e-6), 2)}},
@@ -435,10 +462,23 @@ def predict_upcoming(push=True):
         if div in DEFAULT_SEASONS:
             by_div.setdefault(div, []).append(fx)
     out_fixtures = []
+    all_tables = {}
     for div, fxs in sorted(by_div.items()):
         print(f"\n=== upcoming: {div} ({len(fxs)} fixtures) ===")
         df, base, models, (report, stack, stack_nm, tab, draw_head) = \
             run_league(div)
+        try:
+            all_tables[div] = league_table(div)
+        except Exception as e:
+            print(f"  table {div}: {str(e)[:60]}")
+            all_tables[div] = []
+        raw_rows = []
+        src = FootballDataCoUk()
+        for s in DEFAULT_SEASONS.get(div, ALL_SEASONS).split(",")[-4:]:
+            try:
+                raw_rows += src.season_csv(s, div)
+            except Exception:
+                pass
         # refit team-strength models on ALL data (the backtest split holds
         # out recent matches, which would leave promoted teams unseen)
         today = df["date"].max()
@@ -461,6 +501,8 @@ def predict_upcoming(push=True):
                 continue
             p = fixture_payload(models, stack, stack_nm, tab, draw_head,
                                 df, fx, div)
+            p.update(fixture_extras(fx["HomeTeam"], fx["AwayTeam"], div,
+                                    raw_rows, all_tables.get(div)))
             out_fixtures.append(p)
             append_history(
                 {"generated": datetime.now(timezone.utc).isoformat(),
@@ -469,14 +511,9 @@ def predict_upcoming(push=True):
                 kickoff=p["kickoff"],
                 difficulty=p["reward_difficulty_multiplier"])
             print(f"  {p['fixture']}: {p['final_calibrated']}")
-    tables = {}
-    for div in by_div:
-        try:
-            tables[div] = league_table(div)
-        except Exception as e:
-            print(f"table {div}: {str(e)[:60]}")
     payload = {"generated": datetime.now(timezone.utc).isoformat(),
-               "fixtures": out_fixtures, "tables": tables}
+               "fixtures": out_fixtures, "tables": all_tables,
+               "teams": {c: v for c, v in team_registry().items()}}
     OUTPUT.write_text(json.dumps(payload, indent=2))
     print(f"\n{len(out_fixtures)} predictions -> {OUTPUT}")
     if push and out_fixtures:
