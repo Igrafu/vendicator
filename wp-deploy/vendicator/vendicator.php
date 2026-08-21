@@ -378,11 +378,20 @@ border:1px solid var(--edge);border-radius:999px;padding:5px 13px;}
 .vd-nav-score b{color:var(--lime);}
 .vd-nav-clock{color:var(--lime);font-weight:800;font-size:14px;
 font-variant-numeric:tabular-nums;letter-spacing:1px;}
+.vd-nav-sl{color:var(--mint);font-size:12.5px;background:rgba(124,255,203,.1);
+border:1px solid rgba(124,255,203,.4);border-radius:999px;padding:5px 12px;
+font-variant-numeric:tabular-nums;}
+.vd-nav-sl b{color:var(--white);font-size:13.5px;}
 .vd-sl-badge{display:inline-flex;align-items:center;gap:7px;
 background:rgba(124,255,203,.12);border:1px solid rgba(124,255,203,.4);
 color:var(--mint);border-radius:999px;padding:4px 12px;font-size:12.5px;
 font-weight:700;}
 .vd-sl-badge small{color:var(--muted);font-weight:400;}
+.vd-slrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+margin:10px 0 2px;padding-top:10px;border-top:1px solid rgba(255,255,255,.07);}
+.vd-slhead{color:var(--muted);font-size:12px;letter-spacing:1px;
+text-transform:uppercase;}
+.vd-slhead b{color:var(--mint);font-size:15px;}
 .vd-opts{display:grid;gap:8px;}
 .vd-opt{display:grid;grid-template-columns:1fr auto auto;gap:10px;
 align-items:center;border:1px solid var(--edge);border-radius:11px;
@@ -556,7 +565,9 @@ function vendicator_nav($active = '') {
         $out .= '<span class="vd-nav-score" title="Your rank and points">'
             . $rank['icon'] . ' <b>' . number_format($life) . '</b></span>';
     }
-    $out .= '<span class="vd-nav-clock" id="vd-clock">--:--:--</span>';
+    $out .= '<span class="vd-nav-sl" id="vd-nav-sl" title="Vendicator Scoreline">'
+        . 'VS <b>--</b></span>'
+        . '<span class="vd-nav-clock" id="vd-clock">--:--:--</span>';
     return $out . '</div>';
 }
 
@@ -613,9 +624,18 @@ return "<b>"+f.fixture+"</b><br>The model favours the "+fav[0]+" at <b>"+fav[1]
 +". Most likely scoreline <b>"+top[0]+"</b> ("+top[1]+"%). 90% band on the home win: "
 +f.uncertainty_band_home_pct.join("-")+"%. Reward difficulty x"+f.reward_difficulty_multiplier+".";}
 var VD_COMPARE=(window.VD&&VD.compareUrl)||"";
+/* header Vendicator Scoreline follows the ticker's current fixture */
+function navScore(f){var el=document.getElementById("vd-nav-sl");if(!el)return;
+if(f&&f.scoreline){var s=f.scoreline;
+el.innerHTML="VS <b>"+s.headline+"</b> <small>"+(s.home&&s.home.decimal||"-")
++" / "+(s.away&&s.away.decimal||"-")+"</small>";
+el.title="Vendicator Scoreline "+s.headline+" · "+(f.home_team||"home")+" "
++(s.home?s.home.decimal+" ("+s.home.fractional+")":"-")+" · "+(f.away_team||"away")+" "
++(s.away?s.away.decimal+" ("+s.away.fractional+")":"-");}}
 function tick(){if(!fx.length)return;var f=fx[idx%fx.length];
 var it=document.getElementById("vd-tick-item");var hv=document.getElementById("vd-hover");
 if(it)it.innerHTML=fmt(f);
+navScore(f);
 if(hv)hv.innerHTML=hover(f)+(VD_COMPARE?'<br><br><a class="vd-btn" style="padding:6px 14px;font-size:12px;" href="'
 +VD_COMPARE+encodeURIComponent(f.fixture)+'">Open this prediction card &rarr;</a>':"");
 var tk=document.querySelector(".vd-ticker");
@@ -981,6 +1001,7 @@ function vendicator_render_fixture($p, $allowed, $sel) {
         . '</div><p class="vd-muted">Calibrated ensemble - 90% band on home win: '
         . esc_html(implode('-', (array) $p['uncertainty_band_home_pct'])) . '%'
         . ' - difficulty x' . esc_html($p['reward_difficulty_multiplier']) . '</p>'
+        . vendicator_scoreline_row($p)
         . '<details class="vd-details"><summary>Build your slip &mdash; markets, players &amp; odds</summary>'
         . '<form class="vd-slipform" method="post" action="'
         . esc_url(admin_url('admin-post.php')) . '">'
@@ -1002,6 +1023,27 @@ function vendicator_render_fixture($p, $allowed, $sel) {
         $out .= vendicator_player_market($p);
     }
     return $out . '</div>' . vendicator_slip_bar($p) . '</details></div>';
+}
+
+/** Vendicator Scoreline strip for a fixture card. */
+function vendicator_scoreline_row($p) {
+    if (empty($p['scoreline'])) { return ''; }
+    $s = $p['scoreline'];
+    $row = function ($team, $sl) {
+        return '<span class="vd-sl-badge" title="' . esc_attr($sl['note']) . '">'
+            . esc_html($team) . ' <b>' . esc_html($sl['total']) . '</b> '
+            . '<small>' . esc_html($sl['decimal']) . ' / '
+            . esc_html($sl['fractional']) . '</small></span>';
+    };
+    $gw = !empty($p['gameweek']) ? ' &middot; GW' . (int) $p['gameweek'] : '';
+    return '<div class="vd-slrow">'
+        . '<span class="vd-slhead">Vendicator Scoreline <b>' . esc_html($s['headline'])
+        . '</b></span>'
+        . $row(isset($p['home_team']) ? $p['home_team'] : 'Home', $s['home'])
+        . $row(isset($p['away_team']) ? $p['away_team'] : 'Away', $s['away'])
+        . '<span class="vd-muted" style="font-size:11.5px;">'
+        . esc_html(isset($p['season_label']) ? $p['season_label'] : '') . $gw
+        . '</span></div>';
 }
 
 /** Running-total bar + submit for one card's slip. */

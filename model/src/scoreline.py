@@ -96,12 +96,28 @@ def near_miss_analysis(records):
     return stats
 
 
+# The fractions bookmakers actually print, shortest-priced first.
+STANDARD_FRACTIONS = [
+    (1, 10), (1, 8), (1, 7), (1, 6), (1, 5), (2, 9), (1, 4), (2, 7),
+    (3, 10), (1, 3), (4, 11), (2, 5), (4, 9), (1, 2), (8, 15), (4, 7),
+    (8, 13), (2, 3), (8, 11), (4, 5), (5, 6), (10, 11), (1, 1), (11, 10),
+    (6, 5), (5, 4), (11, 8), (3, 2), (13, 8), (7, 4), (15, 8), (2, 1),
+    (85, 40), (9, 4), (5, 2), (11, 4), (3, 1), (10, 3), (7, 2), (4, 1),
+    (9, 2), (5, 1), (11, 2), (6, 1), (13, 2), (7, 1), (15, 2), (8, 1),
+    (9, 1), (10, 1), (11, 1), (12, 1), (14, 1), (16, 1), (18, 1), (20, 1),
+    (25, 1), (33, 1), (40, 1), (50, 1), (66, 1), (80, 1), (100, 1),
+]
+
+
 def to_fractional(decimal_odds):
-    """2.5 -> '3/2'. Standard betting-slip fraction."""
+    """2.5 -> '6/4'. Snaps to the fraction a real bookmaker would show,
+    so the number can be compared with a live slip elsewhere."""
     if decimal_odds is None or decimal_odds <= 1:
         return None
-    fr = Fraction(decimal_odds - 1).limit_denominator(50)
-    return f"{fr.numerator}/{fr.denominator}"
+    target = decimal_odds - 1.0
+    num, den = min(STANDARD_FRACTIONS,
+                   key=lambda f: abs(f[0] / f[1] - target))
+    return "evens" if (num, den) == (1, 1) else f"{num}/{den}"
 
 
 def _odds_from(total, edge_prob):

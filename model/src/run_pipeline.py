@@ -334,13 +334,15 @@ def attach_gameweeks(payload):
             m = json.loads(line)
             weeks[(m["competition"], m["home"], m["away"])] = (
                 m.get("gameweek"), m.get("season"))
+    from season_log import current_season_code, season_label
+    code = current_season_code()
     for fx in payload.get("fixtures", []):
         gw, season = weeks.get(
             (fx["league"], fx.get("home_team"), fx.get("away_team")),
-            (None, "2526"))
+            (None, code))
         fx["gameweek"] = gw
         fx["season"] = season
-        fx["season_label"] = "2025/26"
+        fx["season_label"] = season_label(season)
     return payload
 
 

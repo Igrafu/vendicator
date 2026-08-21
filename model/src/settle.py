@@ -20,7 +20,9 @@ import requests
 from run_pipeline import HISTORY, push_to_wp
 
 ROOT = Path(__file__).resolve().parents[2]
-CURRENT_SEASON = "2526"
+from season_log import current_season_code
+
+CURRENT_SEASON = current_season_code()
 
 
 def fresh_results(div):

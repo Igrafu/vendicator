@@ -21,7 +21,20 @@ from teams import canonical
 ROOT = Path(__file__).resolve().parents[2]
 LOG = ROOT / "records" / "season-log.jsonl"
 SUMMARY = ROOT / "records" / "season-summary.json"
-CURRENT = "2526"
+def current_season_code(today=None):
+    """football-data.co.uk season code for the season in progress.
+    Seasons run Jul->Jun, so August 2026 is '2627'."""
+    today = today or datetime.now(timezone.utc)
+    start = today.year if today.month >= 7 else today.year - 1
+    return f"{start % 100:02d}{(start + 1) % 100:02d}"
+
+
+def season_label(code=None):
+    code = code or current_season_code()
+    return f"20{code[:2]}/{code[2:]}"
+
+
+CURRENT = current_season_code()
 
 LEAGUE_DIVS = ("E0", "E1", "E2", "E3", "SP1", "SP2", "I1", "I2", "D1", "F1")
 CUP_FILES = {"ucl": "UCL", "uel": "UEL", "fac": "FAC", "eflc": "EFLC",
@@ -88,7 +101,7 @@ def collect():
         ctype = "friendly" if comp == "FRIENDLY" else "cup"
         for m in json.loads(f.read_text()):
             d = _parse(m.get("date"))
-            if not d or d.year < 2025:
+            if not d or d.year < int("20" + CURRENT[:2]):
                 continue
             out.append({"competition": comp, "competition_type": ctype,
                         "season": CURRENT, "date": d.strftime("%Y-%m-%d"),
