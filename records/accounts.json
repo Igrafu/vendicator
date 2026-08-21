@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "last_synced": null,
+  "users": [],
+  "_user_shape": {
+    "id": "wp user id",
+    "username": "",
+    "email": "",
+    "joined": "ISO date",
+    "tier": "free | bronze | silver | gold",
+    "points_balance": 0,
+    "lifetime_points": 0,
+    "ranking": null,
+    "top5_players": [],
+    "top5_teams": [],
+    "rewards_redeemed": [],
+    "invoices": []
+  },
+  "_invoice_shape": {
+    "invoice_id": "",
+    "user_id": "",
+    "date": "ISO date",
+    "amount": 0,
+    "currency": "GBP",
+    "description": "",
+    "status": "paid | pending | refunded"
+  }
+}
