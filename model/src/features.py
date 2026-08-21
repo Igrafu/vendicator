@@ -86,7 +86,9 @@ def build_match_table(rows, xg_lookup=None):
     recs = []
     for r in rows:
         try:
-            date = datetime.strptime(r["Date"], "%d/%m/%Y")
+            raw = r["Date"]
+            fmt = "%d/%m/%Y" if len(raw.split("/")[-1]) == 4 else "%d/%m/%y"
+            date = datetime.strptime(raw, fmt)
             hg, ag = int(r["FTHG"]), int(r["FTAG"])
         except (KeyError, ValueError):
             continue

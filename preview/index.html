@@ -144,9 +144,13 @@ function teamTip(name, probs, xg, side) {
     Side: ${side} · click for full team stats (site build)</span>`;
 }
 
-function render(p) {
+function render(payload) {
   document.getElementById("generated").textContent =
-    "generated " + new Date(p.generated).toLocaleString();
+    "generated " + new Date(payload.generated).toLocaleString();
+  (payload.fixtures || [payload]).forEach((p, i) => renderFixture(p, i));
+}
+
+function renderFixture(p, i) {
   const f = p.final_calibrated, dc = p.markets_dixon_coles;
   const [home, away] = p.fixture.split(" vs ");
   const app = document.getElementById("app");
@@ -155,13 +159,13 @@ function render(p) {
   <div class="card">
     <div class="fixture">
       <div class="team">
-        <img id="badge-h" alt="" src="">
+        <img id="badge-h-${i}" alt="" src="">
         <h2>${home}</h2>
         ${teamTip(home, f.home, p.expected_goals.home, "home")}
       </div>
-      <span class="vs">VS · ${p.league}</span>
+      <span class="vs">VS · ${p.league}${p.kickoff ? " · " + p.kickoff : ""}</span>
       <div class="team">
-        <img id="badge-a" alt="" src="">
+        <img id="badge-a-${i}" alt="" src="">
         <h2>${away}</h2>
         ${teamTip(away, f.away, p.expected_goals.away, "away")}
       </div>
@@ -197,7 +201,7 @@ function render(p) {
       ${dc.exact_score_top10.map(([s, v]) => row(s, pct(v))).join("")}
     </table></div>
 
-    <div class="card"><h3>Live Demo — 60' at 1-0</h3><table>
+    ${p.in_play_demo_60min_1_0 ? `<div class="card"><h3>Live Demo — 60' at 1-0</h3><table>
       ${row("Home win", pct(p.in_play_demo_60min_1_0.win_prob.home))}
       ${row("Draw", pct(p.in_play_demo_60min_1_0.win_prob.draw))}
       ${row("Away win", pct(p.in_play_demo_60min_1_0.win_prob.away))}
@@ -206,25 +210,28 @@ function render(p) {
       ${row("No more goals", pct(p.in_play_demo_60min_1_0.next_goal.none))}
       </table>
       <p class="warn">InPlayEngine — recomputes every poll from live
-      minute/score/cards</p></div>
+      minute/score/cards</p></div>` : ""}
 
-    <div class="card"><h3>Meta-Model Trust</h3>
+    ${p.book_odds ? `<div class="card"><h3>Bookmaker Odds (input)</h3><table>
+      ${row("Home", p.book_odds.home)}${row("Draw", p.book_odds.draw)}
+      ${row("Away", p.book_odds.away)}</table>
+      <p class="warn">De-vigged and fed to the meta-model as a signal</p>
+      </div>` : ""}
+
+    ${p.explanation_context ? `<div class="card"><h3>Meta-Model Trust</h3>
       ${Object.entries(p.explanation_context.meta_model_trust)
         .sort((a, b) => b[1] - a[1])
         .map(([m, w]) => `<div class="muted">${m}
           <div class="bar"><i style="width:${Math.min(w * 130, 100)}%"></i>
-          </div></div>`).join("")}
-      <p class="warn">How much the stacking meta-learner trusts each
-      specialist model</p></div>
+          </div></div>`).join("")}</div>` : ""}
 
-    <div class="card"><h3>Tactical Notes</h3>
+    ${p.tactical_notes ? `<div class="card"><h3>Tactical Notes</h3>
       ${p.tactical_notes.map(n => `<span class="pill">${n}</span>`).join("")}
-      <p class="warn">Rule-based for now — GNN heads take over in Phase 2;
-      Claude turns these into match previews</p></div>
+      </div>` : ""}
   </div>`);
 
-  badge(home, "badge-h");
-  badge(away, "badge-a");
+  badge(home, `badge-h-${i}`);
+  badge(away, `badge-a-${i}`);
 }
 </script>
 </body>

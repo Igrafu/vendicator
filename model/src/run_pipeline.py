@@ -31,17 +31,20 @@ FootballDataCoUk.CACHE = ROOT / "model" / "data"
 
 UNDERSTAT_LEAGUE = {"E0": "EPL", "SP1": "La_liga", "D1": "Bundesliga",
                     "I1": "Serie_A", "F1": "Ligue_1"}
-DEFAULT_SEASONS = {
-    "E0": "1819,1920,2021,2122,2223,2324,2425,2526",
-    "E1": "2122,2223,2324,2425,2526",
-    "E2": "2122,2223,2324,2425,2526",
-    "E3": "2122,2223,2324,2425,2526",
-    "SP1": "2223,2324,2425",
-    "SP2": "2122,2223,2324,2425,2526",
-    "D1": "2223,2324,2425",
-    "I1": "2223,2324,2425",
-    "I2": "2122,2223,2324,2425,2526",
-    "F1": "2223,2324,2425",
+ALL_SEASONS = "1617,1718,1819,1920,2021,2122,2223,2324,2425,2526"
+DEFAULT_SEASONS = {d: ALL_SEASONS for d in
+                   ("E0", "E1", "E2", "E3", "SP1", "SP2", "I1", "I2",
+                    "D1", "F1")}
+
+# fixtures.csv name variants -> historical results-CSV names
+FIXTURES_ALIASES = {
+    "Atl. Madrid": "Ath Madrid", "Atl. Bilbao": "Ath Bilbao",
+    "Espanyol": "Espanol", "Real Sociedad": "Sociedad",
+    "Real Betis": "Betis", "Rayo Vallecano": "Vallecano",
+    "Celta Vigo": "Celta", "Deportivo Alaves": "Alaves",
+    "Bradford City": "Bradford", "Sheffield Wed": "Sheffield Weds",
+    "Nottm Forest": "Nott'm Forest", "AC Milan": "Milan",
+    "Paris Saint-Germain": "Paris SG", "Inter Milan": "Inter",
 }
 
 
@@ -268,10 +271,142 @@ def demo_prediction(df, models, stack, tab, draw_head, home, away, league):
     }
 
 
-def append_history(payload, league):
+def fetch_upcoming():
+    """Free upcoming fixtures + current bookmaker odds for every
+    football-data.co.uk division (updates continuously)."""
+    import requests
+    r = requests.get("https://www.football-data.co.uk/fixtures.csv",
+                     timeout=30)
+    r.raise_for_status()
+    import csv as _csv
+    import io as _io
+    return list(_csv.DictReader(_io.StringIO(
+        r.content.decode("utf-8-sig", errors="ignore"))))
+
+
+def push_to_wp(payload, route="predictions"):
+    import os
+    import requests
+    from dotenv import load_dotenv
+    load_dotenv(ROOT / ".env")
+    base = os.getenv("WP_BASE_URL", "").rstrip("/")
+    auth = (os.getenv("WP_APP_USER", ""), os.getenv("WP_APP_PASSWORD", ""))
+    r = requests.post(f"{base}/wp-json/vendicator/v1/{route}", json=payload,
+                      auth=auth, timeout=40,
+                      headers={"User-Agent": "Mozilla/5.0 (VendicatorBot)"})
+    print(f"WP push {route}: {r.status_code} {r.text[:80]}")
+    return r.ok
+
+
+def fixture_payload(models, stack, stack_nm, tab, draw_head, df, fx, league):
+    """Full percentage payload for one upcoming fixture, using bookmaker
+    odds as a model input when present."""
+    from engines.value import devig_proportional
+    home, away = fx["HomeTeam"], fx["AwayTeam"]
+    dc, elo, bayes = models["dc"], models["elo"], models["bayes"]
+    grid, lam, mu = dc.score_grid(home, away)
+    markets = markets_from_grid(grid)
+    ep = elo.probs(home, away)
+    bp = bayes.probs_with_uncertainty(home, away)
+    feat_row = np.full((1, len([c for c in FEATURE_COLS
+                                if c in df.columns])), np.nan)
+    base = {"elo": np.array([[ep["home"], ep["draw"], ep["away"]]]),
+            "dixon_coles": np.array([[markets["1x2"]["home"],
+                                      markets["1x2"]["draw"],
+                                      markets["1x2"]["away"]]]),
+            "bayesian": np.array([[bp["home"], bp["draw"], bp["away"]]]),
+            "xg_poisson": UNIFORM.reshape(1, 3),
+            "tabular": tab.predict_proba(feat_row)}
+    p_draw = draw_head.predict_proba(np.nan_to_num(feat_row))[:, 1]
+    odds = {}
+    for k, col in (("home", "B365H"), ("draw", "B365D"), ("away", "B365A")):
+        try:
+            v = float(fx.get(col) or fx.get("Avg" + col[-1]) or 0)
+            if v > 1:
+                odds[k] = v
+        except ValueError:
+            pass
+    if len(odds) == 3:
+        fair = devig_proportional(odds)
+        base["market"] = np.array([[fair["home"], fair["draw"],
+                                    fair["away"]]])
+        final = stack.predict_proba(base, context=p_draw.reshape(-1, 1))[0]
+    else:
+        final = stack_nm.predict_proba(base,
+                                       context=p_draw.reshape(-1, 1))[0]
+    return {
+        "league": league,
+        "kickoff": f"{fx.get('Date', '')} {fx.get('Time', '')}".strip(),
+        "fixture": f"{home} vs {away}",
+        "expected_goals": {"home": round(lam, 2), "away": round(mu, 2)},
+        "final_calibrated": as_percentages(
+            {"home": float(final[0]), "draw": float(final[1]),
+             "away": float(final[2])}),
+        "markets_dixon_coles": as_percentages(markets),
+        "uncertainty_band_home_pct": [round(x * 100, 1)
+                                      for x in bp["home_ci90"]],
+        "reward_difficulty_multiplier": bayes.difficulty_multiplier(home,
+                                                                    away),
+        "book_odds": odds or None,
+    }
+
+
+def predict_upcoming(push=True):
+    fixtures = fetch_upcoming()
+    by_div = {}
+    for fx in fixtures:
+        div = fx.get("Div")
+        if div in DEFAULT_SEASONS:
+            by_div.setdefault(div, []).append(fx)
+    out_fixtures = []
+    for div, fxs in sorted(by_div.items()):
+        print(f"\n=== upcoming: {div} ({len(fxs)} fixtures) ===")
+        df, base, models, (report, stack, stack_nm, tab, draw_head) = \
+            run_league(div)
+        # refit team-strength models on ALL data (the backtest split holds
+        # out recent matches, which would leave promoted teams unseen)
+        today = df["date"].max()
+        all_matches = [{"home": m["home"], "away": m["away"], "hg": m["hg"],
+                        "ag": m["ag"], "days_ago": (today - m["date"]).days}
+                       for _, m in df.iterrows()]
+        models["dc"] = DixonColes().fit(all_matches)
+        models["bayes"] = BayesianStrengths().fit(
+            [(m["home"], m["away"], m["hg"], m["ag"])
+             for m in all_matches])
+        known = set(models["dc"].teams)
+        for fx in fxs:
+            fx["HomeTeam"] = FIXTURES_ALIASES.get(fx["HomeTeam"],
+                                                  fx["HomeTeam"])
+            fx["AwayTeam"] = FIXTURES_ALIASES.get(fx["AwayTeam"],
+                                                  fx["AwayTeam"])
+            if fx["HomeTeam"] not in known or fx["AwayTeam"] not in known:
+                print(f"  skip {fx['HomeTeam']} vs {fx['AwayTeam']} "
+                      "(team unseen in training window)")
+                continue
+            p = fixture_payload(models, stack, stack_nm, tab, draw_head,
+                                df, fx, div)
+            out_fixtures.append(p)
+            append_history(
+                {"generated": datetime.now(timezone.utc).isoformat(),
+                 "league": div, "fixture": p["fixture"],
+                 "final_calibrated": p["final_calibrated"]}, div,
+                kickoff=p["kickoff"],
+                difficulty=p["reward_difficulty_multiplier"])
+            print(f"  {p['fixture']}: {p['final_calibrated']}")
+    payload = {"generated": datetime.now(timezone.utc).isoformat(),
+               "fixtures": out_fixtures}
+    OUTPUT.write_text(json.dumps(payload, indent=2))
+    print(f"\n{len(out_fixtures)} predictions -> {OUTPUT}")
+    if push and out_fixtures:
+        push_to_wp(payload)
+    return payload
+
+
+def append_history(payload, league, kickoff=None, difficulty=None):
     rec = {"ts": payload["generated"], "league": league,
            "home": payload["fixture"].split(" vs ")[0],
            "away": payload["fixture"].split(" vs ")[1],
+           "kickoff": kickoff, "difficulty": difficulty,
            "model": "ensemble", "market": "1x2",
            "prediction": payload["final_calibrated"],
            "probs": payload["final_calibrated"],
@@ -297,9 +432,16 @@ def main():
     ap.add_argument("--home")
     ap.add_argument("--away")
     ap.add_argument("--no-history", action="store_true")
+    ap.add_argument("--upcoming", action="store_true",
+                    help="predict all upcoming fixtures (fixtures.csv) and "
+                         "push to the site")
+    ap.add_argument("--no-push", action="store_true")
     args = ap.parse_args()
 
     print(f"Tabular libraries available: {sorted(TABULAR_AVAILABLE)}")
+    if args.upcoming:
+        predict_upcoming(push=not args.no_push)
+        return
     leagues = args.league.split(",")
 
     if len(leagues) > 1:  # per-league backtest sweep -> report file

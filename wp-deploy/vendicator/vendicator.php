@@ -161,6 +161,17 @@ add_action('rest_api_init', function () {
             return array('ok' => true);
         },
     ));
+    register_rest_route('vendicator/v1', '/results', array(
+        'methods' => 'POST',
+        'permission_callback' => function () { return current_user_can('manage_options'); },
+        'callback' => function ($req) {
+            $body = $req->get_json_params();
+            $results = isset($body['results']) ? (array) $body['results'] : array();
+            $settled = vendicator_settle_bets($results);
+            update_option('vendicator_last_results', $results);
+            return array('ok' => true, 'bets_settled' => $settled);
+        },
+    ));
     register_rest_route('vendicator/v1', '/records', array(
         'methods' => 'GET',
         'permission_callback' => function () { return current_user_can('manage_options'); },
@@ -182,6 +193,51 @@ add_action('rest_api_init', function () {
         },
     ));
 });
+
+function vendicator_settle_bets($results) {
+    $map = array();
+    foreach ($results as $r) {
+        if (isset($r['fixture'])) { $map[$r['fixture']] = $r; }
+    }
+    if (!$map) { return 0; }
+    $count = 0;
+    foreach (get_users() as $u) {
+        $bets = json_decode((string) get_user_meta($u->ID, 'vendicator_bets', true), true);
+        if (!is_array($bets)) { continue; }
+        $changed = false;
+        $streak = (int) get_user_meta($u->ID, 'vendicator_streak', true);
+        foreach ($bets as $i => $b) {
+            if (!empty($b['settled']) || empty($map[$b['fixture']])) { continue; }
+            $r = $map[$b['fixture']];
+            $difficulty = isset($r['difficulty']) ? (float) $r['difficulty'] : 1.0;
+            $won = ($b['pick'] === $r['result']);
+            $points = $won ? (int) round(100 * $difficulty) : 0;
+            $streak = $won ? $streak + 1 : 0;
+            if ($streak === 3) { $points += 150; }
+            elseif ($streak === 5) { $points += 400; }
+            elseif ($streak === 10) { $points += 1500; }
+            $bets[$i]['settled'] = true;
+            $bets[$i]['result'] = $r['result'];
+            $bets[$i]['score'] = isset($r['score']) ? $r['score'] : '';
+            $bets[$i]['points'] = $points;
+            $bal = (int) get_user_meta($u->ID, 'vendicator_points_balance', true) + $points;
+            $life = (int) get_user_meta($u->ID, 'vendicator_lifetime_points', true) + $points;
+            update_user_meta($u->ID, 'vendicator_points_balance', $bal);
+            update_user_meta($u->ID, 'vendicator_lifetime_points', $life);
+            $hist = json_decode((string) get_user_meta($u->ID, 'vendicator_points_history', true), true);
+            if (!is_array($hist)) { $hist = array(); }
+            $hist[] = $life;
+            update_user_meta($u->ID, 'vendicator_points_history', wp_json_encode($hist));
+            $changed = true;
+            $count++;
+        }
+        update_user_meta($u->ID, 'vendicator_streak', $streak);
+        if ($changed) {
+            update_user_meta($u->ID, 'vendicator_bets', wp_json_encode($bets));
+        }
+    }
+    return $count;
+}
 
 /* ----------------------------------------------------------------- theming */
 
@@ -356,19 +412,33 @@ add_shortcode('vendicator_dashboard', function () {
         return $out . '<div class="vd-card">No predictions published yet - '
             . 'the engine pushes the next matchday payload automatically.</div></div></div>';
     }
+    $out .= '<p class="vd-muted" style="margin:0 0 4px;">Updated '
+        . esc_html(get_option('vendicator_predictions_updated', '')) . '</p>';
+    $list = isset($p['fixtures']) && is_array($p['fixtures'])
+        ? $p['fixtures'] : array($p);
+    foreach ($list as $fx) {
+        $out .= vendicator_render_fixture($fx, $allowed, $sel);
+    }
+    $out .= '</div></div>';
+    return $out;
+});
+
+function vendicator_render_fixture($p, $allowed, $sel) {
     $f = $p['final_calibrated'];
-    $out .= '<div class="vd-card"><h2>' . esc_html($p['fixture']) . '</h2>'
-        . '<p class="vd-muted">' . esc_html($p['league']) . ' · expected goals '
-        . esc_html($p['expected_goals']['home'] . ' – ' . $p['expected_goals']['away'])
-        . ' · updated ' . esc_html(get_option('vendicator_predictions_updated', '')) . '</p>'
+    $dc = $p['markets_dixon_coles'];
+    $out = '<div class="vd-card"><h2>' . esc_html($p['fixture']) . '</h2>'
+        . '<p class="vd-muted">' . esc_html($p['league'])
+        . (empty($p['kickoff']) ? '' : ' - kickoff ' . esc_html($p['kickoff']))
+        . ' - expected goals '
+        . esc_html($p['expected_goals']['home'] . ' - ' . $p['expected_goals']['away']) . '</p>'
         . '<div class="vd-bar">'
         . '<div class="vd-h" style="flex:' . floatval($f['home']) . '">' . floatval($f['home']) . '%</div>'
         . '<div class="vd-d" style="flex:' . floatval($f['draw']) . '">' . floatval($f['draw']) . '%</div>'
         . '<div class="vd-a" style="flex:' . floatval($f['away']) . '">' . floatval($f['away']) . '%</div>'
-        . '</div><p class="vd-muted">Calibrated ensemble · 90% band on home win: '
-        . esc_html(implode('–', (array) $p['uncertainty_band_home_pct'])) . '%'
-        . ' · difficulty ×' . esc_html($p['reward_difficulty_multiplier']) . '</p></div><div class="vd-grid">';
-    $dc = $p['markets_dixon_coles'];
+        . '</div><p class="vd-muted">Calibrated ensemble - 90% band on home win: '
+        . esc_html(implode('-', (array) $p['uncertainty_band_home_pct'])) . '%'
+        . ' - difficulty x' . esc_html($p['reward_difficulty_multiplier']) . '</p></div>'
+        . '<div class="vd-grid">';
     $cards = array(
         '1x2' => array('1X2', array('Home' => $dc['1x2']['home'], 'Draw' => $dc['1x2']['draw'], 'Away' => $dc['1x2']['away'])),
         'double_chance' => array('Double Chance', array('1X' => $dc['double_chance']['1x'], '12' => $dc['double_chance']['12'], 'X2' => $dc['double_chance']['x2'])),
@@ -392,7 +462,7 @@ add_shortcode('vendicator_dashboard', function () {
         }
         $out .= '</table></div>';
     }
-    $out .= '<div class="vd-card"><h3>Make your prediction (+points)</h3>'
+    $out .= '<div class="vd-card"><h3>Your prediction (+points)</h3>'
         . '<form method="post" action="' . esc_url(admin_url('admin-post.php')) . '">'
         . '<input type="hidden" name="action" value="vendicator_bet">'
         . wp_nonce_field('vendicator_bet', '_vdnonce', true, false)
@@ -401,11 +471,10 @@ add_shortcode('vendicator_dashboard', function () {
         . '<label><input type="radio" name="vd_pick" value="D"> Draw</label><br>'
         . '<label><input type="radio" name="vd_pick" value="A"> Away win</label></p>'
         . '<input type="submit" value="Lock it in">'
-        . '<p class="vd-muted">Points use a proper scoring rule × difficulty - confident and right beats lucky.</p>'
+        . '<p class="vd-muted">Correct pick earns 100 x difficulty points; streaks pay bonuses (3, 5, 10 in a row).</p>'
         . '</form></div>';
-    $out .= '</div></div></div>';
-    return $out;
-});
+    return $out . '</div>';
+}
 
 add_action('admin_post_vendicator_bet', function () {
     check_admin_referer('vendicator_bet', '_vdnonce');
