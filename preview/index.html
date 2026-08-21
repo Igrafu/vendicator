@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vindicator — Prediction Engine Preview</title>
+<style>
+  :root {
+    --navy:#1B2A4A; --navy2:#243759; --green:#2ECC71; --amber:#F5A623;
+    --bg:#0F1830; --card:#1B2A4A; --text:#EAF0FA; --muted:#8FA0BE;
+    --red:#E74C3C;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text);
+         font:15px/1.5 -apple-system,'Segoe UI',Roboto,sans-serif; }
+  header { background:linear-gradient(120deg,var(--navy),var(--navy2));
+           padding:22px 28px; border-bottom:3px solid var(--green);
+           display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  header h1 { font-size:26px; letter-spacing:3px; }
+  header h1 span { color:var(--green); }
+  header small { color:var(--muted); }
+  main { max-width:1100px; margin:0 auto; padding:24px 16px 60px;
+         display:grid; gap:18px; }
+  .card { background:var(--card); border-radius:14px; padding:20px 22px;
+          box-shadow:0 6px 18px rgba(0,0,0,.35); }
+  .fixture { display:flex; justify-content:space-between; align-items:center;
+             flex-wrap:wrap; gap:10px; }
+  .fixture h2 { font-size:22px; }
+  .badge { background:var(--green); color:#08331B; font-weight:700;
+           border-radius:8px; padding:3px 10px; font-size:12px; }
+  .probbar { display:flex; height:44px; border-radius:10px; overflow:hidden;
+             margin:16px 0 6px; font-weight:700; font-size:14px; }
+  .probbar div { display:flex; align-items:center; justify-content:center;
+                 min-width:36px; }
+  .p-home { background:var(--green); color:#08331B; }
+  .p-draw { background:#5B6C8F; }
+  .p-away { background:var(--amber); color:#3A2703; }
+  .legend { display:flex; justify-content:space-between; color:var(--muted);
+            font-size:12px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+          gap:18px; }
+  h3 { font-size:13px; text-transform:uppercase; letter-spacing:1.6px;
+       color:var(--green); margin-bottom:12px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  td { padding:5px 4px; border-bottom:1px solid rgba(255,255,255,.07); }
+  td:last-child { text-align:right; font-variant-numeric:tabular-nums;
+                  font-weight:600; }
+  .muted { color:var(--muted); font-size:13px; }
+  .pill { display:inline-block; background:var(--navy2); border-radius:20px;
+          padding:4px 12px; margin:3px 4px 3px 0; font-size:12.5px;
+          color:var(--text); }
+  .stat { font-size:30px; font-weight:800; color:var(--green); }
+  .warn { color:var(--muted); font-size:12px; margin-top:14px; }
+  .bar { height:8px; background:var(--navy2); border-radius:5px;
+         overflow:hidden; margin-top:4px; }
+  .bar i { display:block; height:100%; background:var(--green); }
+  footer { text-align:center; color:var(--muted); font-size:12px;
+           padding-bottom:30px; }
+  #err { color:var(--red); padding:30px; text-align:center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>VINDI<span>CATOR</span></h1>
+  <small id="generated">loading…</small>
+  <span class="badge">SIX-ENGINE PREVIEW</span>
+</header>
+<main id="app"><div id="err" hidden></div></main>
+<footer>Statistical analysis, not betting advice · Vindicator prediction engine</footer>
+<script>
+const pct = v => (typeof v === "number" ? v.toFixed(1) + "%" : v);
+
+fetch("/model/output/predictions.json")
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(render)
+  .catch(e => { const el = document.getElementById("err");
+    el.hidden = false; el.textContent = "Could not load predictions.json — run the pipeline first (" + e + ")"; });
+
+function row(k, v) { return `<tr><td>${k}</td><td>${v}</td></tr>`; }
+
+function render(p) {
+  document.getElementById("generated").textContent =
+    "generated " + new Date(p.generated).toLocaleString();
+  const f = p.final_calibrated, dc = p.markets_dixon_coles;
+  const [home, away] = p.fixture.split(" vs ");
+  const app = document.getElementById("app");
+
+  app.insertAdjacentHTML("beforeend", `
+  <div class="card">
+    <div class="fixture"><h2>${p.fixture}</h2>
+      <span class="muted">${p.league} · expected goals
+      ${p.expected_goals.home} – ${p.expected_goals.away}</span></div>
+    <div class="probbar">
+      <div class="p-home" style="flex:${f.home}">${pct(f.home)}</div>
+      <div class="p-draw" style="flex:${f.draw}">${pct(f.draw)}</div>
+      <div class="p-away" style="flex:${f.away}">${pct(f.away)}</div>
+    </div>
+    <div class="legend"><span>${home} win</span><span>Draw</span>
+      <span>${away} win</span></div>
+    <p class="warn">Calibrated ensemble output · 90% band on home win:
+      ${p.uncertainty_band_home_pct[0]}–${p.uncertainty_band_home_pct[1]}%
+      · reward difficulty ×${p.reward_difficulty_multiplier}</p>
+  </div>
+
+  <div class="grid">
+    <div class="card"><h3>1X2 &amp; Double Chance</h3><table>
+      ${row("Home", pct(dc["1x2"].home))}${row("Draw", pct(dc["1x2"].draw))}
+      ${row("Away", pct(dc["1x2"].away))}
+      ${row("1X", pct(dc.double_chance["1x"]))}
+      ${row("12", pct(dc.double_chance["12"]))}
+      ${row("X2", pct(dc.double_chance["x2"]))}</table></div>
+
+    <div class="card"><h3>Goals Markets</h3><table>
+      ${row("BTTS yes", pct(dc.btts.yes))}${row("BTTS no", pct(dc.btts.no))}
+      ${row("Over 1.5", pct(dc.totals["over_1.5"]))}
+      ${row("Over 2.5", pct(dc.totals["over_2.5"]))}
+      ${row("Over 3.5", pct(dc.totals["over_3.5"]))}
+      ${row("Under 2.5", pct(dc.totals["under_2.5"]))}</table></div>
+
+    <div class="card"><h3>Exact Score — top 10</h3><table>
+      ${dc.exact_score_top10.map(([s, v]) => row(s, pct(v))).join("")}
+    </table></div>
+
+    <div class="card"><h3>Live Demo — 60' at 1-0</h3><table>
+      ${row("Home win", pct(p.in_play_demo_60min_1_0.win_prob.home))}
+      ${row("Draw", pct(p.in_play_demo_60min_1_0.win_prob.draw))}
+      ${row("Away win", pct(p.in_play_demo_60min_1_0.win_prob.away))}
+      ${row("Next goal: home", pct(p.in_play_demo_60min_1_0.next_goal.home))}
+      ${row("Next goal: away", pct(p.in_play_demo_60min_1_0.next_goal.away))}
+      ${row("No more goals", pct(p.in_play_demo_60min_1_0.next_goal.none))}
+      </table>
+      <p class="warn">InPlayEngine — recomputes every poll from live
+      minute/score/cards</p></div>
+
+    <div class="card"><h3>Meta-Model Trust</h3>
+      ${Object.entries(p.explanation_context.meta_model_trust)
+        .sort((a, b) => b[1] - a[1])
+        .map(([m, w]) => `<div class="muted">${m}
+          <div class="bar"><i style="width:${Math.min(w * 130, 100)}%"></i>
+          </div></div>`).join("")}
+      <p class="warn">How much the stacking meta-learner trusts each
+      specialist model</p></div>
+
+    <div class="card"><h3>Tactical Notes</h3>
+      ${p.tactical_notes.map(n => `<span class="pill">${n}</span>`).join("")}
+      <p class="warn">Rule-based for now — GNN heads take over in Phase 2;
+      Claude turns these into match previews</p></div>
+  </div>`);
+}
+</script>
+</body>
+</html>

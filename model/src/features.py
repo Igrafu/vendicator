@@ -14,6 +14,17 @@ from engines.value import devig_proportional
 
 FORM_N = 5
 
+# Understat team names -> football-data.co.uk names (EPL)
+UNDERSTAT_TO_FDCUK = {
+    "Manchester United": "Man United", "Manchester City": "Man City",
+    "Nottingham Forest": "Nott'm Forest",
+    "Wolverhampton Wanderers": "Wolves", "Newcastle United": "Newcastle",
+}
+
+
+def normalise_understat(name):
+    return UNDERSTAT_TO_FDCUK.get(name, name)
+
 
 def _to_float(v):
     try:
@@ -47,9 +58,12 @@ def market_features(row):
     return out
 
 
-def build_match_table(rows):
+def build_match_table(rows, xg_lookup=None):
     """rows: list of csv dicts -> chronological DataFrame with rolling-form,
-    rolling attack/defence, shots, rest days and market features per match."""
+    rolling attack/defence, shots, rest days, market features and (when an
+    xg_lookup is provided) rolling xG/xGA per match.
+
+    xg_lookup: callable (home, away, date) -> (xg_home, xg_away) or None."""
     recs = []
     for r in rows:
         try:
@@ -62,6 +76,11 @@ def build_match_table(rows):
                "hs": _to_float(r.get("HS")), "as_": _to_float(r.get("AS")),
                "hst": _to_float(r.get("HST")), "ast": _to_float(r.get("AST")),
                "result": "H" if hg > ag else "D" if hg == ag else "A"}
+        if xg_lookup:
+            xg = xg_lookup(rec["home"], rec["away"], date)
+            rec["xh"], rec["xa"] = xg if xg else (np.nan, np.nan)
+        else:
+            rec["xh"] = rec["xa"] = np.nan
         rec.update(market_features(r))
         recs.append(rec)
     df = pd.DataFrame(recs).sort_values("date").reset_index(drop=True)
@@ -80,27 +99,31 @@ def build_match_table(rows):
                 f[f"{side}_shots_avg"] = np.nanmean(
                     [p["shots"] for p in past])
                 f[f"{side}_sot_avg"] = np.nanmean([p["sot"] for p in past])
+                f[f"{side}_xg_avg"] = np.nanmean([p["xg"] for p in past])
+                f[f"{side}_xga_avg"] = np.nanmean([p["xga"] for p in past])
                 f[f"{side}_rest_days"] = (m["date"] - past[-1]["date"]).days
             else:
                 f[f"{side}_form_pts"] = np.nan
         feats.append(f)
 
-        for team, gf, ga, shots, sot in (
-                (m["home"], m["hg"], m["ag"], m["hs"], m["hst"]),
-                (m["away"], m["ag"], m["hg"], m["as_"], m["ast"])):
+        for team, gf, ga, shots, sot, xg, xga in (
+                (m["home"], m["hg"], m["ag"], m["hs"], m["hst"],
+                 m["xh"], m["xa"]),
+                (m["away"], m["ag"], m["hg"], m["as_"], m["ast"],
+                 m["xa"], m["xh"])):
             pts = 3 if gf > ga else 1 if gf == ga else 0
             hist.setdefault(team, []).append(
                 {"date": m["date"], "gf": gf, "ga": ga, "pts": pts,
-                 "shots": shots, "sot": sot})
+                 "shots": shots, "sot": sot, "xg": xg, "xga": xga})
 
     return pd.concat([df, pd.DataFrame(feats)], axis=1)
 
 
 FEATURE_COLS = [
     "h_form_pts", "h_gf_avg", "h_ga_avg", "h_shots_avg", "h_sot_avg",
-    "h_rest_days",
+    "h_xg_avg", "h_xga_avg", "h_rest_days",
     "a_form_pts", "a_gf_avg", "a_ga_avg", "a_shots_avg", "a_sot_avg",
-    "a_rest_days",
+    "a_xg_avg", "a_xga_avg", "a_rest_days",
     "mkt_p_home", "mkt_p_draw", "mkt_p_away",
     "mkt_move_home", "mkt_move_away", "mkt_disagreement",
     # appended by the pipeline from the statistical engine:

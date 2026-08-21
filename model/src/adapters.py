@@ -129,6 +129,67 @@ class FootballDataCoUk:
         return list(csv.DictReader(io.StringIO(r.text)))
 
 
+class Understat:
+    """Historical team xG per match (scrape-tolerated; TRAINING data only,
+    never live). Leagues: EPL, La_liga, Bundesliga, Serie_A, Ligue_1, RFPL."""
+
+    BASE = "https://understat.com"
+
+    def matches(self, league="EPL", season="2023"):
+        """Returns [{date, home, away, hg, ag, xg_home, xg_away}, ...].
+        Uses the same getLeagueData endpoint the site's own frontend calls."""
+        headers = dict(UA)
+        headers.update({
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                          "AppleWebKit/537.36",
+            "Referer": f"{self.BASE}/league/{league}/{season}",
+            "X-Requested-With": "XMLHttpRequest",
+        })
+        r = requests.get(f"{self.BASE}/getLeagueData/{league}/{season}",
+                         headers=headers, timeout=60)
+        r.raise_for_status()
+        data = r.json()
+        games = data.get("dates", [])
+        out = []
+        for g in games:
+            if not g.get("isResult"):
+                continue
+            out.append({
+                "date": g["datetime"][:10],
+                "home": g["h"]["title"], "away": g["a"]["title"],
+                "hg": int(g["goals"]["h"]), "ag": int(g["goals"]["a"]),
+                "xg_home": float(g["xG"]["h"]), "xg_away": float(g["xG"]["a"]),
+            })
+        return out
+
+
+class StatsBombOpen:
+    """StatsBomb Open Data (free, GitHub) - event-level training data for the
+    Phase-2 temporal Transformer / GNN prototypes."""
+
+    BASE = ("https://raw.githubusercontent.com/statsbomb/open-data/master/"
+            "data")
+
+    def competitions(self):
+        r = requests.get(f"{self.BASE}/competitions.json", headers=UA,
+                         timeout=60)
+        r.raise_for_status()
+        return r.json()
+
+    def matches(self, competition_id, season_id):
+        r = requests.get(
+            f"{self.BASE}/matches/{competition_id}/{season_id}.json",
+            headers=UA, timeout=60)
+        r.raise_for_status()
+        return r.json()
+
+    def events(self, match_id):
+        r = requests.get(f"{self.BASE}/events/{match_id}.json", headers=UA,
+                         timeout=120)
+        r.raise_for_status()
+        return r.json()
+
+
 class Sportmonks:
     """Free tier: Danish Superliga + Scottish Premiership, full features
     (xG, predictions) -> use as the rich-data pilot leagues."""

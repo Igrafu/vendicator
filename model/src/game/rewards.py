@@ -34,6 +34,43 @@ OFFERS = {
 
 TIERS = [(0, "free"), (1000, "bronze"), (5000, "silver"), (15000, "gold")]
 
+# Subscription catalogue: users upgrade with EARNED points (lifetime points
+# unlock eligibility; upgrading never spends the balance). Each rank buys
+# better predictions, better odds views and more customization.
+SUBSCRIPTIONS = {
+    "free": {
+        "points_required": 0,
+        "benefits": ["T3 lower-league predictions", "1X2 + BTTS markets",
+                     "single-bookmaker odds view", "standard profile"],
+    },
+    "bronze": {
+        "points_required": 1000,
+        "benefits": ["T2 leagues unlocked", "over/under markets",
+                     "daily value pick", "profile badge colours"],
+    },
+    "silver": {
+        "points_required": 5000,
+        "benefits": ["T1 top leagues unlocked",
+                     "exact score + handicap markets",
+                     "uncertainty bands on every prediction",
+                     "multi-bookmaker odds comparison",
+                     "custom dashboard themes"],
+    },
+    "gold": {
+        "points_required": 15000,
+        "benefits": ["early prediction release", "full odds + value engine",
+                     "private competitions", "badge & avatar customization",
+                     "priority rewards catalogue"],
+    },
+}
+
+
+def upgrade_eligible(lifetime_points, current_tier):
+    """Tiers the user can upgrade to right now, based on earned points."""
+    order = list(SUBSCRIPTIONS)
+    return [t for t in order[order.index(current_tier) + 1:]
+            if lifetime_points >= SUBSCRIPTIONS[t]["points_required"]]
+
 
 def prediction_points(user_probs, outcome, difficulty=1.0, multiplier=1.0):
     """Brier-based proper scoring: confident-and-right beats hedging,

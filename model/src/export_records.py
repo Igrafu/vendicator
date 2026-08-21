@@ -81,6 +81,16 @@ def build(accounts, history):
                   for u in users for r in u.get("rewards_redeemed", [])],
                  tab_color=ACCENT)
 
+    subs = accounts.get("subscriptions", [])
+    _style_sheet(wb.create_sheet("Subscriptions"),
+                 ["Subscription ID", "User", "Tier", "Started",
+                  "Unlocked By Points", "Status", "Benefits"],
+                 [[s.get("subscription_id"), s.get("user_id"),
+                   s.get("tier"), s.get("started"),
+                   s.get("unlocked_by_points"), s.get("status"),
+                   "; ".join(s.get("benefits_snapshot", []))]
+                  for s in subs], tab_color=ACCENT)
+
     _style_sheet(wb.create_sheet("Invoices"),
                  ["Invoice ID", "User", "Date", "Amount", "Currency",
                   "Description", "Status"],

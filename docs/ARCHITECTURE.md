@@ -84,12 +84,18 @@ stacking → calibration → Monte Carlo — never one giant network.
 | Model | Brier | Log loss |
 |---|---|---|
 | De-vigged market (B365) | 0.5811 | 0.9734 |
+| xG-Poisson (Understat rolling xG) | 0.5928 | 0.9935 |
 | Elo | 0.5908 | 0.9866 |
-| **Stacked + calibrated** | **0.5938** | **0.9948** |
-| Stacked (no market input) | 0.6035 | 1.0086 |
+| **Stacked + calibrated** | **0.5938** | **0.9946** |
+| Stacked (no market input) | 0.5998 | 1.0035 |
 | Dixon-Coles | 0.6271 | 1.0415 |
 | Bayesian | 0.6366 | 1.0583 |
-| Tabular (4 members) | 0.7082 | 1.2132 |
+| Tabular (4 members) | 0.7388 | 1.2639 |
+
+xG integration (2026-08-21): three seasons of Understat team xG cached in
+`model/data/` via the site's own getLeagueData endpoint; rolling xG/xGA are
+tabular features and drive the standalone xG-Poisson base model — the
+strongest non-market signal. The odds-less ensemble improved 0.6035 → 0.5998.
 
 Reading: the market is the hardest benchmark (as expected — beating the
 closing line is the long game). The ensemble already beats every non-market

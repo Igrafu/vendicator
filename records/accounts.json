@@ -1,7 +1,17 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "last_synced": null,
   "users": [],
+  "subscriptions": [],
+  "_subscription_shape": {
+    "subscription_id": "",
+    "user_id": "",
+    "tier": "free | bronze | silver | gold",
+    "started": "ISO date",
+    "unlocked_by_points": 0,
+    "status": "active | expired | upgraded",
+    "benefits_snapshot": []
+  },
   "_user_shape": {
     "id": "wp user id",
     "username": "",

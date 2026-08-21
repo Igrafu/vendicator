@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "vindicator-preview",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd '/private/tmp/claude-501/-Volumes-External-SSD-Workbase-Vindicator/826356a6-4595-4bd3-81ee-e844b1d778a6/scratchpad/preview-site' && exec python3 -m http.server 8890"],
+      "port": 8890
+    }
+  ]
+}

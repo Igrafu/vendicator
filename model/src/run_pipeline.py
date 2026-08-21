@@ -19,7 +19,7 @@ from engines import (BayesianStrengths, DixonColes, EloModel, InPlayEngine,
                      TABULAR_AVAILABLE, as_percentages, brier,
                      bookmaker_suggestion, log_loss_score, markets_from_grid)
 from engines.graph import TacticalReport
-from features import FEATURE_COLS, build_match_table
+from features import FEATURE_COLS, build_match_table, normalise_understat
 from llm_explain import explanation_context
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -28,12 +28,53 @@ HISTORY = ROOT / "records" / "model-history.jsonl"
 UNIFORM = np.array([1 / 3, 1 / 3, 1 / 3])
 
 
+def understat_lookup(league="EPL"):
+    """Lookup from cached Understat files (model/data/): nearest same-pairing
+    match within 4 days -> (xg_home, xg_away)."""
+    pairs = {}
+    for path in sorted((ROOT / "model" / "data").glob(
+            f"understat_{league}_*.json")):
+        for g in json.loads(path.read_text()):
+            key = (normalise_understat(g["home"]),
+                   normalise_understat(g["away"]))
+            date = datetime.strptime(g["date"], "%Y-%m-%d")
+            pairs.setdefault(key, []).append(
+                (date, g["xg_home"], g["xg_away"]))
+
+    def lookup(home, away, date):
+        best = None
+        for d, xh, xa in pairs.get((home, away), []):
+            gap = abs((d - date).days)
+            if gap <= 4 and (best is None or gap < best[0]):
+                best = (gap, xh, xa)
+        return (best[1], best[2]) if best else None
+    return lookup if pairs else None
+
+
 def load_table(div, seasons):
     src = FootballDataCoUk()
     rows = []
     for s in seasons:
         rows += src.season_csv(s, div)
-    return build_match_table(rows)
+    return build_match_table(rows, xg_lookup=understat_lookup(
+        "EPL" if div == "E0" else div))
+
+
+def xg_poisson_probs(df):
+    """xG model: rolling xG for / xGA against -> Poisson 1X2 probabilities."""
+    from scipy.stats import poisson as pois
+    out = []
+    for _, m in df.iterrows():
+        lam = np.nanmean([m.get("h_xg_avg"), m.get("a_xga_avg")]) * 1.1
+        mu = np.nanmean([m.get("a_xg_avg"), m.get("h_xga_avg")]) * 0.95
+        if not (np.isfinite(lam) and np.isfinite(mu)):
+            out.append(UNIFORM.tolist())
+            continue
+        grid = np.outer(pois.pmf(range(9), lam), pois.pmf(range(9), mu))
+        grid /= grid.sum()
+        out.append([float(np.tril(grid, -1).sum()), float(np.trace(grid)),
+                    float(np.triu(grid, 1).sum())])
+    return np.array(out)
 
 
 def walk_forward_probs(df, train_end):
@@ -83,7 +124,8 @@ def walk_forward_probs(df, train_end):
     df["dc_lambda"] = dc_lams
     df["dc_mu"] = dc_mus
     base = {"elo": np.array(elo_probs), "dixon_coles": np.array(dc_probs),
-            "bayesian": np.array(bayes_probs)}
+            "bayesian": np.array(bayes_probs),
+            "xg_poisson": xg_poisson_probs(df)}
     mkt = df[["mkt_p_home", "mkt_p_draw", "mkt_p_away"]].to_numpy(float)
     base["market"] = np.where(np.isnan(mkt), UNIFORM, mkt)
     return df, base, {"elo": elo, "dc": dc, "bayes": bayes}
@@ -145,6 +187,7 @@ def demo_prediction(df, models, stack, tab, home, away, league):
                                       markets["1x2"]["draw"],
                                       markets["1x2"]["away"]]]),
             "bayesian": np.array([[bp["home"], bp["draw"], bp["away"]]]),
+            "xg_poisson": UNIFORM.reshape(1, 3),
             "tabular": tab.predict_proba(feat_row)}
     final = stack.predict_proba(base)[0]
     final_probs = {"home": float(final[0]), "draw": float(final[1]),
