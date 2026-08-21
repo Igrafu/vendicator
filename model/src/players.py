@@ -21,6 +21,7 @@ import time
 from pathlib import Path
 
 import requests
+from scipy.stats import poisson
 
 from teams import canonical
 
@@ -96,6 +97,96 @@ def value_rating(p):
 
 DEF_WEIGHT = {"D": 2.6, "DM": 2.4, "M": 1.7, "AM": 1.1, "F": 0.7,
               "S": 0.7, "GK": 0.3}
+
+# Understat writes positions as terse codes ("AMR", "DC", "F S"). The site
+# shows the short group next to a name in the markets grid and the full
+# description on the player's own profile.
+POSITION_LONG = {
+    "GK": ("GK", "Goalkeeper"),
+    "D": ("DEF", "Defender"),
+    "DC": ("DEF", "Centre-Back"),
+    "DR": ("DEF", "Right-Back"),
+    "DL": ("DEF", "Left-Back"),
+    "DM": ("MID", "Defensive Midfielder"),
+    "DMC": ("MID", "Central Defensive Midfielder"),
+    "M": ("MID", "Midfielder"),
+    "MC": ("MID", "Central Midfielder"),
+    "MR": ("MID", "Right Midfielder"),
+    "ML": ("MID", "Left Midfielder"),
+    "AM": ("MID", "Attacking Midfielder"),
+    "AMC": ("MID", "Attacking Midfielder (Centre)"),
+    "AMR": ("FWD", "Right Winger"),
+    "AML": ("FWD", "Left Winger"),
+    "F": ("FWD", "Forward"),
+    "FW": ("FWD", "Forward"),
+    "FWR": ("FWD", "Right Forward"),
+    "FWL": ("FWD", "Left Forward"),
+    "S": ("FWD", "Striker"),
+    "SUB": ("SUB", "Substitute"),
+}
+
+
+def position_detail(raw):
+    """'AMR S' -> ('FWD', 'Right Winger, used as a substitute')."""
+    tokens = [t.upper() for t in str(raw or "").replace(",", " ").split() if t]
+    if not tokens:
+        return "", "Position not recorded"
+    # Understat appends S when a player has any substitute appearances; that
+    # says nothing about where they play, so it is dropped rather than
+    # reported as if it were their role.
+    if len(tokens) > 1 and tokens[-1] == "S":
+        tokens = tokens[:-1]
+    named = [POSITION_LONG[t][1] for t in tokens if t in POSITION_LONG]
+    group = next((POSITION_LONG[t][0] for t in tokens if t in POSITION_LONG), "")
+    if not named:
+        return group, str(raw)
+    return group, " / ".join(dict.fromkeys(named))
+
+
+def _tail(lmbda, k):
+    """P(at least k) for a Poisson rate, as a percentage."""
+    return round(float(poisson.sf(k - 1, max(lmbda, 1e-6))) * 100, 1)
+
+
+def market_lines(p):
+    """Per-market thresholds for one player, priced off their per-90 rate.
+
+    Every market offers a ladder rather than a single yes/no, so a slip can
+    be built on '2+ goals' or 'under 2 tackles' as well as the headline
+    selection. Expected minutes are the player's own average, so a rotation
+    option prices shorter than a nailed-on starter.
+    """
+    mins = max(_f(p.get("time")), 1.0)
+    games = max(_f(p.get("games")), 1.0)
+    share = min(mins / games, 90.0) / 90.0        # expected share of a match
+    def rate(stat):
+        return _f(p.get(stat)) / mins * 90.0 * share
+
+    goals, assists = rate("goals"), rate("assists")
+    keyp = rate("key_passes")
+    tackles = _defensive_actions(p) / max(games, 1.0) * share
+    yellow, red = rate("yellow_cards"), rate("red_cards")
+    out = {
+        "score": [{"line": k, "label": f"{k}+ goal" + ("s" if k > 1 else ""),
+                   "pct": _tail(goals, k)} for k in (1, 2, 3)],
+        "assist": [{"line": k, "label": f"{k}+ assist" + ("s" if k > 1 else ""),
+                    "pct": _tail(assists, k)} for k in (1, 2)],
+        "score_or_assist": [{"line": 1, "label": "Goal or assist",
+                             "pct": _tail(goals + assists, 1)}],
+        "key_passes": [{"line": k, "label": f"{k}+ key passes",
+                        "pct": _tail(keyp, k)} for k in (1, 2, 3, 4)],
+        "tackles": [{"line": k, "label": f"{k}+ tackles",
+                     "pct": _tail(tackles, k)} for k in (1, 2, 3, 4)],
+        "yellow_card": [{"line": 1, "label": "To be booked",
+                         "pct": _tail(yellow, 1)},
+                        {"line": 0, "label": "Not booked",
+                         "pct": round(100 - _tail(yellow, 1), 1)}],
+        "red_card": [{"line": 1, "label": "To be sent off",
+                      "pct": max(_tail(red, 1), 0.4)}],
+    }
+    # drop dead lines - anything the fixture cannot realistically reach
+    return {m: [ln for ln in lines if 0.4 <= ln["pct"] <= 97.0] or lines[:1]
+            for m, lines in out.items()}
 
 
 def _defensive_actions(p):
@@ -177,11 +268,14 @@ def team_players(team, league="EPL", season="2024", limit=14):
         except Exception:
             tally = {"goals": ["dnp"] * 5, "assists": ["dnp"] * 5}
         mins = max(_f(p.get("time")), 1.0)
+        group, detail = position_detail(p.get("position"))
         out.append({
             "id": p.get("id"),
             "name": p.get("player_name"),
             "team": canon,
             "position": p.get("position", ""),
+            "position_short": group,
+            "position_long": detail,
             "games": int(_f(p.get("games"))),
             "minutes": int(mins),
             "goals": int(_f(p.get("goals"))),
@@ -195,6 +289,9 @@ def team_players(team, league="EPL", season="2024", limit=14):
             "tackles": _defensive_actions(p),
             "rating": rating,
             "last5": tally,
+            "markets": market_lines(p),
+            # points weight: low-rated players pay more for the same line
+            "weight": round(1.0 + (100.0 - rating) / 110.0, 3),
             "points": {m: market_points(rating, m)
                        for m in ("score", "assist", "score_or_assist",
                                  "key_passes", "tackles",
@@ -243,6 +340,8 @@ def player_profile(player_id, league="EPL", season="2024"):
         "name": agg.get("player_name") if agg else "",
         "team": canonical(agg.get("team_title")) if agg else "",
         "position": agg.get("position") if agg else "",
+        "position_short": position_detail(agg.get("position"))[0] if agg else "",
+        "position_long": position_detail(agg.get("position"))[1] if agg else "",
         "rating": value_rating(agg) if agg else None,
         "season": agg,
         "recent": recent,

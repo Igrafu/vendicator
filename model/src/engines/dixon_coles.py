@@ -81,13 +81,22 @@ class DixonColes:
         return grid, lam, mu
 
 
+TOTAL_LINES = (0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5)
+
+# Share of a match's goals scored in the first half. Football is reliably
+# back-loaded (fresher legs, fewer risks taken early, chasing games late);
+# the long-run split across the top European leagues sits near 45/55, which
+# is what the half-time markets below are built on.
+FIRST_HALF_SHARE = 0.45
+
+
 def markets_from_grid(grid):
     """Derive every displayed market, as probabilities, from a scoreline grid."""
     home = float(np.tril(grid, -1).sum())   # i > j
     away = float(np.triu(grid, 1).sum())    # j > i
     draw = float(np.trace(grid))
     totals = {}
-    for line in (0.5, 1.5, 2.5, 3.5, 4.5):
+    for line in TOTAL_LINES:
         over = sum(grid[i, j] for i in range(grid.shape[0])
                    for j in range(grid.shape[1]) if i + j > line)
         totals[f"over_{line}"] = float(over)
@@ -105,6 +114,37 @@ def markets_from_grid(grid):
         "totals": totals,
         "exact_score_top10": top_scores,
     }
+
+
+def _half_1x2(lam, mu):
+    """1X2 for one half from that half's expected goals."""
+    n = 8
+    h = poisson.pmf(range(n), lam)
+    a = poisson.pmf(range(n), mu)
+    g = np.outer(h, a)
+    g /= g.sum()
+    return {"home": float(np.tril(g, -1).sum()),
+            "draw": float(np.trace(g)),
+            "away": float(np.triu(g, 1).sum())}
+
+
+def half_markets(lam, mu):
+    """First-half and second-half result markets, plus HT/FT combinations.
+
+    The two halves are priced independently off their own expected goals
+    (`FIRST_HALF_SHARE` of the match total in the first, the rest in the
+    second), which is why a second-half home win prices differently from a
+    first-half one even for the same fixture.
+    """
+    s = FIRST_HALF_SHARE
+    first = _half_1x2(lam * s, mu * s)
+    second = _half_1x2(lam * (1 - s), mu * (1 - s))
+    combos = {}
+    for hk, hv in first.items():
+        for fk, fv in second.items():
+            combos[f"{hk}_{fk}"] = float(hv * fv)
+    return {"first_half": first, "second_half": second,
+            "ht_ft": combos}
 
 
 def as_percentages(obj, dp=1):

@@ -21,6 +21,7 @@ MARKETS = (
 )
 FORM_N = 12          # matches of history per team
 PRIOR_W = 6.0        # league-average prior weight (pseudo-matches)
+LIVE_BAND = (4.0, 94.0)   # probabilities worth offering as a selection
 
 
 def _f(v):
@@ -81,10 +82,20 @@ def recent_rates(rows, n=FORM_N):
     return team_rates(trimmed or rows)
 
 
-def sensible_lines(expected):
-    """Thresholds worth offering around the expectation."""
-    lo = max(1, int(math.floor(expected)) - 1)
-    return [lo, lo + 1, lo + 2, lo + 3]
+def sensible_lines(expected, spread=None):
+    """Thresholds worth offering around the expectation.
+
+    The window widens with the size of the market: a yellow-card market
+    expected at ~4 only supports a handful of live lines, while a fouls
+    market expected at ~22 is still meaningful several either side. Scaling
+    by the Poisson standard deviation keeps every offered line inside the
+    range the fixture can plausibly reach.
+    """
+    if spread is None:
+        spread = max(2, int(round(math.sqrt(max(expected, 1.0)) * 1.6)))
+    lo = max(1, int(math.floor(expected)) - spread)
+    hi = int(math.ceil(expected)) + spread
+    return list(range(lo, hi + 1))
 
 
 def market_table(rates, home, away):
@@ -105,9 +116,17 @@ def market_table(rates, home, away):
         expected = home_exp + away_exp
         lines = []
         for line in sensible_lines(expected):
-            pct = float(poisson.sf(line - 1, expected)) * 100
-            lines.append({"line": line, "label": f"{line}+",
-                          "pct": round(pct, 1)})
+            over = float(poisson.sf(line - 1, expected)) * 100
+            # a 98.9% line is not a selection, it is decoration - only
+            # thresholds that are genuinely live for this fixture are offered
+            if LIVE_BAND[0] <= over <= LIVE_BAND[1]:
+                lines.append({"line": line, "label": f"{line}+", "side": "over",
+                              "pct": round(over, 1)})
+            # the matching "under" so the builder can be played either way
+            if LIVE_BAND[0] <= 100 - over <= LIVE_BAND[1]:
+                lines.append({"line": line, "label": f"under {line}",
+                              "side": "under", "pct": round(100 - over, 1)})
+        lines.sort(key=lambda ln: (ln["line"], ln["side"]))
         out.append({
             "key": key, "label": label,
             "expected": round(expected, 1),

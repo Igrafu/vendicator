@@ -18,6 +18,7 @@ from engines import (BayesianStrengths, DixonColes, EloModel, InPlayEngine,
                      MatchState, StackedEnsemble, TabularEnsemble,
                      TABULAR_AVAILABLE, as_percentages, brier,
                      bookmaker_suggestion, log_loss_score, markets_from_grid)
+from engines.dixon_coles import half_markets
 from engines.graph import TacticalReport
 from discipline import market_table, recent_rates
 from scoreline import build as scoreline_build
@@ -48,14 +49,17 @@ def short_code(team):
     return team_code(team)
 
 
-def league_table(div, season="2526"):
-    """Live league standings from the free current-season results CSV."""
+def _table_rows(div, season):
+    """Standings for one division and season, from the free results CSV."""
     import csv as _csv
     import io as _io
     import requests
     r = requests.get(
         f"https://www.football-data.co.uk/mmz4281/{season}/{div}.csv",
-        timeout=60, headers={"User-Agent": "VendicatorModel/0.1"})
+        timeout=60,
+        # standings are never served from a stale copy
+        headers={"User-Agent": "VendicatorModel/0.1",
+                 "Cache-Control": "no-cache"})
     r.raise_for_status()
     table = {}
     for row in _csv.DictReader(_io.StringIO(
@@ -81,6 +85,37 @@ def league_table(div, season="2526"):
                 e["l"] += 1
     return sorted(table.values(),
                   key=lambda e: (-e["pts"], -(e["gf"] - e["ga"]), -e["gf"]))
+
+
+# which season each division's standings were actually read from, so the
+# site can say so rather than labelling a finished table "live"
+TABLE_SEASONS = {}
+
+
+def league_table(div, season=None):
+    """Live standings for the season actually in progress.
+
+    The season code is derived, never hard-coded - a fixed code silently
+    serves last season's table once the calendar rolls over in July. Very
+    early in a new season the current CSV can exist but be empty, so the
+    previous season is used until real results land.
+    """
+    from season_log import current_season_code
+    if season:
+        TABLE_SEASONS[div] = {"code": season, "current": True}
+        return _table_rows(div, season)
+    code = current_season_code()
+    try:
+        rows = _table_rows(div, code)
+    except Exception:
+        rows = []
+    if rows:
+        TABLE_SEASONS[div] = {"code": code, "current": True}
+        return rows
+    prev = f"{(int(code[:2]) - 1) % 100:02d}{int(code[:2]) % 100:02d}"
+    print(f"  table {div}: {code} has no results yet, showing {prev}")
+    TABLE_SEASONS[div] = {"code": prev, "current": False}
+    return _table_rows(div, prev)
 
 
 ODDS_BOOKS = [("Bet365", "B365"), ("Betfair", "BFD"), ("BetVictor", "BV"),
@@ -373,6 +408,32 @@ def push_to_wp(payload, route="predictions"):
     return r.ok
 
 
+def kickoff_epoch(date_str, time_str):
+    """'21/08/2026' + '15:00' -> UTC epoch seconds.
+
+    football-data.co.uk publishes kick-offs in UK local time. The site needs
+    one absolute instant so every clock, countdown and 'has this started yet'
+    check agrees regardless of where the member is reading from.
+    """
+    from zoneinfo import ZoneInfo
+    for fmt in ("%d/%m/%Y", "%d/%m/%y"):
+        try:
+            d = datetime.strptime(date_str.strip(), fmt)
+            break
+        except (ValueError, AttributeError):
+            d = None
+    if d is None:
+        return None
+    hh, mm = 15, 0
+    if time_str and ":" in str(time_str):
+        try:
+            hh, mm = (int(x) for x in str(time_str).split(":")[:2])
+        except ValueError:
+            pass
+    local = d.replace(hour=hh, minute=mm, tzinfo=ZoneInfo("Europe/London"))
+    return int(local.astimezone(timezone.utc).timestamp())
+
+
 def fixture_extras(home, away, league, raw_rows, table):
     """Discipline markets + player markets + team-pick point values."""
     out = {}
@@ -453,6 +514,7 @@ def fixture_payload(models, stack, stack_nm, tab, draw_head, df, fx, league):
     return {
         "league": league,
         "kickoff": f"{fx.get('Date', '')} {fx.get('Time', '')}".strip(),
+        "kickoff_ts": kickoff_epoch(fx.get("Date", ""), fx.get("Time", "")),
         "fixture": f"{ch} vs {ca}",
         "home_team": ch, "away_team": ca,
         "country": team_country(ch),
@@ -471,6 +533,7 @@ def fixture_payload(models, stack, stack_nm, tab, draw_head, df, fx, league):
             {"home": float(final[0]), "draw": float(final[1]),
              "away": float(final[2])}),
         "markets_dixon_coles": as_percentages(markets),
+        "markets_halves": as_percentages(half_markets(lam, mu)),
         "uncertainty_band_home_pct": [round(x * 100, 1)
                                       for x in bp["home_ci90"]],
         "reward_difficulty_multiplier": bayes.difficulty_multiplier(home,
@@ -536,8 +599,11 @@ def predict_upcoming(push=True):
                 kickoff=p["kickoff"],
                 difficulty=p["reward_difficulty_multiplier"])
             print(f"  {p['fixture']}: {p['final_calibrated']}")
+    from season_log import season_label
     payload = {"generated": datetime.now(timezone.utc).isoformat(),
                "fixtures": out_fixtures, "tables": all_tables,
+               "table_seasons": {d: dict(v, label=season_label(v["code"]))
+                                 for d, v in TABLE_SEASONS.items()},
                "teams": {c: v for c, v in team_registry().items()}}
     attach_gameweeks(payload)
     scoreline_build(payload)

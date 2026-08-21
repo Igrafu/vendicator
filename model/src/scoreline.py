@@ -120,6 +120,17 @@ def to_fractional(decimal_odds):
     return "evens" if (num, den) == (1, 1) else f"{num}/{den}"
 
 
+def odds_style_rating(total):
+    """The 0-100 composite expressed the way a price is written.
+
+    Bookmakers and the exchanges lead with a single digit before the point
+    (1.85, 2.63, 9.40), so the Scoreline is shown on the same scale: a 40.3
+    composite reads as 4.03. The ordering and the information are identical -
+    it just sits alongside a real slip without a mental conversion.
+    """
+    return round(max(min(float(total), 100.0), 10.0) / 10.0, 2)
+
+
 def _odds_from(total, edge_prob):
     """Fair decimal price, widened when the Scoreline is unsure."""
     p = max(min(float(edge_prob), 0.95), 0.03)
@@ -190,7 +201,8 @@ def team_scoreline(team, table_row=None, model_probs=None, history=None,
                     + (f", '{best}' would have paid" if best else ""))
     if won + lost:
         note.append(f"member bets {won}W-{lost}L")
-    return {"total": total, "decimal": dec, "fractional": frac,
+    return {"total": total, "rating": odds_style_rating(total),
+            "decimal": dec, "fractional": frac,
             "components": parts, "note": "; ".join(note) or
             "no settled history yet - score is model-derived"}
 
@@ -207,7 +219,8 @@ def player_scoreline(player, history=None):
     prob = max(min((player.get("prob", {}).get("score", 10) or 10) / 100.0,
                    0.9), 0.02)
     dec, frac = _odds_from(total, prob)
-    return {"total": total, "decimal": dec, "fractional": frac,
+    return {"total": total, "rating": odds_style_rating(total),
+            "decimal": dec, "fractional": frac,
             "note": f"{goals} goal(s), {assists} assist(s) in last 5"
                     + (f", {dnp} missed" if dnp else "")}
 
@@ -227,8 +240,9 @@ def build(payload):
                             {"top": probs.get("home", 33)}, history, bets)
         as_ = team_scoreline(away, rows.get(away),
                              {"top": probs.get("away", 33)}, history, bets)
-        fx["scoreline"] = {"home": hs, "away": as_,
-                           "headline": round((hs["total"] + as_["total"]) / 2, 1)}
+        headline = round((hs["total"] + as_["total"]) / 2, 1)
+        fx["scoreline"] = {"home": hs, "away": as_, "headline": headline,
+                           "rating": odds_style_rating(headline)}
         store["teams"][home] = hs
         store["teams"][away] = as_
         for pl in fx.get("players", []) or []:

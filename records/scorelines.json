@@ -2,6 +2,7 @@
  "teams": {
   "Hull City": {
    "total": 38.4,
+   "rating": 3.84,
    "decimal": 6.95,
    "fractional": "6/1",
    "components": {
@@ -16,6 +17,7 @@
   },
   "Manchester United": {
    "total": 52.3,
+   "rating": 5.23,
    "decimal": 1.67,
    "fractional": "2/3",
    "components": {
@@ -30,6 +32,7 @@
   },
   "Everton": {
    "total": 42.3,
+   "rating": 4.23,
    "decimal": 2.63,
    "fractional": "13/8",
    "components": {
@@ -44,6 +47,7 @@
   },
   "Crystal Palace": {
    "total": 38.4,
+   "rating": 3.84,
    "decimal": 3.8,
    "fractional": "11/4",
    "components": {
@@ -58,6 +62,7 @@
   },
   "Ipswich Town": {
    "total": 42.9,
+   "rating": 4.29,
    "decimal": 2.97,
    "fractional": "2/1",
    "components": {
@@ -72,6 +77,7 @@
   },
   "Sunderland": {
    "total": 42.3,
+   "rating": 4.23,
    "decimal": 2.84,
    "fractional": "15/8",
    "components": {
@@ -86,6 +92,7 @@
   },
   "Nottingham Forest": {
    "total": 41.4,
+   "rating": 4.14,
    "decimal": 2.64,
    "fractional": "13/8",
    "components": {
@@ -100,6 +107,7 @@
   },
   "Leeds United": {
    "total": 38.9,
+   "rating": 3.89,
    "decimal": 3.8,
    "fractional": "11/4",
    "components": {
@@ -114,6 +122,7 @@
   },
   "Brentford": {
    "total": 43.2,
+   "rating": 4.32,
    "decimal": 2.68,
    "fractional": "13/8",
    "components": {
@@ -128,6 +137,7 @@
   },
   "Tottenham Hotspur": {
    "total": 37.7,
+   "rating": 3.77,
    "decimal": 3.88,
    "fractional": "3/1",
    "components": {
@@ -142,6 +152,7 @@
   },
   "Brighton & Hove Albion": {
    "total": 43.6,
+   "rating": 4.36,
    "decimal": 2.6,
    "fractional": "13/8",
    "components": {
@@ -156,6 +167,7 @@
   },
   "Aston Villa": {
    "total": 43.2,
+   "rating": 4.32,
    "decimal": 3.72,
    "fractional": "11/4",
    "components": {
@@ -170,6 +182,7 @@
   },
   "Manchester City": {
    "total": 53.3,
+   "rating": 5.33,
    "decimal": 1.91,
    "fractional": "10/11",
    "components": {
@@ -184,6 +197,7 @@
   },
   "Bournemouth": {
    "total": 39.4,
+   "rating": 3.94,
    "decimal": 5.72,
    "fractional": "9/2",
    "components": {
@@ -198,6 +212,7 @@
   },
   "Newcastle United": {
    "total": 39.8,
+   "rating": 3.98,
    "decimal": 3.73,
    "fractional": "11/4",
    "components": {
@@ -212,6 +227,7 @@
   },
   "Liverpool": {
    "total": 45.5,
+   "rating": 4.55,
    "decimal": 2.49,
    "fractional": "3/2",
    "components": {
@@ -226,6 +242,7 @@
   },
   "Fulham": {
    "total": 40.1,
+   "rating": 4.01,
    "decimal": 3.72,
    "fractional": "11/4",
    "components": {
@@ -240,6 +257,7 @@
   },
   "Chelsea": {
    "total": 43.8,
+   "rating": 4.38,
    "decimal": 2.5,
    "fractional": "3/2",
    "components": {
@@ -253,12 +271,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Birmingham City": {
-   "total": 45.8,
-   "decimal": 2.04,
+   "total": 43.1,
+   "rating": 4.31,
+   "decimal": 2.05,
    "fractional": "evens",
    "components": {
-    "form": 9.3,
-    "goal_difference": 5.1,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 11.4,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -267,12 +286,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Bristol City": {
-   "total": 37.5,
-   "decimal": 6.81,
+   "total": 23.5,
+   "rating": 2.35,
+   "decimal": 7.11,
    "fractional": "6/1",
    "components": {
-    "form": 9.0,
-    "goal_difference": 5.0,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 3.5,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -281,12 +301,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Millwall": {
-   "total": 45.9,
-   "decimal": 2.86,
-   "fractional": "15/8",
+   "total": 58.1,
+   "rating": 5.81,
+   "decimal": 2.76,
+   "fractional": "7/4",
    "components": {
-    "form": 12.0,
-    "goal_difference": 5.8,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 8.1,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -295,12 +316,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Norwich City": {
-   "total": 40.7,
-   "decimal": 4.01,
+   "total": 28.4,
+   "rating": 2.84,
+   "decimal": 4.16,
    "fractional": "3/1",
    "components": {
-    "form": 9.4,
-    "goal_difference": 5.4,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 5.9,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -310,11 +332,12 @@
   },
   "Blackburn Rovers": {
    "total": 36.4,
+   "rating": 3.64,
    "decimal": 5.04,
    "fractional": "4/1",
    "components": {
-    "form": 7.5,
-    "goal_difference": 4.2,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 4.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -323,12 +346,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Middlesbrough": {
-   "total": 45.5,
-   "decimal": 3.1,
-   "fractional": "85/40",
+   "total": 55.0,
+   "rating": 5.5,
+   "decimal": 3.02,
+   "fractional": "2/1",
    "components": {
-    "form": 11.6,
-    "goal_difference": 6.4,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 7.5,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -337,12 +361,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Derby County": {
-   "total": 44.1,
-   "decimal": 2.66,
-   "fractional": "13/8",
+   "total": 31.2,
+   "rating": 3.12,
+   "decimal": 2.76,
+   "fractional": "7/4",
    "components": {
-    "form": 10.0,
-    "goal_difference": 5.4,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 8.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -351,11 +376,12 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Cardiff City": {
-   "total": 41.0,
-   "decimal": 3.92,
+   "total": 37.7,
+   "rating": 3.77,
+   "decimal": 3.96,
    "fractional": "3/1",
    "components": {
-    "form": 10.0,
+    "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 6.0,
     "model_accuracy": 10.0,
@@ -365,12 +391,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Preston North End": {
-   "total": 37.1,
-   "decimal": 6.21,
-   "fractional": "5/1",
+   "total": 26.3,
+   "rating": 2.63,
+   "decimal": 6.42,
+   "fractional": "11/2",
    "components": {
-    "form": 8.7,
-    "goal_difference": 4.6,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 3.8,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -379,11 +406,12 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Wolverhampton Wanderers": {
-   "total": 42.9,
-   "decimal": 2.96,
+   "total": 39.6,
+   "rating": 3.96,
+   "decimal": 2.99,
    "fractional": "2/1",
    "components": {
-    "form": 10.0,
+    "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 7.9,
     "model_accuracy": 10.0,
@@ -393,12 +421,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Queens Park Rangers": {
-   "total": 42.7,
-   "decimal": 2.33,
-   "fractional": "11/8",
+   "total": 60.0,
+   "rating": 6.0,
+   "decimal": 2.21,
+   "fractional": "6/5",
    "components": {
-    "form": 8.4,
-    "goal_difference": 4.3,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 10.0,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -407,12 +436,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Bolton": {
-   "total": 40.3,
-   "decimal": 4.45,
-   "fractional": "7/2",
+   "total": 52.8,
+   "rating": 5.28,
+   "decimal": 4.29,
+   "fractional": "10/3",
    "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 5.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -421,12 +451,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Southampton": {
-   "total": 50.4,
-   "decimal": 1.85,
-   "fractional": "5/6",
+   "total": 34.9,
+   "rating": 3.49,
+   "decimal": 1.93,
+   "fractional": "10/11",
    "components": {
-    "form": 11.6,
-    "goal_difference": 6.4,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 12.4,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -435,12 +466,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Stoke City": {
-   "total": 36.3,
-   "decimal": 6.68,
-   "fractional": "11/2",
+   "total": 26.1,
+   "rating": 2.61,
+   "decimal": 6.89,
+   "fractional": "6/1",
    "components": {
-    "form": 8.0,
-    "goal_difference": 4.7,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 3.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -449,12 +481,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Swansea City": {
-   "total": 41.3,
-   "decimal": 3.32,
+   "total": 54.6,
+   "rating": 5.46,
+   "decimal": 3.2,
    "fractional": "9/4",
    "components": {
-    "form": 9.3,
-    "goal_difference": 4.9,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 7.1,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -463,11 +496,12 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Sheffield United": {
-   "total": 40.5,
-   "decimal": 3.46,
+   "total": 38.5,
+   "rating": 3.85,
+   "decimal": 3.48,
    "fractional": "5/2",
    "components": {
-    "form": 8.7,
+    "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 6.8,
     "model_accuracy": 10.0,
@@ -477,12 +511,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Wrexham": {
-   "total": 44.7,
-   "decimal": 2.52,
+   "total": 40.9,
+   "rating": 4.09,
+   "decimal": 2.55,
    "fractional": "3/2",
    "components": {
-    "form": 10.3,
-    "goal_difference": 5.2,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 9.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -491,12 +526,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Watford": {
-   "total": 38.3,
-   "decimal": 4.12,
+   "total": 53.2,
+   "rating": 5.32,
+   "decimal": 3.95,
    "fractional": "3/1",
    "components": {
-    "form": 8.3,
-    "goal_difference": 4.3,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 5.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -505,12 +541,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "West Bromwich Albion": {
-   "total": 39.2,
-   "decimal": 3.37,
+   "total": 54.5,
+   "rating": 5.45,
+   "decimal": 3.22,
    "fractional": "9/4",
    "components": {
-    "form": 7.7,
-    "goal_difference": 4.5,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 7.0,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -519,11 +556,12 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Burnley": {
-   "total": 40.2,
-   "decimal": 4.56,
+   "total": 36.9,
+   "rating": 3.69,
+   "decimal": 4.6,
    "fractional": "7/2",
    "components": {
-    "form": 10.0,
+    "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 5.2,
     "model_accuracy": 10.0,
@@ -533,12 +571,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Doncaster": {
-   "total": 42.0,
-   "decimal": 2.52,
-   "fractional": "3/2",
+   "total": 31.8,
+   "rating": 3.18,
+   "decimal": 2.59,
+   "fractional": "13/8",
    "components": {
-    "form": 8.7,
-    "goal_difference": 4.0,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 9.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -547,12 +586,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Barnsley": {
-   "total": 39.5,
-   "decimal": 3.81,
-   "fractional": "11/4",
+   "total": 28.7,
+   "rating": 2.87,
+   "decimal": 3.94,
+   "fractional": "3/1",
    "components": {
-    "form": 8.6,
-    "goal_difference": 4.7,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 6.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -561,12 +601,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "AFC Wimbledon": {
-   "total": 38.6,
-   "decimal": 3.39,
+   "total": 27.0,
+   "rating": 2.7,
+   "decimal": 3.52,
    "fractional": "5/2",
    "components": {
-    "form": 7.7,
-    "goal_difference": 3.9,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 7.0,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -575,12 +616,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Reading": {
-   "total": 42.0,
-   "decimal": 3.04,
-   "fractional": "2/1",
+   "total": 30.2,
+   "rating": 3.02,
+   "decimal": 3.15,
+   "fractional": "85/40",
    "components": {
-    "form": 9.1,
-    "goal_difference": 5.2,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 7.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -589,11 +631,12 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Milton Keynes Dons": {
-   "total": 43.3,
-   "decimal": 2.82,
+   "total": 40.0,
+   "rating": 4.0,
+   "decimal": 2.85,
    "fractional": "15/8",
    "components": {
-    "form": 10.0,
+    "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 8.3,
     "model_accuracy": 10.0,
@@ -603,12 +646,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Huddersfield": {
-   "total": 42.3,
-   "decimal": 3.27,
-   "fractional": "9/4",
+   "total": 57.1,
+   "rating": 5.71,
+   "decimal": 3.14,
+   "fractional": "85/40",
    "components": {
-    "form": 9.7,
-    "goal_difference": 5.5,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 7.1,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -617,12 +661,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Peterboro": {
-   "total": 39.2,
-   "decimal": 3.51,
-   "fractional": "5/2",
+   "total": 26.7,
+   "rating": 2.67,
+   "decimal": 3.64,
+   "fractional": "11/4",
    "components": {
-    "form": 7.7,
-    "goal_difference": 4.8,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 6.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -631,12 +676,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Mansfield": {
-   "total": 42.3,
-   "decimal": 3.23,
-   "fractional": "9/4",
+   "total": 54.7,
+   "rating": 5.47,
+   "decimal": 3.12,
+   "fractional": "85/40",
    "components": {
-    "form": 9.4,
-    "goal_difference": 5.7,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 7.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -645,12 +691,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Stevenage": {
-   "total": 44.8,
-   "decimal": 2.65,
-   "fractional": "13/8",
+   "total": 40.4,
+   "rating": 4.04,
+   "decimal": 2.69,
+   "fractional": "7/4",
    "components": {
-    "form": 10.9,
-    "goal_difference": 5.2,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 8.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -659,11 +706,12 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Oxford United": {
-   "total": 41.5,
-   "decimal": 3.6,
-   "fractional": "5/2",
+   "total": 38.2,
+   "rating": 3.82,
+   "decimal": 3.64,
+   "fractional": "11/4",
    "components": {
-    "form": 10.0,
+    "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 6.5,
     "model_accuracy": 10.0,
@@ -673,12 +721,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Stockport": {
-   "total": 47.7,
-   "decimal": 2.13,
-   "fractional": "11/10",
+   "total": 60.8,
+   "rating": 6.08,
+   "decimal": 2.05,
+   "fractional": "evens",
    "components": {
-    "form": 11.2,
-    "goal_difference": 5.7,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 10.8,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -687,12 +736,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Blackpool": {
-   "total": 37.1,
-   "decimal": 5.87,
+   "total": 35.7,
+   "rating": 3.57,
+   "decimal": 5.9,
    "fractional": "5/1",
    "components": {
-    "form": 8.7,
-    "goal_difference": 4.4,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 4.0,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -701,12 +751,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Wigan": {
-   "total": 41.9,
-   "decimal": 2.52,
-   "fractional": "3/2",
+   "total": 31.8,
+   "rating": 3.18,
+   "decimal": 2.59,
+   "fractional": "13/8",
    "components": {
-    "form": 8.1,
-    "goal_difference": 4.5,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 9.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -715,12 +766,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Leyton Orient": {
-   "total": 38.0,
-   "decimal": 3.83,
-   "fractional": "11/4",
+   "total": 28.7,
+   "rating": 2.87,
+   "decimal": 3.94,
+   "fractional": "3/1",
    "components": {
-    "form": 7.5,
-    "goal_difference": 4.3,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 6.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -729,12 +781,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Wycombe": {
-   "total": 42.8,
-   "decimal": 2.9,
+   "total": 39.8,
+   "rating": 3.98,
+   "decimal": 2.92,
    "fractional": "15/8",
    "components": {
-    "form": 9.1,
-    "goal_difference": 5.6,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 8.1,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -743,12 +796,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Plymouth": {
-   "total": 42.4,
-   "decimal": 3.81,
-   "fractional": "11/4",
+   "total": 26.1,
+   "rating": 2.61,
+   "decimal": 4.0,
+   "fractional": "3/1",
    "components": {
-    "form": 10.6,
-    "goal_difference": 5.7,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 6.1,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -757,12 +811,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Bristol Rvs": {
-   "total": 42.8,
-   "decimal": 2.5,
-   "fractional": "3/2",
+   "total": 31.8,
+   "rating": 3.18,
+   "decimal": 2.58,
+   "fractional": "13/8",
    "components": {
-    "form": 9.0,
-    "goal_difference": 4.5,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 9.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -771,12 +826,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Newport County": {
-   "total": 34.3,
-   "decimal": 5.07,
+   "total": 54.7,
+   "rating": 5.47,
+   "decimal": 4.78,
    "fractional": "4/1",
    "components": {
-    "form": 6.2,
-    "goal_difference": 3.4,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 4.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -785,12 +841,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Salford": {
-   "total": 44.2,
-   "decimal": 3.34,
-   "fractional": "9/4",
+   "total": 27.0,
+   "rating": 2.7,
+   "decimal": 3.52,
+   "fractional": "5/2",
    "components": {
-    "form": 11.7,
-    "goal_difference": 5.5,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 7.0,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -799,12 +856,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Chesterfield": {
-   "total": 44.0,
-   "decimal": 3.43,
+   "total": 29.3,
+   "rating": 2.93,
+   "decimal": 3.58,
    "fractional": "5/2",
    "components": {
-    "form": 11.4,
-    "goal_difference": 5.8,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 6.8,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -813,12 +871,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Walsall": {
-   "total": 39.7,
-   "decimal": 4.43,
-   "fractional": "7/2",
+   "total": 55.3,
+   "rating": 5.53,
+   "decimal": 4.23,
+   "fractional": "10/3",
    "components": {
-    "form": 9.4,
-    "goal_difference": 5.0,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 5.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -827,12 +886,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Grimsby": {
-   "total": 46.2,
-   "decimal": 2.7,
-   "fractional": "7/4",
+   "total": 56.1,
+   "rating": 5.61,
+   "decimal": 2.62,
+   "fractional": "13/8",
    "components": {
-    "form": 11.3,
-    "goal_difference": 6.3,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 8.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -841,12 +901,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Colchester": {
-   "total": 42.0,
-   "decimal": 3.49,
+   "total": 38.4,
+   "rating": 3.84,
+   "decimal": 3.53,
    "fractional": "5/2",
    "components": {
-    "form": 9.6,
-    "goal_difference": 5.7,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 6.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -855,12 +916,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Oldham": {
-   "total": 43.0,
-   "decimal": 3.22,
-   "fractional": "9/4",
+   "total": 57.2,
+   "rating": 5.72,
+   "decimal": 3.09,
+   "fractional": "85/40",
    "components": {
-    "form": 9.9,
-    "goal_difference": 5.9,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 7.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -869,12 +931,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Crewe": {
-   "total": 42.0,
-   "decimal": 3.36,
+   "total": 54.5,
+   "rating": 5.45,
+   "decimal": 3.24,
    "fractional": "9/4",
    "components": {
-    "form": 9.7,
-    "goal_difference": 5.3,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 7.0,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -883,11 +946,12 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Northampton": {
-   "total": 41.8,
-   "decimal": 3.45,
+   "total": 38.5,
+   "rating": 3.85,
+   "decimal": 3.49,
    "fractional": "5/2",
    "components": {
-    "form": 10.0,
+    "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 6.8,
     "model_accuracy": 10.0,
@@ -897,12 +961,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Exeter": {
-   "total": 43.7,
-   "decimal": 2.69,
+   "total": 31.2,
+   "rating": 3.12,
+   "decimal": 2.79,
    "fractional": "7/4",
    "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 8.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -911,12 +976,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Accrington": {
-   "total": 37.2,
-   "decimal": 4.63,
+   "total": 36.8,
+   "rating": 3.68,
+   "decimal": 4.64,
    "fractional": "7/2",
    "components": {
-    "form": 7.7,
-    "goal_difference": 4.4,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 5.1,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -925,12 +991,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Fleetwood Town": {
-   "total": 41.5,
-   "decimal": 3.0,
-   "fractional": "2/1",
+   "total": 55.3,
+   "rating": 5.53,
+   "decimal": 2.88,
+   "fractional": "15/8",
    "components": {
-    "form": 8.8,
-    "goal_difference": 4.9,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 7.8,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -939,12 +1006,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Gillingham": {
-   "total": 37.9,
-   "decimal": 3.79,
-   "fractional": "11/4",
+   "total": 26.2,
+   "rating": 2.62,
+   "decimal": 3.93,
+   "fractional": "3/1",
    "components": {
-    "form": 7.7,
-    "goal_difference": 4.0,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 6.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -953,12 +1021,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Port Vale": {
-   "total": 45.6,
-   "decimal": 2.18,
-   "fractional": "6/5",
+   "total": 30.6,
+   "rating": 3.06,
+   "decimal": 2.28,
+   "fractional": "5/4",
    "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 10.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -967,12 +1036,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Tranmere": {
-   "total": 32.8,
-   "decimal": 7.2,
+   "total": 53.3,
+   "rating": 5.33,
+   "decimal": 6.78,
    "fractional": "6/1",
    "components": {
-    "form": 5.9,
-    "goal_difference": 3.6,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 3.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -981,12 +1051,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Rochdale": {
-   "total": 42.8,
-   "decimal": 2.98,
-   "fractional": "2/1",
+   "total": 27.8,
+   "rating": 2.78,
+   "decimal": 3.12,
+   "fractional": "85/40",
    "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 7.8,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -995,12 +1066,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Crawley Town": {
-   "total": 35.7,
-   "decimal": 3.82,
-   "fractional": "11/4",
+   "total": 28.7,
+   "rating": 2.87,
+   "decimal": 3.9,
+   "fractional": "3/1",
    "components": {
-    "form": 5.8,
-    "goal_difference": 3.7,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 6.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1009,12 +1081,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Shrewsbury": {
-   "total": 35.6,
-   "decimal": 4.81,
+   "total": 25.0,
+   "rating": 2.5,
+   "decimal": 4.96,
    "fractional": "4/1",
    "components": {
-    "form": 7.1,
-    "goal_difference": 3.5,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 5.0,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1023,12 +1096,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Barnet": {
-   "total": 45.2,
-   "decimal": 2.79,
+   "total": 58.3,
+   "rating": 5.83,
+   "decimal": 2.69,
    "fractional": "7/4",
    "components": {
-    "form": 11.0,
-    "goal_difference": 5.9,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 8.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1037,12 +1111,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Swindon": {
-   "total": 44.4,
-   "decimal": 2.93,
-   "fractional": "15/8",
+   "total": 39.6,
+   "rating": 3.96,
+   "decimal": 2.97,
+   "fractional": "2/1",
    "components": {
-    "form": 10.9,
-    "goal_difference": 5.6,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 7.9,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1051,12 +1126,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Cheltenham": {
-   "total": 37.3,
-   "decimal": 3.83,
+   "total": 53.7,
+   "rating": 5.37,
+   "decimal": 3.65,
    "fractional": "11/4",
    "components": {
-    "form": 7.5,
-    "goal_difference": 3.6,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 6.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1066,6 +1142,7 @@
   },
   "Marseille": {
    "total": 47.3,
+   "rating": 4.73,
    "decimal": 2.46,
    "fractional": "3/2",
    "components": {
@@ -1080,6 +1157,7 @@
   },
   "Strasbourg": {
    "total": 41.8,
+   "rating": 4.18,
    "decimal": 4.18,
    "fractional": "10/3",
    "components": {
@@ -1094,6 +1172,7 @@
   },
   "Lens": {
    "total": 53.2,
+   "rating": 5.32,
    "decimal": 1.85,
    "fractional": "5/6",
    "components": {
@@ -1108,6 +1187,7 @@
   },
   "Auxerre": {
    "total": 35.1,
+   "rating": 3.51,
    "decimal": 5.88,
    "fractional": "5/1",
    "components": {
@@ -1122,6 +1202,7 @@
   },
   "Nice": {
    "total": 38.2,
+   "rating": 3.82,
    "decimal": 2.76,
    "fractional": "7/4",
    "components": {
@@ -1136,6 +1217,7 @@
   },
   "Lorient": {
    "total": 38.8,
+   "rating": 3.88,
    "decimal": 4.51,
    "fractional": "7/2",
    "components": {
@@ -1150,6 +1232,7 @@
   },
   "Toulouse": {
    "total": 39.6,
+   "rating": 3.96,
    "decimal": 4.12,
    "fractional": "3/1",
    "components": {
@@ -1164,6 +1247,7 @@
   },
   "Lyon": {
    "total": 47.0,
+   "rating": 4.7,
    "decimal": 2.51,
    "fractional": "3/2",
    "components": {
@@ -1178,6 +1262,7 @@
   },
   "Troyes": {
    "total": 39.9,
+   "rating": 3.99,
    "decimal": 4.82,
    "fractional": "4/1",
    "components": {
@@ -1192,6 +1277,7 @@
   },
   "Paris FC": {
    "total": 42.2,
+   "rating": 4.22,
    "decimal": 2.65,
    "fractional": "13/8",
    "components": {
@@ -1206,6 +1292,7 @@
   },
   "Angers": {
    "total": 34.4,
+   "rating": 3.44,
    "decimal": 6.4,
    "fractional": "11/2",
    "components": {
@@ -1220,6 +1307,7 @@
   },
   "Lille": {
    "total": 48.0,
+   "rating": 4.8,
    "decimal": 2.32,
    "fractional": "11/8",
    "components": {
@@ -1234,6 +1322,7 @@
   },
   "Le Havre": {
    "total": 35.1,
+   "rating": 3.51,
    "decimal": 5.85,
    "fractional": "5/1",
    "components": {
@@ -1248,6 +1337,7 @@
   },
   "Monaco": {
    "total": 46.8,
+   "rating": 4.68,
    "decimal": 2.13,
    "fractional": "11/10",
    "components": {
@@ -1262,6 +1352,7 @@
   },
   "Paris Saint-Germain": {
    "total": 55.7,
+   "rating": 5.57,
    "decimal": 1.8,
    "fractional": "4/5",
    "components": {
@@ -1276,6 +1367,7 @@
   },
   "Rennes": {
    "total": 41.4,
+   "rating": 4.14,
    "decimal": 5.66,
    "fractional": "9/2",
    "components": {
@@ -1290,6 +1382,7 @@
   },
   "Inter Milan": {
    "total": 62.4,
+   "rating": 6.24,
    "decimal": 1.19,
    "fractional": "1/5",
    "components": {
@@ -1304,6 +1397,7 @@
   },
   "Monza": {
    "total": 36.5,
+   "rating": 3.65,
    "decimal": 16.28,
    "fractional": "16/1",
    "components": {
@@ -1318,6 +1412,7 @@
   },
   "Udinese": {
    "total": 37.9,
+   "rating": 3.79,
    "decimal": 5.56,
    "fractional": "9/2",
    "components": {
@@ -1332,6 +1427,7 @@
   },
   "Como": {
    "total": 49.7,
+   "rating": 4.97,
    "decimal": 2.34,
    "fractional": "11/8",
    "components": {
@@ -1346,6 +1442,7 @@
   },
   "Genoa": {
    "total": 36.0,
+   "rating": 3.6,
    "decimal": 5.27,
    "fractional": "9/2",
    "components": {
@@ -1360,6 +1457,7 @@
   },
   "Napoli": {
    "total": 50.0,
+   "rating": 5.0,
    "decimal": 2.21,
    "fractional": "6/5",
    "components": {
@@ -1374,6 +1472,7 @@
   },
   "Parma": {
    "total": 40.0,
+   "rating": 4.0,
    "decimal": 2.83,
    "fractional": "15/8",
    "components": {
@@ -1388,6 +1487,7 @@
   },
   "Cagliari": {
    "total": 36.7,
+   "rating": 3.67,
    "decimal": 4.64,
    "fractional": "7/2",
    "components": {
@@ -1402,6 +1502,7 @@
   },
   "Frosinone": {
    "total": 36.2,
+   "rating": 3.62,
    "decimal": 19.5,
    "fractional": "18/1",
    "components": {
@@ -1416,6 +1517,7 @@
   },
   "Juventus": {
    "total": 51.7,
+   "rating": 5.17,
    "decimal": 1.78,
    "fractional": "4/5",
    "components": {
@@ -1430,6 +1532,7 @@
   },
   "Venezia": {
    "total": 43.4,
+   "rating": 4.34,
    "decimal": 2.78,
    "fractional": "7/4",
    "components": {
@@ -1444,6 +1547,7 @@
   },
   "Lecce": {
    "total": 35.5,
+   "rating": 3.55,
    "decimal": 4.6,
    "fractional": "7/2",
    "components": {
@@ -1458,6 +1562,7 @@
   },
   "Atalanta": {
    "total": 51.0,
+   "rating": 5.1,
    "decimal": 1.56,
    "fractional": "4/7",
    "components": {
@@ -1472,6 +1577,7 @@
   },
   "Sassuolo": {
    "total": 35.4,
+   "rating": 3.54,
    "decimal": 11.36,
    "fractional": "10/1",
    "components": {
@@ -1486,6 +1592,7 @@
   },
   "Torino": {
    "total": 36.0,
+   "rating": 3.6,
    "decimal": 5.59,
    "fractional": "9/2",
    "components": {
@@ -1500,6 +1607,7 @@
   },
   "AC Milan": {
    "total": 48.3,
+   "rating": 4.83,
    "decimal": 2.35,
    "fractional": "11/8",
    "components": {
@@ -1514,6 +1622,7 @@
   },
   "Bologna": {
    "total": 43.7,
+   "rating": 4.37,
    "decimal": 2.67,
    "fractional": "13/8",
    "components": {
@@ -1528,6 +1637,7 @@
   },
   "Lazio": {
    "total": 39.6,
+   "rating": 3.96,
    "decimal": 4.69,
    "fractional": "7/2",
    "components": {
@@ -1542,6 +1652,7 @@
   },
   "AS Roma": {
    "total": 53.1,
+   "rating": 5.31,
    "decimal": 1.68,
    "fractional": "2/3",
    "components": {
@@ -1556,6 +1667,7 @@
   },
   "Fiorentina": {
    "total": 33.7,
+   "rating": 3.37,
    "decimal": 12.36,
    "fractional": "11/1",
    "components": {
@@ -1570,6 +1682,7 @@
   },
   "Vicenza": {
    "total": 41.2,
+   "rating": 4.12,
    "decimal": 3.78,
    "fractional": "11/4",
    "components": {
@@ -1584,6 +1697,7 @@
   },
   "Catanzaro": {
    "total": 42.9,
+   "rating": 4.29,
    "decimal": 3.44,
    "fractional": "5/2",
    "components": {
@@ -1598,6 +1712,7 @@
   },
   "Carrarese": {
    "total": 39.6,
+   "rating": 3.96,
    "decimal": 3.28,
    "fractional": "9/4",
    "components": {
@@ -1612,6 +1727,7 @@
   },
   "Mantova": {
    "total": 40.2,
+   "rating": 4.02,
    "decimal": 2.99,
    "fractional": "2/1",
    "components": {
@@ -1626,6 +1742,7 @@
   },
   "Sudtirol": {
    "total": 39.5,
+   "rating": 3.95,
    "decimal": 2.96,
    "fractional": "2/1",
    "components": {
@@ -1640,6 +1757,7 @@
   },
   "Virtus Entella": {
    "total": 38.7,
+   "rating": 3.87,
    "decimal": 3.24,
    "fractional": "9/4",
    "components": {
@@ -1654,6 +1772,7 @@
   },
   "Benevento": {
    "total": 42.5,
+   "rating": 4.25,
    "decimal": 3.1,
    "fractional": "85/40",
    "components": {
@@ -1668,6 +1787,7 @@
   },
   "Modena": {
    "total": 43.1,
+   "rating": 4.31,
    "decimal": 3.05,
    "fractional": "2/1",
    "components": {
@@ -1682,6 +1802,7 @@
   },
   "Empoli": {
    "total": 38.5,
+   "rating": 3.85,
    "decimal": 3.46,
    "fractional": "5/2",
    "components": {
@@ -1696,6 +1817,7 @@
   },
   "Cremonese": {
    "total": 43.5,
+   "rating": 4.35,
    "decimal": 2.75,
    "fractional": "7/4",
    "components": {
@@ -1710,6 +1832,7 @@
   },
   "Pisa": {
    "total": 46.9,
+   "rating": 4.69,
    "decimal": 1.94,
    "fractional": "10/11",
    "components": {
@@ -1724,6 +1847,7 @@
   },
   "Padova": {
    "total": 37.5,
+   "rating": 3.75,
    "decimal": 4.61,
    "fractional": "7/2",
    "components": {
@@ -1738,6 +1862,7 @@
   },
   "Verona": {
    "total": 47.5,
+   "rating": 4.75,
    "decimal": 1.84,
    "fractional": "5/6",
    "components": {
@@ -1752,6 +1877,7 @@
   },
   "Ascoli": {
    "total": 39.3,
+   "rating": 3.93,
    "decimal": 5.46,
    "fractional": "9/2",
    "components": {
@@ -1766,6 +1892,7 @@
   },
   "Cesena": {
    "total": 39.6,
+   "rating": 3.96,
    "decimal": 3.28,
    "fractional": "9/4",
    "components": {
@@ -1780,6 +1907,7 @@
   },
   "Sampdoria": {
    "total": 39.7,
+   "rating": 3.97,
    "decimal": 3.0,
    "fractional": "2/1",
    "components": {
@@ -1794,6 +1922,7 @@
   },
   "Palermo": {
    "total": 51.9,
+   "rating": 5.19,
    "decimal": 1.82,
    "fractional": "5/6",
    "components": {
@@ -1808,6 +1937,7 @@
   },
   "Juve Stabia": {
    "total": 38.1,
+   "rating": 3.81,
    "decimal": 5.48,
    "fractional": "9/2",
    "components": {
@@ -1821,12 +1951,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Real Betis": {
-   "total": 46.6,
-   "decimal": 2.21,
+   "total": 45.4,
+   "rating": 4.54,
+   "decimal": 2.22,
    "fractional": "6/5",
    "components": {
-    "form": 10.5,
-    "goal_difference": 5.7,
+    "form": 10.0,
+    "goal_difference": 5.0,
     "model_conviction": 10.4,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1835,12 +1966,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Real Sociedad": {
-   "total": 37.1,
-   "decimal": 5.79,
-   "fractional": "5/1",
+   "total": 39.1,
+   "rating": 3.91,
+   "decimal": 5.75,
+   "fractional": "9/2",
    "components": {
-    "form": 8.1,
-    "goal_difference": 4.9,
+    "form": 10.0,
+    "goal_difference": 5.0,
     "model_conviction": 4.1,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1849,12 +1981,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Athletic Bilbao": {
-   "total": 43.1,
-   "decimal": 2.09,
+   "total": 46.2,
+   "rating": 4.62,
+   "decimal": 2.07,
    "fractional": "11/10",
    "components": {
-    "form": 7.9,
-    "goal_difference": 4.0,
+    "form": 10.0,
+    "goal_difference": 5.0,
     "model_conviction": 11.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1863,12 +1996,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Sevilla": {
-   "total": 35.4,
-   "decimal": 6.31,
-   "fractional": "11/2",
+   "total": 51.3,
+   "rating": 5.13,
+   "decimal": 6.02,
+   "fractional": "5/1",
    "components": {
-    "form": 7.5,
-    "goal_difference": 4.1,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 3.8,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1877,12 +2011,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Valencia": {
-   "total": 42.4,
-   "decimal": 2.49,
+   "total": 44.4,
+   "rating": 4.44,
+   "decimal": 2.48,
    "fractional": "3/2",
    "components": {
-    "form": 8.6,
-    "goal_difference": 4.4,
+    "form": 10.0,
+    "goal_difference": 5.0,
     "model_conviction": 9.4,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1891,12 +2026,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Celta Vigo": {
-   "total": 38.6,
-   "decimal": 6.22,
+   "total": 38.8,
+   "rating": 3.88,
+   "decimal": 6.21,
    "fractional": "5/1",
    "components": {
-    "form": 9.5,
-    "goal_difference": 5.3,
+    "form": 10.0,
+    "goal_difference": 5.0,
     "model_conviction": 3.8,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1905,12 +2041,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Espanyol": {
-   "total": 35.0,
-   "decimal": 8.78,
-   "fractional": "8/1",
+   "total": 52.7,
+   "rating": 5.27,
+   "decimal": 8.34,
+   "fractional": "15/2",
    "components": {
-    "form": 8.1,
-    "goal_difference": 4.2,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 2.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1919,12 +2056,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Real Madrid": {
-   "total": 52.4,
-   "decimal": 2.4,
-   "fractional": "11/8",
+   "total": 44.5,
+   "rating": 4.45,
+   "decimal": 2.45,
+   "fractional": "3/2",
    "components": {
-    "form": 15.1,
-    "goal_difference": 7.8,
+    "form": 10.0,
+    "goal_difference": 5.0,
     "model_conviction": 9.5,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1933,12 +2071,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Atletico Madrid": {
-   "total": 48.7,
-   "decimal": 2.2,
+   "total": 45.4,
+   "rating": 4.54,
+   "decimal": 2.22,
    "fractional": "6/5",
    "components": {
-    "form": 12.1,
-    "goal_difference": 6.2,
+    "form": 10.0,
+    "goal_difference": 5.0,
     "model_conviction": 10.4,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1947,12 +2086,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Villarreal": {
-   "total": 43.4,
-   "decimal": 5.71,
-   "fractional": "9/2",
+   "total": 35.8,
+   "rating": 3.58,
+   "decimal": 5.84,
+   "fractional": "5/1",
    "components": {
-    "form": 12.6,
-    "goal_difference": 6.7,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 4.1,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1961,12 +2101,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Elche": {
-   "total": 34.9,
+   "total": 34.6,
+   "rating": 3.46,
    "decimal": 8.13,
    "fractional": "7/1",
    "components": {
-    "form": 7.5,
-    "goal_difference": 4.5,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 2.9,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1975,12 +2116,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Barcelona": {
-   "total": 56.3,
-   "decimal": 2.05,
-   "fractional": "evens",
+   "total": 45.9,
+   "rating": 4.59,
+   "decimal": 2.11,
+   "fractional": "11/10",
    "components": {
-    "form": 16.5,
-    "goal_difference": 8.9,
+    "form": 10.0,
+    "goal_difference": 5.0,
     "model_conviction": 10.9,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -1989,12 +2131,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Osasuna": {
-   "total": 41.6,
-   "decimal": 2.45,
-   "fractional": "3/2",
+   "total": 44.6,
+   "rating": 4.46,
+   "decimal": 2.43,
+   "fractional": "11/8",
    "components": {
-    "form": 7.4,
-    "goal_difference": 4.6,
+    "form": 10.0,
+    "goal_difference": 5.0,
     "model_conviction": 9.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2003,12 +2146,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Levante": {
-   "total": 35.2,
-   "decimal": 6.38,
+   "total": 23.7,
+   "rating": 2.37,
+   "decimal": 6.61,
    "fractional": "11/2",
    "components": {
-    "form": 7.4,
-    "goal_difference": 4.1,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 3.7,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2017,12 +2161,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Malaga": {
-   "total": 43.4,
-   "decimal": 2.78,
-   "fractional": "7/4",
+   "total": 28.4,
+   "rating": 2.84,
+   "decimal": 2.91,
+   "fractional": "15/8",
    "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 8.4,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2032,6 +2177,7 @@
   },
   "La Coruna": {
    "total": 40.3,
+   "rating": 4.03,
    "decimal": 4.4,
    "fractional": "10/3",
    "components": {
@@ -2045,12 +2191,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Cordoba": {
-   "total": 38.8,
-   "decimal": 5.47,
+   "total": 26.8,
+   "rating": 2.68,
+   "decimal": 5.67,
    "fractional": "9/2",
    "components": {
-    "form": 9.7,
-    "goal_difference": 4.8,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 4.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2059,11 +2206,12 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Girona": {
-   "total": 42.1,
-   "decimal": 3.28,
+   "total": 38.8,
+   "rating": 3.88,
+   "decimal": 3.31,
    "fractional": "9/4",
    "components": {
-    "form": 10.0,
+    "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 7.1,
     "model_accuracy": 10.0,
@@ -2073,11 +2221,12 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Oviedo": {
-   "total": 46.5,
-   "decimal": 2.01,
+   "total": 43.2,
+   "rating": 4.32,
+   "decimal": 2.03,
    "fractional": "evens",
    "components": {
-    "form": 10.0,
+    "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 11.5,
     "model_accuracy": 10.0,
@@ -2087,12 +2236,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Leganes": {
-   "total": 35.2,
+   "total": 35.1,
+   "rating": 3.51,
    "decimal": 7.02,
    "fractional": "6/1",
    "components": {
-    "form": 7.3,
-    "goal_difference": 4.5,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 3.4,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2101,12 +2251,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Albacete": {
-   "total": 46.0,
-   "decimal": 2.01,
-   "fractional": "evens",
+   "total": 34.0,
+   "rating": 3.4,
+   "decimal": 2.09,
+   "fractional": "11/10",
    "components": {
-    "form": 9.4,
-    "goal_difference": 5.1,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 11.5,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2115,12 +2266,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Sociedad B": {
-   "total": 35.4,
-   "decimal": 7.02,
+   "total": 25.9,
+   "rating": 2.59,
+   "decimal": 7.22,
    "fractional": "6/1",
    "components": {
-    "form": 7.5,
-    "goal_difference": 4.5,
+    "form": 0.0,
+    "goal_difference": 2.5,
     "model_conviction": 3.4,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2129,12 +2281,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Ceuta": {
-   "total": 37.6,
-   "decimal": 6.62,
-   "fractional": "11/2",
+   "total": 23.6,
+   "rating": 2.36,
+   "decimal": 6.91,
+   "fractional": "6/1",
    "components": {
-    "form": 9.7,
-    "goal_difference": 4.3,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 3.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2143,12 +2296,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Las Palmas": {
-   "total": 46.9,
-   "decimal": 2.47,
-   "fractional": "3/2",
+   "total": 56.8,
+   "rating": 5.68,
+   "decimal": 2.4,
+   "fractional": "11/8",
    "components": {
-    "form": 11.6,
-    "goal_difference": 6.0,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 9.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2157,12 +2311,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Eldense": {
-   "total": 43.3,
-   "decimal": 2.81,
-   "fractional": "7/4",
+   "total": 28.3,
+   "rating": 2.83,
+   "decimal": 2.94,
+   "fractional": "2/1",
    "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 8.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2171,12 +2326,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Cadiz": {
-   "total": 35.1,
-   "decimal": 5.33,
+   "total": 36.2,
+   "rating": 3.62,
+   "decimal": 5.31,
    "fractional": "9/2",
    "components": {
-    "form": 6.8,
-    "goal_difference": 3.8,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 4.5,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2185,12 +2341,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Eibar": {
-   "total": 46.8,
-   "decimal": 2.2,
-   "fractional": "6/5",
+   "total": 30.5,
+   "rating": 3.05,
+   "decimal": 2.31,
+   "fractional": "5/4",
    "components": {
-    "form": 10.6,
-    "goal_difference": 5.7,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 10.5,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2199,12 +2356,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Valladolid": {
-   "total": 35.7,
-   "decimal": 5.65,
-   "fractional": "9/2",
+   "total": 24.2,
+   "rating": 2.42,
+   "decimal": 5.85,
+   "fractional": "5/1",
    "components": {
-    "form": 7.3,
-    "goal_difference": 4.2,
+    "form": 0.0,
+    "goal_difference": 0.0,
     "model_conviction": 4.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2213,12 +2371,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Castellon": {
-   "total": 50.8,
-   "decimal": 1.72,
-   "fractional": "8/11",
+   "total": 60.8,
+   "rating": 6.08,
+   "decimal": 1.67,
+   "fractional": "2/3",
    "components": {
-    "form": 11.4,
-    "goal_difference": 6.1,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 13.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2227,11 +2386,12 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Sabadell": {
-   "total": 37.8,
-   "decimal": 8.58,
+   "total": 34.5,
+   "rating": 3.45,
+   "decimal": 8.67,
    "fractional": "15/2",
    "components": {
-    "form": 10.0,
+    "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 2.8,
     "model_accuracy": 10.0,
@@ -2241,12 +2401,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Sp Gijon": {
-   "total": 43.7,
-   "decimal": 2.71,
+   "total": 40.3,
+   "rating": 4.03,
+   "decimal": 2.74,
    "fractional": "7/4",
    "components": {
-    "form": 9.7,
-    "goal_difference": 5.4,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 8.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2255,12 +2416,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Burgos": {
-   "total": 41.9,
-   "decimal": 5.04,
+   "total": 52.1,
+   "rating": 5.21,
+   "decimal": 4.9,
    "fractional": "4/1",
    "components": {
-    "form": 11.4,
-    "goal_difference": 5.9,
+    "form": 20.0,
+    "goal_difference": 7.5,
     "model_conviction": 4.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2269,12 +2431,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Tenerife": {
-   "total": 38.5,
-   "decimal": 6.68,
+   "total": 53.5,
+   "rating": 5.35,
+   "decimal": 6.39,
    "fractional": "11/2",
    "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 3.5,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2283,12 +2446,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Almeria": {
-   "total": 47.7,
-   "decimal": 2.32,
-   "fractional": "11/8",
+   "total": 59.9,
+   "rating": 5.99,
+   "decimal": 2.25,
+   "fractional": "5/4",
    "components": {
-    "form": 11.7,
-    "goal_difference": 6.1,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 9.9,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2297,12 +2461,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Granada": {
-   "total": 38.8,
+   "total": 38.3,
+   "rating": 3.83,
    "decimal": 3.56,
    "fractional": "5/2",
    "components": {
-    "form": 7.6,
-    "goal_difference": 4.6,
+    "form": 6.7,
+    "goal_difference": 5.0,
     "model_conviction": 6.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2311,12 +2476,13 @@
    "note": "no settled history yet - score is model-derived"
   },
   "Mallorca": {
-   "total": 41.3,
-   "decimal": 3.72,
-   "fractional": "11/4",
+   "total": 56.3,
+   "rating": 5.63,
+   "decimal": 3.56,
+   "fractional": "5/2",
    "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
+    "form": 20.0,
+    "goal_difference": 10.0,
     "model_conviction": 6.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
@@ -2328,6 +2494,7 @@
  "players": {
   "1228": {
    "total": 88.4,
+   "rating": 8.84,
    "decimal": 4.35,
    "fractional": "10/3",
    "note": "1 goal(s), 3 assist(s) in last 5",
@@ -2335,6 +2502,7 @@
   },
   "8127": {
    "total": 80.2,
+   "rating": 8.02,
    "decimal": 2.75,
    "fractional": "7/4",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2342,6 +2510,7 @@
   },
   "10552": {
    "total": 43.0,
+   "rating": 4.3,
    "decimal": 4.7,
    "fractional": "7/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2349,6 +2518,7 @@
   },
   "11055": {
    "total": 69.1,
+   "rating": 6.91,
    "decimal": 6.12,
    "fractional": "5/1",
    "note": "3 goal(s), 2 assist(s) in last 5",
@@ -2356,6 +2526,7 @@
   },
   "8044": {
    "total": 31.5,
+   "rating": 3.15,
    "decimal": 6.16,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2363,6 +2534,7 @@
   },
   "7281": {
    "total": 29.7,
+   "rating": 2.97,
    "decimal": 12.13,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2370,6 +2542,7 @@
   },
   "11766": {
    "total": 30.3,
+   "rating": 3.03,
    "decimal": 24.22,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2377,6 +2550,7 @@
   },
   "10802": {
    "total": 28.6,
+   "rating": 2.86,
    "decimal": 11.93,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2384,6 +2558,7 @@
   },
   "646": {
    "total": 58.6,
+   "rating": 5.86,
    "decimal": 12.97,
    "fractional": "12/1",
    "note": "0 goal(s), 3 assist(s) in last 5",
@@ -2391,6 +2566,7 @@
   },
   "7902": {
    "total": 31.9,
+   "rating": 3.19,
    "decimal": 14.35,
    "fractional": "14/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2398,6 +2574,7 @@
   },
   "10696": {
    "total": 22.4,
+   "rating": 2.24,
    "decimal": 12.41,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2405,6 +2582,7 @@
   },
   "1687": {
    "total": 25.8,
+   "rating": 2.58,
    "decimal": 24.07,
    "fractional": "25/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2412,6 +2590,7 @@
   },
   "2248": {
    "total": 44.5,
+   "rating": 4.45,
    "decimal": 19.68,
    "fractional": "18/1",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -2419,6 +2598,7 @@
   },
   "7768": {
    "total": 30.4,
+   "rating": 3.04,
    "decimal": 8.41,
    "fractional": "15/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2426,6 +2606,7 @@
   },
   "6756": {
    "total": 64.5,
+   "rating": 6.45,
    "decimal": 4.19,
    "fractional": "10/3",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2433,6 +2614,7 @@
   },
   "9307": {
    "total": 43.9,
+   "rating": 4.39,
    "decimal": 3.56,
    "fractional": "5/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2440,6 +2622,7 @@
   },
   "9983": {
    "total": 60.1,
+   "rating": 6.01,
    "decimal": 2.34,
    "fractional": "11/8",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -2447,6 +2630,7 @@
   },
   "1726": {
    "total": 38.4,
+   "rating": 3.84,
    "decimal": 11.48,
    "fractional": "10/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2454,6 +2638,7 @@
   },
   "631": {
    "total": 34.0,
+   "rating": 3.4,
    "decimal": 24.44,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2461,6 +2646,7 @@
   },
   "5555": {
    "total": 60.5,
+   "rating": 6.05,
    "decimal": 6.68,
    "fractional": "11/2",
    "note": "3 goal(s), 0 assist(s) in last 5",
@@ -2468,6 +2654,7 @@
   },
   "668": {
    "total": 43.0,
+   "rating": 4.3,
    "decimal": 11.66,
    "fractional": "11/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -2475,6 +2662,7 @@
   },
   "10291": {
    "total": 28.6,
+   "rating": 2.86,
    "decimal": 40.58,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2482,6 +2670,7 @@
   },
   "1653": {
    "total": 41.5,
+   "rating": 4.15,
    "decimal": 4.52,
    "fractional": "7/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2489,6 +2678,7 @@
   },
   "1665": {
    "total": 47.4,
+   "rating": 4.74,
    "decimal": 37.14,
    "fractional": "33/1",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -2496,6 +2686,7 @@
   },
   "12014": {
    "total": 33.6,
+   "rating": 3.36,
    "decimal": 10.43,
    "fractional": "9/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2503,6 +2694,7 @@
   },
   "741": {
    "total": 22.4,
+   "rating": 2.24,
    "decimal": 12.41,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2510,6 +2702,7 @@
   },
   "8476": {
    "total": 29.9,
+   "rating": 2.99,
    "decimal": 12.12,
    "fractional": "11/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2517,6 +2710,7 @@
   },
   "8720": {
    "total": 35.0,
+   "rating": 3.5,
    "decimal": 27.77,
    "fractional": "25/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2524,6 +2718,7 @@
   },
   "5735": {
    "total": 67.2,
+   "rating": 6.72,
    "decimal": 2.33,
    "fractional": "11/8",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -2531,6 +2726,7 @@
   },
   "8706": {
    "total": 70.3,
+   "rating": 7.03,
    "decimal": 3.96,
    "fractional": "3/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2538,6 +2734,7 @@
   },
   "5675": {
    "total": 66.1,
+   "rating": 6.61,
    "decimal": 4.15,
    "fractional": "3/1",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -2545,6 +2742,7 @@
   },
   "12408": {
    "total": 43.2,
+   "rating": 4.32,
    "decimal": 10.5,
    "fractional": "9/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2552,6 +2750,7 @@
   },
   "8214": {
    "total": 29.5,
+   "rating": 2.95,
    "decimal": 12.14,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2559,6 +2758,7 @@
   },
   "7603": {
    "total": 37.8,
+   "rating": 3.78,
    "decimal": 13.46,
    "fractional": "12/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2566,6 +2766,7 @@
   },
   "6482": {
    "total": 49.0,
+   "rating": 4.9,
    "decimal": 4.18,
    "fractional": "10/3",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2573,6 +2774,7 @@
   },
   "6104": {
    "total": 30.2,
+   "rating": 3.02,
    "decimal": 12.11,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2580,6 +2782,7 @@
   },
   "8853": {
    "total": 22.2,
+   "rating": 2.22,
    "decimal": 41.38,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2587,6 +2790,7 @@
   },
   "12409": {
    "total": 40.6,
+   "rating": 4.06,
    "decimal": 11.74,
    "fractional": "11/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2594,6 +2798,7 @@
   },
   "13038": {
    "total": 43.3,
+   "rating": 4.33,
    "decimal": 6.1,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2601,6 +2806,7 @@
   },
   "13387": {
    "total": 68.3,
+   "rating": 6.83,
    "decimal": 1.5,
    "fractional": "1/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2608,6 +2814,7 @@
   },
   "2182": {
    "total": 21.9,
+   "rating": 2.19,
    "decimal": 12.43,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2615,6 +2822,7 @@
   },
   "8430": {
    "total": 19.8,
+   "rating": 1.98,
    "decimal": 26.61,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2622,6 +2830,7 @@
   },
   "8868": {
    "total": 48.1,
+   "rating": 4.81,
    "decimal": 2.84,
    "fractional": "15/8",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2629,6 +2838,7 @@
   },
   "10348": {
    "total": 40.6,
+   "rating": 4.06,
    "decimal": 11.4,
    "fractional": "10/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2636,6 +2846,7 @@
   },
   "13019": {
    "total": 44.8,
+   "rating": 4.48,
    "decimal": 11.6,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2643,6 +2854,7 @@
   },
   "12752": {
    "total": 44.9,
+   "rating": 4.49,
    "decimal": 3.3,
    "fractional": "9/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2650,6 +2862,7 @@
   },
   "8563": {
    "total": 57.8,
+   "rating": 5.78,
    "decimal": 2.52,
    "fractional": "3/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2657,6 +2870,7 @@
   },
   "8919": {
    "total": 35.0,
+   "rating": 3.5,
    "decimal": 36.18,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2664,6 +2878,7 @@
   },
   "6424": {
    "total": 44.4,
+   "rating": 4.44,
    "decimal": 17.08,
    "fractional": "16/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -2671,6 +2886,7 @@
   },
   "8756": {
    "total": 26.7,
+   "rating": 2.67,
    "decimal": 12.24,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2678,6 +2894,7 @@
   },
   "12748": {
    "total": 27.2,
+   "rating": 2.72,
    "decimal": 37.05,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2685,6 +2902,7 @@
   },
   "10301": {
    "total": 35.9,
+   "rating": 3.59,
    "decimal": 26.46,
    "fractional": "25/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2692,6 +2910,7 @@
   },
   "12755": {
    "total": 30.0,
+   "rating": 3.0,
    "decimal": 12.12,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2699,6 +2918,7 @@
   },
   "12750": {
    "total": 32.5,
+   "rating": 3.25,
    "decimal": 11.35,
    "fractional": "10/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2706,6 +2926,7 @@
   },
   "9406": {
    "total": 51.3,
+   "rating": 5.13,
    "decimal": 4.28,
    "fractional": "10/3",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -2713,6 +2934,7 @@
   },
   "12745": {
    "total": 21.5,
+   "rating": 2.15,
    "decimal": 30.35,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2720,6 +2942,7 @@
   },
   "4456": {
    "total": 73.9,
+   "rating": 7.39,
    "decimal": 1.8,
    "fractional": "4/5",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2727,6 +2950,7 @@
   },
   "9524": {
    "total": 62.8,
+   "rating": 6.28,
    "decimal": 5.2,
    "fractional": "4/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2734,6 +2958,7 @@
   },
   "6857": {
    "total": 100.0,
+   "rating": 10.0,
    "decimal": 4.55,
    "fractional": "7/2",
    "note": "4 goal(s), 2 assist(s) in last 5",
@@ -2741,6 +2966,7 @@
   },
   "9154": {
    "total": 70.0,
+   "rating": 7.0,
    "decimal": 16.63,
    "fractional": "16/1",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -2748,6 +2974,7 @@
   },
   "6174": {
    "total": 36.8,
+   "rating": 3.68,
    "decimal": 8.8,
    "fractional": "8/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2755,6 +2982,7 @@
   },
   "6456": {
    "total": 69.3,
+   "rating": 6.93,
    "decimal": 5.34,
    "fractional": "9/2",
    "note": "0 goal(s), 3 assist(s) in last 5",
@@ -2762,6 +2990,7 @@
   },
   "8204": {
    "total": 33.8,
+   "rating": 3.38,
    "decimal": 34.24,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2769,6 +2998,7 @@
   },
   "12766": {
    "total": 47.7,
+   "rating": 4.77,
    "decimal": 3.4,
    "fractional": "5/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2776,6 +3006,7 @@
   },
   "725": {
    "total": 26.0,
+   "rating": 2.6,
    "decimal": 20.45,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2783,6 +3014,7 @@
   },
   "11003": {
    "total": 37.4,
+   "rating": 3.74,
    "decimal": 12.35,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2790,6 +3022,7 @@
   },
   "12123": {
    "total": 25.1,
+   "rating": 2.51,
    "decimal": 21.97,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2797,6 +3030,7 @@
   },
   "8252": {
    "total": 21.5,
+   "rating": 2.15,
    "decimal": 12.44,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2804,6 +3038,7 @@
   },
   "4120": {
    "total": 24.4,
+   "rating": 2.44,
    "decimal": 12.33,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2811,6 +3046,7 @@
   },
   "5722": {
    "total": 26.0,
+   "rating": 2.6,
    "decimal": 12.27,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2818,6 +3054,7 @@
   },
   "6552": {
    "total": 89.2,
+   "rating": 8.92,
    "decimal": 1.95,
    "fractional": "10/11",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -2825,6 +3062,7 @@
   },
   "5786": {
    "total": 59.7,
+   "rating": 5.97,
    "decimal": 2.02,
    "fractional": "evens",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2832,6 +3070,7 @@
   },
   "9156": {
    "total": 62.3,
+   "rating": 6.23,
    "decimal": 2.6,
    "fractional": "13/8",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2839,6 +3078,7 @@
   },
   "8859": {
    "total": 54.1,
+   "rating": 5.41,
    "decimal": 18.83,
    "fractional": "18/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2846,6 +3086,7 @@
   },
   "7083": {
    "total": 40.8,
+   "rating": 4.08,
    "decimal": 7.48,
    "fractional": "13/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2853,6 +3094,7 @@
   },
   "9733": {
    "total": 30.5,
+   "rating": 3.05,
    "decimal": 22.84,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2860,6 +3102,7 @@
   },
   "10809": {
    "total": 35.4,
+   "rating": 3.54,
    "decimal": 39.75,
    "fractional": "40/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2867,6 +3110,7 @@
   },
   "9680": {
    "total": 32.4,
+   "rating": 3.24,
    "decimal": 30.86,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2874,6 +3118,7 @@
   },
   "9501": {
    "total": 63.2,
+   "rating": 6.32,
    "decimal": 2.44,
    "fractional": "3/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2881,6 +3126,7 @@
   },
   "7047": {
    "total": 27.5,
+   "rating": 2.75,
    "decimal": 12.21,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2888,6 +3134,7 @@
   },
   "9678": {
    "total": 26.0,
+   "rating": 2.6,
    "decimal": 13.05,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2895,6 +3142,7 @@
   },
   "9685": {
    "total": 27.9,
+   "rating": 2.79,
    "decimal": 12.2,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2902,6 +3150,7 @@
   },
   "7166": {
    "total": 44.6,
+   "rating": 4.46,
    "decimal": 11.61,
    "fractional": "11/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -2909,6 +3158,7 @@
   },
   "11281": {
    "total": 29.5,
+   "rating": 2.95,
    "decimal": 12.14,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2916,6 +3166,7 @@
   },
   "453": {
    "total": 61.9,
+   "rating": 6.19,
    "decimal": 3.75,
    "fractional": "11/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2923,6 +3174,7 @@
   },
   "6818": {
    "total": 83.1,
+   "rating": 8.31,
    "decimal": 2.38,
    "fractional": "11/8",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2930,6 +3182,7 @@
   },
   "10760": {
    "total": 53.3,
+   "rating": 5.33,
    "decimal": 2.49,
    "fractional": "3/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2937,6 +3190,7 @@
   },
   "1679": {
    "total": 48.1,
+   "rating": 4.81,
    "decimal": 3.15,
    "fractional": "85/40",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2944,6 +3198,7 @@
   },
   "6691": {
    "total": 54.8,
+   "rating": 5.48,
    "decimal": 4.29,
    "fractional": "10/3",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2951,6 +3206,7 @@
   },
   "6912": {
    "total": 45.1,
+   "rating": 4.51,
    "decimal": 16.8,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2958,6 +3214,7 @@
   },
   "9021": {
    "total": 40.5,
+   "rating": 4.05,
    "decimal": 8.33,
    "fractional": "15/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -2965,6 +3222,7 @@
   },
   "6026": {
    "total": 83.7,
+   "rating": 8.37,
    "decimal": 1.36,
    "fractional": "4/11",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -2972,6 +3230,7 @@
   },
   "10764": {
    "total": 28.9,
+   "rating": 2.89,
    "decimal": 24.32,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2979,6 +3238,7 @@
   },
   "9780": {
    "total": 52.5,
+   "rating": 5.25,
    "decimal": 5.79,
    "fractional": "5/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -2986,6 +3246,7 @@
   },
   "65": {
    "total": 41.0,
+   "rating": 4.1,
    "decimal": 11.73,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -2993,6 +3254,7 @@
   },
   "6108": {
    "total": 29.6,
+   "rating": 2.96,
    "decimal": 11.24,
    "fractional": "10/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3000,6 +3262,7 @@
   },
   "5609": {
    "total": 25.6,
+   "rating": 2.56,
    "decimal": 9.6,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3007,6 +3270,7 @@
   },
   "10050": {
    "total": 25.6,
+   "rating": 2.56,
    "decimal": 12.29,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3014,6 +3278,7 @@
   },
   "8272": {
    "total": 76.2,
+   "rating": 7.62,
    "decimal": 2.33,
    "fractional": "11/8",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3021,6 +3286,7 @@
   },
   "10806": {
    "total": 59.0,
+   "rating": 5.9,
    "decimal": 3.23,
    "fractional": "9/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3028,6 +3294,7 @@
   },
   "501": {
    "total": 74.0,
+   "rating": 7.4,
    "decimal": 2.56,
    "fractional": "3/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -3035,6 +3302,7 @@
   },
   "12759": {
    "total": 58.5,
+   "rating": 5.85,
    "decimal": 3.78,
    "fractional": "11/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3042,6 +3310,7 @@
   },
   "6937": {
    "total": 52.8,
+   "rating": 5.28,
    "decimal": 4.23,
    "fractional": "10/3",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3049,6 +3318,7 @@
   },
   "11269": {
    "total": 72.6,
+   "rating": 7.26,
    "decimal": 4.44,
    "fractional": "7/2",
    "note": "3 goal(s), 0 assist(s) in last 5",
@@ -3056,6 +3326,7 @@
   },
   "11310": {
    "total": 61.5,
+   "rating": 6.15,
    "decimal": 8.38,
    "fractional": "15/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3063,6 +3334,7 @@
   },
   "10527": {
    "total": 32.2,
+   "rating": 3.22,
    "decimal": 12.16,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3070,6 +3342,7 @@
   },
   "11710": {
    "total": 54.9,
+   "rating": 5.49,
    "decimal": 6.75,
    "fractional": "11/2",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -3077,6 +3350,7 @@
   },
   "12758": {
    "total": 53.1,
+   "rating": 5.31,
    "decimal": 12.45,
    "fractional": "11/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3084,6 +3358,7 @@
   },
   "13206": {
    "total": 44.0,
+   "rating": 4.4,
    "decimal": 6.02,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3091,6 +3366,7 @@
   },
   "8226": {
    "total": 40.3,
+   "rating": 4.03,
    "decimal": 5.68,
    "fractional": "9/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3098,6 +3374,7 @@
   },
   "11385": {
    "total": 38.3,
+   "rating": 3.83,
    "decimal": 12.99,
    "fractional": "12/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3105,6 +3382,7 @@
   },
   "10807": {
    "total": 26.0,
+   "rating": 2.6,
    "decimal": 40.9,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3112,6 +3390,7 @@
   },
   "8865": {
    "total": 100.0,
+   "rating": 10.0,
    "decimal": 1.85,
    "fractional": "5/6",
    "note": "3 goal(s), 1 assist(s) in last 5",
@@ -3119,6 +3398,7 @@
   },
   "12412": {
    "total": 83.3,
+   "rating": 8.33,
    "decimal": 4.62,
    "fractional": "7/2",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -3126,6 +3406,7 @@
   },
   "5956": {
    "total": 42.5,
+   "rating": 4.25,
    "decimal": 13.12,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3133,6 +3414,7 @@
   },
   "11366": {
    "total": 64.7,
+   "rating": 6.47,
    "decimal": 1.22,
    "fractional": "2/9",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3140,6 +3422,7 @@
   },
   "7723": {
    "total": 59.2,
+   "rating": 5.92,
    "decimal": 27.84,
    "fractional": "25/1",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -3147,6 +3430,7 @@
   },
   "1823": {
    "total": 43.9,
+   "rating": 4.39,
    "decimal": 11.63,
    "fractional": "11/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -3154,6 +3438,7 @@
   },
   "8941": {
    "total": 48.5,
+   "rating": 4.85,
    "decimal": 21.26,
    "fractional": "20/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -3161,6 +3446,7 @@
   },
   "2117": {
    "total": 48.2,
+   "rating": 4.82,
    "decimal": 3.19,
    "fractional": "9/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3168,6 +3454,7 @@
   },
   "592": {
    "total": 77.9,
+   "rating": 7.79,
    "decimal": 1.99,
    "fractional": "evens",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -3175,6 +3462,7 @@
   },
   "9667": {
    "total": 28.6,
+   "rating": 2.86,
    "decimal": 7.42,
    "fractional": "13/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3182,6 +3470,7 @@
   },
   "5221": {
    "total": 34.7,
+   "rating": 3.47,
    "decimal": 15.32,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3189,6 +3478,7 @@
   },
   "11807": {
    "total": 44.2,
+   "rating": 4.42,
    "decimal": 13.83,
    "fractional": "12/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3196,6 +3486,7 @@
   },
   "9749": {
    "total": 92.1,
+   "rating": 9.21,
    "decimal": 1.13,
    "fractional": "1/8",
    "note": "3 goal(s), 2 assist(s) in last 5",
@@ -3203,6 +3494,7 @@
   },
   "7726": {
    "total": 28.0,
+   "rating": 2.8,
    "decimal": 19.99,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3210,6 +3502,7 @@
   },
   "8260": {
    "total": 100.0,
+   "rating": 10.0,
    "decimal": 1.39,
    "fractional": "2/5",
    "note": "5 goal(s), 1 assist(s) in last 5",
@@ -3217,6 +3510,7 @@
   },
   "447": {
    "total": 78.0,
+   "rating": 7.8,
    "decimal": 5.02,
    "fractional": "4/1",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -3224,6 +3518,7 @@
   },
   "11735": {
    "total": 63.2,
+   "rating": 6.32,
    "decimal": 22.03,
    "fractional": "20/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3231,6 +3526,7 @@
   },
   "6055": {
    "total": 61.8,
+   "rating": 6.18,
    "decimal": 3.11,
    "fractional": "85/40",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3238,6 +3534,7 @@
   },
   "8981": {
    "total": 80.1,
+   "rating": 8.01,
    "decimal": 5.91,
    "fractional": "5/1",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -3245,6 +3542,7 @@
   },
   "3635": {
    "total": 39.7,
+   "rating": 3.97,
    "decimal": 8.72,
    "fractional": "15/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3252,6 +3550,7 @@
   },
   "2254": {
    "total": 55.6,
+   "rating": 5.56,
    "decimal": 4.63,
    "fractional": "7/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3259,6 +3558,7 @@
   },
   "314": {
    "total": 67.2,
+   "rating": 6.72,
    "decimal": 27.23,
    "fractional": "25/1",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -3266,6 +3566,7 @@
   },
   "11000": {
    "total": 44.9,
+   "rating": 4.49,
    "decimal": 21.48,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3273,6 +3574,7 @@
   },
   "8393": {
    "total": 77.6,
+   "rating": 7.76,
    "decimal": 2.01,
    "fractional": "evens",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -3280,6 +3582,7 @@
   },
   "9790": {
    "total": 39.6,
+   "rating": 3.96,
    "decimal": 8.6,
    "fractional": "15/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3287,6 +3590,7 @@
   },
   "6054": {
    "total": 37.5,
+   "rating": 3.75,
    "decimal": 11.85,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3294,6 +3598,7 @@
   },
   "10847": {
    "total": 25.1,
+   "rating": 2.51,
    "decimal": 26.18,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3301,6 +3606,7 @@
   },
   "10126": {
    "total": 56.2,
+   "rating": 5.62,
    "decimal": 1.42,
    "fractional": "2/5",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3308,6 +3614,7 @@
   },
   "6963": {
    "total": 78.9,
+   "rating": 7.89,
    "decimal": 2.34,
    "fractional": "11/8",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3315,6 +3622,7 @@
   },
   "11363": {
    "total": 67.0,
+   "rating": 6.7,
    "decimal": 3.54,
    "fractional": "5/2",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -3322,6 +3630,7 @@
   },
   "12963": {
    "total": 43.7,
+   "rating": 4.37,
    "decimal": 3.07,
    "fractional": "85/40",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3329,6 +3638,7 @@
   },
   "9662": {
    "total": 58.4,
+   "rating": 5.84,
    "decimal": 3.57,
    "fractional": "5/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3336,6 +3646,7 @@
   },
   "10741": {
    "total": 57.5,
+   "rating": 5.75,
    "decimal": 7.99,
    "fractional": "7/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3343,6 +3654,7 @@
   },
   "11709": {
    "total": 39.8,
+   "rating": 3.98,
    "decimal": 21.8,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3350,6 +3662,7 @@
   },
   "11943": {
    "total": 35.3,
+   "rating": 3.53,
    "decimal": 10.65,
    "fractional": "10/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3357,6 +3670,7 @@
   },
   "10744": {
    "total": 39.8,
+   "rating": 3.98,
    "decimal": 14.01,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3364,6 +3678,7 @@
   },
   "1789": {
    "total": 32.9,
+   "rating": 3.29,
    "decimal": 40.05,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3371,6 +3686,7 @@
   },
   "7352": {
    "total": 37.4,
+   "rating": 3.74,
    "decimal": 11.86,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3378,6 +3694,7 @@
   },
   "6219": {
    "total": 67.4,
+   "rating": 6.74,
    "decimal": 1.77,
    "fractional": "4/5",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3385,6 +3702,7 @@
   },
   "6820": {
    "total": 41.6,
+   "rating": 4.16,
    "decimal": 6.1,
    "fractional": "5/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3392,6 +3710,7 @@
   },
   "10866": {
    "total": 59.5,
+   "rating": 5.95,
    "decimal": 2.73,
    "fractional": "7/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3399,6 +3718,7 @@
   },
   "11486": {
    "total": 22.3,
+   "rating": 2.23,
    "decimal": 12.41,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3406,6 +3726,7 @@
   },
   "5232": {
    "total": 90.7,
+   "rating": 9.07,
    "decimal": 1.39,
    "fractional": "2/5",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -3413,6 +3734,7 @@
   },
   "6063": {
    "total": 75.6,
+   "rating": 7.56,
    "decimal": 3.61,
    "fractional": "5/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3420,6 +3742,7 @@
   },
   "6681": {
    "total": 87.6,
+   "rating": 8.76,
    "decimal": 2.21,
    "fractional": "6/5",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -3427,6 +3750,7 @@
   },
   "8327": {
    "total": 51.1,
+   "rating": 5.11,
    "decimal": 8.38,
    "fractional": "15/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3434,6 +3758,7 @@
   },
   "8150": {
    "total": 77.3,
+   "rating": 7.73,
    "decimal": 4.86,
    "fractional": "4/1",
    "note": "3 goal(s), 0 assist(s) in last 5",
@@ -3441,6 +3766,7 @@
   },
   "87": {
    "total": 40.6,
+   "rating": 4.06,
    "decimal": 7.94,
    "fractional": "7/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3448,6 +3774,7 @@
   },
   "7958": {
    "total": 36.0,
+   "rating": 3.6,
    "decimal": 8.69,
    "fractional": "15/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3455,6 +3782,7 @@
   },
   "76": {
    "total": 29.8,
+   "rating": 2.98,
    "decimal": 9.86,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3462,6 +3790,7 @@
   },
   "10216": {
    "total": 32.9,
+   "rating": 3.29,
    "decimal": 12.02,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3469,6 +3798,7 @@
   },
   "652": {
    "total": 44.2,
+   "rating": 4.42,
    "decimal": 11.62,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3476,6 +3806,7 @@
   },
   "7382": {
    "total": 31.8,
+   "rating": 3.18,
    "decimal": 40.18,
    "fractional": "40/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3483,6 +3814,7 @@
   },
   "6630": {
    "total": 39.2,
+   "rating": 3.92,
    "decimal": 11.79,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3490,6 +3822,7 @@
   },
   "9512": {
    "total": 24.5,
+   "rating": 2.45,
    "decimal": 12.33,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3497,6 +3830,7 @@
   },
   "8090": {
    "total": 32.1,
+   "rating": 3.21,
    "decimal": 12.04,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3504,6 +3838,7 @@
   },
   "1250": {
    "total": 100.0,
+   "rating": 10.0,
    "decimal": 1.3,
    "fractional": "3/10",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -3511,6 +3846,7 @@
   },
   "10408": {
    "total": 79.2,
+   "rating": 7.92,
    "decimal": 2.19,
    "fractional": "6/5",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -3518,6 +3854,7 @@
   },
   "11296": {
    "total": 72.5,
+   "rating": 7.25,
    "decimal": 2.35,
    "fractional": "11/8",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3525,6 +3862,7 @@
   },
   "9788": {
    "total": 73.5,
+   "rating": 7.35,
    "decimal": 5.0,
    "fractional": "4/1",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -3532,6 +3870,7 @@
   },
   "8379": {
    "total": 58.3,
+   "rating": 5.83,
    "decimal": 6.49,
    "fractional": "11/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3539,6 +3878,7 @@
   },
   "1791": {
    "total": 50.2,
+   "rating": 5.02,
    "decimal": 10.2,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3546,6 +3886,7 @@
   },
   "6854": {
    "total": 56.8,
+   "rating": 5.68,
    "decimal": 2.46,
    "fractional": "3/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3553,6 +3894,7 @@
   },
   "10720": {
    "total": 50.2,
+   "rating": 5.02,
    "decimal": 2.72,
    "fractional": "7/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3560,6 +3902,7 @@
   },
   "6665": {
    "total": 58.8,
+   "rating": 5.88,
    "decimal": 7.1,
    "fractional": "6/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -3567,6 +3910,7 @@
   },
   "833": {
    "total": 38.2,
+   "rating": 3.82,
    "decimal": 14.6,
    "fractional": "14/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3574,6 +3918,7 @@
   },
   "10697": {
    "total": 41.3,
+   "rating": 4.13,
    "decimal": 11.72,
    "fractional": "11/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3581,6 +3926,7 @@
   },
   "6326": {
    "total": 28.5,
+   "rating": 2.85,
    "decimal": 34.79,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3588,6 +3934,7 @@
   },
   "7546": {
    "total": 59.2,
+   "rating": 5.92,
    "decimal": 3.96,
    "fractional": "3/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3595,6 +3942,7 @@
   },
   "10120": {
    "total": 37.6,
+   "rating": 3.76,
    "decimal": 11.85,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3602,6 +3950,7 @@
   },
   "500": {
    "total": 59.0,
+   "rating": 5.9,
    "decimal": 4.16,
    "fractional": "3/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3609,6 +3958,7 @@
   },
   "4105": {
    "total": 48.9,
+   "rating": 4.89,
    "decimal": 2.68,
    "fractional": "13/8",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3616,6 +3966,7 @@
   },
   "8940": {
    "total": 51.3,
+   "rating": 5.13,
    "decimal": 11.39,
    "fractional": "10/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3623,6 +3974,7 @@
   },
   "7230": {
    "total": 48.8,
+   "rating": 4.88,
    "decimal": 4.46,
    "fractional": "7/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3630,6 +3982,7 @@
   },
   "900": {
    "total": 52.8,
+   "rating": 5.28,
    "decimal": 11.12,
    "fractional": "10/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3637,6 +3990,7 @@
   },
   "10717": {
    "total": 59.9,
+   "rating": 5.99,
    "decimal": 1.42,
    "fractional": "2/5",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3644,6 +3998,7 @@
   },
   "5596": {
    "total": 65.7,
+   "rating": 6.57,
    "decimal": 2.33,
    "fractional": "11/8",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3651,6 +4006,7 @@
   },
   "922": {
    "total": 40.0,
+   "rating": 4.0,
    "decimal": 13.52,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3658,6 +4014,7 @@
   },
   "6837": {
    "total": 85.3,
+   "rating": 8.53,
    "decimal": 1.66,
    "fractional": "2/3",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3665,6 +4022,7 @@
   },
   "1537": {
    "total": 24.7,
+   "rating": 2.47,
    "decimal": 12.32,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3672,6 +4030,7 @@
   },
   "5973": {
    "total": 28.8,
+   "rating": 2.88,
    "decimal": 12.17,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3679,6 +4038,7 @@
   },
   "6835": {
    "total": 50.7,
+   "rating": 5.07,
    "decimal": 3.6,
    "fractional": "5/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3686,6 +4046,7 @@
   },
   "181": {
    "total": 22.4,
+   "rating": 2.24,
    "decimal": 12.41,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3693,6 +4054,7 @@
   },
   "11728": {
    "total": 23.6,
+   "rating": 2.36,
    "decimal": 41.2,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3700,6 +4062,7 @@
   },
   "8497": {
    "total": 70.7,
+   "rating": 7.07,
    "decimal": 2.58,
    "fractional": "13/8",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3707,6 +4070,7 @@
   },
   "10048": {
    "total": 84.9,
+   "rating": 8.49,
    "decimal": 2.65,
    "fractional": "13/8",
    "note": "3 goal(s), 0 assist(s) in last 5",
@@ -3714,6 +4078,7 @@
   },
   "11356": {
    "total": 75.8,
+   "rating": 7.58,
    "decimal": 5.78,
    "fractional": "5/1",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -3721,6 +4086,7 @@
   },
   "6382": {
    "total": 64.1,
+   "rating": 6.41,
    "decimal": 6.82,
    "fractional": "6/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -3728,6 +4094,7 @@
   },
   "11357": {
    "total": 56.9,
+   "rating": 5.69,
    "decimal": 3.76,
    "fractional": "11/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3735,6 +4102,7 @@
   },
   "6345": {
    "total": 54.8,
+   "rating": 5.48,
    "decimal": 7.37,
    "fractional": "13/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3742,6 +4110,7 @@
   },
   "7134": {
    "total": 43.9,
+   "rating": 4.39,
    "decimal": 7.75,
    "fractional": "13/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3749,6 +4118,7 @@
   },
   "3300": {
    "total": 66.5,
+   "rating": 6.65,
    "decimal": 3.54,
    "fractional": "5/2",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -3756,6 +4126,7 @@
   },
   "9453": {
    "total": 28.8,
+   "rating": 2.88,
    "decimal": 40.55,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3763,6 +4134,7 @@
   },
   "10805": {
    "total": 35.2,
+   "rating": 3.52,
    "decimal": 20.94,
    "fractional": "20/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3770,6 +4142,7 @@
   },
   "5590": {
    "total": 24.3,
+   "rating": 2.43,
    "decimal": 19.27,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3777,6 +4150,7 @@
   },
   "8067": {
    "total": 30.5,
+   "rating": 3.05,
    "decimal": 14.24,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3784,6 +4158,7 @@
   },
   "7892": {
    "total": 50.9,
+   "rating": 5.09,
    "decimal": 4.81,
    "fractional": "4/1",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -3791,6 +4166,7 @@
   },
   "12573": {
    "total": 67.3,
+   "rating": 6.73,
    "decimal": 1.96,
    "fractional": "evens",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3798,6 +4174,7 @@
   },
   "7490": {
    "total": 88.2,
+   "rating": 8.82,
    "decimal": 1.48,
    "fractional": "1/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -3805,6 +4182,7 @@
   },
   "8980": {
    "total": 61.5,
+   "rating": 6.15,
    "decimal": 4.65,
    "fractional": "7/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3812,6 +4190,7 @@
   },
   "3291": {
    "total": 60.2,
+   "rating": 6.02,
    "decimal": 3.4,
    "fractional": "5/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3819,6 +4198,7 @@
   },
   "3621": {
    "total": 64.0,
+   "rating": 6.4,
    "decimal": 3.21,
    "fractional": "9/4",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3826,6 +4206,7 @@
   },
   "343": {
    "total": 63.0,
+   "rating": 6.3,
    "decimal": 16.45,
    "fractional": "16/1",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -3833,6 +4214,7 @@
   },
   "10172": {
    "total": 74.3,
+   "rating": 7.43,
    "decimal": 2.95,
    "fractional": "2/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -3840,6 +4222,7 @@
   },
   "5717": {
    "total": 72.1,
+   "rating": 7.21,
    "decimal": 3.16,
    "fractional": "85/40",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3847,6 +4230,7 @@
   },
   "12111": {
    "total": 34.8,
+   "rating": 3.48,
    "decimal": 32.29,
    "fractional": "33/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3854,6 +4238,7 @@
   },
   "9399": {
    "total": 41.7,
+   "rating": 4.17,
    "decimal": 21.28,
    "fractional": "20/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3861,6 +4246,7 @@
   },
   "3673": {
    "total": 52.1,
+   "rating": 5.21,
    "decimal": 6.57,
    "fractional": "11/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -3868,6 +4254,7 @@
   },
   "399": {
    "total": 49.9,
+   "rating": 4.99,
    "decimal": 5.83,
    "fractional": "5/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3875,6 +4262,7 @@
   },
   "9182": {
    "total": 58.0,
+   "rating": 5.8,
    "decimal": 2.42,
    "fractional": "11/8",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3882,6 +4270,7 @@
   },
   "1461": {
    "total": 44.0,
+   "rating": 4.4,
    "decimal": 8.68,
    "fractional": "15/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3889,6 +4278,7 @@
   },
   "6981": {
    "total": 44.8,
+   "rating": 4.48,
    "decimal": 11.6,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3896,6 +4286,7 @@
   },
   "11817": {
    "total": 57.2,
+   "rating": 5.72,
    "decimal": 2.07,
    "fractional": "11/10",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3903,6 +4294,7 @@
   },
   "8920": {
    "total": 66.8,
+   "rating": 6.68,
    "decimal": 5.14,
    "fractional": "4/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3910,6 +4302,7 @@
   },
   "11808": {
    "total": 60.5,
+   "rating": 6.05,
    "decimal": 3.52,
    "fractional": "5/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3917,6 +4310,7 @@
   },
   "12970": {
    "total": 79.7,
+   "rating": 7.97,
    "decimal": 4.23,
    "fractional": "10/3",
    "note": "3 goal(s), 1 assist(s) in last 5",
@@ -3924,6 +4318,7 @@
   },
   "11978": {
    "total": 54.3,
+   "rating": 5.43,
    "decimal": 16.13,
    "fractional": "16/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -3931,6 +4326,7 @@
   },
   "9767": {
    "total": 48.5,
+   "rating": 4.85,
    "decimal": 7.55,
    "fractional": "13/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3938,6 +4334,7 @@
   },
   "10057": {
    "total": 51.2,
+   "rating": 5.12,
    "decimal": 5.69,
    "fractional": "9/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3945,6 +4342,7 @@
   },
   "10868": {
    "total": 38.4,
+   "rating": 3.84,
    "decimal": 35.82,
    "fractional": "33/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3952,6 +4350,7 @@
   },
   "10390": {
    "total": 32.1,
+   "rating": 3.21,
    "decimal": 35.43,
    "fractional": "33/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -3959,6 +4358,7 @@
   },
   "12498": {
    "total": 39.7,
+   "rating": 3.97,
    "decimal": 11.78,
    "fractional": "11/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3966,6 +4366,7 @@
   },
   "8970": {
    "total": 56.8,
+   "rating": 5.68,
    "decimal": 9.04,
    "fractional": "8/1",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -3973,6 +4374,7 @@
   },
   "10485": {
    "total": 38.5,
+   "rating": 3.85,
    "decimal": 5.79,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3980,6 +4382,7 @@
   },
   "11618": {
    "total": 62.8,
+   "rating": 6.28,
    "decimal": 1.88,
    "fractional": "10/11",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -3987,6 +4390,7 @@
   },
   "11253": {
    "total": 20.5,
+   "rating": 2.05,
    "decimal": 12.48,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -3994,6 +4398,7 @@
   },
   "3549": {
    "total": 65.0,
+   "rating": 6.5,
    "decimal": 10.74,
    "fractional": "10/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -4001,6 +4406,7 @@
   },
   "12104": {
    "total": 68.0,
+   "rating": 6.8,
    "decimal": 2.41,
    "fractional": "11/8",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -4008,6 +4414,7 @@
   },
   "9018": {
    "total": 44.6,
+   "rating": 4.46,
    "decimal": 3.16,
    "fractional": "85/40",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4015,6 +4422,7 @@
   },
   "9633": {
    "total": 44.8,
+   "rating": 4.48,
    "decimal": 4.51,
    "fractional": "7/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4022,6 +4430,7 @@
   },
   "9632": {
    "total": 37.3,
+   "rating": 3.73,
    "decimal": 23.72,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4029,6 +4438,7 @@
   },
   "11703": {
    "total": 67.5,
+   "rating": 6.75,
    "decimal": 8.5,
    "fractional": "15/2",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -4036,6 +4446,7 @@
   },
   "13335": {
    "total": 63.0,
+   "rating": 6.3,
    "decimal": 2.78,
    "fractional": "7/4",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -4043,6 +4454,7 @@
   },
   "9523": {
    "total": 39.6,
+   "rating": 3.96,
    "decimal": 29.45,
    "fractional": "25/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4050,6 +4462,7 @@
   },
   "6006": {
    "total": 29.9,
+   "rating": 2.99,
    "decimal": 15.35,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4057,6 +4470,7 @@
   },
   "3799": {
    "total": 43.0,
+   "rating": 4.3,
    "decimal": 3.93,
    "fractional": "3/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4064,6 +4478,7 @@
   },
   "11065": {
    "total": 39.3,
+   "rating": 3.93,
    "decimal": 4.09,
    "fractional": "3/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4071,6 +4486,7 @@
   },
   "3348": {
    "total": 38.2,
+   "rating": 3.82,
    "decimal": 23.65,
    "fractional": "25/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4078,6 +4494,7 @@
   },
   "6019": {
    "total": 34.6,
+   "rating": 3.46,
    "decimal": 13.74,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4085,6 +4502,7 @@
   },
   "8664": {
    "total": 23.2,
+   "rating": 2.32,
    "decimal": 12.38,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4092,6 +4510,7 @@
   },
   "3285": {
    "total": 76.0,
+   "rating": 7.6,
    "decimal": 3.25,
    "fractional": "9/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4099,6 +4518,7 @@
   },
   "10815": {
    "total": 99.5,
+   "rating": 9.95,
    "decimal": 5.13,
    "fractional": "4/1",
    "note": "4 goal(s), 1 assist(s) in last 5",
@@ -4106,6 +4526,7 @@
   },
   "6986": {
    "total": 65.6,
+   "rating": 6.56,
    "decimal": 2.62,
    "fractional": "13/8",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4113,6 +4534,7 @@
   },
   "10812": {
    "total": 41.0,
+   "rating": 4.1,
    "decimal": 5.75,
    "fractional": "9/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4120,6 +4542,7 @@
   },
   "8703": {
    "total": 50.9,
+   "rating": 5.09,
    "decimal": 8.2,
    "fractional": "7/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -4127,6 +4550,7 @@
   },
   "10799": {
    "total": 56.0,
+   "rating": 5.6,
    "decimal": 2.79,
    "fractional": "7/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4134,6 +4558,7 @@
   },
   "6333": {
    "total": 33.1,
+   "rating": 3.31,
    "decimal": 31.6,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4141,6 +4566,7 @@
   },
   "8351": {
    "total": 29.4,
+   "rating": 2.94,
    "decimal": 29.62,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4148,6 +4574,7 @@
   },
   "12825": {
    "total": 36.8,
+   "rating": 3.68,
    "decimal": 6.03,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4155,6 +4582,7 @@
   },
   "7735": {
    "total": 23.9,
+   "rating": 2.39,
    "decimal": 12.35,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4162,6 +4590,7 @@
   },
   "7960": {
    "total": 35.2,
+   "rating": 3.52,
    "decimal": 3.63,
    "fractional": "11/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4169,6 +4598,7 @@
   },
   "12824": {
    "total": 24.2,
+   "rating": 2.42,
    "decimal": 12.34,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4176,6 +4606,7 @@
   },
   "9807": {
    "total": 30.2,
+   "rating": 3.02,
    "decimal": 12.11,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4183,6 +4614,7 @@
   },
   "12151": {
    "total": 20.6,
+   "rating": 2.06,
    "decimal": 23.1,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4190,6 +4622,7 @@
   },
   "8006": {
    "total": 71.2,
+   "rating": 7.12,
    "decimal": 2.6,
    "fractional": "13/8",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4197,6 +4630,7 @@
   },
   "3746": {
    "total": 66.6,
+   "rating": 6.66,
    "decimal": 2.03,
    "fractional": "evens",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4204,6 +4638,7 @@
   },
   "8697": {
    "total": 50.8,
+   "rating": 5.08,
    "decimal": 9.83,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4211,6 +4646,7 @@
   },
   "6846": {
    "total": 82.2,
+   "rating": 8.22,
    "decimal": 1.97,
    "fractional": "evens",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4218,6 +4654,7 @@
   },
   "8685": {
    "total": 43.6,
+   "rating": 4.36,
    "decimal": 7.19,
    "fractional": "6/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4225,6 +4662,7 @@
   },
   "13070": {
    "total": 64.6,
+   "rating": 6.46,
    "decimal": 3.44,
    "fractional": "5/2",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -4232,6 +4670,7 @@
   },
   "11062": {
    "total": 54.5,
+   "rating": 5.45,
    "decimal": 4.53,
    "fractional": "7/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4239,6 +4678,7 @@
   },
   "8050": {
    "total": 33.6,
+   "rating": 3.36,
    "decimal": 16.43,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4246,6 +4686,7 @@
   },
   "9655": {
    "total": 39.8,
+   "rating": 3.98,
    "decimal": 7.74,
    "fractional": "13/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4253,6 +4694,7 @@
   },
   "8190": {
    "total": 26.9,
+   "rating": 2.69,
    "decimal": 13.3,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4260,6 +4702,7 @@
   },
   "11339": {
    "total": 48.5,
+   "rating": 4.85,
    "decimal": 8.26,
    "fractional": "15/2",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -4267,6 +4710,7 @@
   },
   "5962": {
    "total": 39.0,
+   "rating": 3.9,
    "decimal": 15.13,
    "fractional": "14/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4274,6 +4718,7 @@
   },
   "3696": {
    "total": 52.0,
+   "rating": 5.2,
    "decimal": 1.26,
    "fractional": "1/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4281,6 +4726,7 @@
   },
   "9133": {
    "total": 74.1,
+   "rating": 7.41,
    "decimal": 1.19,
    "fractional": "1/5",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4288,6 +4734,7 @@
   },
   "6874": {
    "total": 49.9,
+   "rating": 4.99,
    "decimal": 6.02,
    "fractional": "5/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4295,6 +4742,7 @@
   },
   "10796": {
    "total": 44.0,
+   "rating": 4.4,
    "decimal": 3.57,
    "fractional": "5/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4302,6 +4750,7 @@
   },
   "465": {
    "total": 66.5,
+   "rating": 6.65,
    "decimal": 3.41,
    "fractional": "5/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -4309,6 +4758,7 @@
   },
   "5311": {
    "total": 38.3,
+   "rating": 3.83,
    "decimal": 6.39,
    "fractional": "11/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4316,6 +4766,7 @@
   },
   "11343": {
    "total": 40.4,
+   "rating": 4.04,
    "decimal": 11.75,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4323,6 +4774,7 @@
   },
   "10193": {
    "total": 52.7,
+   "rating": 5.27,
    "decimal": 3.81,
    "fractional": "11/4",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -4330,6 +4782,7 @@
   },
   "12389": {
    "total": 45.9,
+   "rating": 4.59,
    "decimal": 3.68,
    "fractional": "11/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4337,6 +4790,7 @@
   },
   "12045": {
    "total": 37.0,
+   "rating": 3.7,
    "decimal": 11.99,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4344,6 +4798,7 @@
   },
   "11777": {
    "total": 48.0,
+   "rating": 4.8,
    "decimal": 34.83,
    "fractional": "33/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -4351,6 +4806,7 @@
   },
   "9220": {
    "total": 26.0,
+   "rating": 2.6,
    "decimal": 11.8,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4358,6 +4814,7 @@
   },
   "3357": {
    "total": 29.1,
+   "rating": 2.91,
    "decimal": 12.15,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4365,6 +4822,7 @@
   },
   "12842": {
    "total": 21.8,
+   "rating": 2.18,
    "decimal": 34.53,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4372,6 +4830,7 @@
   },
   "11291": {
    "total": 36.5,
+   "rating": 3.65,
    "decimal": 13.36,
    "fractional": "12/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4379,6 +4838,7 @@
   },
   "12330": {
    "total": 49.6,
+   "rating": 4.96,
    "decimal": 1.27,
    "fractional": "2/7",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4386,6 +4846,7 @@
   },
   "8094": {
    "total": 83.3,
+   "rating": 8.33,
    "decimal": 2.97,
    "fractional": "2/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -4393,6 +4854,7 @@
   },
   "3277": {
    "total": 82.8,
+   "rating": 8.28,
    "decimal": 1.62,
    "fractional": "8/13",
    "note": "3 goal(s), 0 assist(s) in last 5",
@@ -4400,6 +4862,7 @@
   },
   "8187": {
    "total": 100.0,
+   "rating": 10.0,
    "decimal": 1.41,
    "fractional": "2/5",
    "note": "3 goal(s), 2 assist(s) in last 5",
@@ -4407,6 +4870,7 @@
   },
   "3603": {
    "total": 100.0,
+   "rating": 10.0,
    "decimal": 3.72,
    "fractional": "11/4",
    "note": "4 goal(s), 2 assist(s) in last 5",
@@ -4414,6 +4878,7 @@
   },
   "12336": {
    "total": 56.3,
+   "rating": 5.63,
    "decimal": 3.93,
    "fractional": "3/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4421,6 +4886,7 @@
   },
   "1750": {
    "total": 40.5,
+   "rating": 4.05,
    "decimal": 25.54,
    "fractional": "25/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4428,6 +4894,7 @@
   },
   "13358": {
    "total": 53.2,
+   "rating": 5.32,
    "decimal": 11.8,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4435,6 +4902,7 @@
   },
   "11819": {
    "total": 32.5,
+   "rating": 3.25,
    "decimal": 12.03,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4442,6 +4910,7 @@
   },
   "10701": {
    "total": 32.0,
+   "rating": 3.2,
    "decimal": 8.54,
    "fractional": "15/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4449,6 +4918,7 @@
   },
   "12060": {
    "total": 45.6,
+   "rating": 4.56,
    "decimal": 4.45,
    "fractional": "7/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4456,6 +4926,7 @@
   },
   "3585": {
    "total": 56.8,
+   "rating": 5.68,
    "decimal": 9.42,
    "fractional": "8/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4463,6 +4934,7 @@
   },
   "677": {
    "total": 24.6,
+   "rating": 2.46,
    "decimal": 10.81,
    "fractional": "10/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4470,6 +4942,7 @@
   },
   "11318": {
    "total": 42.6,
+   "rating": 4.26,
    "decimal": 14.24,
    "fractional": "14/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -4477,6 +4950,7 @@
   },
   "12367": {
    "total": 48.3,
+   "rating": 4.83,
    "decimal": 1.28,
    "fractional": "2/7",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4484,6 +4958,7 @@
   },
   "12850": {
    "total": 100.0,
+   "rating": 10.0,
    "decimal": 2.02,
    "fractional": "evens",
    "note": "5 goal(s), 2 assist(s) in last 5",
@@ -4491,6 +4966,7 @@
   },
   "10923": {
    "total": 35.3,
+   "rating": 3.53,
    "decimal": 6.35,
    "fractional": "11/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4498,6 +4974,7 @@
   },
   "7064": {
    "total": 35.4,
+   "rating": 3.54,
    "decimal": 12.82,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4505,6 +4982,7 @@
   },
   "9645": {
    "total": 41.0,
+   "rating": 4.1,
    "decimal": 23.46,
    "fractional": "20/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4512,6 +4990,7 @@
   },
   "5988": {
    "total": 40.3,
+   "rating": 4.03,
    "decimal": 3.94,
    "fractional": "3/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4519,6 +4998,7 @@
   },
   "12848": {
    "total": 28.7,
+   "rating": 2.87,
    "decimal": 36.88,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4526,6 +5006,7 @@
   },
   "11294": {
    "total": 40.8,
+   "rating": 4.08,
    "decimal": 11.74,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4533,6 +5014,7 @@
   },
   "9345": {
    "total": 63.0,
+   "rating": 6.3,
    "decimal": 2.02,
    "fractional": "evens",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -4540,6 +5022,7 @@
   },
   "4811": {
    "total": 25.0,
+   "rating": 2.5,
    "decimal": 13.83,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4547,6 +5030,7 @@
   },
   "10517": {
    "total": 26.8,
+   "rating": 2.68,
    "decimal": 20.75,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4554,6 +5038,7 @@
   },
   "7773": {
    "total": 39.4,
+   "rating": 3.94,
    "decimal": 5.24,
    "fractional": "4/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4561,6 +5046,7 @@
   },
   "6895": {
    "total": 21.9,
+   "rating": 2.19,
    "decimal": 12.43,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4568,6 +5054,7 @@
   },
   "5756": {
    "total": 22.6,
+   "rating": 2.26,
    "decimal": 12.4,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4575,6 +5062,7 @@
   },
   "7732": {
    "total": 21.1,
+   "rating": 2.11,
    "decimal": 12.46,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4582,6 +5070,7 @@
   },
   "8636": {
    "total": 72.2,
+   "rating": 7.22,
    "decimal": 1.89,
    "fractional": "10/11",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4589,6 +5078,7 @@
   },
   "11757": {
    "total": 57.7,
+   "rating": 5.77,
    "decimal": 4.46,
    "fractional": "7/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4596,6 +5086,7 @@
   },
   "12801": {
    "total": 49.0,
+   "rating": 4.9,
    "decimal": 5.31,
    "fractional": "9/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4603,6 +5094,7 @@
   },
   "13051": {
    "total": 59.5,
+   "rating": 5.95,
    "decimal": 3.27,
    "fractional": "9/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4610,6 +5102,7 @@
   },
   "7268": {
    "total": 32.9,
+   "rating": 3.29,
    "decimal": 9.24,
    "fractional": "8/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4617,6 +5110,7 @@
   },
   "8310": {
    "total": 53.6,
+   "rating": 5.36,
    "decimal": 4.79,
    "fractional": "4/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4624,6 +5118,7 @@
   },
   "10328": {
    "total": 50.8,
+   "rating": 5.08,
    "decimal": 3.19,
    "fractional": "9/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4631,6 +5126,7 @@
   },
   "1790": {
    "total": 62.4,
+   "rating": 6.24,
    "decimal": 2.58,
    "fractional": "13/8",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -4638,6 +5134,7 @@
   },
   "3223": {
    "total": 27.8,
+   "rating": 2.78,
    "decimal": 12.2,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4645,6 +5142,7 @@
   },
   "3390": {
    "total": 49.3,
+   "rating": 4.93,
    "decimal": 12.87,
    "fractional": "12/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4652,6 +5150,7 @@
   },
   "9646": {
    "total": 68.7,
+   "rating": 6.87,
    "decimal": 2.01,
    "fractional": "evens",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4659,6 +5158,7 @@
   },
   "10810": {
    "total": 26.9,
+   "rating": 2.69,
    "decimal": 37.08,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4666,6 +5166,7 @@
   },
   "5680": {
    "total": 34.4,
+   "rating": 3.44,
    "decimal": 12.59,
    "fractional": "12/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4673,6 +5174,7 @@
   },
   "9944": {
    "total": 29.0,
+   "rating": 2.9,
    "decimal": 12.16,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4680,6 +5182,7 @@
   },
   "3674": {
    "total": 55.5,
+   "rating": 5.55,
    "decimal": 2.94,
    "fractional": "2/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4687,6 +5190,7 @@
   },
   "11792": {
    "total": 87.1,
+   "rating": 8.71,
    "decimal": 4.38,
    "fractional": "10/3",
    "note": "2 goal(s), 2 assist(s) in last 5",
@@ -4694,6 +5198,7 @@
   },
   "11789": {
    "total": 45.6,
+   "rating": 4.56,
    "decimal": 6.5,
    "fractional": "11/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4701,6 +5206,7 @@
   },
   "713": {
    "total": 33.8,
+   "rating": 3.38,
    "decimal": 4.83,
    "fractional": "4/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4708,6 +5214,7 @@
   },
   "13368": {
    "total": 54.2,
+   "rating": 5.42,
    "decimal": 3.61,
    "fractional": "5/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -4715,6 +5222,7 @@
   },
   "3701": {
    "total": 27.6,
+   "rating": 2.76,
    "decimal": 18.78,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4722,6 +5230,7 @@
   },
   "11788": {
    "total": 33.2,
+   "rating": 3.32,
    "decimal": 5.64,
    "fractional": "9/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4729,6 +5238,7 @@
   },
   "11795": {
    "total": 34.6,
+   "rating": 3.46,
    "decimal": 14.4,
    "fractional": "14/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4736,6 +5246,7 @@
   },
   "5801": {
    "total": 31.5,
+   "rating": 3.15,
    "decimal": 12.07,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4743,6 +5254,7 @@
   },
   "12732": {
    "total": 41.9,
+   "rating": 4.19,
    "decimal": 11.7,
    "fractional": "11/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4750,6 +5262,7 @@
   },
   "11794": {
    "total": 29.7,
+   "rating": 2.97,
    "decimal": 12.13,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4757,6 +5270,7 @@
   },
   "8701": {
    "total": 21.4,
+   "rating": 2.14,
    "decimal": 15.18,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4764,6 +5278,7 @@
   },
   "11790": {
    "total": 31.2,
+   "rating": 3.12,
    "decimal": 13.72,
    "fractional": "12/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4771,6 +5286,7 @@
   },
   "2854": {
    "total": 24.0,
+   "rating": 2.4,
    "decimal": 7.57,
    "fractional": "13/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4778,6 +5294,7 @@
   },
   "10058": {
    "total": 81.2,
+   "rating": 8.12,
    "decimal": 5.64,
    "fractional": "9/2",
    "note": "0 goal(s), 3 assist(s) in last 5",
@@ -4785,6 +5302,7 @@
   },
   "10349": {
    "total": 63.6,
+   "rating": 6.36,
    "decimal": 1.22,
    "fractional": "2/9",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4792,6 +5310,7 @@
   },
   "6147": {
    "total": 52.1,
+   "rating": 5.21,
    "decimal": 4.54,
    "fractional": "7/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4799,6 +5318,7 @@
   },
   "5356": {
    "total": 66.3,
+   "rating": 6.63,
    "decimal": 3.75,
    "fractional": "11/4",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -4806,6 +5326,7 @@
   },
   "8239": {
    "total": 52.7,
+   "rating": 5.27,
    "decimal": 4.77,
    "fractional": "4/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4813,6 +5334,7 @@
   },
   "11799": {
    "total": 69.7,
+   "rating": 6.97,
    "decimal": 12.58,
    "fractional": "12/1",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -4820,6 +5342,7 @@
   },
   "10771": {
    "total": 49.3,
+   "rating": 4.93,
    "decimal": 3.73,
    "fractional": "11/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4827,6 +5350,7 @@
   },
   "5177": {
    "total": 55.3,
+   "rating": 5.53,
    "decimal": 11.26,
    "fractional": "10/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -4834,6 +5358,7 @@
   },
   "12804": {
    "total": 54.7,
+   "rating": 5.47,
    "decimal": 2.81,
    "fractional": "7/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4841,6 +5366,7 @@
   },
   "2674": {
    "total": 33.8,
+   "rating": 3.38,
    "decimal": 7.94,
    "fractional": "7/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4848,6 +5374,7 @@
   },
   "10271": {
    "total": 31.0,
+   "rating": 3.1,
    "decimal": 28.1,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4855,6 +5382,7 @@
   },
   "9690": {
    "total": 62.5,
+   "rating": 6.25,
    "decimal": 1.91,
    "fractional": "10/11",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -4862,6 +5390,7 @@
   },
   "7472": {
    "total": 27.3,
+   "rating": 2.73,
    "decimal": 28.42,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4869,6 +5398,7 @@
   },
   "2897": {
    "total": 49.7,
+   "rating": 4.97,
    "decimal": 4.91,
    "fractional": "4/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4876,6 +5406,7 @@
   },
   "8056": {
    "total": 56.8,
+   "rating": 5.68,
    "decimal": 1.93,
    "fractional": "10/11",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4883,6 +5414,7 @@
   },
   "3475": {
    "total": 70.6,
+   "rating": 7.06,
    "decimal": 4.65,
    "fractional": "7/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4890,6 +5422,7 @@
   },
   "8973": {
    "total": 39.4,
+   "rating": 3.94,
    "decimal": 10.34,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4897,6 +5430,7 @@
   },
   "8640": {
    "total": 46.6,
+   "rating": 4.66,
    "decimal": 17.75,
    "fractional": "16/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -4904,6 +5438,7 @@
   },
   "9978": {
    "total": 38.5,
+   "rating": 3.85,
    "decimal": 27.48,
    "fractional": "25/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4911,6 +5446,7 @@
   },
   "12880": {
    "total": 69.3,
+   "rating": 6.93,
    "decimal": 4.9,
    "fractional": "4/1",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -4918,6 +5454,7 @@
   },
   "12971": {
    "total": 75.9,
+   "rating": 7.59,
    "decimal": 1.25,
    "fractional": "1/4",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -4925,6 +5462,7 @@
   },
   "1144": {
    "total": 44.2,
+   "rating": 4.42,
    "decimal": 10.86,
    "fractional": "10/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4932,6 +5470,7 @@
   },
   "13210": {
    "total": 46.6,
+   "rating": 4.66,
    "decimal": 3.36,
    "fractional": "9/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -4939,6 +5478,7 @@
   },
   "12159": {
    "total": 38.7,
+   "rating": 3.87,
    "decimal": 2.71,
    "fractional": "7/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4946,6 +5486,7 @@
   },
   "13435": {
    "total": 51.3,
+   "rating": 5.13,
    "decimal": 11.39,
    "fractional": "10/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -4953,6 +5494,7 @@
   },
   "10237": {
    "total": 21.1,
+   "rating": 2.11,
    "decimal": 17.06,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4960,6 +5502,7 @@
   },
   "12882": {
    "total": 27.8,
+   "rating": 2.78,
    "decimal": 12.2,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4967,6 +5510,7 @@
   },
   "12451": {
    "total": 24.7,
+   "rating": 2.47,
    "decimal": 15.59,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -4974,6 +5518,7 @@
   },
   "5992": {
    "total": 100.0,
+   "rating": 10.0,
    "decimal": 1.84,
    "fractional": "5/6",
    "note": "4 goal(s), 1 assist(s) in last 5",
@@ -4981,6 +5526,7 @@
   },
   "7006": {
    "total": 82.5,
+   "rating": 8.25,
    "decimal": 2.52,
    "fractional": "3/2",
    "note": "2 goal(s), 2 assist(s) in last 5",
@@ -4988,6 +5534,7 @@
   },
   "1324": {
    "total": 76.8,
+   "rating": 7.68,
    "decimal": 6.51,
    "fractional": "11/2",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -4995,6 +5542,7 @@
   },
   "189": {
    "total": 87.7,
+   "rating": 8.77,
    "decimal": 4.59,
    "fractional": "7/2",
    "note": "2 goal(s), 2 assist(s) in last 5",
@@ -5002,6 +5550,7 @@
   },
   "1409": {
    "total": 64.4,
+   "rating": 6.44,
    "decimal": 10.07,
    "fractional": "9/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5009,6 +5558,7 @@
   },
   "9840": {
    "total": 62.1,
+   "rating": 6.21,
    "decimal": 3.38,
    "fractional": "5/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -5016,6 +5566,7 @@
   },
   "4939": {
    "total": 40.7,
+   "rating": 4.07,
    "decimal": 32.61,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5023,6 +5574,7 @@
   },
   "4981": {
    "total": 42.4,
+   "rating": 4.24,
    "decimal": 3.1,
    "fractional": "85/40",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5030,6 +5582,7 @@
   },
   "865": {
    "total": 69.2,
+   "rating": 6.92,
    "decimal": 1.6,
    "fractional": "8/13",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5037,6 +5590,7 @@
   },
   "317": {
    "total": 53.6,
+   "rating": 5.36,
    "decimal": 30.57,
    "fractional": "33/1",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -5044,6 +5598,7 @@
   },
   "557": {
    "total": 37.7,
+   "rating": 3.77,
    "decimal": 7.79,
    "fractional": "7/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5051,6 +5606,7 @@
   },
   "10891": {
    "total": 33.9,
+   "rating": 3.39,
    "decimal": 7.35,
    "fractional": "13/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5058,6 +5614,7 @@
   },
   "6414": {
    "total": 46.3,
+   "rating": 4.63,
    "decimal": 7.04,
    "fractional": "6/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5065,6 +5622,7 @@
   },
   "9854": {
    "total": 42.8,
+   "rating": 4.28,
    "decimal": 6.21,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5072,6 +5630,7 @@
   },
   "10895": {
    "total": 41.2,
+   "rating": 4.12,
    "decimal": 5.53,
    "fractional": "9/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5079,6 +5638,7 @@
   },
   "8034": {
    "total": 42.7,
+   "rating": 4.27,
    "decimal": 18.53,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5086,6 +5646,7 @@
   },
   "1170": {
    "total": 54.8,
+   "rating": 5.48,
    "decimal": 6.87,
    "fractional": "6/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -5093,6 +5654,7 @@
   },
   "1241": {
    "total": 29.8,
+   "rating": 2.98,
    "decimal": 36.75,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5100,6 +5662,7 @@
   },
   "10892": {
    "total": 42.4,
+   "rating": 4.24,
    "decimal": 6.49,
    "fractional": "11/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5107,6 +5670,7 @@
   },
   "1096": {
    "total": 34.3,
+   "rating": 3.43,
    "decimal": 32.34,
    "fractional": "33/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5114,6 +5678,7 @@
   },
   "10894": {
    "total": 29.9,
+   "rating": 2.99,
    "decimal": 14.79,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5121,6 +5686,7 @@
   },
   "1210": {
    "total": 43.6,
+   "rating": 4.36,
    "decimal": 4.16,
    "fractional": "3/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5128,6 +5694,7 @@
   },
   "8232": {
    "total": 22.3,
+   "rating": 2.23,
    "decimal": 12.41,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5135,6 +5702,7 @@
   },
   "1523": {
    "total": 29.6,
+   "rating": 2.96,
    "decimal": 12.14,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5142,6 +5710,7 @@
   },
   "1465": {
    "total": 49.8,
+   "rating": 4.98,
    "decimal": 3.21,
    "fractional": "9/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5149,6 +5718,7 @@
   },
   "13129": {
    "total": 34.8,
+   "rating": 3.48,
    "decimal": 11.95,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5156,6 +5726,7 @@
   },
   "8101": {
    "total": 20.0,
+   "rating": 2.0,
    "decimal": 12.5,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5163,6 +5734,7 @@
   },
   "3209": {
    "total": 17.5,
+   "rating": 1.75,
    "decimal": 12.6,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5170,6 +5742,7 @@
   },
   "11936": {
    "total": 63.7,
+   "rating": 6.37,
    "decimal": 2.41,
    "fractional": "11/8",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5177,6 +5750,7 @@
   },
   "942": {
    "total": 74.8,
+   "rating": 7.48,
    "decimal": 2.98,
    "fractional": "2/1",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -5184,6 +5758,7 @@
   },
   "10878": {
    "total": 36.3,
+   "rating": 3.63,
    "decimal": 15.65,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5191,6 +5766,7 @@
   },
   "3729": {
    "total": 46.0,
+   "rating": 4.6,
    "decimal": 25.69,
    "fractional": "25/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5198,6 +5774,7 @@
   },
   "9993": {
    "total": 59.3,
+   "rating": 5.93,
    "decimal": 7.79,
    "fractional": "7/1",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -5205,6 +5782,7 @@
   },
   "12853": {
    "total": 29.8,
+   "rating": 2.98,
    "decimal": 12.13,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5212,6 +5790,7 @@
   },
   "6618": {
    "total": 33.8,
+   "rating": 3.38,
    "decimal": 22.19,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5219,6 +5798,7 @@
   },
   "10740": {
    "total": 31.3,
+   "rating": 3.13,
    "decimal": 18.87,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5226,6 +5806,7 @@
   },
   "1053": {
    "total": 53.3,
+   "rating": 5.33,
    "decimal": 6.58,
    "fractional": "11/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -5233,6 +5814,7 @@
   },
   "10090": {
    "total": 46.8,
+   "rating": 4.68,
    "decimal": 4.03,
    "fractional": "3/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5240,6 +5822,7 @@
   },
   "12342": {
    "total": 60.9,
+   "rating": 6.09,
    "decimal": 4.8,
    "fractional": "4/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5247,6 +5830,7 @@
   },
   "12084": {
    "total": 31.0,
+   "rating": 3.1,
    "decimal": 18.59,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5254,6 +5838,7 @@
   },
   "1725": {
    "total": 27.0,
+   "rating": 2.7,
    "decimal": 7.89,
    "fractional": "7/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5261,6 +5846,7 @@
   },
   "6807": {
    "total": 27.8,
+   "rating": 2.78,
    "decimal": 40.68,
    "fractional": "40/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5268,6 +5854,7 @@
   },
   "11541": {
    "total": 76.0,
+   "rating": 7.6,
    "decimal": 5.32,
    "fractional": "9/2",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -5275,6 +5862,7 @@
   },
   "4918": {
    "total": 50.8,
+   "rating": 5.08,
    "decimal": 3.73,
    "fractional": "11/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5282,6 +5870,7 @@
   },
   "7944": {
    "total": 71.5,
+   "rating": 7.15,
    "decimal": 5.28,
    "fractional": "9/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -5289,6 +5878,7 @@
   },
   "12081": {
    "total": 70.7,
+   "rating": 7.07,
    "decimal": 3.11,
    "fractional": "85/40",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5296,6 +5886,7 @@
   },
   "8182": {
    "total": 58.7,
+   "rating": 5.87,
    "decimal": 10.93,
    "fractional": "10/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -5303,6 +5894,7 @@
   },
   "7328": {
    "total": 63.3,
+   "rating": 6.33,
    "decimal": 6.8,
    "fractional": "6/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -5310,6 +5902,7 @@
   },
   "12997": {
    "total": 34.3,
+   "rating": 3.43,
    "decimal": 22.16,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5317,6 +5910,7 @@
   },
   "12030": {
    "total": 68.8,
+   "rating": 6.88,
    "decimal": 2.77,
    "fractional": "7/4",
    "note": "3 goal(s), 0 assist(s) in last 5",
@@ -5324,6 +5918,7 @@
   },
   "11378": {
    "total": 33.5,
+   "rating": 3.35,
    "decimal": 11.99,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5331,6 +5926,7 @@
   },
   "11955": {
    "total": 25.4,
+   "rating": 2.54,
    "decimal": 12.29,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5338,6 +5934,7 @@
   },
   "10497": {
    "total": 28.3,
+   "rating": 2.83,
    "decimal": 15.42,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5345,6 +5942,7 @@
   },
   "1186": {
    "total": 36.2,
+   "rating": 3.62,
    "decimal": 3.86,
    "fractional": "11/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5352,6 +5950,7 @@
   },
   "1477": {
    "total": 51.3,
+   "rating": 5.13,
    "decimal": 4.17,
    "fractional": "10/3",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5359,6 +5958,7 @@
   },
   "12909": {
    "total": 73.4,
+   "rating": 7.34,
    "decimal": 1.3,
    "fractional": "3/10",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5366,6 +5966,7 @@
   },
   "4895": {
    "total": 57.5,
+   "rating": 5.75,
    "decimal": 3.59,
    "fractional": "5/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5373,6 +5974,7 @@
   },
   "5133": {
    "total": 44.3,
+   "rating": 4.43,
    "decimal": 11.62,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5380,6 +5982,7 @@
   },
   "9966": {
    "total": 41.3,
+   "rating": 4.13,
    "decimal": 7.46,
    "fractional": "13/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5387,6 +5990,7 @@
   },
   "11380": {
    "total": 41.6,
+   "rating": 4.16,
    "decimal": 8.74,
    "fractional": "15/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5394,6 +5998,7 @@
   },
   "9843": {
    "total": 61.6,
+   "rating": 6.16,
    "decimal": 6.47,
    "fractional": "11/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5401,6 +6006,7 @@
   },
   "9985": {
    "total": 39.7,
+   "rating": 3.97,
    "decimal": 13.23,
    "fractional": "12/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5408,6 +6014,7 @@
   },
   "9964": {
    "total": 26.6,
+   "rating": 2.66,
    "decimal": 9.64,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5415,6 +6022,7 @@
   },
   "3278": {
    "total": 73.0,
+   "rating": 7.3,
    "decimal": 1.43,
    "fractional": "4/9",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5422,6 +6030,7 @@
   },
   "10365": {
    "total": 27.0,
+   "rating": 2.7,
    "decimal": 21.09,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5429,6 +6038,7 @@
   },
   "1898": {
    "total": 27.1,
+   "rating": 2.71,
    "decimal": 12.23,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5436,6 +6046,7 @@
   },
   "8838": {
    "total": 39.1,
+   "rating": 3.91,
    "decimal": 10.92,
    "fractional": "10/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5443,6 +6054,7 @@
   },
   "12776": {
    "total": 42.0,
+   "rating": 4.2,
    "decimal": 9.43,
    "fractional": "8/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5450,6 +6062,7 @@
   },
   "7947": {
    "total": 56.0,
+   "rating": 5.6,
    "decimal": 11.24,
    "fractional": "10/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5457,6 +6070,7 @@
   },
   "13349": {
    "total": 57.2,
+   "rating": 5.72,
    "decimal": 1.24,
    "fractional": "1/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5464,6 +6078,7 @@
   },
   "594": {
    "total": 78.8,
+   "rating": 7.88,
    "decimal": 2.44,
    "fractional": "3/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5471,6 +6086,7 @@
   },
   "5560": {
    "total": 80.2,
+   "rating": 8.02,
    "decimal": 2.86,
    "fractional": "15/8",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -5478,6 +6094,7 @@
   },
   "6434": {
    "total": 49.0,
+   "rating": 4.9,
    "decimal": 6.06,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5485,6 +6102,7 @@
   },
   "7453": {
    "total": 86.5,
+   "rating": 8.65,
    "decimal": 2.76,
    "fractional": "7/4",
    "note": "3 goal(s), 0 assist(s) in last 5",
@@ -5492,6 +6110,7 @@
   },
   "1473": {
    "total": 47.2,
+   "rating": 4.72,
    "decimal": 12.26,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5499,6 +6118,7 @@
   },
   "7500": {
    "total": 66.5,
+   "rating": 6.65,
    "decimal": 2.25,
    "fractional": "5/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5506,6 +6126,7 @@
   },
   "12993": {
    "total": 56.2,
+   "rating": 5.62,
    "decimal": 7.91,
    "fractional": "7/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5513,6 +6134,7 @@
   },
   "6978": {
    "total": 38.8,
+   "rating": 3.88,
    "decimal": 14.58,
    "fractional": "14/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5520,6 +6142,7 @@
   },
   "7924": {
    "total": 39.1,
+   "rating": 3.91,
    "decimal": 39.32,
    "fractional": "40/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5527,6 +6150,7 @@
   },
   "6368": {
    "total": 26.9,
+   "rating": 2.69,
    "decimal": 12.24,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5534,6 +6158,7 @@
   },
   "1500": {
    "total": 29.5,
+   "rating": 2.95,
    "decimal": 20.58,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5541,6 +6166,7 @@
   },
   "1102": {
    "total": 68.3,
+   "rating": 6.83,
    "decimal": 4.21,
    "fractional": "10/3",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -5548,6 +6174,7 @@
   },
   "6125": {
    "total": 24.5,
+   "rating": 2.45,
    "decimal": 12.33,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5555,6 +6182,7 @@
   },
   "5025": {
    "total": 20.8,
+   "rating": 2.08,
    "decimal": 26.53,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5562,6 +6190,7 @@
   },
   "7375": {
    "total": 48.7,
+   "rating": 4.87,
    "decimal": 4.05,
    "fractional": "3/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5569,6 +6198,7 @@
   },
   "9866": {
    "total": 43.2,
+   "rating": 4.32,
    "decimal": 5.95,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5576,6 +6206,7 @@
   },
   "7938": {
    "total": 49.1,
+   "rating": 4.91,
    "decimal": 11.46,
    "fractional": "10/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5583,6 +6214,7 @@
   },
   "7507": {
    "total": 64.8,
+   "rating": 6.48,
    "decimal": 5.96,
    "fractional": "5/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5590,6 +6222,7 @@
   },
   "8856": {
    "total": 45.5,
+   "rating": 4.55,
    "decimal": 5.88,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5597,6 +6230,7 @@
   },
   "1639": {
    "total": 29.4,
+   "rating": 2.94,
    "decimal": 40.48,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5604,6 +6238,7 @@
   },
   "10380": {
    "total": 40.3,
+   "rating": 4.03,
    "decimal": 10.69,
    "fractional": "10/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5611,6 +6246,7 @@
   },
   "6196": {
    "total": 42.2,
+   "rating": 4.22,
    "decimal": 5.59,
    "fractional": "9/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5618,6 +6254,7 @@
   },
   "11957": {
    "total": 44.5,
+   "rating": 4.45,
    "decimal": 11.61,
    "fractional": "11/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -5625,6 +6262,7 @@
   },
   "1634": {
    "total": 32.0,
+   "rating": 3.2,
    "decimal": 9.64,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5632,6 +6270,7 @@
   },
   "12868": {
    "total": 37.0,
+   "rating": 3.7,
    "decimal": 11.87,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5639,6 +6278,7 @@
   },
   "8857": {
    "total": 30.1,
+   "rating": 3.01,
    "decimal": 20.54,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5646,6 +6286,7 @@
   },
   "6706": {
    "total": 32.8,
+   "rating": 3.28,
    "decimal": 32.48,
    "fractional": "33/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5653,6 +6294,7 @@
   },
   "10073": {
    "total": 29.1,
+   "rating": 2.91,
    "decimal": 14.47,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5660,6 +6302,7 @@
   },
   "7084": {
    "total": 86.5,
+   "rating": 8.65,
    "decimal": 2.06,
    "fractional": "11/10",
    "note": "3 goal(s), 0 assist(s) in last 5",
@@ -5667,6 +6310,7 @@
   },
   "11942": {
    "total": 57.8,
+   "rating": 5.78,
    "decimal": 4.28,
    "fractional": "10/3",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5674,6 +6318,7 @@
   },
   "7265": {
    "total": 61.7,
+   "rating": 6.17,
    "decimal": 7.18,
    "fractional": "6/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -5681,6 +6326,7 @@
   },
   "5743": {
    "total": 61.8,
+   "rating": 6.18,
    "decimal": 1.8,
    "fractional": "4/5",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5688,6 +6334,7 @@
   },
   "6601": {
    "total": 46.0,
+   "rating": 4.6,
    "decimal": 4.2,
    "fractional": "10/3",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5695,6 +6342,7 @@
   },
   "5360": {
    "total": 33.4,
+   "rating": 3.34,
    "decimal": 15.58,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5702,6 +6350,7 @@
   },
   "9969": {
    "total": 42.4,
+   "rating": 4.24,
    "decimal": 8.65,
    "fractional": "15/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5709,6 +6358,7 @@
   },
   "13052": {
    "total": 55.5,
+   "rating": 5.55,
    "decimal": 5.49,
    "fractional": "9/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5716,6 +6366,7 @@
   },
   "12904": {
    "total": 64.3,
+   "rating": 6.43,
    "decimal": 2.79,
    "fractional": "7/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5723,6 +6374,7 @@
   },
   "9841": {
    "total": 47.0,
+   "rating": 4.7,
    "decimal": 14.23,
    "fractional": "14/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5730,6 +6382,7 @@
   },
   "7074": {
    "total": 47.9,
+   "rating": 4.79,
    "decimal": 7.61,
    "fractional": "13/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5737,6 +6390,7 @@
   },
   "1122": {
    "total": 31.7,
+   "rating": 3.17,
    "decimal": 19.14,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5744,6 +6398,7 @@
   },
   "12905": {
    "total": 31.4,
+   "rating": 3.14,
    "decimal": 11.61,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5751,6 +6406,7 @@
   },
   "8313": {
    "total": 22.4,
+   "rating": 2.24,
    "decimal": 31.81,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5758,6 +6414,7 @@
   },
   "7483": {
    "total": 48.3,
+   "rating": 4.83,
    "decimal": 9.19,
    "fractional": "8/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5765,6 +6422,7 @@
   },
   "11958": {
    "total": 48.7,
+   "rating": 4.87,
    "decimal": 9.97,
    "fractional": "9/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5772,6 +6430,7 @@
   },
   "5222": {
    "total": 53.6,
+   "rating": 5.36,
    "decimal": 3.43,
    "fractional": "5/2",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -5779,6 +6438,7 @@
   },
   "10957": {
    "total": 33.1,
+   "rating": 3.31,
    "decimal": 16.68,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5786,6 +6446,7 @@
   },
   "1161": {
    "total": 30.4,
+   "rating": 3.04,
    "decimal": 22.01,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5793,6 +6454,7 @@
   },
   "10893": {
    "total": 46.3,
+   "rating": 4.63,
    "decimal": 4.62,
    "fractional": "7/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5800,6 +6462,7 @@
   },
   "9904": {
    "total": 35.8,
+   "rating": 3.58,
    "decimal": 16.78,
    "fractional": "16/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5807,6 +6470,7 @@
   },
   "10389": {
    "total": 24.9,
+   "rating": 2.49,
    "decimal": 20.87,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5814,6 +6478,7 @@
   },
   "9952": {
    "total": 41.6,
+   "rating": 4.16,
    "decimal": 17.74,
    "fractional": "16/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -5821,6 +6486,7 @@
   },
   "7234": {
    "total": 31.5,
+   "rating": 3.15,
    "decimal": 16.09,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5828,6 +6494,7 @@
   },
   "12875": {
    "total": 35.2,
+   "rating": 3.52,
    "decimal": 9.18,
    "fractional": "8/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5835,6 +6502,7 @@
   },
   "13448": {
    "total": 56.8,
+   "rating": 5.68,
    "decimal": 3.08,
    "fractional": "85/40",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -5842,6 +6510,7 @@
   },
   "12989": {
    "total": 19.5,
+   "rating": 1.95,
    "decimal": 41.73,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5849,6 +6518,7 @@
   },
   "9887": {
    "total": 19.1,
+   "rating": 1.91,
    "decimal": 18.17,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5856,6 +6526,7 @@
   },
   "12008": {
    "total": 69.5,
+   "rating": 6.95,
    "decimal": 3.38,
    "fractional": "5/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -5863,6 +6534,7 @@
   },
   "12362": {
    "total": 51.0,
+   "rating": 5.1,
    "decimal": 6.23,
    "fractional": "5/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -5870,6 +6542,7 @@
   },
   "8895": {
    "total": 39.0,
+   "rating": 3.9,
    "decimal": 8.87,
    "fractional": "8/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5877,6 +6550,7 @@
   },
   "11944": {
    "total": 58.9,
+   "rating": 5.89,
    "decimal": 7.58,
    "fractional": "13/2",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -5884,6 +6558,7 @@
   },
   "10906": {
    "total": 43.0,
+   "rating": 4.3,
    "decimal": 11.66,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5891,6 +6566,7 @@
   },
   "10902": {
    "total": 26.4,
+   "rating": 2.64,
    "decimal": 23.12,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5898,6 +6574,7 @@
   },
   "8009": {
    "total": 29.4,
+   "rating": 2.94,
    "decimal": 12.14,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5905,6 +6582,7 @@
   },
   "11945": {
    "total": 30.1,
+   "rating": 3.01,
    "decimal": 24.73,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5912,6 +6590,7 @@
   },
   "3334": {
    "total": 21.3,
+   "rating": 2.13,
    "decimal": 37.73,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5919,6 +6598,7 @@
   },
   "3253": {
    "total": 23.5,
+   "rating": 2.35,
    "decimal": 12.36,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5926,6 +6606,7 @@
   },
   "12885": {
    "total": 21.3,
+   "rating": 2.13,
    "decimal": 12.45,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5933,6 +6614,7 @@
   },
   "1852": {
    "total": 29.7,
+   "rating": 2.97,
    "decimal": 10.11,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5940,6 +6622,7 @@
   },
   "10908": {
    "total": 40.5,
+   "rating": 4.05,
    "decimal": 11.75,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -5947,6 +6630,7 @@
   },
   "7628": {
    "total": 59.0,
+   "rating": 5.9,
    "decimal": 11.14,
    "fractional": "10/1",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -5954,6 +6638,7 @@
   },
   "11898": {
    "total": 100.0,
+   "rating": 10.0,
    "decimal": 1.11,
    "fractional": "1/10",
    "note": "2 goal(s), 2 assist(s) in last 5",
@@ -5961,6 +6646,7 @@
   },
   "5556": {
    "total": 89.3,
+   "rating": 8.93,
    "decimal": 1.75,
    "fractional": "8/11",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -5968,6 +6654,7 @@
   },
   "10877": {
    "total": 57.2,
+   "rating": 5.72,
    "decimal": 3.72,
    "fractional": "11/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5975,6 +6662,7 @@
   },
   "1710": {
    "total": 46.0,
+   "rating": 4.6,
    "decimal": 9.8,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5982,6 +6670,7 @@
   },
   "1134": {
    "total": 42.8,
+   "rating": 4.28,
    "decimal": 8.52,
    "fractional": "15/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -5989,6 +6678,7 @@
   },
   "1178": {
    "total": 49.0,
+   "rating": 4.9,
    "decimal": 6.7,
    "fractional": "11/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -5996,6 +6686,7 @@
   },
   "7284": {
    "total": 56.0,
+   "rating": 5.6,
    "decimal": 3.0,
    "fractional": "2/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6003,6 +6694,7 @@
   },
   "10404": {
    "total": 49.6,
+   "rating": 4.96,
    "decimal": 9.23,
    "fractional": "8/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -6010,6 +6702,7 @@
   },
   "1927": {
    "total": 26.2,
+   "rating": 2.62,
    "decimal": 36.07,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6017,6 +6710,7 @@
   },
   "8872": {
    "total": 32.5,
+   "rating": 3.25,
    "decimal": 12.03,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6024,6 +6718,7 @@
   },
   "8341": {
    "total": 41.5,
+   "rating": 4.15,
    "decimal": 7.28,
    "fractional": "13/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6031,6 +6726,7 @@
   },
   "342": {
    "total": 22.8,
+   "rating": 2.28,
    "decimal": 12.39,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6038,6 +6734,7 @@
   },
   "1089": {
    "total": 36.6,
+   "rating": 3.66,
    "decimal": 11.88,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6045,6 +6742,7 @@
   },
   "10985": {
    "total": 49.0,
+   "rating": 4.9,
    "decimal": 1.8,
    "fractional": "4/5",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6052,6 +6750,7 @@
   },
   "7700": {
    "total": 58.2,
+   "rating": 5.82,
    "decimal": 3.65,
    "fractional": "11/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6059,6 +6758,7 @@
   },
   "6276": {
    "total": 63.4,
+   "rating": 6.34,
    "decimal": 5.19,
    "fractional": "4/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6066,6 +6766,7 @@
   },
   "6352": {
    "total": 38.7,
+   "rating": 3.87,
    "decimal": 11.81,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6073,6 +6774,7 @@
   },
   "11278": {
    "total": 40.5,
+   "rating": 4.05,
    "decimal": 6.22,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6080,6 +6782,7 @@
   },
   "7912": {
    "total": 50.4,
+   "rating": 5.04,
    "decimal": 3.27,
    "fractional": "9/4",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6087,6 +6790,7 @@
   },
   "1441": {
    "total": 37.0,
+   "rating": 3.7,
    "decimal": 25.25,
    "fractional": "25/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6094,6 +6798,7 @@
   },
   "2217": {
    "total": 29.7,
+   "rating": 2.97,
    "decimal": 8.92,
    "fractional": "8/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6101,6 +6806,7 @@
   },
   "1148": {
    "total": 44.7,
+   "rating": 4.47,
    "decimal": 2.57,
    "fractional": "13/8",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6108,6 +6814,7 @@
   },
   "7530": {
    "total": 35.0,
+   "rating": 3.5,
    "decimal": 38.52,
    "fractional": "40/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6115,6 +6822,7 @@
   },
   "11741": {
    "total": 25.4,
+   "rating": 2.54,
    "decimal": 19.51,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6122,6 +6830,7 @@
   },
   "6073": {
    "total": 23.7,
+   "rating": 2.37,
    "decimal": 32.52,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6129,6 +6838,7 @@
   },
   "10433": {
    "total": 37.7,
+   "rating": 3.77,
    "decimal": 13.61,
    "fractional": "12/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6136,6 +6846,7 @@
   },
   "1226": {
    "total": 23.4,
+   "rating": 2.34,
    "decimal": 21.33,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6143,6 +6854,7 @@
   },
   "5700": {
    "total": 26.6,
+   "rating": 2.66,
    "decimal": 12.25,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6150,6 +6862,7 @@
   },
   "2662": {
    "total": 75.6,
+   "rating": 7.56,
    "decimal": 2.71,
    "fractional": "7/4",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6157,6 +6870,7 @@
   },
   "7193": {
    "total": 70.0,
+   "rating": 7.0,
    "decimal": 3.5,
    "fractional": "5/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6164,6 +6878,7 @@
   },
   "11965": {
    "total": 55.1,
+   "rating": 5.51,
    "decimal": 3.92,
    "fractional": "3/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6171,6 +6886,7 @@
   },
   "2547": {
    "total": 52.1,
+   "rating": 5.21,
    "decimal": 8.54,
    "fractional": "15/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6178,6 +6894,7 @@
   },
   "6945": {
    "total": 42.4,
+   "rating": 4.24,
    "decimal": 32.45,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6185,6 +6902,7 @@
   },
   "13453": {
    "total": 73.0,
+   "rating": 7.3,
    "decimal": 1.58,
    "fractional": "4/7",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6192,6 +6910,7 @@
   },
   "1804": {
    "total": 39.9,
+   "rating": 3.99,
    "decimal": 2.91,
    "fractional": "15/8",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6199,6 +6918,7 @@
   },
   "7208": {
    "total": 52.3,
+   "rating": 5.23,
    "decimal": 3.82,
    "fractional": "11/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6206,6 +6926,7 @@
   },
   "8642": {
    "total": 35.3,
+   "rating": 3.53,
    "decimal": 12.43,
    "fractional": "11/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6213,6 +6934,7 @@
   },
   "4920": {
    "total": 25.4,
+   "rating": 2.54,
    "decimal": 14.81,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6220,6 +6942,7 @@
   },
   "8771": {
    "total": 29.5,
+   "rating": 2.95,
    "decimal": 12.14,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6227,6 +6950,7 @@
   },
   "6228": {
    "total": 39.8,
+   "rating": 3.98,
    "decimal": 3.59,
    "fractional": "5/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6234,6 +6958,7 @@
   },
   "703": {
    "total": 23.5,
+   "rating": 2.35,
    "decimal": 12.36,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6241,6 +6966,7 @@
   },
   "6160": {
    "total": 88.7,
+   "rating": 8.87,
    "decimal": 1.46,
    "fractional": "4/9",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -6248,6 +6974,7 @@
   },
   "12528": {
    "total": 53.0,
+   "rating": 5.3,
    "decimal": 3.64,
    "fractional": "11/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6255,6 +6982,7 @@
   },
   "8662": {
    "total": 50.3,
+   "rating": 5.03,
    "decimal": 3.44,
    "fractional": "5/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6262,6 +6990,7 @@
   },
   "7005": {
    "total": 41.7,
+   "rating": 4.17,
    "decimal": 4.3,
    "fractional": "10/3",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6269,6 +6998,7 @@
   },
   "7286": {
    "total": 45.2,
+   "rating": 4.52,
    "decimal": 11.59,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6276,6 +7006,7 @@
   },
   "13061": {
    "total": 45.9,
+   "rating": 4.59,
    "decimal": 5.61,
    "fractional": "9/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6283,6 +7014,7 @@
   },
   "10794": {
    "total": 54.8,
+   "rating": 5.48,
    "decimal": 4.7,
    "fractional": "7/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6290,6 +7022,7 @@
   },
   "8912": {
    "total": 47.9,
+   "rating": 4.79,
    "decimal": 7.51,
    "fractional": "13/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6297,6 +7030,7 @@
   },
   "6517": {
    "total": 51.3,
+   "rating": 5.13,
    "decimal": 11.39,
    "fractional": "10/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6304,6 +7038,7 @@
   },
   "11964": {
    "total": 39.6,
+   "rating": 3.96,
    "decimal": 4.33,
    "fractional": "10/3",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6311,6 +7046,7 @@
   },
   "7576": {
    "total": 54.9,
+   "rating": 5.49,
    "decimal": 7.27,
    "fractional": "13/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6318,6 +7054,7 @@
   },
   "1488": {
    "total": 30.0,
+   "rating": 3.0,
    "decimal": 40.4,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6325,6 +7062,7 @@
   },
   "8626": {
    "total": 35.1,
+   "rating": 3.51,
    "decimal": 11.94,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6332,6 +7070,7 @@
   },
   "10956": {
    "total": 29.6,
+   "rating": 2.96,
    "decimal": 15.17,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6339,6 +7078,7 @@
   },
   "1958": {
    "total": 59.8,
+   "rating": 5.98,
    "decimal": 4.24,
    "fractional": "10/3",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6346,6 +7086,7 @@
   },
   "10948": {
    "total": 65.4,
+   "rating": 6.54,
    "decimal": 2.93,
    "fractional": "15/8",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -6353,6 +7094,7 @@
   },
   "7224": {
    "total": 60.2,
+   "rating": 6.02,
    "decimal": 3.04,
    "fractional": "2/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6360,6 +7102,7 @@
   },
   "687": {
    "total": 91.5,
+   "rating": 9.15,
    "decimal": 1.2,
    "fractional": "1/5",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -6367,6 +7110,7 @@
   },
   "9691": {
    "total": 48.2,
+   "rating": 4.82,
    "decimal": 11.49,
    "fractional": "10/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6374,6 +7118,7 @@
   },
   "11951": {
    "total": 46.8,
+   "rating": 4.68,
    "decimal": 7.21,
    "fractional": "6/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6381,6 +7126,7 @@
   },
   "1423": {
    "total": 45.3,
+   "rating": 4.53,
    "decimal": 5.41,
    "fractional": "9/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6388,6 +7134,7 @@
   },
   "5759": {
    "total": 32.3,
+   "rating": 3.23,
    "decimal": 40.12,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6395,6 +7142,7 @@
   },
   "6176": {
    "total": 34.2,
+   "rating": 3.42,
    "decimal": 7.77,
    "fractional": "7/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6402,6 +7150,7 @@
   },
   "4970": {
    "total": 53.6,
+   "rating": 5.36,
    "decimal": 11.31,
    "fractional": "10/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6409,6 +7158,7 @@
   },
   "12872": {
    "total": 54.1,
+   "rating": 5.41,
    "decimal": 3.96,
    "fractional": "3/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6416,6 +7166,7 @@
   },
   "12378": {
    "total": 68.5,
+   "rating": 6.85,
    "decimal": 5.0,
    "fractional": "4/1",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -6423,6 +7174,7 @@
   },
   "7411": {
    "total": 29.9,
+   "rating": 2.99,
    "decimal": 12.12,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6430,6 +7182,7 @@
   },
   "1375": {
    "total": 41.6,
+   "rating": 4.16,
    "decimal": 11.71,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6437,6 +7190,7 @@
   },
   "11736": {
    "total": 56.3,
+   "rating": 5.63,
    "decimal": 2.55,
    "fractional": "3/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6444,6 +7198,7 @@
   },
   "9965": {
    "total": 57.3,
+   "rating": 5.73,
    "decimal": 4.5,
    "fractional": "7/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6451,6 +7206,7 @@
   },
   "1294": {
    "total": 74.1,
+   "rating": 7.41,
    "decimal": 2.84,
    "fractional": "15/8",
    "note": "0 goal(s), 3 assist(s) in last 5",
@@ -6458,6 +7214,7 @@
   },
   "5954": {
    "total": 73.3,
+   "rating": 7.33,
    "decimal": 3.22,
    "fractional": "9/4",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -6465,6 +7222,7 @@
   },
   "1252": {
    "total": 67.1,
+   "rating": 6.71,
    "decimal": 4.34,
    "fractional": "10/3",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6472,6 +7230,7 @@
   },
   "1168": {
    "total": 43.0,
+   "rating": 4.3,
    "decimal": 6.63,
    "fractional": "11/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6479,6 +7238,7 @@
   },
   "1248": {
    "total": 58.1,
+   "rating": 5.81,
    "decimal": 5.67,
    "fractional": "9/2",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -6486,6 +7246,7 @@
   },
   "1040": {
    "total": 33.5,
+   "rating": 3.35,
    "decimal": 21.04,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6493,6 +7254,7 @@
   },
   "7482": {
    "total": 33.1,
+   "rating": 3.31,
    "decimal": 17.4,
    "fractional": "16/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6500,6 +7262,7 @@
   },
   "1471": {
    "total": 42.3,
+   "rating": 4.23,
    "decimal": 10.72,
    "fractional": "10/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6507,6 +7270,7 @@
   },
   "11470": {
    "total": 55.4,
+   "rating": 5.54,
    "decimal": 7.5,
    "fractional": "13/2",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -6514,6 +7278,7 @@
   },
   "6159": {
    "total": 40.4,
+   "rating": 4.04,
    "decimal": 20.62,
    "fractional": "20/1",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -6521,6 +7286,7 @@
   },
   "6872": {
    "total": 26.5,
+   "rating": 2.65,
    "decimal": 12.25,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6528,6 +7294,7 @@
   },
   "9951": {
    "total": 47.7,
+   "rating": 4.77,
    "decimal": 9.92,
    "fractional": "9/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -6535,6 +7302,7 @@
   },
   "1304": {
    "total": 77.9,
+   "rating": 7.79,
    "decimal": 1.69,
    "fractional": "2/3",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -6542,6 +7310,7 @@
   },
   "6155": {
    "total": 52.1,
+   "rating": 5.21,
    "decimal": 6.42,
    "fractional": "11/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6549,6 +7318,7 @@
   },
   "6762": {
    "total": 88.6,
+   "rating": 8.86,
    "decimal": 3.56,
    "fractional": "5/2",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -6556,6 +7326,7 @@
   },
   "11900": {
    "total": 46.7,
+   "rating": 4.67,
    "decimal": 5.04,
    "fractional": "4/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6563,6 +7334,7 @@
   },
   "3821": {
    "total": 63.5,
+   "rating": 6.35,
    "decimal": 5.92,
    "fractional": "5/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -6570,6 +7342,7 @@
   },
   "10366": {
    "total": 48.8,
+   "rating": 4.88,
    "decimal": 2.72,
    "fractional": "7/4",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6577,6 +7350,7 @@
   },
   "10935": {
    "total": 33.0,
+   "rating": 3.3,
    "decimal": 12.01,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6584,6 +7358,7 @@
   },
   "6696": {
    "total": 32.1,
+   "rating": 3.21,
    "decimal": 40.15,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6591,6 +7366,7 @@
   },
   "1206": {
    "total": 33.6,
+   "rating": 3.36,
    "decimal": 7.84,
    "fractional": "7/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6598,6 +7374,7 @@
   },
   "6718": {
    "total": 32.9,
+   "rating": 3.29,
    "decimal": 9.77,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6605,6 +7382,7 @@
   },
   "9518": {
    "total": 37.3,
+   "rating": 3.73,
    "decimal": 11.4,
    "fractional": "10/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6612,6 +7390,7 @@
   },
   "9924": {
    "total": 32.7,
+   "rating": 3.27,
    "decimal": 7.38,
    "fractional": "13/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6619,6 +7398,7 @@
   },
   "11752": {
    "total": 45.5,
+   "rating": 4.55,
    "decimal": 13.95,
    "fractional": "12/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -6626,6 +7406,7 @@
   },
   "546": {
    "total": 23.9,
+   "rating": 2.39,
    "decimal": 12.35,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6633,6 +7414,7 @@
   },
   "2255": {
    "total": 85.8,
+   "rating": 8.58,
    "decimal": 2.0,
    "fractional": "evens",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6640,6 +7422,7 @@
   },
   "5681": {
    "total": 73.1,
+   "rating": 7.31,
    "decimal": 2.14,
    "fractional": "11/10",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6647,6 +7430,7 @@
   },
   "11094": {
    "total": 73.3,
+   "rating": 7.33,
    "decimal": 3.27,
    "fractional": "9/4",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -6654,6 +7438,7 @@
   },
   "6954": {
    "total": 64.8,
+   "rating": 6.48,
    "decimal": 2.86,
    "fractional": "15/8",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -6661,6 +7446,7 @@
   },
   "12323": {
    "total": 31.6,
+   "rating": 3.16,
    "decimal": 9.57,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6668,6 +7454,7 @@
   },
   "10095": {
    "total": 69.0,
+   "rating": 6.9,
    "decimal": 12.32,
    "fractional": "11/1",
    "note": "3 goal(s), 1 assist(s) in last 5",
@@ -6675,6 +7462,7 @@
   },
   "6500": {
    "total": 43.6,
+   "rating": 4.36,
    "decimal": 12.93,
    "fractional": "12/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6682,6 +7470,7 @@
   },
   "6427": {
    "total": 39.1,
+   "rating": 3.91,
    "decimal": 16.85,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6689,6 +7478,7 @@
   },
   "12302": {
    "total": 34.4,
+   "rating": 3.44,
    "decimal": 4.15,
    "fractional": "3/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6696,6 +7486,7 @@
   },
   "5086": {
    "total": 45.8,
+   "rating": 4.58,
    "decimal": 5.87,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6703,6 +7494,7 @@
   },
   "2306": {
    "total": 58.2,
+   "rating": 5.82,
    "decimal": 4.11,
    "fractional": "3/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6710,6 +7502,7 @@
   },
   "2453": {
    "total": 28.9,
+   "rating": 2.89,
    "decimal": 14.14,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6717,6 +7510,7 @@
   },
   "2163": {
    "total": 25.3,
+   "rating": 2.53,
    "decimal": 17.32,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6724,6 +7518,7 @@
   },
   "2234": {
    "total": 60.2,
+   "rating": 6.02,
    "decimal": 3.14,
    "fractional": "85/40",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -6731,6 +7526,7 @@
   },
   "6656": {
    "total": 60.8,
+   "rating": 6.08,
    "decimal": 16.8,
    "fractional": "16/1",
    "note": "0 goal(s), 3 assist(s) in last 5",
@@ -6738,6 +7534,7 @@
   },
   "8001": {
    "total": 40.7,
+   "rating": 4.07,
    "decimal": 6.24,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6745,6 +7542,7 @@
   },
   "6227": {
    "total": 46.1,
+   "rating": 4.61,
    "decimal": 6.64,
    "fractional": "11/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6752,6 +7550,7 @@
   },
   "7308": {
    "total": 45.3,
+   "rating": 4.53,
    "decimal": 16.32,
    "fractional": "16/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6759,6 +7558,7 @@
   },
   "7526": {
    "total": 26.3,
+   "rating": 2.63,
    "decimal": 20.1,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6766,6 +7566,7 @@
   },
   "11185": {
    "total": 34.8,
+   "rating": 3.48,
    "decimal": 16.15,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6773,6 +7574,7 @@
   },
   "7882": {
    "total": 59.4,
+   "rating": 5.94,
    "decimal": 6.15,
    "fractional": "5/1",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -6780,6 +7582,7 @@
   },
   "13048": {
    "total": 67.9,
+   "rating": 6.79,
    "decimal": 3.74,
    "fractional": "11/4",
    "note": "4 goal(s), 0 assist(s) in last 5",
@@ -6787,6 +7590,7 @@
   },
   "12182": {
    "total": 26.9,
+   "rating": 2.69,
    "decimal": 33.99,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6794,6 +7598,7 @@
   },
   "12862": {
    "total": 29.5,
+   "rating": 2.95,
    "decimal": 24.28,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6801,6 +7606,7 @@
   },
   "9466": {
    "total": 44.8,
+   "rating": 4.48,
    "decimal": 10.55,
    "fractional": "10/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -6808,6 +7614,7 @@
   },
   "13267": {
    "total": 60.0,
+   "rating": 6.0,
    "decimal": 1.35,
    "fractional": "4/11",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6815,6 +7622,7 @@
   },
   "12353": {
    "total": 31.6,
+   "rating": 3.16,
    "decimal": 12.06,
    "fractional": "11/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6822,6 +7630,7 @@
   },
   "7779": {
    "total": 71.2,
+   "rating": 7.12,
    "decimal": 1.31,
    "fractional": "3/10",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6829,6 +7638,7 @@
   },
   "2399": {
    "total": 65.3,
+   "rating": 6.53,
    "decimal": 5.39,
    "fractional": "9/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -6836,6 +7646,7 @@
   },
   "5091": {
    "total": 55.7,
+   "rating": 5.57,
    "decimal": 4.95,
    "fractional": "4/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6843,6 +7654,7 @@
   },
   "9211": {
    "total": 74.0,
+   "rating": 7.4,
    "decimal": 4.73,
    "fractional": "7/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -6850,6 +7662,7 @@
   },
   "7020": {
    "total": 65.5,
+   "rating": 6.55,
    "decimal": 3.23,
    "fractional": "9/4",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -6857,6 +7670,7 @@
   },
   "6766": {
    "total": 32.4,
+   "rating": 3.24,
    "decimal": 8.66,
    "fractional": "15/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6864,6 +7678,7 @@
   },
   "2452": {
    "total": 34.6,
+   "rating": 3.46,
    "decimal": 11.95,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6871,6 +7686,7 @@
   },
   "9755": {
    "total": 46.7,
+   "rating": 4.67,
    "decimal": 11.54,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6878,6 +7694,7 @@
   },
   "11531": {
    "total": 36.8,
+   "rating": 3.68,
    "decimal": 16.73,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6885,6 +7702,7 @@
   },
   "12263": {
    "total": 32.5,
+   "rating": 3.25,
    "decimal": 15.04,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6892,6 +7710,7 @@
   },
   "8948": {
    "total": 35.5,
+   "rating": 3.55,
    "decimal": 8.06,
    "fractional": "7/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6899,6 +7718,7 @@
   },
   "2229": {
    "total": 40.9,
+   "rating": 4.09,
    "decimal": 11.73,
    "fractional": "11/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -6906,6 +7726,7 @@
   },
   "6325": {
    "total": 25.9,
+   "rating": 2.59,
    "decimal": 12.27,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6913,6 +7734,7 @@
   },
   "13417": {
    "total": 32.4,
+   "rating": 3.24,
    "decimal": 9.95,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6920,6 +7742,7 @@
   },
   "5706": {
    "total": 64.4,
+   "rating": 6.44,
    "decimal": 3.45,
    "fractional": "5/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6927,6 +7750,7 @@
   },
   "8409": {
    "total": 50.8,
+   "rating": 5.08,
    "decimal": 5.51,
    "fractional": "9/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6934,6 +7758,7 @@
   },
   "2266": {
    "total": 49.4,
+   "rating": 4.94,
    "decimal": 19.74,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6941,6 +7766,7 @@
   },
   "12305": {
    "total": 35.2,
+   "rating": 3.52,
    "decimal": 7.28,
    "fractional": "13/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6948,6 +7774,7 @@
   },
   "10334": {
    "total": 46.6,
+   "rating": 4.66,
    "decimal": 9.54,
    "fractional": "9/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -6955,6 +7782,7 @@
   },
   "8165": {
    "total": 42.9,
+   "rating": 4.29,
    "decimal": 27.13,
    "fractional": "25/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6962,6 +7790,7 @@
   },
   "2624": {
    "total": 48.1,
+   "rating": 4.81,
    "decimal": 13.36,
    "fractional": "12/1",
    "note": "0 goal(s), 3 assist(s) in last 5",
@@ -6969,6 +7798,7 @@
   },
   "8694": {
    "total": 45.0,
+   "rating": 4.5,
    "decimal": 5.92,
    "fractional": "5/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6976,6 +7806,7 @@
   },
   "7810": {
    "total": 50.7,
+   "rating": 5.07,
    "decimal": 4.39,
    "fractional": "10/3",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -6983,6 +7814,7 @@
   },
   "8665": {
    "total": 25.5,
+   "rating": 2.55,
    "decimal": 36.14,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6990,6 +7822,7 @@
   },
   "7888": {
    "total": 27.2,
+   "rating": 2.72,
    "decimal": 33.96,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -6997,6 +7830,7 @@
   },
   "7174": {
    "total": 27.5,
+   "rating": 2.75,
    "decimal": 31.32,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7004,6 +7838,7 @@
   },
   "9689": {
    "total": 29.9,
+   "rating": 2.99,
    "decimal": 12.12,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7011,6 +7846,7 @@
   },
   "12742": {
    "total": 36.8,
+   "rating": 3.68,
    "decimal": 15.03,
    "fractional": "14/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7018,6 +7854,7 @@
   },
   "9694": {
    "total": 65.4,
+   "rating": 6.54,
    "decimal": 4.31,
    "fractional": "10/3",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7025,6 +7862,7 @@
   },
   "6637": {
    "total": 60.5,
+   "rating": 6.05,
    "decimal": 2.44,
    "fractional": "3/2",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7032,6 +7870,7 @@
   },
   "10322": {
    "total": 63.3,
+   "rating": 6.33,
    "decimal": 10.79,
    "fractional": "10/1",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -7039,6 +7878,7 @@
   },
   "11057": {
    "total": 43.5,
+   "rating": 4.35,
    "decimal": 11.64,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7046,6 +7886,7 @@
   },
   "11140": {
    "total": 31.8,
+   "rating": 3.18,
    "decimal": 30.14,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7053,6 +7894,7 @@
   },
   "2551": {
    "total": 32.6,
+   "rating": 3.26,
    "decimal": 11.35,
    "fractional": "10/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7060,6 +7902,7 @@
   },
   "2589": {
    "total": 50.0,
+   "rating": 5.0,
    "decimal": 9.07,
    "fractional": "8/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7067,6 +7910,7 @@
   },
   "10107": {
    "total": 24.9,
+   "rating": 2.49,
    "decimal": 20.87,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7074,6 +7918,7 @@
   },
   "5666": {
    "total": 32.9,
+   "rating": 3.29,
    "decimal": 4.28,
    "fractional": "10/3",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7081,6 +7926,7 @@
   },
   "8774": {
    "total": 43.0,
+   "rating": 4.3,
    "decimal": 3.27,
    "fractional": "9/4",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7088,6 +7934,7 @@
   },
   "10024": {
    "total": 22.5,
+   "rating": 2.25,
    "decimal": 41.34,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7095,6 +7942,7 @@
   },
   "2509": {
    "total": 20.6,
+   "rating": 2.06,
    "decimal": 12.48,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7102,6 +7950,7 @@
   },
   "2505": {
    "total": 29.4,
+   "rating": 2.94,
    "decimal": 12.14,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7109,6 +7958,7 @@
   },
   "1078": {
    "total": 45.7,
+   "rating": 4.57,
    "decimal": 11.57,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7116,6 +7966,7 @@
   },
   "2290": {
    "total": 82.5,
+   "rating": 8.25,
    "decimal": 2.03,
    "fractional": "evens",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7123,6 +7974,7 @@
   },
   "2543": {
    "total": 71.2,
+   "rating": 7.12,
    "decimal": 2.14,
    "fractional": "11/10",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -7130,6 +7982,7 @@
   },
   "9011": {
    "total": 49.8,
+   "rating": 4.98,
    "decimal": 8.8,
    "fractional": "8/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7137,6 +7990,7 @@
   },
   "10870": {
    "total": 78.3,
+   "rating": 7.83,
    "decimal": 3.9,
    "fractional": "3/1",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -7144,6 +7998,7 @@
   },
   "11154": {
    "total": 54.8,
+   "rating": 5.48,
    "decimal": 4.37,
    "fractional": "10/3",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7151,6 +8006,7 @@
   },
   "10078": {
    "total": 67.3,
+   "rating": 6.73,
    "decimal": 4.76,
    "fractional": "4/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7158,6 +8014,7 @@
   },
   "9241": {
    "total": 49.2,
+   "rating": 4.92,
    "decimal": 3.51,
    "fractional": "5/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7165,6 +8022,7 @@
   },
   "12180": {
    "total": 34.4,
+   "rating": 3.44,
    "decimal": 11.08,
    "fractional": "10/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7172,6 +8030,7 @@
   },
   "8122": {
    "total": 34.0,
+   "rating": 3.4,
    "decimal": 11.98,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7179,6 +8038,7 @@
   },
   "1621": {
    "total": 26.1,
+   "rating": 2.61,
    "decimal": 12.03,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7186,6 +8046,7 @@
   },
   "6931": {
    "total": 30.5,
+   "rating": 3.05,
    "decimal": 16.36,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7193,6 +8054,7 @@
   },
   "9243": {
    "total": 41.6,
+   "rating": 4.16,
    "decimal": 27.23,
    "fractional": "25/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7200,6 +8062,7 @@
   },
   "13200": {
    "total": 45.8,
+   "rating": 4.58,
    "decimal": 4.21,
    "fractional": "10/3",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7207,6 +8070,7 @@
   },
   "6933": {
    "total": 63.2,
+   "rating": 6.32,
    "decimal": 3.08,
    "fractional": "85/40",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7214,6 +8078,7 @@
   },
   "6168": {
    "total": 41.1,
+   "rating": 4.11,
    "decimal": 9.38,
    "fractional": "8/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7221,6 +8086,7 @@
   },
   "10209": {
    "total": 40.0,
+   "rating": 4.0,
    "decimal": 9.64,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7228,6 +8094,7 @@
   },
   "13350": {
    "total": 66.0,
+   "rating": 6.6,
    "decimal": 3.11,
    "fractional": "85/40",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -7235,6 +8102,7 @@
   },
   "2519": {
    "total": 49.1,
+   "rating": 4.91,
    "decimal": 15.7,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7242,6 +8110,7 @@
   },
   "6324": {
    "total": 27.2,
+   "rating": 2.72,
    "decimal": 13.43,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7249,6 +8118,7 @@
   },
   "11402": {
    "total": 44.9,
+   "rating": 4.49,
    "decimal": 16.57,
    "fractional": "16/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7256,6 +8126,7 @@
   },
   "4175": {
    "total": 72.2,
+   "rating": 7.22,
    "decimal": 1.6,
    "fractional": "8/13",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7263,6 +8134,7 @@
   },
   "10875": {
    "total": 27.3,
+   "rating": 2.73,
    "decimal": 12.22,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7270,6 +8142,7 @@
   },
   "5081": {
    "total": 32.8,
+   "rating": 3.28,
    "decimal": 12.02,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7277,6 +8150,7 @@
   },
   "11989": {
    "total": 61.5,
+   "rating": 6.15,
    "decimal": 7.23,
    "fractional": "6/1",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -7284,6 +8158,7 @@
   },
   "5724": {
    "total": 56.0,
+   "rating": 5.6,
    "decimal": 7.2,
    "fractional": "6/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7291,6 +8166,7 @@
   },
   "8017": {
    "total": 20.7,
+   "rating": 2.07,
    "decimal": 12.47,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7298,6 +8174,7 @@
   },
   "7916": {
    "total": 25.4,
+   "rating": 2.54,
    "decimal": 12.29,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7305,6 +8182,7 @@
   },
   "3423": {
    "total": 91.5,
+   "rating": 9.15,
    "decimal": 1.14,
    "fractional": "1/7",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -7312,6 +8190,7 @@
   },
   "7008": {
    "total": 91.2,
+   "rating": 9.12,
    "decimal": 2.34,
    "fractional": "11/8",
    "note": "3 goal(s), 0 assist(s) in last 5",
@@ -7319,6 +8198,7 @@
   },
   "8824": {
    "total": 86.3,
+   "rating": 8.63,
    "decimal": 3.21,
    "fractional": "9/4",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -7326,6 +8206,7 @@
   },
   "8015": {
    "total": 87.3,
+   "rating": 8.73,
    "decimal": 3.76,
    "fractional": "11/4",
    "note": "1 goal(s), 2 assist(s) in last 5",
@@ -7333,6 +8214,7 @@
   },
   "6241": {
    "total": 65.6,
+   "rating": 6.56,
    "decimal": 6.15,
    "fractional": "5/1",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7340,6 +8222,7 @@
   },
   "2250": {
    "total": 47.9,
+   "rating": 4.79,
    "decimal": 11.38,
    "fractional": "10/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7347,6 +8230,7 @@
   },
   "12190": {
    "total": 57.3,
+   "rating": 5.73,
    "decimal": 5.18,
    "fractional": "4/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7354,6 +8238,7 @@
   },
   "2253": {
    "total": 42.0,
+   "rating": 4.2,
    "decimal": 28.53,
    "fractional": "25/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7361,6 +8246,7 @@
   },
   "6421": {
    "total": 57.1,
+   "rating": 5.71,
    "decimal": 4.26,
    "fractional": "10/3",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7368,6 +8254,7 @@
   },
   "7359": {
    "total": 36.6,
+   "rating": 3.66,
    "decimal": 14.32,
    "fractional": "14/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7375,6 +8262,7 @@
   },
   "9810": {
    "total": 25.6,
+   "rating": 2.56,
    "decimal": 12.29,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7382,6 +8270,7 @@
   },
   "7829": {
    "total": 38.9,
+   "rating": 3.89,
    "decimal": 12.29,
    "fractional": "11/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7389,6 +8278,7 @@
   },
   "13201": {
    "total": 22.6,
+   "rating": 2.26,
    "decimal": 12.4,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7396,6 +8286,7 @@
   },
   "6233": {
    "total": 21.5,
+   "rating": 2.15,
    "decimal": 12.44,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7403,6 +8294,7 @@
   },
   "6531": {
    "total": 77.6,
+   "rating": 7.76,
    "decimal": 1.18,
    "fractional": "1/6",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -7410,6 +8302,7 @@
   },
   "10846": {
    "total": 85.7,
+   "rating": 8.57,
    "decimal": 1.72,
    "fractional": "8/11",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7417,6 +8310,7 @@
   },
   "2270": {
    "total": 74.5,
+   "rating": 7.45,
    "decimal": 3.73,
    "fractional": "11/4",
    "note": "0 goal(s), 3 assist(s) in last 5",
@@ -7424,6 +8318,7 @@
   },
   "1145": {
    "total": 54.1,
+   "rating": 5.41,
    "decimal": 8.97,
    "fractional": "8/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7431,6 +8326,7 @@
   },
   "9796": {
    "total": 37.3,
+   "rating": 3.73,
    "decimal": 13.03,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7438,6 +8334,7 @@
   },
   "10943": {
    "total": 60.7,
+   "rating": 6.07,
    "decimal": 6.49,
    "fractional": "11/2",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -7445,6 +8342,7 @@
   },
   "2518": {
    "total": 40.5,
+   "rating": 4.05,
    "decimal": 16.32,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7452,6 +8350,7 @@
   },
   "9040": {
    "total": 51.2,
+   "rating": 5.12,
    "decimal": 6.9,
    "fractional": "6/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7459,6 +8358,7 @@
   },
   "10494": {
    "total": 38.2,
+   "rating": 3.82,
    "decimal": 31.12,
    "fractional": "33/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7466,6 +8366,7 @@
   },
   "2275": {
    "total": 60.8,
+   "rating": 6.08,
    "decimal": 2.22,
    "fractional": "6/5",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7473,6 +8374,7 @@
   },
   "5050": {
    "total": 25.8,
+   "rating": 2.58,
    "decimal": 13.49,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7480,6 +8382,7 @@
   },
   "8963": {
    "total": 37.1,
+   "rating": 3.71,
    "decimal": 11.87,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7487,6 +8390,7 @@
   },
   "2269": {
    "total": 24.8,
+   "rating": 2.48,
    "decimal": 26.2,
    "fractional": "25/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7494,6 +8398,7 @@
   },
   "7385": {
    "total": 24.7,
+   "rating": 2.47,
    "decimal": 12.32,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7501,6 +8406,7 @@
   },
   "770": {
    "total": 91.4,
+   "rating": 9.14,
    "decimal": 1.19,
    "fractional": "1/5",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -7508,6 +8414,7 @@
   },
   "8417": {
    "total": 74.4,
+   "rating": 7.44,
    "decimal": 4.47,
    "fractional": "7/2",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7515,6 +8422,7 @@
   },
   "12916": {
    "total": 62.9,
+   "rating": 6.29,
    "decimal": 2.59,
    "fractional": "13/8",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7522,6 +8430,7 @@
   },
   "9024": {
    "total": 63.6,
+   "rating": 6.36,
    "decimal": 6.08,
    "fractional": "5/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7529,6 +8438,7 @@
   },
   "5656": {
    "total": 88.4,
+   "rating": 8.84,
    "decimal": 5.66,
    "fractional": "9/2",
    "note": "2 goal(s), 2 assist(s) in last 5",
@@ -7536,6 +8446,7 @@
   },
   "11744": {
    "total": 47.6,
+   "rating": 4.76,
    "decimal": 38.36,
    "fractional": "40/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7543,6 +8454,7 @@
   },
   "7070": {
    "total": 40.1,
+   "rating": 4.01,
    "decimal": 8.46,
    "fractional": "15/2",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7550,6 +8462,7 @@
   },
   "2378": {
    "total": 49.3,
+   "rating": 4.93,
    "decimal": 9.7,
    "fractional": "9/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7557,6 +8470,7 @@
   },
   "2120": {
    "total": 63.7,
+   "rating": 6.37,
    "decimal": 2.84,
    "fractional": "15/8",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7564,6 +8478,7 @@
   },
   "8696": {
    "total": 51.3,
+   "rating": 5.13,
    "decimal": 7.12,
    "fractional": "6/1",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -7571,6 +8486,7 @@
   },
   "8200": {
    "total": 36.2,
+   "rating": 3.62,
    "decimal": 17.24,
    "fractional": "16/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7578,6 +8494,7 @@
   },
   "12322": {
    "total": 62.2,
+   "rating": 6.22,
    "decimal": 4.95,
    "fractional": "4/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7585,6 +8502,7 @@
   },
   "2308": {
    "total": 39.7,
+   "rating": 3.97,
    "decimal": 7.65,
    "fractional": "13/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7592,6 +8510,7 @@
   },
   "2521": {
    "total": 51.5,
+   "rating": 5.15,
    "decimal": 11.38,
    "fractional": "10/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7599,6 +8518,7 @@
   },
   "227": {
    "total": 72.8,
+   "rating": 7.28,
    "decimal": 1.2,
    "fractional": "1/5",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -7606,6 +8526,7 @@
   },
   "8026": {
    "total": 88.8,
+   "rating": 8.88,
    "decimal": 1.82,
    "fractional": "5/6",
    "note": "2 goal(s), 0 assist(s) in last 5",
@@ -7613,6 +8534,7 @@
   },
   "11527": {
    "total": 86.5,
+   "rating": 8.65,
    "decimal": 3.68,
    "fractional": "11/4",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -7620,6 +8542,7 @@
   },
   "6441": {
    "total": 100.0,
+   "rating": 10.0,
    "decimal": 1.22,
    "fractional": "2/9",
    "note": "2 goal(s), 1 assist(s) in last 5",
@@ -7627,6 +8550,7 @@
   },
   "8292": {
    "total": 85.8,
+   "rating": 8.58,
    "decimal": 1.41,
    "fractional": "2/5",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7634,6 +8558,7 @@
   },
   "11822": {
    "total": 89.0,
+   "rating": 8.9,
    "decimal": 2.33,
    "fractional": "11/8",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7641,6 +8566,7 @@
   },
   "8935": {
    "total": 61.7,
+   "rating": 6.17,
    "decimal": 9.06,
    "fractional": "8/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -7648,6 +8574,7 @@
   },
   "6433": {
    "total": 30.5,
+   "rating": 3.05,
    "decimal": 17.54,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7655,6 +8582,7 @@
   },
   "8045": {
    "total": 36.7,
+   "rating": 3.67,
    "decimal": 10.15,
    "fractional": "9/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7662,6 +8590,7 @@
   },
   "2484": {
    "total": 39.6,
+   "rating": 3.96,
    "decimal": 11.78,
    "fractional": "11/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7669,6 +8598,7 @@
   },
   "9805": {
    "total": 32.1,
+   "rating": 3.21,
    "decimal": 12.04,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7676,6 +8606,7 @@
   },
   "11151": {
    "total": 35.5,
+   "rating": 3.55,
    "decimal": 21.68,
    "fractional": "20/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7683,6 +8614,7 @@
   },
   "7781": {
    "total": 41.5,
+   "rating": 4.15,
    "decimal": 7.19,
    "fractional": "6/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7690,6 +8622,7 @@
   },
   "12821": {
    "total": 42.9,
+   "rating": 4.29,
    "decimal": 13.26,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7697,6 +8630,7 @@
   },
   "1235": {
    "total": 75.7,
+   "rating": 7.57,
    "decimal": 1.7,
    "fractional": "8/11",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7704,6 +8638,7 @@
   },
   "2183": {
    "total": 53.2,
+   "rating": 5.32,
    "decimal": 6.26,
    "fractional": "11/2",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7711,6 +8646,7 @@
   },
   "8424": {
    "total": 44.2,
+   "rating": 4.42,
    "decimal": 7.8,
    "fractional": "7/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7718,6 +8654,7 @@
   },
   "10143": {
    "total": 55.5,
+   "rating": 5.55,
    "decimal": 23.44,
    "fractional": "20/1",
    "note": "0 goal(s), 1 assist(s) in last 5",
@@ -7725,6 +8662,7 @@
   },
   "7604": {
    "total": 27.9,
+   "rating": 2.79,
    "decimal": 40.66,
    "fractional": "40/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7732,6 +8670,7 @@
   },
   "8042": {
    "total": 61.6,
+   "rating": 6.16,
    "decimal": 2.07,
    "fractional": "11/10",
    "note": "1 goal(s), 1 assist(s) in last 5",
@@ -7739,6 +8678,7 @@
   },
   "9768": {
    "total": 27.1,
+   "rating": 2.71,
    "decimal": 12.23,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7746,6 +8686,7 @@
   },
   "7050": {
    "total": 27.7,
+   "rating": 2.77,
    "decimal": 13.41,
    "fractional": "12/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7753,6 +8694,7 @@
   },
   "12790": {
    "total": 38.8,
+   "rating": 3.88,
    "decimal": 13.57,
    "fractional": "12/1",
    "note": "0 goal(s), 2 assist(s) in last 5",
@@ -7760,6 +8702,7 @@
   },
   "10857": {
    "total": 26.4,
+   "rating": 2.64,
    "decimal": 17.51,
    "fractional": "16/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7767,6 +8710,7 @@
   },
   "10858": {
    "total": 19.2,
+   "rating": 1.92,
    "decimal": 18.99,
    "fractional": "18/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7774,6 +8718,7 @@
   },
   "11395": {
    "total": 30.0,
+   "rating": 3.0,
    "decimal": 12.12,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
@@ -7781,6 +8726,7 @@
   },
   "5140": {
    "total": 48.3,
+   "rating": 4.83,
    "decimal": 11.48,
    "fractional": "10/1",
    "note": "1 goal(s), 0 assist(s) in last 5",
@@ -7788,6 +8734,7 @@
   },
   "7859": {
    "total": 21.0,
+   "rating": 2.1,
    "decimal": 12.46,
    "fractional": "11/1",
    "note": "0 goal(s), 0 assist(s) in last 5",
