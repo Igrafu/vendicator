@@ -94,6 +94,29 @@ def value_rating(p):
     return round(max(min(score, 100.0), 1.0), 1)
 
 
+DEF_WEIGHT = {"D": 2.6, "DM": 2.4, "M": 1.7, "AM": 1.1, "F": 0.7,
+              "S": 0.7, "GK": 0.3}
+
+
+def _defensive_actions(p):
+    """Estimated tackles+interceptions per season. Understat's open feed has
+    no tackle counts, so this is a minutes-and-position model, surfaced on
+    the site as an estimate rather than a recorded stat."""
+    mins = max(_f(p.get("time")), 1.0)
+    pos = (p.get("position") or "M").split()[0].upper()
+    weight = DEF_WEIGHT.get(pos, 1.6)
+    return int(round(mins / 90.0 * weight))
+
+
+def market_points(rating, market):
+    """Points for the extended player markets."""
+    base = {"score": 120, "assist": 150, "score_or_assist": 90,
+            "key_passes": 70, "tackles": 65,
+            "yellow_card": 110, "red_card": 400}.get(market, 100)
+    multiplier = 1.0 + (100.0 - rating) / 55.0
+    return int(round(base * multiplier))
+
+
 def points_for(rating, market):
     """Points a correct player pick pays. Inverse to value: a 90-rated
     striker scoring is expected, a 20-rated defender is not."""
@@ -134,8 +157,13 @@ def last5_tally(matches, n=5):
     return {"goals": goals, "assists": assists}
 
 
-def team_players(team, league="EPL", season="2024", limit=6):
-    """Top players for a team, ready for the market table."""
+def team_players(team, league="EPL", season="2024", limit=14):
+    """Every regular for a team, ready for the market table.
+
+    Understat carries goals, assists, key passes, shots and cards. Tackles
+    are not in the open feed, so a defensive-work proxy is derived from
+    position and minutes and is clearly labelled as such on the site.
+    """
     canon = canonical(team)
     rows = [p for p in league_players(league, season)
             if canonical(p.get("team_title", "")) == canon]
@@ -162,10 +190,15 @@ def team_players(team, league="EPL", season="2024", limit=6):
             "xA": round(_f(p.get("xA")), 2),
             "shots": int(_f(p.get("shots"))),
             "key_passes": int(_f(p.get("key_passes"))),
+            "yellow_cards": int(_f(p.get("yellow_cards"))),
+            "red_cards": int(_f(p.get("red_cards"))),
+            "tackles": _defensive_actions(p),
             "rating": rating,
             "last5": tally,
-            "points": {m: points_for(rating, m)
-                       for m in ("score", "assist", "score_or_assist")},
+            "points": {m: market_points(rating, m)
+                       for m in ("score", "assist", "score_or_assist",
+                                 "key_passes", "tackles",
+                                 "yellow_card", "red_card")},
             # simple per-90 based likelihoods, shown as percentages
             "prob": {
                 "score": round(min(_f(p.get("goals")) / mins * 90 * 100, 92), 1),

@@ -1,0 +1,72 @@
+{
+ "generated": "2026-08-21T15:42:44.061295+00:00",
+ "season": "2526",
+ "by_type": {
+  "league": {
+   "played": 4250,
+   "upcoming": 94
+  }
+ },
+ "by_competition": {
+  "E0": {
+   "type": "league",
+   "played": 380,
+   "upcoming": 10,
+   "gameweeks": 48
+  },
+  "E1": {
+   "type": "league",
+   "played": 552,
+   "upcoming": 12,
+   "gameweeks": 58
+  },
+  "E2": {
+   "type": "league",
+   "played": 552,
+   "upcoming": 11,
+   "gameweeks": 64
+  },
+  "E3": {
+   "type": "league",
+   "played": 552,
+   "upcoming": 12,
+   "gameweeks": 58
+  },
+  "SP1": {
+   "type": "league",
+   "played": 380,
+   "upcoming": 9,
+   "gameweeks": 67
+  },
+  "SP2": {
+   "type": "league",
+   "played": 462,
+   "upcoming": 11,
+   "gameweeks": 76
+  },
+  "I1": {
+   "type": "league",
+   "played": 380,
+   "upcoming": 10,
+   "gameweeks": 56
+  },
+  "I2": {
+   "type": "league",
+   "played": 380,
+   "upcoming": 10,
+   "gameweeks": 43
+  },
+  "D1": {
+   "type": "league",
+   "played": 306,
+   "upcoming": 0,
+   "gameweeks": 36
+  },
+  "F1": {
+   "type": "league",
+   "played": 306,
+   "upcoming": 9,
+   "gameweeks": 38
+  }
+ }
+}

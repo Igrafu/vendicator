@@ -20,6 +20,7 @@ from engines import (BayesianStrengths, DixonColes, EloModel, InPlayEngine,
                      bookmaker_suggestion, log_loss_score, markets_from_grid)
 from engines.graph import TacticalReport
 from discipline import market_table, recent_rates
+from scoreline import build as scoreline_build
 from features import FEATURE_COLS, build_match_table, normalise_understat
 from players import team_players, team_points
 from teams import (as_dict as team_registry, canonical, code as team_code,
@@ -321,6 +322,28 @@ def demo_prediction(df, models, stack, tab, draw_head, home, away, league):
     }
 
 
+def attach_gameweeks(payload):
+    """Stamp each fixture with its competition gameweek + season label,
+    read from the season log."""
+    log = ROOT / "records" / "season-log.jsonl"
+    weeks = {}
+    if log.exists():
+        for line in log.read_text().splitlines():
+            if not line.strip():
+                continue
+            m = json.loads(line)
+            weeks[(m["competition"], m["home"], m["away"])] = (
+                m.get("gameweek"), m.get("season"))
+    for fx in payload.get("fixtures", []):
+        gw, season = weeks.get(
+            (fx["league"], fx.get("home_team"), fx.get("away_team")),
+            (None, "2526"))
+        fx["gameweek"] = gw
+        fx["season"] = season
+        fx["season_label"] = "2025/26"
+    return payload
+
+
 def fetch_upcoming():
     """Free upcoming fixtures + current bookmaker odds for every
     football-data.co.uk division (updates continuously)."""
@@ -514,6 +537,8 @@ def predict_upcoming(push=True):
     payload = {"generated": datetime.now(timezone.utc).isoformat(),
                "fixtures": out_fixtures, "tables": all_tables,
                "teams": {c: v for c, v in team_registry().items()}}
+    attach_gameweeks(payload)
+    scoreline_build(payload)
     OUTPUT.write_text(json.dumps(payload, indent=2))
     print(f"\n{len(out_fixtures)} predictions -> {OUTPUT}")
     if push and out_fixtures:
