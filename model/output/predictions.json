@@ -1,10 +1,65 @@
 {
-  "generated": "2026-08-21T11:48:34.705728+00:00",
+  "generated": "2026-08-21T12:26:05.120565+00:00",
   "fixtures": [
     {
       "league": "E2",
       "kickoff": "20/08/2026 20:00",
       "fixture": "Sheffield Weds vs Bradford",
+      "short": "SHW Vs BRA",
+      "team_to_score": {
+        "home_pct": 78.6,
+        "away_pct": 54.8,
+        "best": "home",
+        "best_team": "Sheffield Weds",
+        "fair_odds": {
+          "home": 1.27,
+          "away": 1.82
+        }
+      },
+      "odds_board": {
+        "home": [
+          {
+            "book": "Market Max",
+            "odds": 2.55
+          },
+          {
+            "book": "Betfair Exchange",
+            "odds": 2.52
+          },
+          {
+            "book": "Betfair",
+            "odds": 2.5
+          }
+        ],
+        "draw": [
+          {
+            "book": "Betfair Exchange",
+            "odds": 3.55
+          },
+          {
+            "book": "Market Max",
+            "odds": 3.5
+          },
+          {
+            "book": "Betfair",
+            "odds": 3.4
+          }
+        ],
+        "away": [
+          {
+            "book": "Betfair Exchange",
+            "odds": 2.94
+          },
+          {
+            "book": "Betfair",
+            "odds": 2.75
+          },
+          {
+            "book": "Market Max",
+            "odds": 2.75
+          }
+        ]
+      },
       "expected_goals": {
         "home": 1.54,
         "away": 0.79
@@ -99,6 +154,61 @@
       "league": "SP1",
       "kickoff": "19/08/2026 20:00",
       "fixture": "Ath Madrid vs Malaga",
+      "short": "ATM Vs MAL",
+      "team_to_score": {
+        "home_pct": 89.3,
+        "away_pct": 46.3,
+        "best": "home",
+        "best_team": "Ath Madrid",
+        "fair_odds": {
+          "home": 1.12,
+          "away": 2.16
+        }
+      },
+      "odds_board": {
+        "home": [
+          {
+            "book": "Betfair Exchange",
+            "odds": 1.35
+          },
+          {
+            "book": "Bet365",
+            "odds": 1.33
+          },
+          {
+            "book": "Market Max",
+            "odds": 1.33
+          }
+        ],
+        "draw": [
+          {
+            "book": "Betfair Exchange",
+            "odds": 5.6
+          },
+          {
+            "book": "Betfair",
+            "odds": 5.5
+          },
+          {
+            "book": "Market Max",
+            "odds": 5.5
+          }
+        ],
+        "away": [
+          {
+            "book": "Betfair Exchange",
+            "odds": 11.5
+          },
+          {
+            "book": "Market Max",
+            "odds": 11.5
+          },
+          {
+            "book": "Betfair",
+            "odds": 11.0
+          }
+        ]
+      },
       "expected_goals": {
         "home": 2.23,
         "away": 0.62
@@ -193,6 +303,61 @@
       "league": "SP1",
       "kickoff": "20/08/2026 20:00",
       "fixture": "Vallecano vs Alaves",
+      "short": "RAY Vs ALA",
+      "team_to_score": {
+        "home_pct": 71.2,
+        "away_pct": 56.8,
+        "best": "home",
+        "best_team": "Vallecano",
+        "fair_odds": {
+          "home": 1.4,
+          "away": 1.76
+        }
+      },
+      "odds_board": {
+        "home": [
+          {
+            "book": "Betfair Exchange",
+            "odds": 2.3
+          },
+          {
+            "book": "Market Max",
+            "odds": 2.3
+          },
+          {
+            "book": "Bet365",
+            "odds": 2.25
+          }
+        ],
+        "draw": [
+          {
+            "book": "Market Max",
+            "odds": 3.15
+          },
+          {
+            "book": "Betfair",
+            "odds": 3.1
+          },
+          {
+            "book": "Betfair Exchange",
+            "odds": 3.1
+          }
+        ],
+        "away": [
+          {
+            "book": "Betfair Exchange",
+            "odds": 3.95
+          },
+          {
+            "book": "SkyBet",
+            "odds": 3.75
+          },
+          {
+            "book": "Market Max",
+            "odds": 3.75
+          }
+        ]
+      },
       "expected_goals": {
         "home": 1.25,
         "away": 0.84
@@ -283,5 +448,451 @@
         "away": 3.6
       }
     }
-  ]
+  ],
+  "tables": {
+    "E2": [
+      {
+        "team": "Lincoln",
+        "p": 46,
+        "w": 31,
+        "d": 10,
+        "l": 5,
+        "gf": 89,
+        "ga": 41,
+        "pts": 103
+      },
+      {
+        "team": "Cardiff",
+        "p": 46,
+        "w": 27,
+        "d": 10,
+        "l": 9,
+        "gf": 90,
+        "ga": 50,
+        "pts": 91
+      },
+      {
+        "team": "Stockport",
+        "p": 46,
+        "w": 22,
+        "d": 11,
+        "l": 13,
+        "gf": 71,
+        "ga": 58,
+        "pts": 77
+      },
+      {
+        "team": "Bradford",
+        "p": 46,
+        "w": 22,
+        "d": 11,
+        "l": 13,
+        "gf": 58,
+        "ga": 51,
+        "pts": 77
+      },
+      {
+        "team": "Bolton",
+        "p": 46,
+        "w": 19,
+        "d": 18,
+        "l": 9,
+        "gf": 70,
+        "ga": 52,
+        "pts": 75
+      },
+      {
+        "team": "Stevenage",
+        "p": 46,
+        "w": 21,
+        "d": 12,
+        "l": 13,
+        "gf": 49,
+        "ga": 46,
+        "pts": 75
+      },
+      {
+        "team": "Luton",
+        "p": 46,
+        "w": 21,
+        "d": 11,
+        "l": 14,
+        "gf": 68,
+        "ga": 56,
+        "pts": 74
+      },
+      {
+        "team": "Plymouth",
+        "p": 46,
+        "w": 22,
+        "d": 7,
+        "l": 17,
+        "gf": 75,
+        "ga": 63,
+        "pts": 73
+      },
+      {
+        "team": "Huddersfield",
+        "p": 46,
+        "w": 18,
+        "d": 13,
+        "l": 15,
+        "gf": 74,
+        "ga": 64,
+        "pts": 67
+      },
+      {
+        "team": "Mansfield",
+        "p": 46,
+        "w": 16,
+        "d": 17,
+        "l": 13,
+        "gf": 62,
+        "ga": 50,
+        "pts": 65
+      },
+      {
+        "team": "Wycombe",
+        "p": 46,
+        "w": 17,
+        "d": 12,
+        "l": 17,
+        "gf": 69,
+        "ga": 58,
+        "pts": 63
+      },
+      {
+        "team": "Reading",
+        "p": 46,
+        "w": 16,
+        "d": 15,
+        "l": 15,
+        "gf": 64,
+        "ga": 60,
+        "pts": 63
+      },
+      {
+        "team": "Blackpool",
+        "p": 46,
+        "w": 17,
+        "d": 9,
+        "l": 20,
+        "gf": 54,
+        "ga": 65,
+        "pts": 60
+      },
+      {
+        "team": "Doncaster",
+        "p": 46,
+        "w": 17,
+        "d": 9,
+        "l": 20,
+        "gf": 50,
+        "ga": 69,
+        "pts": 60
+      },
+      {
+        "team": "Barnsley",
+        "p": 46,
+        "w": 15,
+        "d": 14,
+        "l": 17,
+        "gf": 68,
+        "ga": 73,
+        "pts": 59
+      },
+      {
+        "team": "Wigan",
+        "p": 46,
+        "w": 14,
+        "d": 14,
+        "l": 18,
+        "gf": 49,
+        "ga": 58,
+        "pts": 56
+      },
+      {
+        "team": "Burton",
+        "p": 46,
+        "w": 13,
+        "d": 15,
+        "l": 18,
+        "gf": 50,
+        "ga": 60,
+        "pts": 54
+      },
+      {
+        "team": "Peterboro",
+        "p": 46,
+        "w": 15,
+        "d": 8,
+        "l": 23,
+        "gf": 64,
+        "ga": 68,
+        "pts": 53
+      },
+      {
+        "team": "AFC Wimbledon",
+        "p": 46,
+        "w": 15,
+        "d": 8,
+        "l": 23,
+        "gf": 51,
+        "ga": 72,
+        "pts": 53
+      },
+      {
+        "team": "Leyton Orient",
+        "p": 46,
+        "w": 14,
+        "d": 10,
+        "l": 22,
+        "gf": 59,
+        "ga": 71,
+        "pts": 52
+      },
+      {
+        "team": "Exeter",
+        "p": 46,
+        "w": 12,
+        "d": 13,
+        "l": 21,
+        "gf": 52,
+        "ga": 61,
+        "pts": 49
+      },
+      {
+        "team": "Port Vale",
+        "p": 46,
+        "w": 10,
+        "d": 12,
+        "l": 24,
+        "gf": 36,
+        "ga": 61,
+        "pts": 42
+      },
+      {
+        "team": "Rotherham",
+        "p": 46,
+        "w": 10,
+        "d": 11,
+        "l": 25,
+        "gf": 41,
+        "ga": 71,
+        "pts": 41
+      },
+      {
+        "team": "Northampton",
+        "p": 46,
+        "w": 9,
+        "d": 8,
+        "l": 29,
+        "gf": 39,
+        "ga": 74,
+        "pts": 35
+      }
+    ],
+    "SP1": [
+      {
+        "team": "Barcelona",
+        "p": 38,
+        "w": 31,
+        "d": 1,
+        "l": 6,
+        "gf": 95,
+        "ga": 36,
+        "pts": 94
+      },
+      {
+        "team": "Real Madrid",
+        "p": 38,
+        "w": 27,
+        "d": 5,
+        "l": 6,
+        "gf": 77,
+        "ga": 35,
+        "pts": 86
+      },
+      {
+        "team": "Villarreal",
+        "p": 38,
+        "w": 22,
+        "d": 6,
+        "l": 10,
+        "gf": 72,
+        "ga": 46,
+        "pts": 72
+      },
+      {
+        "team": "Ath Madrid",
+        "p": 38,
+        "w": 21,
+        "d": 6,
+        "l": 11,
+        "gf": 62,
+        "ga": 44,
+        "pts": 69
+      },
+      {
+        "team": "Betis",
+        "p": 38,
+        "w": 15,
+        "d": 15,
+        "l": 8,
+        "gf": 59,
+        "ga": 48,
+        "pts": 60
+      },
+      {
+        "team": "Celta",
+        "p": 38,
+        "w": 14,
+        "d": 12,
+        "l": 12,
+        "gf": 53,
+        "ga": 48,
+        "pts": 54
+      },
+      {
+        "team": "Getafe",
+        "p": 38,
+        "w": 15,
+        "d": 6,
+        "l": 17,
+        "gf": 32,
+        "ga": 38,
+        "pts": 51
+      },
+      {
+        "team": "Vallecano",
+        "p": 38,
+        "w": 12,
+        "d": 14,
+        "l": 12,
+        "gf": 41,
+        "ga": 44,
+        "pts": 50
+      },
+      {
+        "team": "Valencia",
+        "p": 38,
+        "w": 13,
+        "d": 10,
+        "l": 15,
+        "gf": 46,
+        "ga": 55,
+        "pts": 49
+      },
+      {
+        "team": "Sociedad",
+        "p": 38,
+        "w": 11,
+        "d": 13,
+        "l": 14,
+        "gf": 59,
+        "ga": 61,
+        "pts": 46
+      },
+      {
+        "team": "Espanol",
+        "p": 38,
+        "w": 12,
+        "d": 10,
+        "l": 16,
+        "gf": 43,
+        "ga": 55,
+        "pts": 46
+      },
+      {
+        "team": "Ath Bilbao",
+        "p": 38,
+        "w": 13,
+        "d": 6,
+        "l": 19,
+        "gf": 43,
+        "ga": 58,
+        "pts": 45
+      },
+      {
+        "team": "Elche",
+        "p": 38,
+        "w": 10,
+        "d": 13,
+        "l": 15,
+        "gf": 49,
+        "ga": 57,
+        "pts": 43
+      },
+      {
+        "team": "Alaves",
+        "p": 38,
+        "w": 11,
+        "d": 10,
+        "l": 17,
+        "gf": 44,
+        "ga": 56,
+        "pts": 43
+      },
+      {
+        "team": "Sevilla",
+        "p": 38,
+        "w": 12,
+        "d": 7,
+        "l": 19,
+        "gf": 46,
+        "ga": 60,
+        "pts": 43
+      },
+      {
+        "team": "Osasuna",
+        "p": 38,
+        "w": 11,
+        "d": 9,
+        "l": 18,
+        "gf": 44,
+        "ga": 50,
+        "pts": 42
+      },
+      {
+        "team": "Mallorca",
+        "p": 38,
+        "w": 11,
+        "d": 9,
+        "l": 18,
+        "gf": 47,
+        "ga": 57,
+        "pts": 42
+      },
+      {
+        "team": "Levante",
+        "p": 38,
+        "w": 11,
+        "d": 9,
+        "l": 18,
+        "gf": 47,
+        "ga": 61,
+        "pts": 42
+      },
+      {
+        "team": "Girona",
+        "p": 38,
+        "w": 9,
+        "d": 14,
+        "l": 15,
+        "gf": 39,
+        "ga": 55,
+        "pts": 41
+      },
+      {
+        "team": "Oviedo",
+        "p": 38,
+        "w": 6,
+        "d": 11,
+        "l": 21,
+        "gf": 26,
+        "ga": 60,
+        "pts": 29
+      }
+    ]
+  }
 }

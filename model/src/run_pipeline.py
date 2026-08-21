@@ -36,6 +36,57 @@ DEFAULT_SEASONS = {d: ALL_SEASONS for d in
                    ("E0", "E1", "E2", "E3", "SP1", "SP2", "I1", "I2",
                     "D1", "F1")}
 
+SHORT_CODES = {"Man United": "MUN", "Man City": "CTY", "Liverpool": "LIV",
+               "Arsenal": "ARS", "Chelsea": "CHE", "Tottenham": "TOT",
+               "Sheffield Weds": "SHW", "Ath Madrid": "ATM",
+               "Real Madrid": "RMA", "Barcelona": "BAR",
+               "Vallecano": "RAY", "Newcastle": "NEW"}
+
+
+def short_code(team):
+    return SHORT_CODES.get(team, "".join(
+        c for c in team.upper() if c.isalpha())[:3])
+
+
+def league_table(div, season="2526"):
+    """Live league standings from the free current-season results CSV."""
+    import csv as _csv
+    import io as _io
+    import requests
+    r = requests.get(
+        f"https://www.football-data.co.uk/mmz4281/{season}/{div}.csv",
+        timeout=60, headers={"User-Agent": "VendicatorModel/0.1"})
+    r.raise_for_status()
+    table = {}
+    for row in _csv.DictReader(_io.StringIO(
+            r.content.decode("utf-8-sig", errors="ignore"))):
+        try:
+            hg, ag = int(row["FTHG"]), int(row["FTAG"])
+        except (KeyError, ValueError):
+            continue
+        for team, gf, ga in ((row["HomeTeam"], hg, ag),
+                             (row["AwayTeam"], ag, hg)):
+            e = table.setdefault(team, {"team": team, "p": 0, "w": 0, "d": 0,
+                                        "l": 0, "gf": 0, "ga": 0, "pts": 0})
+            e["p"] += 1
+            e["gf"] += gf
+            e["ga"] += ga
+            if gf > ga:
+                e["w"] += 1
+                e["pts"] += 3
+            elif gf == ga:
+                e["d"] += 1
+                e["pts"] += 1
+            else:
+                e["l"] += 1
+    return sorted(table.values(),
+                  key=lambda e: (-e["pts"], -(e["gf"] - e["ga"]), -e["gf"]))
+
+
+ODDS_BOOKS = [("Bet365", "B365"), ("Betfair", "BFD"), ("BetVictor", "BV"),
+              ("Betway", "BW"), ("Paddy Power", "PP"), ("SkyBet", "SKB"),
+              ("Betfair Exchange", "BFE"), ("Market Max", "Max")]
+
 # fixtures.csv name variants -> historical results-CSV names
 FIXTURES_ALIASES = {
     "Atl. Madrid": "Ath Madrid", "Atl. Bilbao": "Ath Bilbao",
@@ -334,10 +385,35 @@ def fixture_payload(models, stack, stack_nm, tab, draw_head, df, fx, league):
     else:
         final = stack_nm.predict_proba(base,
                                        context=p_draw.reshape(-1, 1))[0]
+    p_home_scores = float(1 - grid[0, :].sum())
+    p_away_scores = float(1 - grid[:, 0].sum())
+    best_side = "home" if p_home_scores >= p_away_scores else "away"
+    odds_board = {}
+    for okey, suffix in (("home", "H"), ("draw", "D"), ("away", "A")):
+        prices = []
+        for label, prefix in ODDS_BOOKS:
+            try:
+                v = float(fx.get(prefix + suffix) or 0)
+                if v > 1:
+                    prices.append({"book": label, "odds": v})
+            except (TypeError, ValueError):
+                pass
+        odds_board[okey] = sorted(prices,
+                                  key=lambda x: -x["odds"])[:3]
     return {
         "league": league,
         "kickoff": f"{fx.get('Date', '')} {fx.get('Time', '')}".strip(),
         "fixture": f"{home} vs {away}",
+        "short": f"{short_code(home)} Vs {short_code(away)}",
+        "team_to_score": {
+            "home_pct": round(p_home_scores * 100, 1),
+            "away_pct": round(p_away_scores * 100, 1),
+            "best": best_side,
+            "best_team": home if best_side == "home" else away,
+            "fair_odds": {
+                "home": round(1 / max(p_home_scores, 1e-6), 2),
+                "away": round(1 / max(p_away_scores, 1e-6), 2)}},
+        "odds_board": {k: v for k, v in odds_board.items() if v} or None,
         "expected_goals": {"home": round(lam, 2), "away": round(mu, 2)},
         "final_calibrated": as_percentages(
             {"home": float(final[0]), "draw": float(final[1]),
@@ -393,8 +469,14 @@ def predict_upcoming(push=True):
                 kickoff=p["kickoff"],
                 difficulty=p["reward_difficulty_multiplier"])
             print(f"  {p['fixture']}: {p['final_calibrated']}")
+    tables = {}
+    for div in by_div:
+        try:
+            tables[div] = league_table(div)
+        except Exception as e:
+            print(f"table {div}: {str(e)[:60]}")
     payload = {"generated": datetime.now(timezone.utc).isoformat(),
-               "fixtures": out_fixtures}
+               "fixtures": out_fixtures, "tables": tables}
     OUTPUT.write_text(json.dumps(payload, indent=2))
     print(f"\n{len(out_fixtures)} predictions -> {OUTPUT}")
     if push and out_fixtures:
