@@ -5,3 +5,6 @@ node_modules/
 .DS_Store
 *.log
 model/output/cache/
+
+# chat exports contain pasted credentials - keep local
+docs/exports/
