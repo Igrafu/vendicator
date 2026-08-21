@@ -400,6 +400,30 @@ font-variant-numeric:tabular-nums;}
 box-shadow:0 0 18px rgba(198,255,77,.22);}
 .vd-opt.on .vd-opt-label{font-weight:700;}
 .vd-subhead{margin:12px 0 6px;color:var(--lime);font-weight:700;font-size:12.5px;}
+.vd-cardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+gap:14px;}
+.vd-gcard{position:relative;display:flex;flex-direction:column;gap:6px;
+text-decoration:none;color:var(--white);border:1px solid var(--edge);
+border-radius:14px;padding:14px;background:rgba(255,255,255,.05);
+transition:transform .14s,box-shadow .14s,border-color .14s;}
+.vd-gcard:hover{transform:translateY(-3px);border-color:rgba(198,255,77,.6);
+box-shadow:0 0 26px rgba(198,255,77,.22);z-index:50;}
+.vd-gcard.silver{border-color:rgba(203,213,225,.55);
+box-shadow:0 0 18px rgba(203,213,225,.18);}
+.vd-gcard.gold{border-color:rgba(255,196,84,.6);
+box-shadow:0 0 20px rgba(255,196,84,.25);}
+.vd-gcode{font-weight:800;letter-spacing:2px;color:var(--lime);font-size:13px;}
+.vd-gname{font-size:13.5px;}
+.vd-gkick{color:var(--muted);font-size:11.5px;}
+.vd-gbar{display:flex;height:7px;border-radius:5px;overflow:hidden;margin-top:4px;}
+.vd-gbar .h{background:var(--lime);}
+.vd-gbar .d{background:#3A414D;}
+.vd-gbar .a{background:var(--mint);}
+.vd-ghover{display:none;position:absolute;left:0;top:100%;z-index:120;width:250px;
+background:rgba(16,19,25,.98);border:1px solid rgba(198,255,77,.45);
+border-radius:12px;padding:12px 14px;font-size:12.5px;line-height:1.55;
+box-shadow:0 0 30px rgba(198,255,77,.2);backdrop-filter:blur(12px);}
+.vd-gcard:hover .vd-ghover{display:block;}
 .vd-pcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:14px;}
 .vd-pcol h4{margin:0 0 8px;font-size:11.5px;letter-spacing:1.5px;
@@ -1206,6 +1230,75 @@ add_shortcode('vendicator_compare', function () {
     }
     $out .= vendicator_render_fixture($found, $allowed, $sel);
     return $out . '</div></div>' . vendicator_dashboard_js($p);
+});
+
+add_shortcode('vendicator_cardgrid', function () {
+    if (!is_user_logged_in()) {
+        return '<div class="vd-wrap"><div class="vd-inner"><div class="vd-card"><p>Please '
+            . '<a class="vd-btn" href="' . esc_url(vendicator_page_url('login'))
+            . '">log in</a>.</p></div></div></div>';
+    }
+    $p = get_option('vendicator_predictions');
+    $uid = get_current_user_id();
+    $tier = vendicator_user_tier($uid);
+    $shine = in_array($tier, array('gold'), true) ? ' gold'
+        : (in_array($tier, array('silver'), true) ? ' silver' : '');
+    $cat = vendicator_league_catalogue();
+    $cutoff = strtotime('+3 days');
+    $byleague = array();
+    foreach ((array) (isset($p['fixtures']) ? $p['fixtures'] : array()) as $fx) {
+        $ts = null;
+        if (!empty($fx['kickoff'])
+            && preg_match('#(\d+)/(\d+)/(\d+)\s+(\d+):(\d+)#', $fx['kickoff'], $m)) {
+            $ts = mktime((int) $m[4], (int) $m[5], 0, (int) $m[2], (int) $m[1], (int) $m[3]);
+        }
+        if ($ts && $ts > $cutoff) { continue; }
+        $fx['_ts'] = $ts;
+        $byleague[$fx['league']][] = $fx;
+    }
+    $out = '<div class="vd-wrap"><div class="vd-inner">' . vendicator_nav('')
+        . '<div class="vd-card"><h2 style="margin:0 0 4px;">'
+        . '<span class="vd-mascot">&#127918;</span> CardGrid</h2>'
+        . '<p class="vd-muted" style="margin:0;">Every card kicking off in the next '
+        . 'three days, grouped by competition. Cards leave the grid when their match '
+        . 'starts &mdash; unless you have them locked in.</p>'
+        . '<p style="margin:10px 0 0;"><span class="vd-pill">&#128274; Live in-play '
+        . 'betting &mdash; coming soon for higher tiers</span></p></div>';
+    if (!$byleague) {
+        $out .= '<div class="vd-card"><p class="vd-muted">No cards kicking off in the '
+            . 'next three days. Check the predictions page for the full list.</p></div>';
+    }
+    foreach ($byleague as $lg => $fxs) {
+        usort($fxs, function ($a, $b) { return ($a['_ts'] ?: 0) <=> ($b['_ts'] ?: 0); });
+        $out .= '<div class="vd-card"><h3>' . esc_html(isset($cat[$lg]) ? $cat[$lg][0] : $lg)
+            . ' <span class="vd-muted">(' . count($fxs) . ')</span></h3>'
+            . '<div class="vd-cardgrid">';
+        foreach ($fxs as $fx) {
+            $f = $fx['final_calibrated'];
+            $sl = isset($fx['scoreline']) ? $fx['scoreline']['headline'] : null;
+            $out .= '<a class="vd-gcard' . $shine . '" href="'
+                . esc_url(add_query_arg('fx', rawurlencode($fx['fixture']),
+                    vendicator_page_url('compare'))) . '">'
+                . '<span class="vd-gcode">' . esc_html($fx['short']) . '</span>'
+                . '<span class="vd-gname">' . esc_html($fx['fixture']) . '</span>'
+                . '<span class="vd-gkick">' . esc_html($fx['kickoff'])
+                . (isset($fx['gameweek']) && $fx['gameweek']
+                    ? ' &middot; GW' . (int) $fx['gameweek'] : '') . '</span>'
+                . '<span class="vd-gbar"><i class="h" style="flex:' . floatval($f['home'])
+                . '"></i><i class="d" style="flex:' . floatval($f['draw'])
+                . '"></i><i class="a" style="flex:' . floatval($f['away']) . '"></i></span>'
+                . '<span class="vd-ghover"><b>' . esc_html($fx['fixture']) . '</b><br>'
+                . 'Home ' . floatval($f['home']) . '% &middot; Draw ' . floatval($f['draw'])
+                . '% &middot; Away ' . floatval($f['away']) . '%<br>'
+                . 'Expected goals ' . esc_html($fx['expected_goals']['home']) . ' - '
+                . esc_html($fx['expected_goals']['away'])
+                . ($sl ? '<br>Vendicator Scoreline <b>' . esc_html($sl) . '</b>' : '')
+                . '<br>Difficulty x' . esc_html($fx['reward_difficulty_multiplier'])
+                . '<br><br>Click to open the full card</span></a>';
+        }
+        $out .= '</div></div>';
+    }
+    return $out . '</div></div>' . vendicator_dashboard_js($p ? $p : array());
 });
 
 add_shortcode('vendicator_help', function () {
