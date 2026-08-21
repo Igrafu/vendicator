@@ -102,17 +102,24 @@ def markets_from_grid(grid):
         totals[f"over_{line}"] = float(over)
         totals[f"under_{line}"] = float(1 - over)
     btts_yes = float(grid[1:, 1:].sum())
-    top_scores = sorted(
+    ranked = sorted(
         ((f"{i}-{j}", float(grid[i, j]))
          for i in range(7) for j in range(7)),
-        key=lambda kv: kv[1], reverse=True)[:10]
+        key=lambda kv: kv[1], reverse=True)
+    # a clean sheet is simply the opponent failing to score
+    home_cs = float(grid[:, 0].sum())
+    away_cs = float(grid[0, :].sum())
     return {
         "1x2": {"home": home, "draw": draw, "away": away},
         "double_chance": {"1x": home + draw, "12": home + away,
                           "x2": draw + away},
         "btts": {"yes": btts_yes, "no": 1 - btts_yes},
+        "clean_sheet": {"home": home_cs, "away": away_cs},
         "totals": totals,
-        "exact_score_top10": top_scores,
+        "exact_score_top10": ranked[:10],
+        # a deeper board so the exact-score market offers a real range
+        # rather than ten near-identical favourites
+        "exact_score_board": [kv for kv in ranked[:28] if kv[1] > 0.004],
     }
 
 

@@ -511,6 +511,22 @@ def fixture_payload(models, stack, stack_nm, tab, draw_head, df, fx, league):
         odds_board[okey] = sorted(prices,
                                   key=lambda x: -x["odds"])[:3]
     ch, ca = canonical(home), canonical(away)
+    # VScore: the engine's single best scoreline call. The most likely cell
+    # of the Dixon-Coles grid, reported with how far clear of the runner-up
+    # it is, so a 2-1 the model barely prefers is not passed off as a 2-1 it
+    # is confident about.
+    board = markets["exact_score_board"]
+    top, second = board[0], (board[1] if len(board) > 1 else (None, 0.0))
+    vs_home, vs_away = (int(x) for x in top[0].split("-"))
+    edge = (top[1] - second[1]) * 100
+    vscore = {
+        "home": vs_home, "away": vs_away, "score": top[0],
+        "pct": round(top[1] * 100, 1),
+        "edge": round(edge, 1),
+        "confidence": ("high" if edge >= 3.0 else
+                       "medium" if edge >= 1.0 else "low"),
+        "runner_up": second[0],
+    }
     return {
         "league": league,
         "kickoff": f"{fx.get('Date', '')} {fx.get('Time', '')}".strip(),
@@ -534,6 +550,7 @@ def fixture_payload(models, stack, stack_nm, tab, draw_head, df, fx, league):
              "away": float(final[2])}),
         "markets_dixon_coles": as_percentages(markets),
         "markets_halves": as_percentages(half_markets(lam, mu)),
+        "vscore": vscore,
         "uncertainty_band_home_pct": [round(x * 100, 1)
                                       for x in bp["home_ci90"]],
         "reward_difficulty_multiplier": bayes.difficulty_multiplier(home,

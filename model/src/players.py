@@ -143,6 +143,12 @@ def position_detail(raw):
     return group, " / ".join(dict.fromkeys(named))
 
 
+# Probabilities worth printing as a selection. Anything longer than roughly
+# 60/1 is not a market, it is a lottery ticket, and the points system is
+# meant to be hard to farm rather than hard to believe.
+LIVE_BAND = (1.6, 95.0)
+
+
 def _tail(lmbda, k):
     """P(at least k) for a Poisson rate, as a percentage."""
     return round(float(poisson.sf(k - 1, max(lmbda, 1e-6))) * 100, 1)
@@ -168,15 +174,17 @@ def market_lines(p):
     yellow, red = rate("yellow_cards"), rate("red_cards")
     out = {
         "score": [{"line": k, "label": f"{k}+ goal" + ("s" if k > 1 else ""),
-                   "pct": _tail(goals, k)} for k in (1, 2, 3)],
+                   "pct": _tail(goals, k)} for k in (1, 2, 3, 4)],
         "assist": [{"line": k, "label": f"{k}+ assist" + ("s" if k > 1 else ""),
-                    "pct": _tail(assists, k)} for k in (1, 2)],
+                    "pct": _tail(assists, k)} for k in (1, 2, 3)],
         "score_or_assist": [{"line": 1, "label": "Goal or assist",
-                             "pct": _tail(goals + assists, 1)}],
+                             "pct": _tail(goals + assists, 1)},
+                            {"line": 2, "label": "2+ goals or assists",
+                             "pct": _tail(goals + assists, 2)}],
         "key_passes": [{"line": k, "label": f"{k}+ key passes",
-                        "pct": _tail(keyp, k)} for k in (1, 2, 3, 4)],
+                        "pct": _tail(keyp, k)} for k in range(1, 8)],
         "tackles": [{"line": k, "label": f"{k}+ tackles",
-                     "pct": _tail(tackles, k)} for k in (1, 2, 3, 4)],
+                     "pct": _tail(tackles, k)} for k in range(1, 8)],
         "yellow_card": [{"line": 1, "label": "To be booked",
                          "pct": _tail(yellow, 1)},
                         {"line": 0, "label": "Not booked",
@@ -184,9 +192,11 @@ def market_lines(p):
         "red_card": [{"line": 1, "label": "To be sent off",
                       "pct": max(_tail(red, 1), 0.4)}],
     }
-    # drop dead lines - anything the fixture cannot realistically reach
-    return {m: [ln for ln in lines if 0.4 <= ln["pct"] <= 97.0] or lines[:1]
-            for m, lines in out.items()}
+    # Drop dead lines. The floor is deliberately not near-zero: a 0.3% line
+    # is not a selection a bookmaker would print, and offering it only
+    # invites members to farm the longest price on the board.
+    return {m: [ln for ln in lines if LIVE_BAND[0] <= ln["pct"] <= LIVE_BAND[1]]
+            or lines[:1] for m, lines in out.items()}
 
 
 def _defensive_actions(p):

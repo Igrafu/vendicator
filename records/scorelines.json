@@ -13,7 +13,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.04,
+    "down_rating": 3.4,
+    "settled_calls": 0
+   }
   },
   "Manchester United": {
    "total": 52.3,
@@ -28,7 +35,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.43,
+    "down_rating": 4.79,
+    "settled_calls": 0
+   }
   },
   "Everton": {
    "total": 42.3,
@@ -43,7 +57,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.43,
+    "down_rating": 3.79,
+    "settled_calls": 0
+   }
   },
   "Crystal Palace": {
    "total": 38.4,
@@ -58,7 +79,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.04,
+    "down_rating": 3.4,
+    "settled_calls": 0
+   }
   },
   "Ipswich Town": {
    "total": 42.9,
@@ -73,7 +101,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.49,
+    "down_rating": 3.85,
+    "settled_calls": 0
+   }
   },
   "Sunderland": {
    "total": 42.3,
@@ -88,7 +123,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.43,
+    "down_rating": 3.79,
+    "settled_calls": 0
+   }
   },
   "Nottingham Forest": {
    "total": 41.4,
@@ -103,7 +145,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.34,
+    "down_rating": 3.7,
+    "settled_calls": 0
+   }
   },
   "Leeds United": {
    "total": 38.9,
@@ -118,7 +167,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.09,
+    "down_rating": 3.45,
+    "settled_calls": 0
+   }
   },
   "Brentford": {
    "total": 43.2,
@@ -133,7 +189,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.52,
+    "down_rating": 3.88,
+    "settled_calls": 0
+   }
   },
   "Tottenham Hotspur": {
    "total": 37.7,
@@ -148,7 +211,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.97,
+    "down_rating": 3.33,
+    "settled_calls": 0
+   }
   },
   "Brighton & Hove Albion": {
    "total": 43.6,
@@ -163,7 +233,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.56,
+    "down_rating": 3.92,
+    "settled_calls": 0
+   }
   },
   "Aston Villa": {
    "total": 43.2,
@@ -178,7 +255,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.52,
+    "down_rating": 3.88,
+    "settled_calls": 0
+   }
   },
   "Manchester City": {
    "total": 53.3,
@@ -193,7 +277,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.53,
+    "down_rating": 4.89,
+    "settled_calls": 0
+   }
   },
   "Bournemouth": {
    "total": 39.4,
@@ -208,7 +299,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.14,
+    "down_rating": 3.5,
+    "settled_calls": 0
+   }
   },
   "Newcastle United": {
    "total": 39.8,
@@ -223,7 +321,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.18,
+    "down_rating": 3.54,
+    "settled_calls": 0
+   }
   },
   "Liverpool": {
    "total": 45.5,
@@ -238,7 +343,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.75,
+    "down_rating": 4.11,
+    "settled_calls": 0
+   }
   },
   "Fulham": {
    "total": 40.1,
@@ -253,7 +365,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.21,
+    "down_rating": 3.57,
+    "settled_calls": 0
+   }
   },
   "Chelsea": {
    "total": 43.8,
@@ -268,7 +387,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.58,
+    "down_rating": 3.94,
+    "settled_calls": 0
+   }
   },
   "Birmingham City": {
    "total": 43.1,
@@ -283,7 +409,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.51,
+    "down_rating": 3.87,
+    "settled_calls": 0
+   }
   },
   "Bristol City": {
    "total": 23.5,
@@ -298,7 +431,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.55,
+    "down_rating": 1.91,
+    "settled_calls": 0
+   }
   },
   "Millwall": {
    "total": 58.1,
@@ -313,7 +453,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.01,
+    "down_rating": 5.37,
+    "settled_calls": 0
+   }
   },
   "Norwich City": {
    "total": 28.4,
@@ -328,7 +475,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.04,
+    "down_rating": 2.4,
+    "settled_calls": 0
+   }
   },
   "Blackburn Rovers": {
    "total": 36.4,
@@ -343,7 +497,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.84,
+    "down_rating": 3.2,
+    "settled_calls": 0
+   }
   },
   "Middlesbrough": {
    "total": 55.0,
@@ -358,7 +519,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.7,
+    "down_rating": 5.06,
+    "settled_calls": 0
+   }
   },
   "Derby County": {
    "total": 31.2,
@@ -373,7 +541,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.32,
+    "down_rating": 2.68,
+    "settled_calls": 0
+   }
   },
   "Cardiff City": {
    "total": 37.7,
@@ -388,7 +563,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.97,
+    "down_rating": 3.33,
+    "settled_calls": 0
+   }
   },
   "Preston North End": {
    "total": 26.3,
@@ -403,7 +585,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.83,
+    "down_rating": 2.19,
+    "settled_calls": 0
+   }
   },
   "Wolverhampton Wanderers": {
    "total": 39.6,
@@ -418,7 +607,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.16,
+    "down_rating": 3.52,
+    "settled_calls": 0
+   }
   },
   "Queens Park Rangers": {
    "total": 60.0,
@@ -433,7 +629,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.2,
+    "down_rating": 5.56,
+    "settled_calls": 0
+   }
   },
   "Bolton": {
    "total": 52.8,
@@ -448,7 +651,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.48,
+    "down_rating": 4.84,
+    "settled_calls": 0
+   }
   },
   "Southampton": {
    "total": 34.9,
@@ -463,7 +673,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.69,
+    "down_rating": 3.05,
+    "settled_calls": 0
+   }
   },
   "Stoke City": {
    "total": 26.1,
@@ -478,7 +695,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.81,
+    "down_rating": 2.17,
+    "settled_calls": 0
+   }
   },
   "Swansea City": {
    "total": 54.6,
@@ -493,7 +717,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.66,
+    "down_rating": 5.02,
+    "settled_calls": 0
+   }
   },
   "Sheffield United": {
    "total": 38.5,
@@ -508,7 +739,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.05,
+    "down_rating": 3.41,
+    "settled_calls": 0
+   }
   },
   "Wrexham": {
    "total": 40.9,
@@ -523,7 +761,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.29,
+    "down_rating": 3.65,
+    "settled_calls": 0
+   }
   },
   "Watford": {
    "total": 53.2,
@@ -538,7 +783,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.52,
+    "down_rating": 4.88,
+    "settled_calls": 0
+   }
   },
   "West Bromwich Albion": {
    "total": 54.5,
@@ -553,7 +805,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.65,
+    "down_rating": 5.01,
+    "settled_calls": 0
+   }
   },
   "Burnley": {
    "total": 36.9,
@@ -568,7 +827,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.89,
+    "down_rating": 3.25,
+    "settled_calls": 0
+   }
   },
   "Doncaster": {
    "total": 31.8,
@@ -583,7 +849,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.38,
+    "down_rating": 2.74,
+    "settled_calls": 0
+   }
   },
   "Barnsley": {
    "total": 28.7,
@@ -598,7 +871,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.07,
+    "down_rating": 2.43,
+    "settled_calls": 0
+   }
   },
   "AFC Wimbledon": {
    "total": 27.0,
@@ -613,7 +893,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.9,
+    "down_rating": 2.26,
+    "settled_calls": 0
+   }
   },
   "Reading": {
    "total": 30.2,
@@ -628,7 +915,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.22,
+    "down_rating": 2.58,
+    "settled_calls": 0
+   }
   },
   "Milton Keynes Dons": {
    "total": 40.0,
@@ -643,7 +937,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.2,
+    "down_rating": 3.56,
+    "settled_calls": 0
+   }
   },
   "Huddersfield": {
    "total": 57.1,
@@ -658,7 +959,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.91,
+    "down_rating": 5.27,
+    "settled_calls": 0
+   }
   },
   "Peterboro": {
    "total": 26.7,
@@ -673,7 +981,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.87,
+    "down_rating": 2.23,
+    "settled_calls": 0
+   }
   },
   "Mansfield": {
    "total": 54.7,
@@ -688,7 +1003,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.67,
+    "down_rating": 5.03,
+    "settled_calls": 0
+   }
   },
   "Stevenage": {
    "total": 40.4,
@@ -703,7 +1025,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.24,
+    "down_rating": 3.6,
+    "settled_calls": 0
+   }
   },
   "Oxford United": {
    "total": 38.2,
@@ -718,7 +1047,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.02,
+    "down_rating": 3.38,
+    "settled_calls": 0
+   }
   },
   "Stockport": {
    "total": 60.8,
@@ -733,7 +1069,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.28,
+    "down_rating": 5.64,
+    "settled_calls": 0
+   }
   },
   "Blackpool": {
    "total": 35.7,
@@ -748,7 +1091,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.77,
+    "down_rating": 3.13,
+    "settled_calls": 0
+   }
   },
   "Wigan": {
    "total": 31.8,
@@ -763,7 +1113,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.38,
+    "down_rating": 2.74,
+    "settled_calls": 0
+   }
   },
   "Leyton Orient": {
    "total": 28.7,
@@ -778,7 +1135,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.07,
+    "down_rating": 2.43,
+    "settled_calls": 0
+   }
   },
   "Wycombe": {
    "total": 39.8,
@@ -793,7 +1157,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.18,
+    "down_rating": 3.54,
+    "settled_calls": 0
+   }
   },
   "Plymouth": {
    "total": 26.1,
@@ -808,7 +1179,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.81,
+    "down_rating": 2.17,
+    "settled_calls": 0
+   }
   },
   "Bristol Rvs": {
    "total": 31.8,
@@ -823,7 +1201,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.38,
+    "down_rating": 2.74,
+    "settled_calls": 0
+   }
   },
   "Newport County": {
    "total": 54.7,
@@ -838,7 +1223,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.67,
+    "down_rating": 5.03,
+    "settled_calls": 0
+   }
   },
   "Salford": {
    "total": 27.0,
@@ -853,7 +1245,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.9,
+    "down_rating": 2.26,
+    "settled_calls": 0
+   }
   },
   "Chesterfield": {
    "total": 29.3,
@@ -868,7 +1267,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.13,
+    "down_rating": 2.49,
+    "settled_calls": 0
+   }
   },
   "Walsall": {
    "total": 55.3,
@@ -883,7 +1289,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.73,
+    "down_rating": 5.09,
+    "settled_calls": 0
+   }
   },
   "Grimsby": {
    "total": 56.1,
@@ -898,7 +1311,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.81,
+    "down_rating": 5.17,
+    "settled_calls": 0
+   }
   },
   "Colchester": {
    "total": 38.4,
@@ -913,7 +1333,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.04,
+    "down_rating": 3.4,
+    "settled_calls": 0
+   }
   },
   "Oldham": {
    "total": 57.2,
@@ -928,7 +1355,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.92,
+    "down_rating": 5.28,
+    "settled_calls": 0
+   }
   },
   "Crewe": {
    "total": 54.5,
@@ -943,7 +1377,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.65,
+    "down_rating": 5.01,
+    "settled_calls": 0
+   }
   },
   "Northampton": {
    "total": 38.5,
@@ -958,7 +1399,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.05,
+    "down_rating": 3.41,
+    "settled_calls": 0
+   }
   },
   "Exeter": {
    "total": 31.2,
@@ -973,7 +1421,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.32,
+    "down_rating": 2.68,
+    "settled_calls": 0
+   }
   },
   "Accrington": {
    "total": 36.8,
@@ -988,7 +1443,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.88,
+    "down_rating": 3.24,
+    "settled_calls": 0
+   }
   },
   "Fleetwood Town": {
    "total": 55.3,
@@ -1003,7 +1465,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.73,
+    "down_rating": 5.09,
+    "settled_calls": 0
+   }
   },
   "Gillingham": {
    "total": 26.2,
@@ -1018,7 +1487,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.82,
+    "down_rating": 2.18,
+    "settled_calls": 0
+   }
   },
   "Port Vale": {
    "total": 30.6,
@@ -1033,7 +1509,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.26,
+    "down_rating": 2.62,
+    "settled_calls": 0
+   }
   },
   "Tranmere": {
    "total": 53.3,
@@ -1048,7 +1531,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.53,
+    "down_rating": 4.89,
+    "settled_calls": 0
+   }
   },
   "Rochdale": {
    "total": 27.8,
@@ -1063,7 +1553,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.98,
+    "down_rating": 2.34,
+    "settled_calls": 0
+   }
   },
   "Crawley Town": {
    "total": 28.7,
@@ -1078,7 +1575,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.07,
+    "down_rating": 2.43,
+    "settled_calls": 0
+   }
   },
   "Shrewsbury": {
    "total": 25.0,
@@ -1093,7 +1597,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.7,
+    "down_rating": 2.06,
+    "settled_calls": 0
+   }
   },
   "Barnet": {
    "total": 58.3,
@@ -1108,7 +1619,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.03,
+    "down_rating": 5.39,
+    "settled_calls": 0
+   }
   },
   "Swindon": {
    "total": 39.6,
@@ -1123,7 +1641,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.16,
+    "down_rating": 3.52,
+    "settled_calls": 0
+   }
   },
   "Cheltenham": {
    "total": 53.7,
@@ -1138,7 +1663,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.57,
+    "down_rating": 4.93,
+    "settled_calls": 0
+   }
   },
   "Marseille": {
    "total": 47.3,
@@ -1153,7 +1685,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.93,
+    "down_rating": 4.29,
+    "settled_calls": 0
+   }
   },
   "Strasbourg": {
    "total": 41.8,
@@ -1168,7 +1707,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.38,
+    "down_rating": 3.74,
+    "settled_calls": 0
+   }
   },
   "Lens": {
    "total": 53.2,
@@ -1183,7 +1729,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.52,
+    "down_rating": 4.88,
+    "settled_calls": 0
+   }
   },
   "Auxerre": {
    "total": 35.1,
@@ -1198,7 +1751,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.71,
+    "down_rating": 3.07,
+    "settled_calls": 0
+   }
   },
   "Nice": {
    "total": 38.2,
@@ -1213,7 +1773,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.02,
+    "down_rating": 3.38,
+    "settled_calls": 0
+   }
   },
   "Lorient": {
    "total": 38.8,
@@ -1228,7 +1795,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.08,
+    "down_rating": 3.44,
+    "settled_calls": 0
+   }
   },
   "Toulouse": {
    "total": 39.6,
@@ -1243,7 +1817,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.16,
+    "down_rating": 3.52,
+    "settled_calls": 0
+   }
   },
   "Lyon": {
    "total": 47.0,
@@ -1258,7 +1839,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.9,
+    "down_rating": 4.26,
+    "settled_calls": 0
+   }
   },
   "Troyes": {
    "total": 39.9,
@@ -1273,7 +1861,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.19,
+    "down_rating": 3.55,
+    "settled_calls": 0
+   }
   },
   "Paris FC": {
    "total": 42.2,
@@ -1288,7 +1883,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.42,
+    "down_rating": 3.78,
+    "settled_calls": 0
+   }
   },
   "Angers": {
    "total": 34.4,
@@ -1303,7 +1905,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.64,
+    "down_rating": 3.0,
+    "settled_calls": 0
+   }
   },
   "Lille": {
    "total": 48.0,
@@ -1318,7 +1927,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.0,
+    "down_rating": 4.36,
+    "settled_calls": 0
+   }
   },
   "Le Havre": {
    "total": 35.1,
@@ -1333,7 +1949,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.71,
+    "down_rating": 3.07,
+    "settled_calls": 0
+   }
   },
   "Monaco": {
    "total": 46.8,
@@ -1348,7 +1971,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.88,
+    "down_rating": 4.24,
+    "settled_calls": 0
+   }
   },
   "Paris Saint-Germain": {
    "total": 55.7,
@@ -1363,7 +1993,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.77,
+    "down_rating": 5.13,
+    "settled_calls": 0
+   }
   },
   "Rennes": {
    "total": 41.4,
@@ -1378,7 +2015,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.34,
+    "down_rating": 3.7,
+    "settled_calls": 0
+   }
   },
   "Inter Milan": {
    "total": 62.4,
@@ -1393,7 +2037,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.44,
+    "down_rating": 5.8,
+    "settled_calls": 0
+   }
   },
   "Monza": {
    "total": 36.5,
@@ -1408,7 +2059,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.85,
+    "down_rating": 3.21,
+    "settled_calls": 0
+   }
   },
   "Udinese": {
    "total": 37.9,
@@ -1423,7 +2081,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.99,
+    "down_rating": 3.35,
+    "settled_calls": 0
+   }
   },
   "Como": {
    "total": 49.7,
@@ -1438,7 +2103,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.17,
+    "down_rating": 4.53,
+    "settled_calls": 0
+   }
   },
   "Genoa": {
    "total": 36.0,
@@ -1453,7 +2125,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.8,
+    "down_rating": 3.16,
+    "settled_calls": 0
+   }
   },
   "Napoli": {
    "total": 50.0,
@@ -1468,7 +2147,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.2,
+    "down_rating": 4.56,
+    "settled_calls": 0
+   }
   },
   "Parma": {
    "total": 40.0,
@@ -1483,7 +2169,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.2,
+    "down_rating": 3.56,
+    "settled_calls": 0
+   }
   },
   "Cagliari": {
    "total": 36.7,
@@ -1498,7 +2191,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.87,
+    "down_rating": 3.23,
+    "settled_calls": 0
+   }
   },
   "Frosinone": {
    "total": 36.2,
@@ -1513,7 +2213,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.82,
+    "down_rating": 3.18,
+    "settled_calls": 0
+   }
   },
   "Juventus": {
    "total": 51.7,
@@ -1528,7 +2235,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.37,
+    "down_rating": 4.73,
+    "settled_calls": 0
+   }
   },
   "Venezia": {
    "total": 43.4,
@@ -1543,7 +2257,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.54,
+    "down_rating": 3.9,
+    "settled_calls": 0
+   }
   },
   "Lecce": {
    "total": 35.5,
@@ -1558,7 +2279,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.75,
+    "down_rating": 3.11,
+    "settled_calls": 0
+   }
   },
   "Atalanta": {
    "total": 51.0,
@@ -1573,7 +2301,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.3,
+    "down_rating": 4.66,
+    "settled_calls": 0
+   }
   },
   "Sassuolo": {
    "total": 35.4,
@@ -1588,7 +2323,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.74,
+    "down_rating": 3.1,
+    "settled_calls": 0
+   }
   },
   "Torino": {
    "total": 36.0,
@@ -1603,7 +2345,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.8,
+    "down_rating": 3.16,
+    "settled_calls": 0
+   }
   },
   "AC Milan": {
    "total": 48.3,
@@ -1618,7 +2367,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.03,
+    "down_rating": 4.39,
+    "settled_calls": 0
+   }
   },
   "Bologna": {
    "total": 43.7,
@@ -1633,7 +2389,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.57,
+    "down_rating": 3.93,
+    "settled_calls": 0
+   }
   },
   "Lazio": {
    "total": 39.6,
@@ -1648,7 +2411,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.16,
+    "down_rating": 3.52,
+    "settled_calls": 0
+   }
   },
   "AS Roma": {
    "total": 53.1,
@@ -1663,7 +2433,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.51,
+    "down_rating": 4.87,
+    "settled_calls": 0
+   }
   },
   "Fiorentina": {
    "total": 33.7,
@@ -1678,7 +2455,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.57,
+    "down_rating": 2.93,
+    "settled_calls": 0
+   }
   },
   "Vicenza": {
    "total": 41.2,
@@ -1693,7 +2477,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.32,
+    "down_rating": 3.68,
+    "settled_calls": 0
+   }
   },
   "Catanzaro": {
    "total": 42.9,
@@ -1708,7 +2499,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.49,
+    "down_rating": 3.85,
+    "settled_calls": 0
+   }
   },
   "Carrarese": {
    "total": 39.6,
@@ -1723,7 +2521,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.16,
+    "down_rating": 3.52,
+    "settled_calls": 0
+   }
   },
   "Mantova": {
    "total": 40.2,
@@ -1738,7 +2543,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.22,
+    "down_rating": 3.58,
+    "settled_calls": 0
+   }
   },
   "Sudtirol": {
    "total": 39.5,
@@ -1753,7 +2565,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.15,
+    "down_rating": 3.51,
+    "settled_calls": 0
+   }
   },
   "Virtus Entella": {
    "total": 38.7,
@@ -1768,7 +2587,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.07,
+    "down_rating": 3.43,
+    "settled_calls": 0
+   }
   },
   "Benevento": {
    "total": 42.5,
@@ -1783,7 +2609,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.45,
+    "down_rating": 3.81,
+    "settled_calls": 0
+   }
   },
   "Modena": {
    "total": 43.1,
@@ -1798,7 +2631,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.51,
+    "down_rating": 3.87,
+    "settled_calls": 0
+   }
   },
   "Empoli": {
    "total": 38.5,
@@ -1813,7 +2653,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.05,
+    "down_rating": 3.41,
+    "settled_calls": 0
+   }
   },
   "Cremonese": {
    "total": 43.5,
@@ -1828,7 +2675,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.55,
+    "down_rating": 3.91,
+    "settled_calls": 0
+   }
   },
   "Pisa": {
    "total": 46.9,
@@ -1843,7 +2697,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.89,
+    "down_rating": 4.25,
+    "settled_calls": 0
+   }
   },
   "Padova": {
    "total": 37.5,
@@ -1858,7 +2719,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.95,
+    "down_rating": 3.31,
+    "settled_calls": 0
+   }
   },
   "Verona": {
    "total": 47.5,
@@ -1873,7 +2741,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.95,
+    "down_rating": 4.31,
+    "settled_calls": 0
+   }
   },
   "Ascoli": {
    "total": 39.3,
@@ -1888,7 +2763,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.13,
+    "down_rating": 3.49,
+    "settled_calls": 0
+   }
   },
   "Cesena": {
    "total": 39.6,
@@ -1903,7 +2785,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.16,
+    "down_rating": 3.52,
+    "settled_calls": 0
+   }
   },
   "Sampdoria": {
    "total": 39.7,
@@ -1918,7 +2807,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.17,
+    "down_rating": 3.53,
+    "settled_calls": 0
+   }
   },
   "Palermo": {
    "total": 51.9,
@@ -1933,7 +2829,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.39,
+    "down_rating": 4.75,
+    "settled_calls": 0
+   }
   },
   "Juve Stabia": {
    "total": 38.1,
@@ -1948,7 +2851,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.01,
+    "down_rating": 3.37,
+    "settled_calls": 0
+   }
   },
   "Real Betis": {
    "total": 45.4,
@@ -1963,7 +2873,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.74,
+    "down_rating": 4.1,
+    "settled_calls": 0
+   }
   },
   "Real Sociedad": {
    "total": 39.1,
@@ -1978,7 +2895,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.11,
+    "down_rating": 3.47,
+    "settled_calls": 0
+   }
   },
   "Athletic Bilbao": {
    "total": 46.2,
@@ -1993,7 +2917,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.82,
+    "down_rating": 4.18,
+    "settled_calls": 0
+   }
   },
   "Sevilla": {
    "total": 51.3,
@@ -2008,7 +2939,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.33,
+    "down_rating": 4.69,
+    "settled_calls": 0
+   }
   },
   "Valencia": {
    "total": 44.4,
@@ -2023,7 +2961,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.64,
+    "down_rating": 4.0,
+    "settled_calls": 0
+   }
   },
   "Celta Vigo": {
    "total": 38.8,
@@ -2038,7 +2983,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.08,
+    "down_rating": 3.44,
+    "settled_calls": 0
+   }
   },
   "Espanyol": {
    "total": 52.7,
@@ -2053,7 +3005,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.47,
+    "down_rating": 4.83,
+    "settled_calls": 0
+   }
   },
   "Real Madrid": {
    "total": 44.5,
@@ -2068,7 +3027,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.65,
+    "down_rating": 4.01,
+    "settled_calls": 0
+   }
   },
   "Atletico Madrid": {
    "total": 45.4,
@@ -2083,7 +3049,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.74,
+    "down_rating": 4.1,
+    "settled_calls": 0
+   }
   },
   "Villarreal": {
    "total": 35.8,
@@ -2098,7 +3071,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.78,
+    "down_rating": 3.14,
+    "settled_calls": 0
+   }
   },
   "Elche": {
    "total": 34.6,
@@ -2113,7 +3093,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.66,
+    "down_rating": 3.02,
+    "settled_calls": 0
+   }
   },
   "Barcelona": {
    "total": 45.9,
@@ -2128,7 +3115,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.79,
+    "down_rating": 4.15,
+    "settled_calls": 0
+   }
   },
   "Osasuna": {
    "total": 44.6,
@@ -2143,7 +3137,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.66,
+    "down_rating": 4.02,
+    "settled_calls": 0
+   }
   },
   "Levante": {
    "total": 23.7,
@@ -2158,7 +3159,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.57,
+    "down_rating": 1.93,
+    "settled_calls": 0
+   }
   },
   "Malaga": {
    "total": 28.4,
@@ -2173,7 +3181,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.04,
+    "down_rating": 2.4,
+    "settled_calls": 0
+   }
   },
   "La Coruna": {
    "total": 40.3,
@@ -2188,7 +3203,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.23,
+    "down_rating": 3.59,
+    "settled_calls": 0
+   }
   },
   "Cordoba": {
    "total": 26.8,
@@ -2203,7 +3225,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.88,
+    "down_rating": 2.24,
+    "settled_calls": 0
+   }
   },
   "Girona": {
    "total": 38.8,
@@ -2218,7 +3247,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.08,
+    "down_rating": 3.44,
+    "settled_calls": 0
+   }
   },
   "Oviedo": {
    "total": 43.2,
@@ -2233,7 +3269,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.52,
+    "down_rating": 3.88,
+    "settled_calls": 0
+   }
   },
   "Leganes": {
    "total": 35.1,
@@ -2248,7 +3291,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.71,
+    "down_rating": 3.07,
+    "settled_calls": 0
+   }
   },
   "Albacete": {
    "total": 34.0,
@@ -2263,7 +3313,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.6,
+    "down_rating": 2.96,
+    "settled_calls": 0
+   }
   },
   "Sociedad B": {
    "total": 25.9,
@@ -2278,7 +3335,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.79,
+    "down_rating": 2.15,
+    "settled_calls": 0
+   }
   },
   "Ceuta": {
    "total": 23.6,
@@ -2293,7 +3357,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.56,
+    "down_rating": 1.92,
+    "settled_calls": 0
+   }
   },
   "Las Palmas": {
    "total": 56.8,
@@ -2308,7 +3379,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.88,
+    "down_rating": 5.24,
+    "settled_calls": 0
+   }
   },
   "Eldense": {
    "total": 28.3,
@@ -2323,7 +3401,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.03,
+    "down_rating": 2.39,
+    "settled_calls": 0
+   }
   },
   "Cadiz": {
    "total": 36.2,
@@ -2338,7 +3423,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.82,
+    "down_rating": 3.18,
+    "settled_calls": 0
+   }
   },
   "Eibar": {
    "total": 30.5,
@@ -2353,7 +3445,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.25,
+    "down_rating": 2.61,
+    "settled_calls": 0
+   }
   },
   "Valladolid": {
    "total": 24.2,
@@ -2368,7 +3467,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 2.62,
+    "down_rating": 1.98,
+    "settled_calls": 0
+   }
   },
   "Castellon": {
    "total": 60.8,
@@ -2383,7 +3489,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.28,
+    "down_rating": 5.64,
+    "settled_calls": 0
+   }
   },
   "Sabadell": {
    "total": 34.5,
@@ -2398,7 +3511,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.65,
+    "down_rating": 3.01,
+    "settled_calls": 0
+   }
   },
   "Sp Gijon": {
    "total": 40.3,
@@ -2413,7 +3533,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.23,
+    "down_rating": 3.59,
+    "settled_calls": 0
+   }
   },
   "Burgos": {
    "total": 52.1,
@@ -2428,7 +3555,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.41,
+    "down_rating": 4.77,
+    "settled_calls": 0
+   }
   },
   "Tenerife": {
    "total": 53.5,
@@ -2443,7 +3577,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.55,
+    "down_rating": 4.91,
+    "settled_calls": 0
+   }
   },
   "Almeria": {
    "total": 59.9,
@@ -2458,7 +3599,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.19,
+    "down_rating": 5.55,
+    "settled_calls": 0
+   }
   },
   "Granada": {
    "total": 38.3,
@@ -2473,7 +3621,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.03,
+    "down_rating": 3.39,
+    "settled_calls": 0
+   }
   },
   "Mallorca": {
    "total": 56.3,
@@ -2488,7 +3643,14 @@
     "near_miss_penalty": -0.0,
     "bet_record": 10.0
    },
-   "note": "no settled history yet - score is model-derived"
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.83,
+    "down_rating": 5.19,
+    "settled_calls": 0
+   }
   }
  },
  "players": {

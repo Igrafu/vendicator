@@ -53,6 +53,21 @@ def _load_bets():
         return {}
 
 
+# Accuracy is a running hit rate, so on the first settled call a raw rate
+# leaps from "no idea" to 0% or 100%. These pseudo-matches at even money
+# hold it steady until there is enough history to have earned the move.
+ACC_PRIOR_N = 4.0
+ACC_PRIOR_RATE = 0.5
+
+
+def accuracy_points(hits, n):
+    """The Scoreline's accuracy component (0-20), priored so that early
+    results inform it without whipsawing it."""
+    rate = ((hits + ACC_PRIOR_RATE * ACC_PRIOR_N)
+            / (n + ACC_PRIOR_N))
+    return round(rate * 20, 2)
+
+
 def near_miss_analysis(records):
     """Per team: how often the model was wrong but close, and which
     selection would have paid instead.
@@ -91,7 +106,9 @@ def near_miss_analysis(records):
                 e["brier"] += float(ev)
     for e in stats.values():
         e["accuracy"] = e["hits"] / e["n"] if e["n"] else None
-        e["near_rate"] = e["near"] / e["n"] if e["n"] else 0.0
+        # priored so a team with two settled calls is not judged as harshly
+        # as one with forty - see ACC_PRIOR_N
+        e["near_rate"] = e["near"] / (e["n"] + ACC_PRIOR_N)
         e["avg_brier"] = e["brier"] / e["n"] if e["n"] else None
     return stats
 
@@ -169,11 +186,10 @@ def team_scoreline(team, table_row=None, model_probs=None, history=None,
     else:
         parts["model_conviction"] = 10.0
 
-    # 3. how accurate the model has been on this team (0-20)
-    if h.get("accuracy") is not None:
-        parts["model_accuracy"] = round(h["accuracy"] * 20, 1)
-    else:
-        parts["model_accuracy"] = 10.0
+    # 3. how accurate the model has been on this team (0-20), priored so a
+    #    single settled call cannot swing it from end to end
+    parts["model_accuracy"] = accuracy_points(int(h.get("hits", 0)),
+                                              int(h.get("n", 0)))
 
     # 4. near misses drag the score down (0 to -12)
     parts["near_miss_penalty"] = round(-h.get("near_rate", 0.0) * 12, 1)
@@ -205,6 +221,93 @@ def team_scoreline(team, table_row=None, model_probs=None, history=None,
             "decimal": dec, "fractional": frac,
             "components": parts, "note": "; ".join(note) or
             "no settled history yet - score is model-derived"}
+
+
+# What share of the board carries each grade. Most cards carry none: a
+# bonus that everything qualifies for is not a bonus, it is just a bigger
+# number. These are the fractions of the board, best value first.
+GRADE_BANDS = (("gold", 0.06), ("silver", 0.14), ("bronze", 0.20))
+GRADE_BONUS = {"gold": 0.40, "silver": 0.25, "bronze": 0.12}
+
+
+def value_score(headline, difficulty, movement_up, settled_calls):
+    """Raw value signal for one card, before it is ranked against the board.
+
+    Weighted towards what actually discriminates. Difficulty is included but
+    held light: right now it sits at ~1.96 for almost every fixture, so
+    leaning on it would hand every card the same score. Projected movement
+    only counts once there is settled history behind it - before that it is
+    a constant, and a constant that rewards having no track record is worse
+    than no signal at all.
+    """
+    score = max(min((float(headline) - 25.0) / 35.0, 1.0), 0.0) * 70
+    score += max(min((float(difficulty) - 1.4) / 0.6, 1.0), 0.0) * 20
+    if int(settled_calls or 0) >= 3:
+        score += max(min(float(movement_up) / 1.5, 1.0), 0.0) * 10
+    return round(score, 2)
+
+
+def grade_board(fixtures):
+    """Grade a whole matchday at once, by rank rather than by threshold.
+
+    A card is good value RELATIVE to what else is on the board that day -
+    absolute cut-offs drift out of calibration the moment the underlying
+    numbers shift, which is exactly what happened when every fixture came
+    back with the same difficulty. Ranking is self-correcting: the top
+    slice is graded, the rest pay their selection values and nothing more.
+    """
+    scored = []
+    for fx in fixtures:
+        sl = fx.get("scoreline") or {}
+        calls = ((sl.get("home") or {}).get("movement") or {}).get(
+            "settled_calls", 0)
+        scored.append((value_score(sl.get("headline", 0),
+                                   fx.get("reward_difficulty_multiplier", 1.0),
+                                   (sl.get("movement") or {}).get("up", 0.0),
+                                   calls), fx))
+    scored.sort(key=lambda kv: kv[0], reverse=True)
+    n = len(scored)
+    cursor = 0
+    for tier, share in GRADE_BANDS:
+        upto = cursor + max(1 if n >= 12 else 0, int(round(n * share)))
+        for score, fx in scored[cursor:upto]:
+            fx["scoreline"]["grade"] = {"tier": tier, "score": score,
+                                        "bonus": GRADE_BONUS[tier]}
+        cursor = upto
+    for score, fx in scored[cursor:]:
+        fx["scoreline"]["grade"] = None
+        fx["scoreline"]["value_score"] = score
+    return fixtures
+
+
+def projected_movement(team, history, current_total):
+    """Where this team's Scoreline lands after the match is settled.
+
+    The accuracy component is a running hit rate, so one more settled call
+    moves it by a knowable amount: a hit nudges it up, a miss (and any near
+    miss) drags it down. Reporting both before kick-off tells a member
+    whether a card is worth holding for - a team on the way up is worth more
+    than the same number on the way down.
+    """
+    h = (history or {}).get(team, {})
+    n = int(h.get("n", 0))
+    hits = int(h.get("hits", 0))
+    now = accuracy_points(hits, n)
+    up = accuracy_points(hits + 1, n + 1) - now
+    down = accuracy_points(hits, n + 1) - now
+    # a miss also adds to the near-miss rate, which carries its own penalty.
+    # Same prior applies: one unlucky result is not a pattern.
+    near = int(h.get("near", 0))
+    near_now = -(near / (n + ACC_PRIOR_N)) * 12
+    near_after = -((near + 1) / (n + 1 + ACC_PRIOR_N)) * 12
+    down += near_after - near_now
+    return {
+        "up": round(up, 2),
+        "down": round(down, 2),
+        "up_rating": odds_style_rating(current_total + up),
+        "down_rating": odds_style_rating(current_total + down),
+        "settled_calls": n,
+    }
 
 
 def player_scoreline(player, history=None):
@@ -240,9 +343,29 @@ def build(payload):
                             {"top": probs.get("home", 33)}, history, bets)
         as_ = team_scoreline(away, rows.get(away),
                              {"top": probs.get("away", 33)}, history, bets)
+        hs["movement"] = projected_movement(home, history, hs["total"])
+        as_["movement"] = projected_movement(away, history, as_["total"])
         headline = round((hs["total"] + as_["total"]) / 2, 1)
-        fx["scoreline"] = {"home": hs, "away": as_, "headline": headline,
-                           "rating": odds_style_rating(headline)}
+        move_up = round((hs["movement"]["up"] + as_["movement"]["up"]) / 2, 2)
+        move_down = round(
+            (hs["movement"]["down"] + as_["movement"]["down"]) / 2, 2)
+        fx["scoreline"] = {
+            "home": hs, "away": as_, "headline": headline,
+            "rating": odds_style_rating(headline),
+            # what the headline rating becomes once this card settles
+            "movement": {
+                "up": move_up, "down": move_down,
+                "up_rating_delta": round(
+                    odds_style_rating(headline + move_up)
+                    - odds_style_rating(headline), 2),
+                "down_rating_delta": round(
+                    odds_style_rating(headline + move_down)
+                    - odds_style_rating(headline), 2),
+            },
+            # grade is filled in by grade_board() once every card is priced,
+            # because value is judged against the rest of the board
+            "grade": None,
+        }
         store["teams"][home] = hs
         store["teams"][away] = as_
         for pl in fx.get("players", []) or []:
@@ -250,7 +373,15 @@ def build(payload):
             pl["scoreline"] = ps
             store["players"][str(pl["id"])] = dict(ps, name=pl["name"])
 
+    grade_board(payload.get("fixtures", []))
+    graded = {}
+    for fx in payload.get("fixtures", []):
+        tier = (fx["scoreline"].get("grade") or {}).get("tier", "ungraded")
+        graded[tier] = graded.get(tier, 0) + 1
+
     OUT.write_text(json.dumps(store, indent=1))
     print(f"Vendicator Scorelines: {len(store['teams'])} teams, "
           f"{len(store['players'])} players -> {OUT}")
+    print("  value grades: " + ", ".join(f"{k} {v}" for k, v in
+                                         sorted(graded.items())))
     return payload

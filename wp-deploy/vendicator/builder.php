@@ -35,22 +35,28 @@ function vendicator_pts($n, $sign = false) {
 /**
  * Points for a selection at probability $pct (0-100).
  *
- * The value IS the fair price. A 50% selection pays 2.00, a 25% one pays
- * 4.00, a 4% one pays 25.00 - identical in shape to the decimal odds on an
- * exchange, which is the whole point: a member reading "3+ goals 12.50"
- * knows instantly what they are being offered.
+ * Reward points follow the SHAPE of decimal odds - longer price, more
+ * points, always in the same order - but on a compressed curve rather than
+ * the price itself. A straight price hands out 26.04 for a 2+ goals shot
+ * and 145.80 for a 3+, which makes a season's rank a matter of finding one
+ * long shot rather than being consistently right.
+ *
+ * The exponent flattens the tail: a 50% pick pays 1.51, a 4% pick 6.90, and
+ * the longest line the engine will print tops out near 12. Ranks are earned
+ * by being right often, not once.
  *
  * $weight tilts it where the platform wants to reward exploration - backing
  * a lower-rated player, or a fixture the model finds genuinely hard.
- *
- * The old formula flattened out against a hard 320 ceiling, which made a
- * 3% shot pay exactly the same as a 12% one. The ceiling here sits far
- * beyond any realistic selection, so the ladder never goes flat.
  */
+define('VENDICATOR_POINTS_CURVE', 0.6);
+define('VENDICATOR_POINTS_MAX', 4000);   // 40.00 - a hard ceiling per leg
+
 function vendicator_leg_points($pct, $weight = 1.0) {
     $p = max(min((float) $pct, 97.0), 1.0) / 100.0;
-    $raw = 100.0 * (1.0 / $p) * max((float) $weight, 0.1);
-    return (int) round(max(min($raw, 20000), 101));
+    $price = 1.0 / $p;
+    $raw = 100.0 * pow($price, VENDICATOR_POINTS_CURVE)
+        * max((float) $weight, 0.1);
+    return (int) round(max(min($raw, VENDICATOR_POINTS_MAX), 105));
 }
 
 /** Risk factor 0-1: how exposed a slip is (legs + combined improbability). */
@@ -65,28 +71,47 @@ function vendicator_risk_factor($legs) {
     return round(min($count_risk * 0.45 + $prob_risk * 0.55, 1.0), 3);
 }
 
+/** Bonus ceiling and Scoreline contribution for each value grade. */
+function vendicator_grade_rules() {
+    return array(
+        'bronze' => array('bonus' => 0.12, 'cap' => 1.35, 'label' => 'Bronze value'),
+        'silver' => array('bonus' => 0.25, 'cap' => 1.65, 'label' => 'Silver value'),
+        'gold' => array('bonus' => 0.40, 'cap' => 2.00, 'label' => 'Gold value'),
+    );
+}
+
 /**
  * Winning multiplier for a slip that lands in full.
  *
- * Taking on risk knowingly is the point of the builder, so a slip that
- * survives a high risk factor is paid for it twice over: once through the
- * long-shot leg values themselves, and again through this bonus. The
- * Vendicator Scoreline contributes up to +40%, the risk carried up to
- * +60%, and the price on the board up to a further +25% when the member
- * backed a genuine outsider. Capped so no single slip can run away.
+ * A bonus is not automatic. It is paid only on cards the engine has graded
+ * as carrying value - a strong Scoreline, a fixture that is genuinely hard
+ * to price, and a rating with room to climb. An ungraded card pays its leg
+ * values and nothing else, which is what stops a member farming bonuses off
+ * whichever fixture happens to be on the board.
+ *
+ * On a graded card the bonus comes from three places: the grade itself, the
+ * risk the member chose to carry, and the price of their longest leg. The
+ * grade also sets the ceiling, so a Bronze card can never pay like a Gold.
  */
-function vendicator_win_multiplier($scoreline, $risk, $legs = array()) {
-    $sl = min(max((float) $scoreline, 0), 100) / 100.0;
-    $bonus = 1.0 + $sl * 0.4 + min(max((float) $risk, 0), 1) * 0.6;
+function vendicator_win_multiplier($scoreline, $risk, $legs = array(),
+                                   $grade = null) {
+    $tier = is_array($grade) && isset($grade['tier']) ? $grade['tier'] : null;
+    $rules = vendicator_grade_rules();
+    if (!$tier || !isset($rules[$tier])) {
+        return 1.0;      // ungraded card - leg values only, no bonus
+    }
+    $r = $rules[$tier];
+    $bonus = 1.0 + $r['bonus'];
+    $bonus += min(max((float) $risk, 0), 1) * 0.35;
     $longest = 0.0;
     foreach ($legs as $l) {
         $pct = max(min((float) $l['pct'], 97.0), 1.5);
         $longest = max($longest, 100.0 / $pct);      // implied decimal price
     }
     if ($longest > 2.0) {
-        $bonus += min(($longest - 2.0) / 18.0, 1.0) * 0.25;
+        $bonus += min(($longest - 2.0) / 18.0, 1.0) * 0.15;
     }
-    return round(min($bonus, 2.25), 3);
+    return round(min($bonus, $r['cap']), 3);
 }
 
 /**
@@ -94,7 +119,7 @@ function vendicator_win_multiplier($scoreline, $risk, $legs = array()) {
  * $legs: each ['pct','points','won'(bool)]
  * $scoreline: headline Vendicator Scoreline (0-100) for the fixture
  */
-function vendicator_settle_slip($legs, $scoreline = 50.0) {
+function vendicator_settle_slip($legs, $scoreline = 50.0, $grade = null) {
     $failed = 0;
     $gross = 0;
     foreach ($legs as $l) {
@@ -103,13 +128,17 @@ function vendicator_settle_slip($legs, $scoreline = 50.0) {
     }
     $risk = vendicator_risk_factor($legs);
     if ($failed === 0) {
-        $bonus = vendicator_win_multiplier($scoreline, $risk, $legs);
+        $bonus = vendicator_win_multiplier($scoreline, $risk, $legs, $grade);
         $total = (int) round($gross * $bonus);
+        $tier = is_array($grade) && isset($grade['tier']) ? $grade['tier'] : null;
         return array('points' => $total, 'outcome' => 'won', 'risk' => $risk,
             'multiplier' => $bonus,
-            'note' => 'Full house - ' . vendicator_pts($gross) . ' base x'
-                . number_format($bonus, 2) . ' (Scoreline, risk and price '
-                . 'bonus) = ' . vendicator_pts($total));
+            'note' => 'Full house - ' . vendicator_pts($gross) . ' base'
+                . ($bonus > 1.0
+                    ? ' x' . number_format($bonus, 2) . ' ('
+                        . ucfirst((string) $tier) . ' value card: grade, risk '
+                        . 'carried and price) = ' . vendicator_pts($total)
+                    : ' (this card carries no value grade, so no bonus applies)'));
     }
     if ($failed >= 3) {
         $penalty = (int) round(120 * $failed * (0.5 + $risk));
@@ -177,9 +206,14 @@ function vendicator_settle_leg($leg, $outcome, $score) {
 }
 
 /** One selectable option. */
-function vendicator_option($group, $value, $label, $pct, $points, $extra = '') {
+function vendicator_option($group, $value, $label, $pct, $points, $extra = '',
+                           $excl = null) {
+    // by default a market is single-pick: every option in it overlaps every
+    // other, so the group name is its own exclusion key
+    if ($excl === null) { $excl = $group; }
     return '<label class="vd-opt" data-pct="' . esc_attr($pct) . '" data-points="'
-        . (int) $points . '" data-label="' . esc_attr($label) . '">'
+        . (int) $points . '"' . vendicator_excl_attr($excl)
+        . ' data-label="' . esc_attr($label) . '">'
         . '<input type="checkbox" name="vd_sel[]" value="'
         . esc_attr($group . '|' . $value . '|' . $label . '|' . $pct . '|' . $points) . '">'
         . '<span class="vd-opt-label">' . esc_html($label) . '</span>'
@@ -189,10 +223,31 @@ function vendicator_option($group, $value, $label, $pct, $points, $extra = '') {
         . '</label>';
 }
 
+/**
+ * Selections that cannot sit on the same slip.
+ *
+ * Backing "Everton win" alongside "Everton win or draw" is the same wager
+ * twice: the second cannot lose if the first wins, so it inflates the
+ * payout without adding any risk. The same is true of "over 1.5" with
+ * "over 2.5", or a player "to score" with "goal or assist".
+ *
+ * Every option declares one or more exclusion keys. Picking an option
+ * clears any other checked option sharing a key, so a slip can never carry
+ * two overlapping selections. Keys are space-separated because some options
+ * overlap more than one family - "goal or assist" conflicts with both the
+ * score ladder and the assist ladder.
+ */
+function vendicator_excl_attr($excl) {
+    $excl = is_array($excl) ? implode(' ', $excl) : (string) $excl;
+    return $excl ? ' data-excl="' . esc_attr($excl) . '"' : '';
+}
+
 /** Compact chip form of an option, for the player-market threshold rows. */
-function vendicator_chip_option($group, $value, $label, $pct, $points) {
+function vendicator_chip_option($group, $value, $label, $pct, $points,
+                                $excl = '') {
     return '<label class="vd-opt vd-chip" data-pct="' . esc_attr($pct)
-        . '" data-points="' . (int) $points . '" title="' . esc_attr($pct)
+        . '" data-points="' . (int) $points . '"' . vendicator_excl_attr($excl)
+        . ' title="' . esc_attr($pct)
         . '% &middot; pays ' . vendicator_pts($points) . '">'
         . '<input type="checkbox" name="vd_sel[]" value="'
         . esc_attr($group . '|' . $value . '|' . $label . '|' . $pct . '|' . $points) . '">'
@@ -229,13 +284,18 @@ function vendicator_outcome_options($p) {
         . 'deliberately modest.</p></div>';
 }
 
-/** BTTS with a no-team-to-score option. */
+/**
+ * Both teams to score, plus each side individually.
+ *
+ * The 0-0 option was removed: it belongs in Exact Score and Alternative
+ * Total Goals, both of which price it properly, and having it here made
+ * three ways to back the same outcome from one card.
+ */
 function vendicator_btts_options($p) {
     $dc = $p['markets_dixon_coles'];
     $t = isset($p['team_to_score']) ? $p['team_to_score'] : null;
     $home = isset($p['home_team']) ? $p['home_team'] : 'Home';
     $away = isset($p['away_team']) ? $p['away_team'] : 'Away';
-    $none = isset($dc['totals']['under_0.5']) ? $dc['totals']['under_0.5'] : 3.0;
     $out = '<div class="vd-card"><h3>Both Teams To Score (BTTS)</h3><div class="vd-opts">'
         . vendicator_option('btts', 'yes', 'Both teams to score', $dc['btts']['yes'],
             vendicator_leg_points($dc['btts']['yes']))
@@ -247,8 +307,6 @@ function vendicator_btts_options($p) {
             . vendicator_option('btts', 'away_scores', $away . ' to score',
                 $t['away_pct'], vendicator_leg_points($t['away_pct']));
     }
-    $out .= vendicator_option('btts', 'none', 'No team to score (0-0)',
-        $none, vendicator_leg_points($none));
     return $out . '</div></div>';
 }
 
@@ -277,58 +335,118 @@ function vendicator_totals_options($p) {
 }
 
 /**
- * Half-by-half results. Each half is priced off its own expected goals, so
- * a second-half home win is a genuinely different selection from a first-
- * half one. The HT/FT combinations sit underneath for bigger prices.
+ * Both Halves - a single nine-way market.
+ *
+ * The half-by-half lists were split into two separate selections, which let
+ * a member back "first half home win" and "second half home win" as though
+ * they were independent legs when they are really one combination. This is
+ * the combination itself: pick how the first half goes AND how the second
+ * goes, one selection, priced as the product of the two halves.
+ *
+ * Nine outcomes, three first-half results by three second-half results.
  */
 function vendicator_halves_options($p) {
-    if (empty($p['markets_halves'])) { return ''; }
-    $h = $p['markets_halves'];
+    if (empty($p['markets_halves']['ht_ft'])) { return ''; }
+    $h = $p['markets_halves']['ht_ft'];
     $home = isset($p['home_team']) ? $p['home_team'] : 'Home';
     $away = isset($p['away_team']) ? $p['away_team'] : 'Away';
     $name = array('home' => $home . ' win', 'draw' => 'Draw',
         'away' => $away . ' win');
     $opts = '';
-    foreach (array('first_half' => 'First half',
-                   'second_half' => 'Second half') as $key => $half) {
-        if (empty($h[$key])) { continue; }
-        foreach (array('home', 'draw', 'away') as $side) {
-            if (!isset($h[$key][$side])) { continue; }
-            $pct = $h[$key][$side];
-            $opts .= vendicator_option('half', $key . '_' . $side,
-                $half . ' &mdash; ' . $name[$side], $pct,
-                vendicator_leg_points($pct));
+    foreach (array('home', 'draw', 'away') as $first) {
+        foreach (array('home', 'draw', 'away') as $second) {
+            $key = $first . '_' . $second;
+            if (!isset($h[$key])) { continue; }
+            $pct = $h[$key];
+            $opts .= vendicator_option('htft', $key,
+                '1st half: ' . $name[$first] . ' &nbsp;&ndash;&nbsp; 2nd half: '
+                    . $name[$second], $pct, vendicator_leg_points($pct));
         }
     }
-    $combos = '';
-    if (!empty($h['ht_ft'])) {
-        foreach ($h['ht_ft'] as $k => $pct) {
-            $parts = explode('_', $k);
-            if (count($parts) !== 2) { continue; }
-            $combos .= vendicator_option('htft', $k,
-                'First half ' . $name[$parts[0]] . ', second half '
-                    . $name[$parts[1]], $pct, vendicator_leg_points($pct));
-        }
-    }
-    return '<div class="vd-card"><h3>Half Results</h3>'
-        . vendicator_scroll_opts($opts)
-        . ($combos ? '<p class="vd-subhead">Both halves</p>'
-            . vendicator_scroll_opts($combos) : '')
-        . '<p class="vd-muted" style="font-size:12px;">Halves are priced '
-        . 'independently &mdash; roughly 45% of goals arrive before the '
-        . 'break, so second-half selections carry the heavier expectation.'
-        . '</p></div>';
+    if (!$opts) { return ''; }
+    return '<div class="vd-card"><h3>Both Halves</h3>'
+        . vendicator_scroll_opts($opts, true)
+        . '<p class="vd-muted" style="font-size:12px;">One selection covers '
+        . 'both halves. Each half is priced off its own expected goals '
+        . '&mdash; roughly 45% of goals arrive before the break, so the '
+        . 'second half carries the heavier expectation.</p></div>';
 }
 
-/** Exact score, selectable. */
+/**
+ * Exact score, over the full board rather than a shortlist.
+ *
+ * Ten scorelines is barely a market - it is the model's favourites listed
+ * back. The board runs to every scoreline the engine gives a real chance,
+ * sorted by likelihood, in a scroll box with a filter for the home side's
+ * goal count so a member can find 3-1 without hunting.
+ */
 function vendicator_score_options($p) {
     $dc = $p['markets_dixon_coles'];
-    $out = '<div class="vd-card"><h3>Exact Score</h3><div class="vd-opts">';
-    foreach (array_slice($dc['exact_score_top10'], 0, 10) as $pair) {
-        $out .= vendicator_option('exact', $pair[0], $pair[0], $pair[1],
-            vendicator_leg_points($pair[1]));
+    $board = !empty($dc['exact_score_board'])
+        ? $dc['exact_score_board'] : $dc['exact_score_top10'];
+    $opts = '';
+    $buckets = array();
+    foreach ($board as $pair) {
+        $hg = (int) substr($pair[0], 0, strpos($pair[0], '-'));
+        $buckets[$hg] = true;
+        $opts .= '<span class="vd-scoreopt" data-hg="' . $hg . '">'
+            . vendicator_option('exact', $pair[0], $pair[0], $pair[1],
+                vendicator_leg_points($pair[1])) . '</span>';
     }
-    return $out . '</div></div>';
+    ksort($buckets);
+    $filter = '<select class="vd-scorefilter" aria-label="Filter by home goals">'
+        . '<option value="">Every scoreline (' . count($board) . ')</option>';
+    foreach (array_keys($buckets) as $hg) {
+        $filter .= '<option value="' . (int) $hg . '">' . (int) $hg
+            . ' goal' . ($hg === 1 ? '' : 's') . ' for the home side</option>';
+    }
+    $filter .= '</select>';
+    return '<div class="vd-card"><h3>Exact Score</h3>' . $filter
+        . vendicator_scroll_opts($opts, true)
+        . '<p class="vd-muted" style="font-size:12px;">Every scoreline the '
+        . 'model gives a realistic chance, likeliest first.</p></div>';
+}
+
+/**
+ * Clean sheets. A keeper's market, priced straight off the score grid: a
+ * clean sheet is simply the opposition failing to score. Understat's open
+ * feed lists almost no goalkeepers, so the row is anchored to the team and
+ * names the keeper only when the data actually has them.
+ */
+function vendicator_clean_sheet_options($p) {
+    $dc = $p['markets_dixon_coles'];
+    if (empty($dc['clean_sheet'])) { return ''; }
+    $home = isset($p['home_team']) ? $p['home_team'] : 'Home';
+    $away = isset($p['away_team']) ? $p['away_team'] : 'Away';
+    $keepers = array();
+    foreach ((array) (isset($p['players']) ? $p['players'] : array()) as $pl) {
+        if (!empty($pl['position_short']) && $pl['position_short'] === 'GK') {
+            $keepers[$pl['team']] = $pl;
+        }
+    }
+    $out = '';
+    foreach (array(array($home, 'home'), array($away, 'away')) as $side) {
+        list($team, $key) = $side;
+        $pct = (float) $dc['clean_sheet'][$key];
+        $gk = isset($keepers[$team]) ? $keepers[$team] : null;
+        $who = $gk ? $gk['name'] : $team;
+        $out .= '<div class="vd-prow"><span class="vd-pwho">'
+            . ($gk ? vendicator_player_identity($gk)
+                : '<span class="vd-pident"><span class="vd-pname">'
+                    . esc_html($team) . ' <i class="vd-pos">GK</i></span>'
+                    . '<small class="vd-pteam">goalkeeper not named in the '
+                    . 'open feed</small></span>')
+            . '</span><span class="vd-plines">'
+            . vendicator_chip_option('cleansheet', $key . '_yes',
+                $who . ' - clean sheet', $pct, vendicator_leg_points($pct),
+                'cs-' . $key)
+            . vendicator_chip_option('cleansheet', $key . '_no',
+                $who . ' - concedes', 100 - $pct,
+                vendicator_leg_points(100 - $pct), 'cs-' . $key)
+            . '</span></div>';
+    }
+    return '<details class="vd-details vd-pcat"><summary>Clean sheets</summary>'
+        . '<div class="vd-prows">' . $out . '</div></details>';
 }
 
 /** One discipline market rendered as a scrollable ladder of lines. */
@@ -336,10 +454,11 @@ function vendicator_discipline_block($m) {
     $opts = '';
     foreach ($m['lines'] as $ln) {
         $side = isset($ln['side']) ? $ln['side'] : 'over';
+        // one line per market: "9+ corners" and "11+ corners" overlap
         $opts .= vendicator_option('disc',
             $m['key'] . '_' . $side . '_' . $ln['line'],
             $m['label'] . ' ' . $ln['label'], $ln['pct'],
-            vendicator_leg_points($ln['pct']));
+            vendicator_leg_points($ln['pct']), '', 'disc-' . $m['key']);
     }
     return '<p class="vd-subhead">' . esc_html($m['label'])
         . ' <span class="vd-muted">expected ' . esc_html($m['expected'])
@@ -381,9 +500,25 @@ function vendicator_corners_options($p) {
         . 'expectation &mdash; good ground for a builder leg.</p></div>';
 }
 
-/** Best odds as a selectable market rather than a static table. */
-function vendicator_odds_options($p) {
+/**
+ * Best odds - back the price.
+ *
+ * Two gates sit on this card. Seeing it at all requires a lifetime points
+ * total above the site average, which is a moving target that has to be
+ * defended rather than reached once. Seeing WHICH bookmaker is offering the
+ * price is a Gold-tier benefit; everyone else sees the price itself.
+ *
+ * The selections share the match-result exclusion key: backing "Home win @
+ * 3.2" here is the same wager as backing the home win on the result card.
+ */
+function vendicator_odds_options($p, $may_see = true, $show_books = false) {
     if (empty($p['odds_board'])) { return ''; }
+    if (!$may_see) {
+        return '<div class="vd-card vd-locked"><h3>Best Odds</h3>'
+            . '<p class="vd-muted">&#128274; Opens once your lifetime reward '
+            . 'points are above the site average. It is a moving line &mdash; '
+            . 'holding it takes a steady record, not one good week.</p></div>';
+    }
     $dc = $p['markets_dixon_coles'];
     $labels = array('home' => 'Home win', 'draw' => 'Draw', 'away' => 'Away win');
     $out = '<div class="vd-card"><h3>Best Odds &mdash; back the price</h3><div class="vd-opts">';
@@ -394,9 +529,14 @@ function vendicator_odds_options($p) {
         $out .= vendicator_option('odds', $market,
             (isset($labels[$market]) ? $labels[$market] : $market)
                 . ' @ ' . $best['odds'], $pct, vendicator_leg_points($pct),
-            esc_html($best['book']));
+            $show_books ? esc_html($best['book'])
+                : '<span class="vd-bookhidden">bookmaker hidden &mdash; '
+                    . 'Gold tier</span>',
+            'result');
     }
     return $out . '</div><p class="vd-muted" style="font-size:12px;">'
-        . 'Top price across the open bookmaker feed. Informational only '
-        . '&mdash; not betting advice.</p></div>';
+        . 'Top price across the open bookmaker feed'
+        . ($show_books ? '' : '; the book behind each price is shown at Gold '
+            . 'tier') . '. Informational only &mdash; not betting advice.'
+        . '</p></div>';
 }
