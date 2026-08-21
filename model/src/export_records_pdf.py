@@ -71,7 +71,7 @@ def section_table(headers, rows, col_widths=None):
 
 def cover_band(width):
     stamp = datetime.now(timezone.utc).strftime("%d %B %Y, %H:%M UTC")
-    t = Table([[Paragraph("VINDICATOR", H1)],
+    t = Table([[Paragraph("VENDICATOR", H1)],
                [Paragraph("Records Report — users, subscriptions, rewards, "
                           f"invoices & model history · generated {stamp} · "
                           "read-only", SUB)]],
@@ -147,7 +147,7 @@ def build_story(accounts, history, width):
           (h.get("eval") or {}).get("clv")] for h in settled])]
 
     story += [Spacer(1, 6 * mm),
-              Paragraph("Vindicator records are generated automatically from "
+              Paragraph("Vendicator records are generated automatically from "
                         "accounts.json and model-history.jsonl. This document "
                         "is read-only; the source files are the record of "
                         "truth. Predictions are statistical analysis, not "
@@ -160,14 +160,14 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     page = landscape(A4)
     margin = 14 * mm
-    enc = StandardEncryption("", ownerPassword="vindicator-owner",
+    enc = StandardEncryption("", ownerPassword="vendicator-owner",
                              canPrint=1, canModify=0, canCopy=1,
                              canAnnotate=0)
     doc = SimpleDocTemplate(str(OUT), pagesize=page, encrypt=enc,
                             leftMargin=margin, rightMargin=margin,
                             topMargin=margin, bottomMargin=margin,
-                            title="Vindicator Records",
-                            author="Vindicator")
+                            title="Vendicator Records",
+                            author="Vendicator")
     doc.build(build_story(accounts, history, page[0] - 2 * margin))
     print(f"Wrote {OUT}")
 

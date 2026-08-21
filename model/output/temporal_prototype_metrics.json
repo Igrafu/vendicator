@@ -1,0 +1,8 @@
+{
+  "snapshots": 900,
+  "matches": 50,
+  "holdout_matches": 10,
+  "live_brier_prototype": 0.8825,
+  "live_brier_analytic_baseline": 0.4633,
+  "beats_baseline": false
+}

@@ -14,11 +14,30 @@ from engines.value import devig_proportional
 
 FORM_N = 5
 
-# Understat team names -> football-data.co.uk names (EPL)
+# Understat team names -> football-data.co.uk names (top 5 leagues)
 UNDERSTAT_TO_FDCUK = {
+    # England
     "Manchester United": "Man United", "Manchester City": "Man City",
     "Nottingham Forest": "Nott'm Forest",
     "Wolverhampton Wanderers": "Wolves", "Newcastle United": "Newcastle",
+    "Sheffield United": "Sheffield United",
+    # Spain
+    "Atletico Madrid": "Ath Madrid", "Athletic Club": "Ath Bilbao",
+    "Celta Vigo": "Celta", "Espanyol": "Espanol",
+    "Real Sociedad": "Sociedad", "Real Betis": "Betis",
+    "Rayo Vallecano": "Vallecano", "Real Valladolid": "Valladolid",
+    "Deportivo Alaves": "Alaves",
+    # Germany
+    "Borussia Dortmund": "Dortmund", "Eintracht Frankfurt": "Ein Frankfurt",
+    "Bayer Leverkusen": "Leverkusen", "Borussia M.Gladbach": "M'gladbach",
+    "RasenBallsport Leipzig": "RB Leipzig", "FC Cologne": "FC Koln",
+    "Mainz 05": "Mainz", "VfB Stuttgart": "Stuttgart",
+    "FC Heidenheim": "Heidenheim", "St. Pauli": "St Pauli",
+    # Italy
+    "AC Milan": "Milan",
+    # France
+    "Paris Saint Germain": "Paris SG", "Clermont Foot": "Clermont",
+    "Saint-Etienne": "St Etienne",
 }
 
 

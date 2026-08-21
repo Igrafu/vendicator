@@ -1,4 +1,4 @@
-# Vindicator Model Plan
+# Vendicator Model Plan
 
 ## 0. Layered architecture
 

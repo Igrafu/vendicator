@@ -19,7 +19,7 @@ EXPORT_DIR = ROOT / "records" / "exports"
 NAVY = "1B2A4A"
 ACCENT = "2ECC71"
 STRIPE = "F4F6FA"
-PROTECT_PW = "vindicator-readonly"
+PROTECT_PW = "vendicator-readonly"
 
 
 def _style_sheet(ws, headers, rows, tab_color=NAVY):

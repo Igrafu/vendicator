@@ -94,6 +94,39 @@ class InPlayEngine:
         }
 
 
+class TemporalPrototype:
+    """GBM temporal model trained on StatsBomb Open Data snapshots
+    (train_temporal_prototype.py). Free stand-in for the Transformer; loads
+    from model/output/temporal_prototype.pkl when present. Admin-selectable
+    next to InPlayEngine; the Transformer replaces it in Phase 2."""
+
+    def __init__(self, path=None):
+        import pickle
+        from pathlib import Path
+        path = path or (Path(__file__).resolve().parents[3] / "model"
+                        / "output" / "temporal_prototype.pkl")
+        with open(path, "rb") as f:
+            bundle = pickle.load(f)
+        self.model = bundle["model"]
+        self.features = bundle["features"]
+        self.classes = bundle["classes"]
+
+    def live_probs(self, state, shots_h_10=0, shots_a_10=0, xg_h_10=0.0,
+                   xg_a_10=0.0, xg_h_total=0.0, xg_a_total=0.0):
+        row = {"minute_frac": state.minute / 93.0,
+               "goal_diff": state.home_goals - state.away_goals,
+               "total_goals": state.home_goals + state.away_goals,
+               "home_reds": state.home_reds, "away_reds": state.away_reds,
+               "shots_h_10": shots_h_10, "shots_a_10": shots_a_10,
+               "xg_h_10": xg_h_10, "xg_a_10": xg_a_10,
+               "xg_h_total": xg_h_total, "xg_a_total": xg_a_total}
+        X = np.array([[row[f] for f in self.features]])
+        p = self.model.predict_proba(X)[0]
+        return {"minute": state.minute,
+                "score": f"{state.home_goals}-{state.away_goals}",
+                "win_prob": dict(zip(("home", "draw", "away"), map(float, p)))}
+
+
 class TemporalTransformerStub:
     """Phase 2 interface. Timestep vector (structured, not raw text/video):
     [minute/90, goal_diff, home_reds, away_reds, subs_used_h, subs_used_a,

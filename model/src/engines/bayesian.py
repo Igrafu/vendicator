@@ -55,6 +55,13 @@ class BayesianStrengths:
         mu = atk_a * def_h / self.league_rate
         return (self.rng.poisson(lam), self.rng.poisson(mu))
 
+    def probs_fast(self, home, away, n_samples=1000):
+        """1X2 probabilities only - no bootstrap, for bulk walk-forward."""
+        hg, ag = self.sample_match(home, away, n_samples)
+        return {"home": float((hg > ag).mean()),
+                "draw": float((hg == ag).mean()),
+                "away": float((hg < ag).mean())}
+
     def probs_with_uncertainty(self, home, away, n_samples=4000):
         """1X2 probabilities plus a 90% credible interval on the home-win
         probability - the site's uncertainty band."""

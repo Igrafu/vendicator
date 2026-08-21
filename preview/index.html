@@ -3,72 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vindicator — Prediction Engine Preview</title>
+<title>Vendicator — Prediction Engine Preview</title>
 <style>
   :root {
-    --navy:#1B2A4A; --navy2:#243759; --green:#2ECC71; --amber:#F5A623;
-    --bg:#0F1830; --card:#1B2A4A; --text:#EAF0FA; --muted:#8FA0BE;
-    --red:#E74C3C;
+    /* metallic dark grey + glass, neon lime highlights */
+    --bg0:#0C0E12; --bg1:#14171D; --steel:#1C2027; --steel2:#242933;
+    --glass:rgba(255,255,255,.045); --glass-edge:rgba(255,255,255,.10);
+    --lime:#C6FF4D; --lime2:#9BE81F; --mint:#7CFFCB;
+    --white:#F7FAF2; --muted:#9AA3B2; --amber:#FFB454; --red:#FF6B6B;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { background:var(--bg); color:var(--text);
-         font:15px/1.5 -apple-system,'Segoe UI',Roboto,sans-serif; }
-  header { background:linear-gradient(120deg,var(--navy),var(--navy2));
-           padding:22px 28px; border-bottom:3px solid var(--green);
-           display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
-  header h1 { font-size:26px; letter-spacing:3px; }
-  header h1 span { color:var(--green); }
+  body {
+    color:var(--white); font:15px/1.5 -apple-system,'Segoe UI',Roboto,sans-serif;
+    background:
+      radial-gradient(900px 400px at 85% -10%, rgba(198,255,77,.10), transparent 60%),
+      radial-gradient(700px 500px at -10% 30%, rgba(124,255,203,.06), transparent 55%),
+      linear-gradient(160deg, var(--bg1), var(--bg0) 60%);
+    min-height:100vh;
+  }
+  /* neon streaks */
+  body::before, body::after {
+    content:""; position:fixed; pointer-events:none; z-index:0;
+    height:2px; left:-10%; right:-10%;
+    background:linear-gradient(90deg, transparent, var(--lime), transparent);
+    opacity:.35; filter:blur(.5px);
+  }
+  body::before { top:120px; transform:rotate(-4deg); }
+  body::after { top:75%; transform:rotate(3deg); opacity:.15; }
+
+  header {
+    position:relative; z-index:1; padding:24px 30px;
+    display:flex; align-items:baseline; gap:16px; flex-wrap:wrap;
+    background:linear-gradient(120deg, rgba(36,41,51,.85), rgba(20,23,29,.85));
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--glass-edge);
+    box-shadow:0 1px 0 rgba(198,255,77,.25), 0 12px 40px rgba(0,0,0,.5);
+  }
+  header h1 { font-size:27px; letter-spacing:4px; font-weight:800; }
+  header h1 span { color:var(--lime); text-shadow:0 0 18px rgba(198,255,77,.55); }
   header small { color:var(--muted); }
-  main { max-width:1100px; margin:0 auto; padding:24px 16px 60px;
-         display:grid; gap:18px; }
-  .card { background:var(--card); border-radius:14px; padding:20px 22px;
-          box-shadow:0 6px 18px rgba(0,0,0,.35); }
+  .chip {
+    background:linear-gradient(120deg, var(--lime), var(--lime2));
+    color:#101505; font-weight:800; border-radius:999px; padding:4px 13px;
+    font-size:11.5px; letter-spacing:1px;
+    box-shadow:0 0 22px rgba(198,255,77,.35);
+  }
+  main { position:relative; z-index:1; max-width:1120px; margin:0 auto;
+         padding:26px 16px 60px; display:grid; gap:18px; }
+  .card {
+    background:var(--glass); border:1px solid var(--glass-edge);
+    border-radius:16px; padding:20px 22px; backdrop-filter:blur(14px);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.06), 0 10px 30px rgba(0,0,0,.45);
+  }
   .fixture { display:flex; justify-content:space-between; align-items:center;
-             flex-wrap:wrap; gap:10px; }
-  .fixture h2 { font-size:22px; }
-  .badge { background:var(--green); color:#08331B; font-weight:700;
-           border-radius:8px; padding:3px 10px; font-size:12px; }
-  .probbar { display:flex; height:44px; border-radius:10px; overflow:hidden;
-             margin:16px 0 6px; font-weight:700; font-size:14px; }
+             flex-wrap:wrap; gap:12px; }
+  .team { display:flex; align-items:center; gap:10px; position:relative;
+          cursor:pointer; }
+  .team img { width:44px; height:44px; object-fit:contain;
+              filter:drop-shadow(0 0 8px rgba(198,255,77,.25)); }
+  .team h2 { font-size:21px; }
+  .vs { color:var(--muted); font-size:13px; letter-spacing:2px; }
+  .tip {
+    display:none; position:absolute; top:54px; left:0; z-index:5; width:230px;
+    background:rgba(20,23,29,.97); border:1px solid rgba(198,255,77,.35);
+    border-radius:12px; padding:12px 14px; font-size:12.5px;
+    box-shadow:0 0 30px rgba(198,255,77,.18), 0 18px 40px rgba(0,0,0,.6);
+  }
+  .team:hover .tip { display:block; }
+  .tip b { color:var(--lime); }
+  .probbar { display:flex; height:46px; border-radius:12px; overflow:hidden;
+             margin:18px 0 6px; font-weight:800; font-size:14px;
+             border:1px solid var(--glass-edge); }
   .probbar div { display:flex; align-items:center; justify-content:center;
-                 min-width:36px; }
-  .p-home { background:var(--green); color:#08331B; }
-  .p-draw { background:#5B6C8F; }
-  .p-away { background:var(--amber); color:#3A2703; }
+                 min-width:38px; }
+  .p-home { background:linear-gradient(180deg, var(--lime), var(--lime2));
+            color:#101505; text-shadow:none; }
+  .p-draw { background:linear-gradient(180deg, #3A414D, #2C323C);
+            color:var(--white); }
+  .p-away { background:linear-gradient(180deg, var(--mint), #45D6A0);
+            color:#062A1D; }
   .legend { display:flex; justify-content:space-between; color:var(--muted);
             font-size:12px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr));
           gap:18px; }
-  h3 { font-size:13px; text-transform:uppercase; letter-spacing:1.6px;
-       color:var(--green); margin-bottom:12px; }
+  h3 { font-size:12.5px; text-transform:uppercase; letter-spacing:2px;
+       color:var(--lime); margin-bottom:12px;
+       text-shadow:0 0 14px rgba(198,255,77,.35); }
   table { width:100%; border-collapse:collapse; font-size:14px; }
-  td { padding:5px 4px; border-bottom:1px solid rgba(255,255,255,.07); }
+  td { padding:5px 4px; border-bottom:1px solid rgba(255,255,255,.06); }
   td:last-child { text-align:right; font-variant-numeric:tabular-nums;
-                  font-weight:600; }
+                  font-weight:700; color:var(--white); }
   .muted { color:var(--muted); font-size:13px; }
-  .pill { display:inline-block; background:var(--navy2); border-radius:20px;
-          padding:4px 12px; margin:3px 4px 3px 0; font-size:12.5px;
-          color:var(--text); }
-  .stat { font-size:30px; font-weight:800; color:var(--green); }
+  .pill { display:inline-block; background:rgba(255,255,255,.06);
+          border:1px solid var(--glass-edge); border-radius:999px;
+          padding:4px 12px; margin:3px 4px 3px 0; font-size:12.5px; }
   .warn { color:var(--muted); font-size:12px; margin-top:14px; }
-  .bar { height:8px; background:var(--navy2); border-radius:5px;
+  .bar { height:8px; background:rgba(255,255,255,.08); border-radius:5px;
          overflow:hidden; margin-top:4px; }
-  .bar i { display:block; height:100%; background:var(--green); }
-  footer { text-align:center; color:var(--muted); font-size:12px;
-           padding-bottom:30px; }
+  .bar i { display:block; height:100%;
+           background:linear-gradient(90deg, var(--lime2), var(--lime));
+           box-shadow:0 0 12px rgba(198,255,77,.6); }
+  footer { position:relative; z-index:1; text-align:center;
+           color:var(--muted); font-size:12px; padding-bottom:30px; }
   #err { color:var(--red); padding:30px; text-align:center; }
 </style>
 </head>
 <body>
 <header>
-  <h1>VINDI<span>CATOR</span></h1>
+  <h1>VENDI<span>CATOR</span></h1>
   <small id="generated">loading…</small>
-  <span class="badge">SIX-ENGINE PREVIEW</span>
+  <span class="chip">SIX-ENGINE PREVIEW</span>
 </header>
 <main id="app"><div id="err" hidden></div></main>
-<footer>Statistical analysis, not betting advice · Vindicator prediction engine</footer>
+<footer>Statistical analysis, not betting advice · Vendicator prediction engine</footer>
 <script>
 const pct = v => (typeof v === "number" ? v.toFixed(1) + "%" : v);
+const TSDB = "https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=";
 
 fetch("/model/output/predictions.json")
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -77,6 +127,22 @@ fetch("/model/output/predictions.json")
     el.hidden = false; el.textContent = "Could not load predictions.json — run the pipeline first (" + e + ")"; });
 
 function row(k, v) { return `<tr><td>${k}</td><td>${v}</td></tr>`; }
+
+async function badge(team, imgId) {
+  try {
+    const r = await fetch(TSDB + encodeURIComponent(team));
+    const d = await r.json();
+    const url = d.teams && d.teams[0] && (d.teams[0].strBadge || d.teams[0].strTeamBadge);
+    if (url) document.getElementById(imgId).src = url + "/preview";
+  } catch (e) { /* badge is decorative; ignore */ }
+}
+
+function teamTip(name, probs, xg, side) {
+  return `<span class="tip"><b>${name}</b><br>
+    Win probability: <b>${pct(probs)}</b><br>
+    Expected goals: <b>${xg}</b><br>
+    Side: ${side} · click for full team stats (site build)</span>`;
+}
 
 function render(p) {
   document.getElementById("generated").textContent =
@@ -87,9 +153,19 @@ function render(p) {
 
   app.insertAdjacentHTML("beforeend", `
   <div class="card">
-    <div class="fixture"><h2>${p.fixture}</h2>
-      <span class="muted">${p.league} · expected goals
-      ${p.expected_goals.home} – ${p.expected_goals.away}</span></div>
+    <div class="fixture">
+      <div class="team">
+        <img id="badge-h" alt="" src="">
+        <h2>${home}</h2>
+        ${teamTip(home, f.home, p.expected_goals.home, "home")}
+      </div>
+      <span class="vs">VS · ${p.league}</span>
+      <div class="team">
+        <img id="badge-a" alt="" src="">
+        <h2>${away}</h2>
+        ${teamTip(away, f.away, p.expected_goals.away, "away")}
+      </div>
+    </div>
     <div class="probbar">
       <div class="p-home" style="flex:${f.home}">${pct(f.home)}</div>
       <div class="p-draw" style="flex:${f.draw}">${pct(f.draw)}</div>
@@ -146,6 +222,9 @@ function render(p) {
       <p class="warn">Rule-based for now — GNN heads take over in Phase 2;
       Claude turns these into match previews</p></div>
   </div>`);
+
+  badge(home, "badge-h");
+  badge(away, "badge-a");
 }
 </script>
 </body>

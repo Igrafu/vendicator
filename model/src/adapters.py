@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-UA = {"User-Agent": "VindicatorModel/0.1 (research; contact site owner)"}
+UA = {"User-Agent": "VendicatorModel/0.1 (research; contact site owner)"}
 
 
 class ApiFootball:
@@ -120,12 +120,22 @@ class FootballDataCoUk:
     SP1=La Liga, I1=Serie A, F1=Ligue 1 ... incl. lower leagues (E2, E3, EC)."""
 
     BASE = "https://www.football-data.co.uk/mmz4281"
+    CACHE = None  # set to a pathlib.Path directory to cache downloads
 
     def season_csv(self, season_code, div):
-        """season_code like '2526' for 2025/26; div like 'E0'."""
+        """season_code like '2526' for 2025/26; div like 'E0'.
+        Caches to model/data/ so repeated backtests don't re-download."""
+        cache = None
+        if self.CACHE:
+            cache = self.CACHE / f"fdcuk_{season_code}_{div}.csv"
+            if cache.exists():
+                return list(csv.DictReader(io.StringIO(
+                    cache.read_text(errors="ignore"))))
         r = requests.get(f"{self.BASE}/{season_code}/{div}.csv",
                          headers=UA, timeout=60)
         r.raise_for_status()
+        if cache:
+            cache.write_text(r.text)
         return list(csv.DictReader(io.StringIO(r.text)))
 
 

@@ -27,6 +27,21 @@ OUTPUT = ROOT / "model" / "output" / "predictions.json"
 HISTORY = ROOT / "records" / "model-history.jsonl"
 UNIFORM = np.array([1 / 3, 1 / 3, 1 / 3])
 
+FootballDataCoUk.CACHE = ROOT / "model" / "data"
+
+UNDERSTAT_LEAGUE = {"E0": "EPL", "SP1": "La_liga", "D1": "Bundesliga",
+                    "I1": "Serie_A", "F1": "Ligue_1"}
+DEFAULT_SEASONS = {
+    "E0": "1819,1920,2021,2122,2223,2324,2425,2526",
+    "E1": "2122,2223,2324,2425,2526",
+    "E2": "2122,2223,2324,2425,2526",
+    "E3": "2122,2223,2324,2425,2526",
+    "SP1": "2223,2324,2425",
+    "D1": "2223,2324,2425",
+    "I1": "2223,2324,2425",
+    "F1": "2223,2324,2425",
+}
+
 
 def understat_lookup(league="EPL"):
     """Lookup from cached Understat files (model/data/): nearest same-pairing
@@ -52,12 +67,22 @@ def understat_lookup(league="EPL"):
 
 
 def load_table(div, seasons):
+    if div in ("UCL", "UEL"):  # cached API-Football European cup fixtures
+        cached = json.loads(
+            (ROOT / "model" / "data" / f"{div.lower()}_matches.json")
+            .read_text())
+        rows = [{"Date": datetime.strptime(m["date"], "%Y-%m-%d")
+                 .strftime("%d/%m/%Y"),
+                 "HomeTeam": m["home"], "AwayTeam": m["away"],
+                 "FTHG": m["hg"], "FTAG": m["ag"]} for m in cached]
+        return build_match_table(rows)
     src = FootballDataCoUk()
     rows = []
     for s in seasons:
         rows += src.season_csv(s, div)
-    return build_match_table(rows, xg_lookup=understat_lookup(
-        "EPL" if div == "E0" else div))
+    us = UNDERSTAT_LEAGUE.get(div)
+    return build_match_table(rows,
+                             xg_lookup=understat_lookup(us) if us else None)
 
 
 def xg_poisson_probs(df):
@@ -110,8 +135,7 @@ def walk_forward_probs(df, train_end):
             dc_probs.append([mk["home"], mk["draw"], mk["away"]])
             dc_lams.append(lam)
             dc_mus.append(mu)
-            bp = bayes.probs_with_uncertainty(m["home"], m["away"],
-                                              n_samples=1500)
+            bp = bayes.probs_fast(m["home"], m["away"])
             bayes_probs.append([bp["home"], bp["draw"], bp["away"]])
         else:  # promoted team unseen in training window
             dc_probs.append(UNIFORM.tolist())
@@ -126,13 +150,20 @@ def walk_forward_probs(df, train_end):
     base = {"elo": np.array(elo_probs), "dixon_coles": np.array(dc_probs),
             "bayesian": np.array(bayes_probs),
             "xg_poisson": xg_poisson_probs(df)}
-    mkt = df[["mkt_p_home", "mkt_p_draw", "mkt_p_away"]].to_numpy(float)
-    base["market"] = np.where(np.isnan(mkt), UNIFORM, mkt)
+    if "mkt_p_home" in df.columns:  # absent for odds-less sources (UCL/UEL)
+        mkt = df[["mkt_p_home", "mkt_p_draw", "mkt_p_away"]].to_numpy(float)
+        base["market"] = np.where(np.isnan(mkt), UNIFORM, mkt)
+    else:
+        base["market"] = np.tile(UNIFORM, (len(df), 1))
     return df, base, {"elo": elo, "dc": dc, "bayes": bayes}
 
 
 def backtest(df, base):
-    """60/20/20 chronological split: base-train / meta-fit / evaluation."""
+    """60/20/20 chronological split: base-train / meta-fit / evaluation.
+
+    A draw-specialist head (binary GBM on 'is this a draw?') feeds the
+    stacker as a context feature - draws are the classic weak spot."""
+    from sklearn.ensemble import HistGradientBoostingClassifier
     n = len(df)
     i_meta, i_test = int(n * 0.6), int(n * 0.8)
     y = df["result"].to_numpy()
@@ -143,16 +174,24 @@ def backtest(df, base):
     tab_all = tab.predict_proba(X)
     base["tabular"] = tab_all
 
+    draw_head = HistGradientBoostingClassifier(max_iter=250,
+                                               learning_rate=0.05)
+    draw_head.fit(np.nan_to_num(X[:i_meta]), (y[:i_meta] == "D"))
+    p_draw = draw_head.predict_proba(np.nan_to_num(X))[:, 1].reshape(-1, 1)
+
     meta_slice = slice(i_meta, i_test)
     test_slice = slice(i_test, n)
     stack = StackedEnsemble().fit(
-        {k: v[meta_slice] for k, v in base.items()}, y[meta_slice])
+        {k: v[meta_slice] for k, v in base.items()}, y[meta_slice],
+        context=p_draw[meta_slice])
     # second stacker without market input, for fixtures with no odds yet
     no_mkt = {k: v for k, v in base.items() if k != "market"}
     stack_no_market = StackedEnsemble().fit(
-        {k: v[meta_slice] for k, v in no_mkt.items()}, y[meta_slice])
+        {k: v[meta_slice] for k, v in no_mkt.items()}, y[meta_slice],
+        context=p_draw[meta_slice])
 
-    final = stack.predict_proba({k: v[test_slice] for k, v in base.items()})
+    final = stack.predict_proba({k: v[test_slice] for k, v in base.items()},
+                                context=p_draw[test_slice])
     report = {"n_test": n - i_test,
               "tabular_members": list(tab.models),
               "trust_weights": stack.trust_weights(),
@@ -164,14 +203,15 @@ def backtest(df, base):
             "log_loss": round(log_loss_score(np.asarray(probs),
                                              y[test_slice]), 4)}
     final_nm = stack_no_market.predict_proba(
-        {k: v[test_slice] for k, v in no_mkt.items()})
+        {k: v[test_slice] for k, v in no_mkt.items()},
+        context=p_draw[test_slice])
     report["scores"]["STACKED_NO_MARKET"] = {
         "brier": round(brier(final_nm, y[test_slice]), 4),
         "log_loss": round(log_loss_score(final_nm, y[test_slice]), 4)}
-    return report, stack, stack_no_market, tab
+    return report, stack, stack_no_market, tab, draw_head
 
 
-def demo_prediction(df, models, stack, tab, home, away, league):
+def demo_prediction(df, models, stack, tab, draw_head, home, away, league):
     """Full site payload for one fixture, all percentages."""
     dc, elo, bayes = models["dc"], models["elo"], models["bayes"]
     grid, lam, mu = dc.score_grid(home, away)
@@ -189,7 +229,8 @@ def demo_prediction(df, models, stack, tab, home, away, league):
             "bayesian": np.array([[bp["home"], bp["draw"], bp["away"]]]),
             "xg_poisson": UNIFORM.reshape(1, 3),
             "tabular": tab.predict_proba(feat_row)}
-    final = stack.predict_proba(base)[0]
+    p_draw = draw_head.predict_proba(np.nan_to_num(feat_row))[:, 1]
+    final = stack.predict_proba(base, context=p_draw.reshape(-1, 1))[0]
     final_probs = {"home": float(final[0]), "draw": float(final[1]),
                    "away": float(final[2])}
 
@@ -234,26 +275,47 @@ def append_history(payload, league):
         f.write(json.dumps(rec, separators=(",", ":")) + "\n")
 
 
+def run_league(league, seasons=None):
+    seasons = (seasons or DEFAULT_SEASONS.get(league, "2223,2324,2425")
+               ).split(",")
+    df = load_table(league, seasons)
+    print(f"Loaded {len(df)} matches ({league})")
+    df, base, models = walk_forward_probs(df, int(len(df) * 0.6))
+    return df, base, models, backtest(df, base)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--league", default="E0")
-    ap.add_argument("--seasons", default="2223,2324,2425")
+    ap.add_argument("--league", default="E0",
+                    help="one league, or comma list for a backtest sweep")
+    ap.add_argument("--seasons")
     ap.add_argument("--home")
     ap.add_argument("--away")
     ap.add_argument("--no-history", action="store_true")
     args = ap.parse_args()
 
     print(f"Tabular libraries available: {sorted(TABULAR_AVAILABLE)}")
-    df = load_table(args.league, args.seasons.split(","))
-    print(f"Loaded {len(df)} matches ({args.league})")
+    leagues = args.league.split(",")
 
-    df, base, models = walk_forward_probs(df, int(len(df) * 0.6))
-    report, stack, stack_no_market, tab = backtest(df, base)
+    if len(leagues) > 1:  # per-league backtest sweep -> report file
+        sweep = {}
+        for lg in leagues:
+            print(f"\n=== {lg} ===")
+            *_, (report, *_models) = run_league(lg, args.seasons)
+            sweep[lg] = report
+            print(json.dumps(report["scores"], indent=2))
+        out = ROOT / "model" / "output" / "backtest_report.json"
+        out.write_text(json.dumps(sweep, indent=2))
+        print(f"\nWrote {out}")
+        return
+
+    df, base, models, (report, stack, stack_no_market, tab, draw_head) = \
+        run_league(leagues[0], args.seasons)
     print(json.dumps(report, indent=2))
 
     if args.home and args.away:
-        payload = demo_prediction(df, models, stack_no_market, tab,
-                                  args.home, args.away, args.league)
+        payload = demo_prediction(df, models, stack_no_market, tab, draw_head,
+                                  args.home, args.away, leagues[0])
         OUTPUT.parent.mkdir(parents=True, exist_ok=True)
         OUTPUT.write_text(json.dumps(payload, indent=2))
         if not args.no_history:

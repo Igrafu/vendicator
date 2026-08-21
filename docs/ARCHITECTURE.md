@@ -1,4 +1,4 @@
-# Vindicator — Six-Engine Architecture
+# Vendicator — Six-Engine Architecture
 
 Two strictly separated AI brains:
 - **Prediction Brain** — "what is likely to happen?" (engines below)

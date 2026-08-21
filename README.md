@@ -1,4 +1,4 @@
-# Vindicator — Football Prediction & Rewards Platform
+# Vendicator — Football Prediction & Rewards Platform
 
 Football score/betting-market prediction engine plus a WordPress (Bricks Builder)
 front end with user accounts, points, rankings and rewards.

@@ -1,0 +1,308 @@
+{
+  "E0": {
+    "n_test": 608,
+    "tabular_members": [
+      "lightgbm",
+      "xgboost",
+      "catboost",
+      "hist_gbm"
+    ],
+    "trust_weights": {
+      "bayesian": 0.15804848004769567,
+      "dixon_coles": 0.22117337225266484,
+      "elo": 0.1817226250830795,
+      "market": 0.6591061092993922,
+      "tabular": 0.24096802158617184,
+      "xg_poisson": 0.1470163422287408
+    },
+    "scores": {
+      "elo": {
+        "brier": 0.6147,
+        "log_loss": 1.0219
+      },
+      "dixon_coles": {
+        "brier": 0.6506,
+        "log_loss": 1.0784
+      },
+      "bayesian": {
+        "brier": 0.6656,
+        "log_loss": 1.1011
+      },
+      "xg_poisson": {
+        "brier": 0.64,
+        "log_loss": 1.0608
+      },
+      "market": {
+        "brier": 0.6001,
+        "log_loss": 1.0016
+      },
+      "tabular": {
+        "brier": 0.6806,
+        "log_loss": 1.1398
+      },
+      "STACKED+CALIBRATED": {
+        "brier": 0.6194,
+        "log_loss": 1.0428
+      },
+      "STACKED_NO_MARKET": {
+        "brier": 0.6264,
+        "log_loss": 1.0525
+      }
+    }
+  },
+  "E1": {
+    "n_test": 552,
+    "tabular_members": [
+      "lightgbm",
+      "xgboost",
+      "catboost",
+      "hist_gbm"
+    ],
+    "trust_weights": {
+      "bayesian": 0.29687053876583575,
+      "dixon_coles": 0.279000029691103,
+      "elo": 0.1875922793970843,
+      "market": 0.4040149367405619,
+      "tabular": 0.18564443376606068,
+      "xg_poisson": 0.012935659318980624
+    },
+    "scores": {
+      "elo": {
+        "brier": 0.645,
+        "log_loss": 1.0657
+      },
+      "dixon_coles": {
+        "brier": 0.6543,
+        "log_loss": 1.0816
+      },
+      "bayesian": {
+        "brier": 0.6517,
+        "log_loss": 1.0776
+      },
+      "xg_poisson": {
+        "brier": 0.6667,
+        "log_loss": 1.0986
+      },
+      "market": {
+        "brier": 0.6285,
+        "log_loss": 1.0416
+      },
+      "tabular": {
+        "brier": 0.7144,
+        "log_loss": 1.2018
+      },
+      "STACKED+CALIBRATED": {
+        "brier": 0.6474,
+        "log_loss": 1.091
+      },
+      "STACKED_NO_MARKET": {
+        "brier": 0.6524,
+        "log_loss": 1.1012
+      }
+    }
+  },
+  "E2": {
+    "n_test": 552,
+    "tabular_members": [
+      "lightgbm",
+      "xgboost",
+      "catboost",
+      "hist_gbm"
+    ],
+    "trust_weights": {
+      "bayesian": 0.24782970146328265,
+      "dixon_coles": 0.12388736473500535,
+      "elo": 0.25971913938788194,
+      "market": 0.5251181860719886,
+      "tabular": 0.1945260128381667,
+      "xg_poisson": 0.007688699976808388
+    },
+    "scores": {
+      "elo": {
+        "brier": 0.6292,
+        "log_loss": 1.0493
+      },
+      "dixon_coles": {
+        "brier": 0.6614,
+        "log_loss": 1.0943
+      },
+      "bayesian": {
+        "brier": 0.6632,
+        "log_loss": 1.0952
+      },
+      "xg_poisson": {
+        "brier": 0.6667,
+        "log_loss": 1.0986
+      },
+      "market": {
+        "brier": 0.6097,
+        "log_loss": 1.0188
+      },
+      "tabular": {
+        "brier": 0.6713,
+        "log_loss": 1.131
+      },
+      "STACKED+CALIBRATED": {
+        "brier": 0.6307,
+        "log_loss": 1.1027
+      },
+      "STACKED_NO_MARKET": {
+        "brier": 0.6338,
+        "log_loss": 1.0676
+      }
+    }
+  },
+  "E3": {
+    "n_test": 552,
+    "tabular_members": [
+      "lightgbm",
+      "xgboost",
+      "catboost",
+      "hist_gbm"
+    ],
+    "trust_weights": {
+      "bayesian": 0.173254404567821,
+      "dixon_coles": 0.22198326828142,
+      "elo": 0.06505712006211573,
+      "market": 0.4463578229354331,
+      "tabular": 0.2961453283097522,
+      "xg_poisson": 0.00863787068704982
+    },
+    "scores": {
+      "elo": {
+        "brier": 0.6326,
+        "log_loss": 1.0516
+      },
+      "dixon_coles": {
+        "brier": 0.6604,
+        "log_loss": 1.0889
+      },
+      "bayesian": {
+        "brier": 0.6581,
+        "log_loss": 1.0851
+      },
+      "xg_poisson": {
+        "brier": 0.6667,
+        "log_loss": 1.0986
+      },
+      "market": {
+        "brier": 0.6137,
+        "log_loss": 1.0218
+      },
+      "tabular": {
+        "brier": 0.6957,
+        "log_loss": 1.1517
+      },
+      "STACKED+CALIBRATED": {
+        "brier": 0.6358,
+        "log_loss": 1.1579
+      },
+      "STACKED_NO_MARKET": {
+        "brier": 0.6488,
+        "log_loss": 1.2017
+      }
+    }
+  },
+  "UCL": {
+    "n_test": 86,
+    "tabular_members": [
+      "lightgbm",
+      "xgboost",
+      "catboost",
+      "hist_gbm"
+    ],
+    "trust_weights": {
+      "bayesian": 0.12555647154060426,
+      "dixon_coles": 0.43166542531418184,
+      "elo": 0.1291145940657302,
+      "market": 0.00018977937859773565,
+      "tabular": 0.2226501882740054,
+      "xg_poisson": 0.00018977937859778187
+    },
+    "scores": {
+      "elo": {
+        "brier": 0.5699,
+        "log_loss": 0.9571
+      },
+      "dixon_coles": {
+        "brier": 0.6673,
+        "log_loss": 1.1258
+      },
+      "bayesian": {
+        "brier": 0.6429,
+        "log_loss": 1.0602
+      },
+      "xg_poisson": {
+        "brier": 0.6667,
+        "log_loss": 1.0986
+      },
+      "market": {
+        "brier": 0.6667,
+        "log_loss": 1.0986
+      },
+      "tabular": {
+        "brier": 0.9048,
+        "log_loss": 1.5786
+      },
+      "STACKED+CALIBRATED": {
+        "brier": 0.6256,
+        "log_loss": 1.0385
+      },
+      "STACKED_NO_MARKET": {
+        "brier": 0.6256,
+        "log_loss": 1.0385
+      }
+    }
+  },
+  "UEL": {
+    "n_test": 70,
+    "tabular_members": [
+      "lightgbm",
+      "xgboost",
+      "catboost",
+      "hist_gbm"
+    ],
+    "trust_weights": {
+      "bayesian": 0.1229083725975874,
+      "dixon_coles": 0.30606772049928815,
+      "elo": 0.18994301069234684,
+      "market": 0.0004984396713690471,
+      "tabular": 0.3591458508830061,
+      "xg_poisson": 0.0004984396713690048
+    },
+    "scores": {
+      "elo": {
+        "brier": 0.6115,
+        "log_loss": 1.0203
+      },
+      "dixon_coles": {
+        "brier": 0.6696,
+        "log_loss": 1.1008
+      },
+      "bayesian": {
+        "brier": 0.6525,
+        "log_loss": 1.0774
+      },
+      "xg_poisson": {
+        "brier": 0.6667,
+        "log_loss": 1.0986
+      },
+      "market": {
+        "brier": 0.6667,
+        "log_loss": 1.0986
+      },
+      "tabular": {
+        "brier": 0.9273,
+        "log_loss": 1.6272
+      },
+      "STACKED+CALIBRATED": {
+        "brier": 0.6067,
+        "log_loss": 1.0123
+      },
+      "STACKED_NO_MARKET": {
+        "brier": 0.6067,
+        "log_loss": 1.0123
+      }
+    }
+  }
+}

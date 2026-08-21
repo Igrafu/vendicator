@@ -1,7 +1,36 @@
 {
   "schema_version": 2,
-  "last_synced": null,
-  "users": [],
+  "last_synced": "2026-08-21T10:18:38.167272+00:00",
+  "users": [
+    {
+      "id": 3,
+      "username": "claudio",
+      "email": "bluetuxedo808@proton.me",
+      "joined": "",
+      "tier": "gold",
+      "points_balance": 0,
+      "lifetime_points": 0,
+      "ranking": null,
+      "top5_players": [],
+      "top5_teams": [],
+      "rewards_redeemed": [],
+      "invoices": []
+    },
+    {
+      "id": 1,
+      "username": "eljay00p@gmail.com",
+      "email": "eljay00p@gmail.com",
+      "joined": "",
+      "tier": "gold",
+      "points_balance": 0,
+      "lifetime_points": 0,
+      "ranking": null,
+      "top5_players": [],
+      "top5_teams": [],
+      "rewards_redeemed": [],
+      "invoices": []
+    }
+  ],
   "subscriptions": [],
   "_subscription_shape": {
     "subscription_id": "",
