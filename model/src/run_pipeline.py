@@ -37,8 +37,10 @@ DEFAULT_SEASONS = {
     "E2": "2122,2223,2324,2425,2526",
     "E3": "2122,2223,2324,2425,2526",
     "SP1": "2223,2324,2425",
+    "SP2": "2122,2223,2324,2425,2526",
     "D1": "2223,2324,2425",
     "I1": "2223,2324,2425",
+    "I2": "2122,2223,2324,2425,2526",
     "F1": "2223,2324,2425",
 }
 
@@ -66,8 +68,11 @@ def understat_lookup(league="EPL"):
     return lookup if pairs else None
 
 
+CUP_CODES = ("UCL", "UEL", "FAC", "EFLC", "CDR", "COPIT")
+
+
 def load_table(div, seasons):
-    if div in ("UCL", "UEL"):  # cached API-Football European cup fixtures
+    if div in CUP_CODES:  # cached API-Football cup fixtures
         cached = json.loads(
             (ROOT / "model" / "data" / f"{div.lower()}_matches.json")
             .read_text())

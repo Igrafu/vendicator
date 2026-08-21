@@ -1,0 +1,10466 @@
+{
+ "1874 Northwich": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "AC Milan": {
+  "competitions": [
+   "UCL",
+   "UEL",
+   "COPIT"
+  ],
+  "first_seen": "2022-09-06",
+  "last_seen": "2024-04-18",
+  "matches": 27
+ },
+ "AD Ceuta FC": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-01-19",
+  "matches": 4
+ },
+ "AEK Athens FC": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-08-15",
+  "last_seen": "2023-12-14",
+  "matches": 10
+ },
+ "AEK Larnaca": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-19",
+  "last_seen": "2022-11-03",
+  "matches": 12
+ },
+ "AFC Croydon Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "AFC Dunstable": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "AFC Emley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-30",
+  "matches": 8
+ },
+ "AFC Fylde": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-11-04",
+  "matches": 10
+ },
+ "AFC Hornchurch": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-03",
+  "matches": 8
+ },
+ "AFC Kempston Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "AFC Liverpool": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "AFC Mansfield": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-09",
+  "matches": 4
+ },
+ "AFC Portchester": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "AFC Rushden & Diamonds": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-04",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "AFC Stoneham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 8
+ },
+ "AFC Sudbury": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-16",
+  "matches": 8
+ },
+ "AFC Telford United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-02",
+  "matches": 2
+ },
+ "AFC Totton": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-10-14",
+  "matches": 7
+ },
+ "AFC Wimbledon": {
+  "competitions": [
+   "E2",
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 458
+ },
+ "AFC Wulfrunians": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "AS Roma": {
+  "competitions": [
+   "UEL",
+   "COPIT"
+  ],
+  "first_seen": "2022-09-08",
+  "last_seen": "2024-05-09",
+  "matches": 33
+ },
+ "Abbey Hey": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Abbey Rangers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-09",
+  "matches": 3
+ },
+ "Aberdeen": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2023-08-24",
+  "last_seen": "2023-08-31",
+  "matches": 2
+ },
+ "Accrington": {
+  "competitions": [
+   "E3",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 449
+ },
+ "Accrington ST": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-11-14",
+  "matches": 9
+ },
+ "Ajaccio": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-06-03",
+  "matches": 38
+ },
+ "Ajax": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-09-07",
+  "last_seen": "2023-12-14",
+  "matches": 16
+ },
+ "Alaves": {
+  "competitions": [
+   "SP1",
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-23",
+  "matches": 392
+ },
+ "Albacete": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2017-08-20",
+  "last_seen": "2026-05-30",
+  "matches": 339
+ },
+ "Albion Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 8
+ },
+ "Alcora": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-11-12",
+  "matches": 2
+ },
+ "Alcorcon": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2024-06-02",
+  "matches": 298
+ },
+ "Aldershot Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2024-01-07",
+  "matches": 6
+ },
+ "Alessandria": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2021-08-22",
+  "last_seen": "2022-05-06",
+  "matches": 38
+ },
+ "Alfaro": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Alfold": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Alfreton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-12-12",
+  "matches": 7
+ },
+ "Algar": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-11-13",
+  "matches": 2
+ },
+ "Almaz\u00e1n": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-11-12",
+  "matches": 1
+ },
+ "Almeria": {
+  "competitions": [
+   "SP2",
+   "SP1",
+   "CDR"
+  ],
+  "first_seen": "2016-08-19",
+  "last_seen": "2026-05-31",
+  "matches": 415
+ },
+ "Alresford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-09",
+  "matches": 2
+ },
+ "Alton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-08-08",
+  "matches": 2
+ },
+ "Altrincham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-10-14",
+  "matches": 3
+ },
+ "Alvechurch": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 8
+ },
+ "Alzira": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Amiens": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2017-08-05",
+  "last_seen": "2020-03-06",
+  "matches": 104
+ },
+ "Amig\u00f3": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-10-19",
+  "matches": 1
+ },
+ "Amorebieta": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2021-08-14",
+  "last_seen": "2024-06-02",
+  "matches": 87
+ },
+ "Andorra": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2022-08-15",
+  "last_seen": "2026-05-31",
+  "matches": 126
+ },
+ "Andover New Street": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Andratx": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-12-06",
+  "matches": 2
+ },
+ "Angers": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-17",
+  "matches": 324
+ },
+ "Anstey Nomads": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 13
+ },
+ "Antequera": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-12-06",
+  "matches": 2
+ },
+ "Antoniano": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Antwerp": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-08-22",
+  "last_seen": "2023-12-13",
+  "matches": 8
+ },
+ "Apollon Limassol": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-08-03",
+  "last_seen": "2022-08-25",
+  "matches": 4
+ },
+ "Arandina": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2024-01-06",
+  "matches": 3
+ },
+ "Ardley United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Arenas Getxo": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-12-21",
+  "matches": 2
+ },
+ "Arenteiro": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-12-06",
+  "matches": 4
+ },
+ "Aris": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-26",
+  "last_seen": "2023-12-14",
+  "matches": 12
+ },
+ "Arlesey Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Arnedo": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-12-21",
+  "matches": 2
+ },
+ "Arosa": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-02",
+  "last_seen": "2023-12-05",
+  "matches": 2
+ },
+ "Arsenal": {
+  "competitions": [
+   "E0",
+   "UCL",
+   "UEL",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-14",
+  "last_seen": "2026-05-24",
+  "matches": 404
+ },
+ "Ascoli": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2024-05-10",
+  "matches": 313
+ },
+ "Ascot United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-09-15",
+  "matches": 7
+ },
+ "Ashby Ivanhoe": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Ashford Town (Middlesex)": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 6
+ },
+ "Ashford United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Ashington AFC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 10
+ },
+ "Ashton & Backwell United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Ashton Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-09",
+  "matches": 2
+ },
+ "Ashton United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-14",
+  "matches": 7
+ },
+ "Aston Villa": {
+  "competitions": [
+   "E1",
+   "E0",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-07",
+  "last_seen": "2026-05-24",
+  "matches": 411
+ },
+ "Atalanta": {
+  "competitions": [
+   "I1",
+   "UEL",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-22",
+  "matches": 400
+ },
+ "Ath Bilbao": {
+  "competitions": [
+   "SP1"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-23",
+  "matches": 380
+ },
+ "Ath Madrid": {
+  "competitions": [
+   "SP1"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-24",
+  "matches": 380
+ },
+ "Atherstone Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 7
+ },
+ "Atherton Collieries": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-19",
+  "matches": 4
+ },
+ "Athletic Club": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2024-04-06",
+  "matches": 15
+ },
+ "Athletic Newham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Atletico Madrid": {
+  "competitions": [
+   "UCL",
+   "CDR"
+  ],
+  "first_seen": "2022-09-07",
+  "last_seen": "2024-04-16",
+  "matches": 26
+ },
+ "Atl\u00e8tic Club d'Escaldes": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-06-27",
+  "last_seen": "2023-06-27",
+  "matches": 1
+ },
+ "Atl\u00e9tico Astorga": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-12-06",
+  "matches": 2
+ },
+ "Atl\u00e9tico Baleares": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Atl\u00e9tico Lugones": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2023-11-01",
+  "matches": 3
+ },
+ "Atl\u00e9tico Paso": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-12-20",
+  "matches": 2
+ },
+ "Atzeneta": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-14",
+  "last_seen": "2023-12-05",
+  "matches": 2
+ },
+ "Augsburg": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-16",
+  "matches": 340
+ },
+ "Austria Vienna": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2022-08-18",
+  "last_seen": "2022-08-25",
+  "matches": 2
+ },
+ "Autol": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-11-12",
+  "matches": 2
+ },
+ "Auxerre": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2026-05-17",
+  "matches": 106
+ },
+ "Aveley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-17",
+  "matches": 8
+ },
+ "Avellino": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-08",
+  "matches": 122
+ },
+ "Avro": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-06",
+  "matches": 5
+ },
+ "Aylesbury United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-18",
+  "matches": 6
+ },
+ "Aylesbury Vale Dynamos": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Aylestone Park": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-08",
+  "matches": 2
+ },
+ "Azuaga": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "BK Hacken": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-12",
+  "last_seen": "2023-12-14",
+  "matches": 14
+ },
+ "BSC Young Boys": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-08-23",
+  "last_seen": "2024-02-22",
+  "matches": 10
+ },
+ "Badalona": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Badshot Lea": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Baffins Milton Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Baldock Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 2
+ },
+ "Balham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Ballkani": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2023-07-19",
+  "matches": 4
+ },
+ "Bamber Bridge": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Banbury United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-20",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Banstead Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Barakaldo": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Barbad\u00e1s": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-11-12",
+  "matches": 2
+ },
+ "Barbastro": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2024-01-07",
+  "matches": 3
+ },
+ "Barcelona": {
+  "competitions": [
+   "SP1",
+   "UCL",
+   "UEL",
+   "CDR"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-23",
+  "matches": 406
+ },
+ "Barcelona B": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2017-08-19",
+  "last_seen": "2018-06-02",
+  "matches": 42
+ },
+ "Bari": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-08",
+  "matches": 240
+ },
+ "Barking": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Barnet": {
+  "competitions": [
+   "E3",
+   "FAC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 147
+ },
+ "Barnoldswick Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Barnsley": {
+  "competitions": [
+   "E2",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 468
+ },
+ "Barnstaple Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Barrow": {
+  "competitions": [
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2020-09-12",
+  "last_seen": "2026-05-02",
+  "matches": 282
+ },
+ "Barton Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-30",
+  "matches": 10
+ },
+ "Barton Town Old Boys": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "Barwell": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 5
+ },
+ "Basford United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Bashley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Basildon United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Basingstoke Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Bastia": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-12",
+  "last_seen": "2017-05-20",
+  "matches": 38
+ },
+ "Bate Borisov": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-11",
+  "last_seen": "2023-08-17",
+  "matches": 6
+ },
+ "Bath City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-14",
+  "matches": 6
+ },
+ "Bayer Leverkusen": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-09-07",
+  "last_seen": "2024-05-22",
+  "matches": 27
+ },
+ "Bayern Munich": {
+  "competitions": [
+   "D1",
+   "UCL"
+  ],
+  "first_seen": "2016-08-26",
+  "last_seen": "2026-05-16",
+  "matches": 362
+ },
+ "Beaconsfield Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-05",
+  "matches": 4
+ },
+ "Bearsted": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Beasain": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-11-12",
+  "matches": 1
+ },
+ "Beckenham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 9
+ },
+ "Bedfont Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-22",
+  "matches": 4
+ },
+ "Bedford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 7
+ },
+ "Bedworth United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Belper Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Belper United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Bemerton Heath Harleq.": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 4
+ },
+ "Benevento": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2023-05-19",
+  "matches": 269
+ },
+ "Benfica": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-08-02",
+  "last_seen": "2024-04-18",
+  "matches": 26
+ },
+ "Berkhamsted": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-30",
+  "matches": 7
+ },
+ "Betis": {
+  "competitions": [
+   "SP1"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-23",
+  "matches": 380
+ },
+ "Bewdley Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Bexhill United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Bideford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Bielefeld": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2020-09-19",
+  "last_seen": "2022-05-14",
+  "matches": 68
+ },
+ "Biggleswade": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-21",
+  "last_seen": "2023-09-17",
+  "matches": 5
+ },
+ "Biggleswade Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-10-14",
+  "matches": 12
+ },
+ "Biggleswade United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Billericay Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-17",
+  "matches": 9
+ },
+ "Binfield": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-05",
+  "matches": 7
+ },
+ "Birmingham": {
+  "competitions": [
+   "E1",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 469
+ },
+ "Birtley Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-08",
+  "last_seen": "2023-08-08",
+  "matches": 1
+ },
+ "Bishop Auckland": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 8
+ },
+ "Bishop's Cleeve": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-09-02",
+  "matches": 9
+ },
+ "Bishop's Stortford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-19",
+  "matches": 3
+ },
+ "Bitton": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Blackburn": {
+  "competitions": [
+   "E1",
+   "FAC",
+   "EFLC",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 476
+ },
+ "Blackfield & Langley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Blackpool": {
+  "competitions": [
+   "E2",
+   "E1",
+   "FAC",
+   "EFLC",
+   "E3"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 458
+ },
+ "Blyth Spartans": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-03",
+  "matches": 8
+ },
+ "Bochum": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2021-08-14",
+  "last_seen": "2025-05-17",
+  "matches": 136
+ },
+ "Bodo/Glimt": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2022-11-03",
+  "matches": 14
+ },
+ "Bognor Regis Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Boiro": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Boldmere St. Michaels": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Bologna": {
+  "competitions": [
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-23",
+  "matches": 387
+ },
+ "Bolton": {
+  "competitions": [
+   "E1",
+   "E2",
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 457
+ },
+ "Bootle": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Bordeaux": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2022-05-21",
+  "matches": 218
+ },
+ "Boreham Wood": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-11-04",
+  "matches": 7
+ },
+ "Boro Rangers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Borussia Dortmund": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-09-06",
+  "last_seen": "2024-06-01",
+  "matches": 21
+ },
+ "Boston United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-10-14",
+  "matches": 10
+ },
+ "Bottesford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Bournemouth": {
+  "competitions": [
+   "E0",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-14",
+  "last_seen": "2026-05-24",
+  "matches": 406
+ },
+ "Bournemouth FC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Bowers & Pitsea": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-08-23",
+  "matches": 3
+ },
+ "Brackley Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-30",
+  "matches": 4
+ },
+ "Bracknell Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-11-04",
+  "matches": 11
+ },
+ "Bradford": {
+  "competitions": [
+   "E2",
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 458
+ },
+ "Bradford (Park Avenue)": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-18",
+  "matches": 4
+ },
+ "Bradford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Braintree": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-17",
+  "matches": 8
+ },
+ "Brantham Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Breidablik": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-06-27",
+  "last_seen": "2023-08-17",
+  "matches": 8
+ },
+ "Brentford": {
+  "competitions": [
+   "E1",
+   "E0",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-24",
+  "matches": 427
+ },
+ "Brentwood Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Brescia": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2025-05-13",
+  "matches": 350
+ },
+ "Brest": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2019-08-10",
+  "last_seen": "2026-05-17",
+  "matches": 244
+ },
+ "Bridgwater Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Bridlington Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Brighouse Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Brightlingsea Regent": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 6
+ },
+ "Brighton": {
+  "competitions": [
+   "E0",
+   "UEL",
+   "FAC",
+   "EFLC",
+   "E1"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-24",
+  "matches": 408
+ },
+ "Brimscombe & Thrupp": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-09",
+  "matches": 3
+ },
+ "Brislington": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Bristol City": {
+  "competitions": [
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 473
+ },
+ "Bristol Manor Farm": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-16",
+  "matches": 5
+ },
+ "Bristol Rovers": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2024-01-17",
+  "matches": 8
+ },
+ "Bristol Rvs": {
+  "competitions": [
+   "E2",
+   "E3"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 449
+ },
+ "Brixham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Broadbridge Heath": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Broadfields United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Brockenhurst": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Bromley": {
+  "competitions": [
+   "E3",
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2026-05-02",
+  "matches": 95
+ },
+ "Bromsgrove Sporting": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-02",
+  "matches": 6
+ },
+ "Buckhurst Hill": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Buckland Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 5
+ },
+ "Buducnost Podgorica": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-06-27",
+  "last_seen": "2023-06-30",
+  "matches": 2
+ },
+ "Bugbrooke St Michaels": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Burgess Hill Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-16",
+  "matches": 9
+ },
+ "Burgos": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2021-08-15",
+  "last_seen": "2026-05-31",
+  "matches": 215
+ },
+ "Burnham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Burnley": {
+  "competitions": [
+   "E0",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-24",
+  "matches": 408
+ },
+ "Burscough": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Burton": {
+  "competitions": [
+   "E2",
+   "E1"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 449
+ },
+ "Burton Albion": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-11-14",
+  "matches": 7
+ },
+ "Bury": {
+  "competitions": [
+   "E3",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2019-05-04",
+  "matches": 138
+ },
+ "Bury AFC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-19",
+  "matches": 11
+ },
+ "Bury Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Buxton": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-16",
+  "matches": 6
+ },
+ "Bu\u00f1ol": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-11",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "CD Coria": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-12-21",
+  "matches": 2
+ },
+ "CF Talavera": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-31",
+  "last_seen": "2023-10-31",
+  "matches": 1
+ },
+ "CFR 1907 Cluj": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2022-07-13",
+  "matches": 2
+ },
+ "Cacere\u00f1o": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-10-31",
+  "matches": 4
+ },
+ "Cadbury Heath": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-20",
+  "matches": 3
+ },
+ "Cadiz": {
+  "competitions": [
+   "SP2",
+   "SP1",
+   "CDR"
+  ],
+  "first_seen": "2016-08-19",
+  "last_seen": "2026-05-31",
+  "matches": 407
+ },
+ "Caen": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2019-05-24",
+  "matches": 114
+ },
+ "Cagliari": {
+  "competitions": [
+   "I1",
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-24",
+  "matches": 385
+ },
+ "Camberley Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-08-05",
+  "matches": 5
+ },
+ "Cambridge": {
+  "competitions": [
+   "E3",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 451
+ },
+ "Cambridge City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-21",
+  "last_seen": "2023-09-30",
+  "matches": 6
+ },
+ "Cambridge United": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-02",
+  "last_seen": "2024-01-06",
+  "matches": 9
+ },
+ "Campion": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-08",
+  "last_seen": "2023-08-08",
+  "matches": 1
+ },
+ "Canterbury City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-10",
+  "matches": 2
+ },
+ "Canvey Island": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-19",
+  "matches": 5
+ },
+ "Cardassar": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-10-19",
+  "matches": 1
+ },
+ "Cardiff": {
+  "competitions": [
+   "E0",
+   "E1",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 459
+ },
+ "Carlisle": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2025-05-03",
+  "matches": 410
+ },
+ "Carlisle City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-04",
+  "matches": 3
+ },
+ "Carlton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-16",
+  "matches": 6
+ },
+ "Carpi": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2019-05-11",
+  "matches": 120
+ },
+ "Carrarese": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2024-08-18",
+  "last_seen": "2026-05-08",
+  "matches": 76
+ },
+ "Carshalton Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-03",
+  "matches": 8
+ },
+ "Cartagena": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2020-09-13",
+  "last_seen": "2025-06-01",
+  "matches": 210
+ },
+ "Castellon": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2020-09-12",
+  "last_seen": "2026-05-31",
+  "matches": 126
+ },
+ "Castell\u00f3n": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-31",
+  "last_seen": "2024-01-07",
+  "matches": 3
+ },
+ "Catanzaro": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2022-07-31",
+  "last_seen": "2026-05-08",
+  "matches": 117
+ },
+ "Cay\u00f3n": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-12-07",
+  "matches": 2
+ },
+ "Cazalegas": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-11-13",
+  "matches": 2
+ },
+ "Celta": {
+  "competitions": [
+   "SP1"
+  ],
+  "first_seen": "2016-08-22",
+  "last_seen": "2026-05-23",
+  "matches": 380
+ },
+ "Celta Vigo": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2024-01-23",
+  "matches": 8
+ },
+ "Celtic": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-09-06",
+  "last_seen": "2023-12-13",
+  "matches": 12
+ },
+ "Cesena": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-29",
+  "last_seen": "2026-05-08",
+  "matches": 162
+ },
+ "Ceuta": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2025-08-15",
+  "last_seen": "2026-05-30",
+  "matches": 42
+ },
+ "Ceuta 6 de Junio": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2023-10-11",
+  "matches": 2
+ },
+ "Chadderton": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-06",
+  "last_seen": "2023-08-06",
+  "matches": 1
+ },
+ "Chalfont St Peter": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Charlton": {
+  "competitions": [
+   "E2",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 472
+ },
+ "Charnock Richard": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-05",
+  "matches": 9
+ },
+ "Chasetown": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Chatham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Cheadle Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Chelmsford City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-17",
+  "matches": 11
+ },
+ "Chelsea": {
+  "competitions": [
+   "E0",
+   "UCL",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-15",
+  "last_seen": "2026-05-24",
+  "matches": 405
+ },
+ "Cheltenham": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 454
+ },
+ "Chertsey Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Chesham United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-11-04",
+  "matches": 9
+ },
+ "Cheshunt": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Chester": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-11-14",
+  "matches": 10
+ },
+ "Chesterfield": {
+  "competitions": [
+   "E3",
+   "FAC",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 193
+ },
+ "Chichester City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 5
+ },
+ "Chiclana": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-11",
+  "last_seen": "2023-11-02",
+  "matches": 2
+ },
+ "Chievo": {
+  "competitions": [
+   "I1",
+   "I2"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2021-05-10",
+  "matches": 190
+ },
+ "Chippenham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-16",
+  "matches": 7
+ },
+ "Chipping Sodbury Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-23",
+  "matches": 3
+ },
+ "Chipstead": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "Chorley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-30",
+  "matches": 6
+ },
+ "Christchurch": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Cinderford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-06",
+  "matches": 5
+ },
+ "Cirbonero": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Cirencester Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-19",
+  "matches": 6
+ },
+ "Cittadella": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2025-05-13",
+  "matches": 352
+ },
+ "City of Liverpool": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-09",
+  "matches": 5
+ },
+ "Clacton": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-15",
+  "matches": 4
+ },
+ "Clapton": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Cleethorpes Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-16",
+  "matches": 8
+ },
+ "Clermont": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2021-08-08",
+  "last_seen": "2024-05-19",
+  "matches": 110
+ },
+ "Clevedon Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Clitheroe": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 8
+ },
+ "Club Brugge KV": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-09-07",
+  "last_seen": "2023-03-07",
+  "matches": 8
+ },
+ "Coalville Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 9
+ },
+ "Cobham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Cockfosters": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Cogenhoe United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Coggeshall Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-06",
+  "matches": 3
+ },
+ "Colchester": {
+  "competitions": [
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 456
+ },
+ "Coleshill Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Colliers Wood United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Colne": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Colney Heath": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Como": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2021-08-22",
+  "last_seen": "2026-05-24",
+  "matches": 191
+ },
+ "Compostela": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Concord Rangers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-05",
+  "matches": 3
+ },
+ "Congleton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 10
+ },
+ "Consett": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Corby Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Cordoba": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-31",
+  "matches": 211
+ },
+ "Corinthian": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Corinthian-Casuals": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-08-23",
+  "matches": 3
+ },
+ "Corsham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Coruxo": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Cosenza": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2018-08-26",
+  "last_seen": "2025-05-13",
+  "matches": 265
+ },
+ "Covadonga": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Coventry": {
+  "competitions": [
+   "E3",
+   "E2",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 457
+ },
+ "Coventry Sphinx": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Coventry United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-04",
+  "matches": 3
+ },
+ "Cowes Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Crawley Down Gatwick": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Crawley Green": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Crawley Town": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 457
+ },
+ "Cray Valley PM": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-11-15",
+  "matches": 13
+ },
+ "Cray Wanderers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-20",
+  "matches": 5
+ },
+ "Cremonese": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2017-08-25",
+  "last_seen": "2026-05-24",
+  "matches": 353
+ },
+ "Crewe": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 459
+ },
+ "Cribbs": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-09-16",
+  "matches": 5
+ },
+ "Cristo Atl\u00e9tico": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-11-12",
+  "matches": 1
+ },
+ "Crook Town AFC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Crotone": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2023-08-14",
+  "matches": 227
+ },
+ "Crowborough Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Crystal Palace": {
+  "competitions": [
+   "E0",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-24",
+  "matches": 387
+ },
+ "Cukaricki": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2023-08-24",
+  "last_seen": "2023-08-31",
+  "matches": 2
+ },
+ "Cultural Leonesa": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2025-08-15",
+  "last_seen": "2026-05-30",
+  "matches": 42
+ },
+ "Curzon Ashton": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-11-04",
+  "matches": 10
+ },
+ "Dagenham & Redbridge": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-10-14",
+  "matches": 5
+ },
+ "Darlaston Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-06",
+  "matches": 5
+ },
+ "Darlington 1883": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-30",
+  "matches": 4
+ },
+ "Darmstadt": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2024-05-18",
+  "matches": 68
+ },
+ "Dartford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-16",
+  "matches": 2
+ },
+ "Daventry Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Deal Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-28",
+  "matches": 5
+ },
+ "Deeping Rangers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Deportivo La Coruna": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-12-06",
+  "matches": 3
+ },
+ "Deportivo Murcia": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-11-02",
+  "matches": 2
+ },
+ "Derby": {
+  "competitions": [
+   "E1",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 471
+ },
+ "Dereham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-09-02",
+  "matches": 7
+ },
+ "Desborough Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Didcot Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-30",
+  "matches": 8
+ },
+ "Dijon": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2021-05-23",
+  "matches": 180
+ },
+ "Dinamo Batumi": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2022-07-13",
+  "matches": 2
+ },
+ "Dinamo San Juan": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-10-19",
+  "matches": 1
+ },
+ "Dinamo Tbilisi": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-07-12",
+  "last_seen": "2023-07-19",
+  "matches": 2
+ },
+ "Dinamo Zagreb": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-19",
+  "last_seen": "2023-08-31",
+  "matches": 18
+ },
+ "Diocesano": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-12-20",
+  "matches": 2
+ },
+ "Dnipro-1": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-08-18",
+  "last_seen": "2023-08-17",
+  "matches": 6
+ },
+ "Doncaster": {
+  "competitions": [
+   "E2",
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 455
+ },
+ "Dorchester Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Dorking Wanderers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-10-14",
+  "matches": 2
+ },
+ "Dortmund": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-16",
+  "matches": 340
+ },
+ "Dover": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-14",
+  "matches": 4
+ },
+ "Downham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Dudley Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Dulwich Hamlet": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-05",
+  "matches": 4
+ },
+ "Dunstable Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Dunston UTS": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Dynamo Kyiv": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-20",
+  "last_seen": "2022-11-03",
+  "matches": 12
+ },
+ "Easington Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-21",
+  "matches": 7
+ },
+ "East Grinstead Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 6
+ },
+ "East Thurrock United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-23",
+  "matches": 6
+ },
+ "Eastbourne Borough": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Eastbourne Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 5
+ },
+ "Eastbourne United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 5
+ },
+ "Eastleigh": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2024-01-16",
+  "matches": 7
+ },
+ "Eastwood Community": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Ebbsfleet United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-17",
+  "matches": 7
+ },
+ "Eccleshill United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Edgware Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-08",
+  "matches": 6
+ },
+ "Egham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Eibar": {
+  "competitions": [
+   "SP1",
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-19",
+  "last_seen": "2026-05-31",
+  "matches": 405
+ },
+ "Ein Frankfurt": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-16",
+  "matches": 340
+ },
+ "Eintracht Frankfurt": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-09-07",
+  "last_seen": "2023-03-15",
+  "matches": 8
+ },
+ "Elche": {
+  "competitions": [
+   "SP2",
+   "SP1",
+   "CDR"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-23",
+  "matches": 368
+ },
+ "Eldense": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2025-06-01",
+  "matches": 89
+ },
+ "Ely City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Empoli": {
+  "competitions": [
+   "I1",
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-08",
+  "matches": 386
+ },
+ "Enfield 1893": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 6
+ },
+ "Enfield Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-14",
+  "matches": 5
+ },
+ "Epsom & Ewell FC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Erith & Belvedere": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-06",
+  "matches": 6
+ },
+ "Erith Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 7
+ },
+ "Espanol": {
+  "competitions": [
+   "SP1",
+   "SP2"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-23",
+  "matches": 388
+ },
+ "Espanyol": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2024-01-06",
+  "matches": 7
+ },
+ "Europa Fc": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Everton": {
+  "competitions": [
+   "E0",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-24",
+  "matches": 390
+ },
+ "Evesham United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Exeter": {
+  "competitions": [
+   "E3",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 451
+ },
+ "Exeter City": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-11-04",
+  "matches": 9
+ },
+ "Exmouth": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Extremadura UD": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2018-08-19",
+  "last_seen": "2020-07-20",
+  "matches": 84
+ },
+ "Eynesbury Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "F91 Dudelange": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2022-08-11",
+  "matches": 6
+ },
+ "FC Andorra": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-11-01",
+  "matches": 3
+ },
+ "FC Astana": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-12",
+  "last_seen": "2023-08-17",
+  "matches": 6
+ },
+ "FC Cartagena": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2024-01-07",
+  "matches": 6
+ },
+ "FC Copenhagen": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-08-16",
+  "last_seen": "2024-03-06",
+  "matches": 22
+ },
+ "FC Halifax Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-10-14",
+  "matches": 3
+ },
+ "FC Koln": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-16",
+  "matches": 272
+ },
+ "FC Levadia Tallinn": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-06-21",
+  "last_seen": "2022-06-21",
+  "matches": 1
+ },
+ "FC Lugano": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2023-08-24",
+  "last_seen": "2023-08-31",
+  "matches": 2
+ },
+ "FC Midtjylland": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-19",
+  "last_seen": "2023-02-23",
+  "matches": 12
+ },
+ "FC Porto": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-09-07",
+  "last_seen": "2024-03-12",
+  "matches": 16
+ },
+ "FC Romania": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "FC Urartu": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-07-11",
+  "last_seen": "2023-07-18",
+  "matches": 2
+ },
+ "FC Zurich": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-19",
+  "last_seen": "2022-11-03",
+  "matches": 12
+ },
+ "FK Crvena Zvezda": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-08-03",
+  "last_seen": "2023-12-13",
+  "matches": 16
+ },
+ "FK Partizan": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2022-08-04",
+  "last_seen": "2022-08-11",
+  "matches": 2
+ },
+ "FK Tobol Kostanay": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2022-07-13",
+  "matches": 2
+ },
+ "FK Zalgiris Vilnius": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2023-08-17",
+  "matches": 14
+ },
+ "Fairford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-09",
+  "matches": 3
+ },
+ "Fakenham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 7
+ },
+ "Falmouth Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Fareham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Farnborough": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-30",
+  "matches": 9
+ },
+ "Farnham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Farsley Celtic FC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-19",
+  "matches": 4
+ },
+ "Farul Constanta": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-07-12",
+  "last_seen": "2023-07-18",
+  "matches": 2
+ },
+ "Faversham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Felixstowe & Walton Utd": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Fenerbah\u00e7e": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-20",
+  "last_seen": "2023-03-16",
+  "matches": 14
+ },
+ "FeralpiSalo": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2023-08-20",
+  "last_seen": "2024-05-10",
+  "matches": 38
+ },
+ "Feralpisalo": {
+  "competitions": [
+   "COPIT"
+  ],
+  "first_seen": "2022-07-30",
+  "last_seen": "2023-08-14",
+  "matches": 4
+ },
+ "Ferencvarosi TC": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2023-07-19",
+  "matches": 18
+ },
+ "Ferrol": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2023-08-12",
+  "last_seen": "2025-05-31",
+  "matches": 84
+ },
+ "Feyenoord": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-09-08",
+  "last_seen": "2024-02-22",
+  "matches": 18
+ },
+ "Fiorentina": {
+  "competitions": [
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-22",
+  "matches": 389
+ },
+ "Fisher": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 10
+ },
+ "Flackwell Heath": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-06",
+  "matches": 5
+ },
+ "Fleet Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Fleetwood Town": {
+  "competitions": [
+   "E2",
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 460
+ },
+ "Flora Tallinn": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-07-11",
+  "last_seen": "2023-07-18",
+  "matches": 2
+ },
+ "Foggia": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2017-08-27",
+  "last_seen": "2023-08-05",
+  "matches": 79
+ },
+ "Folkestone Invicta": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-19",
+  "matches": 7
+ },
+ "Folland Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Forest Green": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2017-08-05",
+  "last_seen": "2024-04-27",
+  "matches": 321
+ },
+ "Fortuna Dusseldorf": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2018-08-25",
+  "last_seen": "2020-06-27",
+  "matches": 68
+ },
+ "Freiburg": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-28",
+  "last_seen": "2026-05-16",
+  "matches": 340
+ },
+ "Frenford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Frickley Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Frimley Green": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Frome Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-30",
+  "matches": 7
+ },
+ "Frosinone": {
+  "competitions": [
+   "I1",
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-08",
+  "matches": 393
+ },
+ "Fuenlabrada": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2019-08-17",
+  "last_seen": "2022-11-12",
+  "matches": 127
+ },
+ "Fuentes": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-11-12",
+  "matches": 2
+ },
+ "Fulham": {
+  "competitions": [
+   "E0",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-05",
+  "last_seen": "2026-05-24",
+  "matches": 426
+ },
+ "Gainsborough Trinity": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-05",
+  "matches": 6
+ },
+ "Galatasaray": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-25",
+  "last_seen": "2024-02-22",
+  "matches": 14
+ },
+ "Garforth Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Gateshead": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-11-04",
+  "matches": 5
+ },
+ "Genk": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-25",
+  "last_seen": "2023-08-17",
+  "matches": 4
+ },
+ "Genoa": {
+  "competitions": [
+   "I1",
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-24",
+  "matches": 386
+ },
+ "Gent": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2022-08-18",
+  "last_seen": "2022-08-25",
+  "matches": 2
+ },
+ "Gernika": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-11-01",
+  "matches": 3
+ },
+ "Getafe": {
+  "competitions": [
+   "SP1",
+   "CDR",
+   "SP2"
+  ],
+  "first_seen": "2016-08-19",
+  "last_seen": "2026-05-23",
+  "matches": 391
+ },
+ "Gillingham": {
+  "competitions": [
+   "E2",
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 463
+ },
+ "Gimnastic": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2023-11-01",
+  "matches": 130
+ },
+ "Gimn\u00e1stica Segoviana": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-08",
+  "last_seen": "2023-11-08",
+  "matches": 1
+ },
+ "Gimn\u00e1stica Torrelavega": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Girona": {
+  "competitions": [
+   "SP1",
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-23",
+  "matches": 403
+ },
+ "Glebe": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Glossop North End": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Gloucester City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-16",
+  "matches": 3
+ },
+ "Godmanchester Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Golcar United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "Goole": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-01",
+  "matches": 7
+ },
+ "Gorleston": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-30",
+  "matches": 7
+ },
+ "Gosport Borough": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-04",
+  "matches": 8
+ },
+ "Granada": {
+  "competitions": [
+   "SP2",
+   "SP1"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-30",
+  "matches": 400
+ },
+ "Granada CF": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-11-02",
+  "matches": 3
+ },
+ "Grantham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Grays Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-23",
+  "matches": 6
+ },
+ "Great Wakering Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Gresley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Greuther Furth": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2021-08-14",
+  "last_seen": "2022-05-14",
+  "matches": 34
+ },
+ "Grimsby": {
+  "competitions": [
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 418
+ },
+ "Grimsby Borough": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Guadalajara": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-12-20",
+  "matches": 2
+ },
+ "Guijuelo": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-11-01",
+  "matches": 3
+ },
+ "Guildford City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Guingamp": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-12",
+  "last_seen": "2019-05-24",
+  "matches": 114
+ },
+ "Guisborough Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Guiseley AFC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-05",
+  "matches": 4
+ },
+ "HJK Helsinki": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2023-08-17",
+  "matches": 20
+ },
+ "Hadleigh United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 2
+ },
+ "Hadley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-09-05",
+  "matches": 4
+ },
+ "Halesowen Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-30",
+  "matches": 4
+ },
+ "Hallam": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Halstead Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Hamble Club": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Hamburg": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-16",
+  "matches": 102
+ },
+ "Hampton & Richmond": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-30",
+  "matches": 6
+ },
+ "Hamrun Spartans": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-07-11",
+  "last_seen": "2023-07-18",
+  "matches": 2
+ },
+ "Hamworthy United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Handsworth Parramore": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Hanley Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 12
+ },
+ "Hannover": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2017-08-19",
+  "last_seen": "2019-05-18",
+  "matches": 68
+ },
+ "Hanwell Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Hanworth Villa": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-30",
+  "matches": 7
+ },
+ "Harborough Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 8
+ },
+ "Harefield United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Haringey Borough": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 5
+ },
+ "Harleston Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Harlow Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2022-09-03",
+  "matches": 3
+ },
+ "Harpenden Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "Harrogate": {
+  "competitions": [
+   "E3"
+  ],
+  "first_seen": "2020-09-12",
+  "last_seen": "2026-05-02",
+  "matches": 276
+ },
+ "Harrogate Town": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-12-02",
+  "matches": 7
+ },
+ "Harrow Borough": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 2
+ },
+ "Hartlepool": {
+  "competitions": [
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2023-10-14",
+  "matches": 144
+ },
+ "Hartley Wintney": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Hartpury University": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-15",
+  "last_seen": "2023-08-15",
+  "matches": 1
+ },
+ "Hashtag United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Hassocks": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Hastings United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Havant & Wville": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Haverhill Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-30",
+  "matches": 3
+ },
+ "Hayes & Yeading United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 5
+ },
+ "Haywards Heath Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Heacham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Heanor Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Heart Of Midlothian": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2022-08-18",
+  "last_seen": "2022-08-25",
+  "matches": 2
+ },
+ "Heather St Johns": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2022-08-07",
+  "matches": 1
+ },
+ "Heaton Stannington": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 7
+ },
+ "Hebburn Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-18",
+  "matches": 2
+ },
+ "Hednesford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Heidenheim": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2023-08-19",
+  "last_seen": "2026-05-16",
+  "matches": 102
+ },
+ "Hellas Verona": {
+  "competitions": [
+   "COPIT"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-10-31",
+  "matches": 3
+ },
+ "Helston Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 8
+ },
+ "Hemel Hempstead Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-17",
+  "matches": 6
+ },
+ "Hendon": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Hereford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-11-04",
+  "matches": 8
+ },
+ "Hereford Lads Club": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Hereford Pegasus": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "Herne Bay": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Hern\u00e1n Cort\u00e9s": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Hertford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-04",
+  "matches": 5
+ },
+ "Hertha": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-28",
+  "last_seen": "2023-05-27",
+  "matches": 238
+ },
+ "Heybridge Swifts": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 7
+ },
+ "Hibernians": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2022-07-12",
+  "matches": 2
+ },
+ "Highgate United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 7
+ },
+ "Highworth Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 5
+ },
+ "Hilltop": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Hinckley AFC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2022-08-07",
+  "matches": 1
+ },
+ "Histon": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Hitchin Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 4
+ },
+ "Hoddesdon Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2022-08-07",
+  "matches": 1
+ },
+ "Hoffenheim": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-28",
+  "last_seen": "2026-05-16",
+  "matches": 340
+ },
+ "Hollands & Blair": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Holmesdale": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Holstein Kiel": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2024-08-24",
+  "last_seen": "2025-05-17",
+  "matches": 34
+ },
+ "Holyport": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Horley Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Horndean": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 6
+ },
+ "Horsham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-12-02",
+  "matches": 10
+ },
+ "Horsham YMCA": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Hucknall Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-08",
+  "last_seen": "2023-08-08",
+  "matches": 1
+ },
+ "Huddersfield": {
+  "competitions": [
+   "E0",
+   "E1",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 448
+ },
+ "Huesca": {
+  "competitions": [
+   "SP1",
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-31",
+  "matches": 416
+ },
+ "Hull": {
+  "competitions": [
+   "E1",
+   "E2",
+   "E0"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-02",
+  "matches": 452
+ },
+ "Hull City": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2024-01-16",
+  "matches": 5
+ },
+ "Hullbridge Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Hungerford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-30",
+  "matches": 4
+ },
+ "Hu\u00e9tor T\u00e1jar": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-11-12",
+  "matches": 1
+ },
+ "Hyde United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 7
+ },
+ "Hythe & Dibden": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "Hythe Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "H\u00e9rcules": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-11-02",
+  "matches": 2
+ },
+ "Ibiza": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2021-08-13",
+  "last_seen": "2023-11-02",
+  "matches": 87
+ },
+ "Ibiza Islas Pitiusas": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-01-05",
+  "matches": 3
+ },
+ "Ilford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-07",
+  "matches": 4
+ },
+ "Ilfracombe Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Ilkeston Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Ingolstadt": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2017-05-20",
+  "matches": 34
+ },
+ "Inter": {
+  "competitions": [
+   "I1",
+   "UCL",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-23",
+  "matches": 407
+ },
+ "Inter Club d'Escaldes": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-06-21",
+  "last_seen": "2022-06-24",
+  "matches": 2
+ },
+ "Intercity": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-01-04",
+  "matches": 3
+ },
+ "Ipswich": {
+  "competitions": [
+   "E1",
+   "E2",
+   "E0",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 454
+ },
+ "Ipswich Wanderers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 6
+ },
+ "Irlam": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 5
+ },
+ "Jersey Bulls": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-22",
+  "matches": 4
+ },
+ "Juve Stabia": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2019-08-25",
+  "last_seen": "2026-05-08",
+  "matches": 114
+ },
+ "Juventud Torremolinos": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-12-21",
+  "matches": 2
+ },
+ "Juventus": {
+  "competitions": [
+   "I1",
+   "UCL",
+   "UEL",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-24",
+  "matches": 403
+ },
+ "K Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-20",
+  "matches": 3
+ },
+ "KI Klaksvik": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2023-08-31",
+  "matches": 10
+ },
+ "Kendal Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Kennington": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Kettering Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-14",
+  "matches": 6
+ },
+ "Keynsham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Kidderminster Harriers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-11-05",
+  "matches": 6
+ },
+ "Kidlington": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Kidsgrove Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Kimberley Miners Welfare": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "King's Lynn Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-18",
+  "matches": 8
+ },
+ "Kings Langley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Kingstonian": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 3
+ },
+ "Kirkley & Pakefield": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Knaphill": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 7
+ },
+ "Knaresborough Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "La Coruna": {
+  "competitions": [
+   "SP2",
+   "SP1"
+  ],
+  "first_seen": "2016-08-19",
+  "last_seen": "2026-05-31",
+  "matches": 244
+ },
+ "La Fiorita": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-06-21",
+  "last_seen": "2022-06-21",
+  "matches": 1
+ },
+ "La Nuc\u00eda": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-01-03",
+  "matches": 3
+ },
+ "Lakenheath": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Lancaster City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 7
+ },
+ "Lancing": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-05",
+  "matches": 6
+ },
+ "Larkhall Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 8
+ },
+ "Larne": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-07-12",
+  "last_seen": "2023-07-19",
+  "matches": 2
+ },
+ "Las Palmas": {
+  "competitions": [
+   "SP2",
+   "SP1",
+   "CDR"
+  ],
+  "first_seen": "2016-08-22",
+  "last_seen": "2026-05-31",
+  "matches": 409
+ },
+ "Las Rozas": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Lask Linz": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2023-08-24",
+  "last_seen": "2023-12-14",
+  "matches": 8
+ },
+ "Latina": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2017-05-18",
+  "matches": 42
+ },
+ "Laverstock & Ford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-01",
+  "matches": 8
+ },
+ "Lazio": {
+  "competitions": [
+   "I1",
+   "UCL",
+   "UEL",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-23",
+  "matches": 400
+ },
+ "Le Havre": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2023-08-13",
+  "last_seen": "2026-05-17",
+  "matches": 102
+ },
+ "Lealtad": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Leamington": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-16",
+  "matches": 3
+ },
+ "Leatherhead": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-05",
+  "matches": 6
+ },
+ "Lecce": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2018-08-27",
+  "last_seen": "2026-05-24",
+  "matches": 305
+ },
+ "Lecco": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2023-09-03",
+  "last_seen": "2024-05-10",
+  "matches": 38
+ },
+ "Lech Poznan": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2022-07-12",
+  "matches": 2
+ },
+ "Leeds": {
+  "competitions": [
+   "E1",
+   "E0",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-07",
+  "last_seen": "2026-05-24",
+  "matches": 440
+ },
+ "Leek Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-10-14",
+  "matches": 6
+ },
+ "Leganes": {
+  "competitions": [
+   "SP1",
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-22",
+  "last_seen": "2026-05-31",
+  "matches": 403
+ },
+ "Leicester": {
+  "competitions": [
+   "E0",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-02",
+  "matches": 410
+ },
+ "Leicester Nirvana": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Leicester Road": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Leighton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Leiston": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 3
+ },
+ "Lens": {
+  "competitions": [
+   "F1",
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2020-08-23",
+  "last_seen": "2026-05-17",
+  "matches": 224
+ },
+ "Leonesa": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2017-08-18",
+  "last_seen": "2018-06-02",
+  "matches": 42
+ },
+ "Levante": {
+  "competitions": [
+   "SP1",
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-23",
+  "matches": 402
+ },
+ "Leverkusen": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-16",
+  "matches": 340
+ },
+ "Leverstock Green": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 6
+ },
+ "Lewes": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-14",
+  "matches": 8
+ },
+ "Leyton Orient": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 363
+ },
+ "Lichfield City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-05",
+  "matches": 6
+ },
+ "Lille": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-17",
+  "matches": 358
+ },
+ "Linares Deportivo": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-12-07",
+  "matches": 5
+ },
+ "Lincoln": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2017-08-05",
+  "last_seen": "2026-05-02",
+  "matches": 412
+ },
+ "Lincoln Red Imps FC": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2023-07-19",
+  "matches": 4
+ },
+ "Lincoln United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 7
+ },
+ "Linfield": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2022-08-11",
+  "matches": 6
+ },
+ "Lingfield": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-06",
+  "matches": 2
+ },
+ "Liskeard Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Litherland Remyca": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-10",
+  "matches": 2
+ },
+ "Little Common": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Little Oakley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Littlehampton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-06",
+  "matches": 3
+ },
+ "Liverpool": {
+  "competitions": [
+   "E0",
+   "UCL",
+   "UEL",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-14",
+  "last_seen": "2026-05-24",
+  "matches": 413
+ },
+ "Liversedge": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Livorno": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2018-09-02",
+  "last_seen": "2020-07-31",
+  "matches": 74
+ },
+ "Lleida Esportiu": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Llerenense": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Logrones": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2020-09-12",
+  "last_seen": "2021-05-30",
+  "matches": 42
+ },
+ "London Colney": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "London Lions": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Long Buckby": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Long Eaton United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 7
+ },
+ "Long Melford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Longlevens": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Longridge Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "Lorca": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2017-08-18",
+  "last_seen": "2018-06-01",
+  "matches": 42
+ },
+ "Lorca Deportiva": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-31",
+  "last_seen": "2023-10-31",
+  "matches": 1
+ },
+ "Lordswood": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 4
+ },
+ "Lorient": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-17",
+  "matches": 220
+ },
+ "Los Y\u00e9benes SB": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-10-19",
+  "matches": 1
+ },
+ "Loughborough Dynamo": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "Loughborough University": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 5
+ },
+ "Lower Breck": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-23",
+  "matches": 3
+ },
+ "Lowestoft Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-30",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Loxwood": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Ludogorets": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2023-08-31",
+  "matches": 22
+ },
+ "Lugo": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2024-01-06",
+  "matches": 298
+ },
+ "Luton": {
+  "competitions": [
+   "E3",
+   "E2",
+   "E1",
+   "E0",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 463
+ },
+ "Lutterworth Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Lydd Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-09-03",
+  "matches": 3
+ },
+ "Lydney Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-09",
+  "matches": 3
+ },
+ "Lye Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-08",
+  "matches": 6
+ },
+ "Lymington Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Lyon": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-14",
+  "last_seen": "2026-05-17",
+  "matches": 358
+ },
+ "M'gladbach": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-16",
+  "matches": 340
+ },
+ "Maccabi Haifa": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-20",
+  "last_seen": "2023-12-14",
+  "matches": 26
+ },
+ "Macclesfield": {
+  "competitions": [
+   "E3",
+   "FAC"
+  ],
+  "first_seen": "2018-08-04",
+  "last_seen": "2023-10-14",
+  "matches": 91
+ },
+ "Maidenhead": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-11-04",
+  "matches": 4
+ },
+ "Maidstone Utd": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2024-02-26",
+  "matches": 9
+ },
+ "Mainz": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-16",
+  "matches": 340
+ },
+ "Malaga": {
+  "competitions": [
+   "SP2",
+   "CDR",
+   "SP1"
+  ],
+  "first_seen": "2016-08-19",
+  "last_seen": "2026-05-31",
+  "matches": 375
+ },
+ "Maldon & Tiptree": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-03",
+  "matches": 7
+ },
+ "Mallorca": {
+  "competitions": [
+   "SP2",
+   "SP1",
+   "CDR"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-23",
+  "matches": 366
+ },
+ "Malmo FF": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2022-11-03",
+  "matches": 14
+ },
+ "Maltby Main": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Malvern Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 5
+ },
+ "Man City": {
+  "competitions": [
+   "E0"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-24",
+  "matches": 380
+ },
+ "Man United": {
+  "competitions": [
+   "E0"
+  ],
+  "first_seen": "2016-08-14",
+  "last_seen": "2026-05-24",
+  "matches": 380
+ },
+ "Manacor": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-10-31",
+  "matches": 2
+ },
+ "Manchego": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Manchester City": {
+  "competitions": [
+   "UCL",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-09-06",
+  "last_seen": "2024-05-25",
+  "matches": 39
+ },
+ "Manchester United": {
+  "competitions": [
+   "UCL",
+   "UEL",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-09-08",
+  "last_seen": "2024-05-25",
+  "matches": 38
+ },
+ "Mangotsfield United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Manresa": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Mansfield": {
+  "competitions": [
+   "E3",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 450
+ },
+ "Mansfield Town": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-11-04",
+  "matches": 8
+ },
+ "Mantova": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2024-08-18",
+  "last_seen": "2026-05-08",
+  "matches": 76
+ },
+ "Marbella": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "March Town United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Margate": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-02",
+  "last_seen": "2023-09-30",
+  "matches": 6
+ },
+ "Maribor": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2022-08-11",
+  "matches": 6
+ },
+ "Marine": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-11-04",
+  "matches": 9
+ },
+ "Market Drayton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2022-08-20",
+  "matches": 2
+ },
+ "Marlow": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-19",
+  "matches": 6
+ },
+ "Marseille": {
+  "competitions": [
+   "F1",
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2016-08-14",
+  "last_seen": "2026-05-17",
+  "matches": 380
+ },
+ "Marske United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 5
+ },
+ "Matlock Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Melilla": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-12-07",
+  "matches": 2
+ },
+ "Melilla CD": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2023-10-12",
+  "matches": 2
+ },
+ "Melksham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Melton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Mensajero": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-31",
+  "last_seen": "2023-10-31",
+  "matches": 1
+ },
+ "Merstham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Merthyr Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 10
+ },
+ "Metropolitan Police": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-08-22",
+  "matches": 6
+ },
+ "Metz": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-17",
+  "matches": 248
+ },
+ "Mickleover Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 4
+ },
+ "Middlesbrough": {
+  "competitions": [
+   "E1",
+   "FAC",
+   "EFLC",
+   "E0"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-02",
+  "matches": 462
+ },
+ "Midhurst & Easebourne": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Mijas Las Lagunas": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-11",
+  "last_seen": "2023-10-11",
+  "matches": 1
+ },
+ "Milan": {
+  "competitions": [
+   "I1"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-24",
+  "matches": 380
+ },
+ "Mildenhall Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Millbrook": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Millwall": {
+  "competitions": [
+   "E1",
+   "FAC",
+   "EFLC",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 464
+ },
+ "Milton Keynes Dons": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 457
+ },
+ "Milton Keynes Irish": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Mirandes": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-19",
+  "last_seen": "2026-05-31",
+  "matches": 340
+ },
+ "Modena": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2022-07-31",
+  "last_seen": "2026-05-08",
+  "matches": 156
+ },
+ "Molde": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-25",
+  "last_seen": "2023-12-14",
+  "matches": 12
+ },
+ "Mollerussa": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-11-13",
+  "matches": 2
+ },
+ "Monaco": {
+  "competitions": [
+   "F1",
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2016-08-12",
+  "last_seen": "2026-05-17",
+  "matches": 368
+ },
+ "Moneyfields": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Monte": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-10-12",
+  "matches": 1
+ },
+ "Montilla": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-10-19",
+  "matches": 1
+ },
+ "Montpellier": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2025-05-17",
+  "matches": 324
+ },
+ "Monza": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2020-09-25",
+  "last_seen": "2026-05-08",
+  "matches": 232
+ },
+ "Morecambe": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2025-05-03",
+  "matches": 413
+ },
+ "Morpeth Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 5
+ },
+ "Mossley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-19",
+  "matches": 5
+ },
+ "Mousehole": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 7
+ },
+ "Mulbarton Wanderers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "M\u00e9rida AD": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-12-21",
+  "matches": 2
+ },
+ "Nailsea & Tickenham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Nancy": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-14",
+  "last_seen": "2017-05-20",
+  "matches": 38
+ },
+ "Nantes": {
+  "competitions": [
+   "F1",
+   "UEL"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-17",
+  "matches": 366
+ },
+ "Nantwich Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 6
+ },
+ "Napoli": {
+  "competitions": [
+   "I1",
+   "UCL",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-24",
+  "matches": 400
+ },
+ "Navalcarnero": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Needham Market": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-17",
+  "matches": 11
+ },
+ "New Mills": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "New Salamis": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Newark Flowserve": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Newcastle": {
+  "competitions": [
+   "E0",
+   "UCL",
+   "FAC",
+   "EFLC",
+   "E1"
+  ],
+  "first_seen": "2016-08-05",
+  "last_seen": "2026-05-24",
+  "matches": 409
+ },
+ "Newcastle Benfield": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Newcastle Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 9
+ },
+ "Newhaven": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 7
+ },
+ "Newmarket Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Newport County": {
+  "competitions": [
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 463
+ },
+ "Newport Isle of Wight FC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-20",
+  "matches": 2
+ },
+ "Newport Pagnell Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Newton Aycliffe": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-15",
+  "matches": 3
+ },
+ "Nice": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-14",
+  "last_seen": "2026-05-17",
+  "matches": 358
+ },
+ "Nimes": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2018-08-11",
+  "last_seen": "2021-05-23",
+  "matches": 104
+ },
+ "North Ferriby": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "North Greenford United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-06",
+  "matches": 4
+ },
+ "North Leigh": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "North Shields": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Northallerton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Northampton": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 455
+ },
+ "Northwich Victoria": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-04",
+  "matches": 3
+ },
+ "Northwood": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-19",
+  "matches": 8
+ },
+ "Norwich": {
+  "competitions": [
+   "E1",
+   "E0",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 453
+ },
+ "Norwich United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Nott'm Forest": {
+  "competitions": [
+   "E1",
+   "E0"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-24",
+  "matches": 428
+ },
+ "Nottingham Forest": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-23",
+  "last_seen": "2024-02-28",
+  "matches": 13
+ },
+ "Notts County": {
+  "competitions": [
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 280
+ },
+ "Novara": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2016-08-28",
+  "last_seen": "2018-05-18",
+  "matches": 84
+ },
+ "Numancia": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2022-12-21",
+  "matches": 170
+ },
+ "Nuneaton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Nuova Cosenza": {
+  "competitions": [
+   "COPIT"
+  ],
+  "first_seen": "2022-08-08",
+  "last_seen": "2022-08-08",
+  "matches": 1
+ },
+ "Nurnberg": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2018-08-25",
+  "last_seen": "2019-05-18",
+  "matches": 34
+ },
+ "N\u00e1xara": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Oadby Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Okehampton Argyle": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Oldham": {
+  "competitions": [
+   "E3",
+   "FAC",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 318
+ },
+ "Oldland Abbotonians": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-08",
+  "matches": 2
+ },
+ "Olimpija Ljubljana": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-11",
+  "last_seen": "2023-08-31",
+  "matches": 8
+ },
+ "Olot": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-11-12",
+  "matches": 1
+ },
+ "Olympiakos Piraeus": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-20",
+  "last_seen": "2023-12-14",
+  "matches": 22
+ },
+ "Omonia Nicosia": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2022-08-18",
+  "last_seen": "2022-11-03",
+  "matches": 8
+ },
+ "Orihuela": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-12-07",
+  "matches": 2
+ },
+ "Osasuna": {
+  "competitions": [
+   "SP2",
+   "SP1",
+   "CDR"
+  ],
+  "first_seen": "2016-08-19",
+  "last_seen": "2026-05-23",
+  "matches": 398
+ },
+ "Ossett United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Ourense CF": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Oviedo": {
+  "competitions": [
+   "SP2",
+   "SP1",
+   "CDR"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-23",
+  "matches": 421
+ },
+ "Oxford": {
+  "competitions": [
+   "E2",
+   "E1"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 449
+ },
+ "Oxford City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-17",
+  "matches": 7
+ },
+ "Oxford United": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2024-01-06",
+  "matches": 9
+ },
+ "Oxhey Jets": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "PSV Eindhoven": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-08-02",
+  "last_seen": "2024-03-13",
+  "matches": 24
+ },
+ "Paderborn": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2019-08-17",
+  "last_seen": "2020-06-27",
+  "matches": 34
+ },
+ "Padiham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Padova": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2018-08-26",
+  "last_seen": "2026-05-08",
+  "matches": 75
+ },
+ "Pagham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Palermo": {
+  "competitions": [
+   "I2",
+   "COPIT",
+   "I1"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-08",
+  "matches": 271
+ },
+ "Panathinaikos": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-25",
+  "last_seen": "2023-12-14",
+  "matches": 12
+ },
+ "Paris FC": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2025-08-17",
+  "last_seen": "2026-05-17",
+  "matches": 34
+ },
+ "Paris SG": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-12",
+  "last_seen": "2026-05-17",
+  "matches": 357
+ },
+ "Paris Saint Germain": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-09-06",
+  "last_seen": "2024-05-07",
+  "matches": 20
+ },
+ "Parma": {
+  "competitions": [
+   "I1",
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2017-08-25",
+  "last_seen": "2026-05-24",
+  "matches": 352
+ },
+ "Partizani": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-07-11",
+  "last_seen": "2023-07-18",
+  "matches": 2
+ },
+ "Paulton Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-22",
+  "matches": 8
+ },
+ "Peacehaven & Telscombe": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Penistone Church": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 6
+ },
+ "Penrith AFC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Perugia": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-29",
+  "last_seen": "2023-05-19",
+  "matches": 235
+ },
+ "Pescara": {
+  "competitions": [
+   "I2",
+   "COPIT",
+   "I1"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-08",
+  "matches": 231
+ },
+ "Peterboro": {
+  "competitions": [
+   "E2",
+   "E1"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 449
+ },
+ "Peterborough": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-10",
+  "last_seen": "2024-01-07",
+  "matches": 12
+ },
+ "Peterborough Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-03",
+  "matches": 8
+ },
+ "Petersfield Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Pe\u00f1a Deportiva": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Phoenix Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 5
+ },
+ "Pickering Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Pilkington": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Pinchbeck United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-09",
+  "matches": 5
+ },
+ "Pisa": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2016-09-04",
+  "last_seen": "2026-05-23",
+  "matches": 310
+ },
+ "Plymouth": {
+  "competitions": [
+   "E2",
+   "E3",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 458
+ },
+ "Plymouth Parkway": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-19",
+  "matches": 8
+ },
+ "Plzen": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-20",
+  "last_seen": "2022-11-01",
+  "matches": 12
+ },
+ "Ponferradina": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2019-08-18",
+  "last_seen": "2023-11-01",
+  "matches": 170
+ },
+ "Pontefract Collieries": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Pontevedra": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-01-04",
+  "matches": 3
+ },
+ "Poole Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 4
+ },
+ "Pordenone": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2019-08-26",
+  "last_seen": "2022-05-06",
+  "matches": 114
+ },
+ "Port Vale": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 462
+ },
+ "Portland United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Portsmouth": {
+  "competitions": [
+   "E2",
+   "E1",
+   "FAC",
+   "EFLC",
+   "E3"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 457
+ },
+ "Potters Bar Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Potton United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Pradej\u00f3n": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-11",
+  "last_seen": "2023-10-11",
+  "matches": 1
+ },
+ "Prescot Cables": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 9
+ },
+ "Preston": {
+  "competitions": [
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 466
+ },
+ "Prestwich Heys": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 7
+ },
+ "Pro Vercelli": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2018-05-18",
+  "matches": 84
+ },
+ "Punjab United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Pyunik Yerevan": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2022-08-25",
+  "matches": 8
+ },
+ "QPR": {
+  "competitions": [
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-07",
+  "last_seen": "2026-05-02",
+  "matches": 464
+ },
+ "Qarabag": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2024-03-14",
+  "matches": 32
+ },
+ "Quintanar": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Quintanar del Rey": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Quorn": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "RB Leipzig": {
+  "competitions": [
+   "D1",
+   "UCL"
+  ],
+  "first_seen": "2016-08-28",
+  "last_seen": "2026-05-16",
+  "matches": 356
+ },
+ "Racing Club Warwick": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Racing Ferrol": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2024-01-07",
+  "matches": 4
+ },
+ "Racing Rioja": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-11-12",
+  "matches": 1
+ },
+ "Racing Santander": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-12-22",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Radcliffe": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 2
+ },
+ "Radford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-09",
+  "matches": 2
+ },
+ "Rak\u00f3w Cz\u0119stochowa": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-11",
+  "last_seen": "2023-12-14",
+  "matches": 14
+ },
+ "Ramsbottom United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 6
+ },
+ "Ramsgate": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-12-04",
+  "matches": 9
+ },
+ "Rangers": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-08-02",
+  "last_seen": "2024-03-14",
+  "matches": 22
+ },
+ "Raynes Park Vale": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 5
+ },
+ "Rayo Majadahonda": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2018-08-19",
+  "last_seen": "2022-11-13",
+  "matches": 43
+ },
+ "Rayo Vallecano": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2024-01-17",
+  "matches": 7
+ },
+ "Reading": {
+  "competitions": [
+   "E1",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 467
+ },
+ "Reading City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-19",
+  "matches": 8
+ },
+ "Real Avil\u00e9s": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Real Bedford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-08",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Real Betis": {
+  "competitions": [
+   "UEL",
+   "CDR"
+  ],
+  "first_seen": "2022-09-08",
+  "last_seen": "2024-01-06",
+  "matches": 19
+ },
+ "Real Ja\u00e9n": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Real Madrid": {
+  "competitions": [
+   "SP1",
+   "UCL",
+   "CDR"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-23",
+  "matches": 413
+ },
+ "Real Murcia": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Real Sociedad": {
+  "competitions": [
+   "UCL",
+   "UEL",
+   "CDR"
+  ],
+  "first_seen": "2022-09-08",
+  "last_seen": "2024-03-05",
+  "matches": 28
+ },
+ "Real Uni\u00f3n": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-12-20",
+  "matches": 2
+ },
+ "Recreativo Huelva": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Red Bull Salzburg": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-09-06",
+  "last_seen": "2023-12-12",
+  "matches": 14
+ },
+ "Redbridge": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-09",
+  "matches": 3
+ },
+ "Redcar Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Redditch United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-18",
+  "matches": 6
+ },
+ "Redhill": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 6
+ },
+ "Reggiana": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2020-09-27",
+  "last_seen": "2026-05-08",
+  "matches": 156
+ },
+ "Reggina": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2020-09-26",
+  "last_seen": "2023-05-19",
+  "matches": 115
+ },
+ "Reims": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2018-08-11",
+  "last_seen": "2025-05-17",
+  "matches": 248
+ },
+ "Rennes": {
+  "competitions": [
+   "F1",
+   "UEL"
+  ],
+  "first_seen": "2016-08-14",
+  "last_seen": "2026-05-17",
+  "matches": 374
+ },
+ "Reus Deportiu": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2019-06-08",
+  "matches": 126
+ },
+ "Rinc\u00f3n": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-11-12",
+  "matches": 2
+ },
+ "Risborough Rangers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Rochdale": {
+  "competitions": [
+   "E2",
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2023-10-14",
+  "matches": 314
+ },
+ "Roffey": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Roma": {
+  "competitions": [
+   "I1"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-24",
+  "matches": 380
+ },
+ "Roman Glass St George": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Romford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 8
+ },
+ "Romulus": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 5
+ },
+ "Rossington Main": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Rotherham": {
+  "competitions": [
+   "E1",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 455
+ },
+ "Rothwell Corinthians": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Rotlet Molinar": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-10-12",
+  "matches": 1
+ },
+ "Royal Wootton": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 5
+ },
+ "Royston Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Rub\u00ed": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Rugby Borough": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Rugby Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 10
+ },
+ "Runcorn Linnets": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-19",
+  "matches": 7
+ },
+ "Rushall Olympic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 3
+ },
+ "Rusthall": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Rylands": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 4
+ },
+ "R\u012bgas FS": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2022-07-12",
+  "matches": 2
+ },
+ "SC Braga": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-09-08",
+  "last_seen": "2024-02-22",
+  "matches": 18
+ },
+ "SC Freiburg": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2022-09-08",
+  "last_seen": "2024-03-14",
+  "matches": 18
+ },
+ "Sabadell": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2020-09-19",
+  "last_seen": "2021-05-30",
+  "matches": 42
+ },
+ "Saffron Walden Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Saguntino": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-12-21",
+  "matches": 2
+ },
+ "Salernitana": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-26",
+  "last_seen": "2025-05-13",
+  "matches": 352
+ },
+ "Salford": {
+  "competitions": [
+   "E3"
+  ],
+  "first_seen": "2019-08-03",
+  "last_seen": "2026-05-02",
+  "matches": 313
+ },
+ "Salford City": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-11-14",
+  "matches": 8
+ },
+ "Salisbury": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-03",
+  "matches": 6
+ },
+ "Saltash United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Saltdean United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Sampdoria": {
+  "competitions": [
+   "I1",
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-08",
+  "matches": 385
+ },
+ "San Juan": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "San Roque Lepe": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Sandhurst Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Sanluque\u00f1o": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Santa Amalia": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-11-12",
+  "matches": 2
+ },
+ "Santander": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2019-08-17",
+  "last_seen": "2026-05-31",
+  "matches": 210
+ },
+ "Santurtzi": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-10-12",
+  "matches": 1
+ },
+ "Sassuolo": {
+  "competitions": [
+   "I1",
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-24",
+  "matches": 384
+ },
+ "Sauzal": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-10-12",
+  "matches": 1
+ },
+ "Sawbridgeworth Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Scarborough Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-12-12",
+  "matches": 10
+ },
+ "Schalke 04": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2023-05-27",
+  "matches": 204
+ },
+ "Scunthorpe": {
+  "competitions": [
+   "E2",
+   "E3",
+   "FAC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2023-09-19",
+  "matches": 270
+ },
+ "Seaham Red Star": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Selston": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-09",
+  "matches": 2
+ },
+ "Servette FC": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-07-25",
+  "last_seen": "2023-12-14",
+  "matches": 10
+ },
+ "Sestao River": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-12-07",
+  "matches": 4
+ },
+ "Sevenoaks Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-05",
+  "matches": 11
+ },
+ "Sevilla": {
+  "competitions": [
+   "SP1",
+   "UCL",
+   "UEL",
+   "CDR"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-23",
+  "matches": 411
+ },
+ "Sevilla B": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2018-06-01",
+  "matches": 84
+ },
+ "Shaftesbury Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Shakhtar Donetsk": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-09-06",
+  "last_seen": "2024-02-22",
+  "matches": 18
+ },
+ "Shakhter Soligorsk": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2022-07-13",
+  "matches": 2
+ },
+ "Shamrock Rovers": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2023-07-18",
+  "matches": 10
+ },
+ "Sheerwater": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Sheffield": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Sheffield United": {
+  "competitions": [
+   "E1",
+   "E0",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 436
+ },
+ "Sheffield Utd": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-11",
+  "last_seen": "2024-01-27",
+  "matches": 10
+ },
+ "Sheffield Wednesday": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-10",
+  "last_seen": "2024-02-06",
+  "matches": 13
+ },
+ "Sheffield Weds": {
+  "competitions": [
+   "E1",
+   "E2"
+  ],
+  "first_seen": "2016-08-07",
+  "last_seen": "2026-05-02",
+  "matches": 460
+ },
+ "Shefford Town & Campton": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 7
+ },
+ "Sheppey United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-11-03",
+  "matches": 13
+ },
+ "Shepshed Dynamo": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 8
+ },
+ "Shepton Mallet": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-09",
+  "matches": 7
+ },
+ "Sherborne Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Sheriff Tiraspol": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2023-12-14",
+  "matches": 28
+ },
+ "Sheringham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 6
+ },
+ "Sherwood Colliery": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 6
+ },
+ "Shifnal Town FC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-09-05",
+  "matches": 5
+ },
+ "Shildon AFC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-19",
+  "matches": 6
+ },
+ "Shkupi 1927": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2022-08-09",
+  "matches": 6
+ },
+ "Sholing": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-19",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Shoreham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Shrewsbury": {
+  "competitions": [
+   "E2",
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 457
+ },
+ "Shrivenham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-09",
+  "matches": 2
+ },
+ "Silkeborg": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2022-08-18",
+  "last_seen": "2022-08-25",
+  "matches": 2
+ },
+ "Silsden": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Sittingbourne": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Sivasspor": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2022-08-18",
+  "last_seen": "2022-08-25",
+  "matches": 2
+ },
+ "Skegness Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Skelmersdale United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-18",
+  "matches": 4
+ },
+ "Slavia Praha": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2023-08-10",
+  "last_seen": "2024-03-14",
+  "matches": 12
+ },
+ "Sleaford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 2
+ },
+ "Slimbridge": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 5
+ },
+ "Slough Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-11-14",
+  "matches": 8
+ },
+ "Slovan Bratislava": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2023-08-31",
+  "matches": 14
+ },
+ "Slov\u00e1cko": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2022-08-04",
+  "last_seen": "2022-08-11",
+  "matches": 2
+ },
+ "Snodland Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Sociedad": {
+  "competitions": [
+   "SP1"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-23",
+  "matches": 380
+ },
+ "Sociedad B": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2021-08-14",
+  "last_seen": "2026-05-30",
+  "matches": 84
+ },
+ "Soham Town Rangers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 5
+ },
+ "Solihull Moors": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-11-04",
+  "matches": 5
+ },
+ "South Park": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 3
+ },
+ "South Shields": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-30",
+  "matches": 7
+ },
+ "Southall": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 8
+ },
+ "Southampton": {
+  "competitions": [
+   "E0",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-02",
+  "matches": 410
+ },
+ "Southend": {
+  "competitions": [
+   "E2",
+   "E3",
+   "FAC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2023-10-14",
+  "matches": 221
+ },
+ "Southend Manor": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-23",
+  "matches": 3
+ },
+ "Southport": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-16",
+  "matches": 2
+ },
+ "Sp Gijon": {
+  "competitions": [
+   "SP2",
+   "SP1"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-30",
+  "matches": 416
+ },
+ "Spal": {
+  "competitions": [
+   "I1",
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2023-05-19",
+  "matches": 272
+ },
+ "Spalding United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 6
+ },
+ "Sparta Praha": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-08-08",
+  "last_seen": "2024-03-14",
+  "matches": 14
+ },
+ "Spelthorne Sports": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Spennymoor Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-19",
+  "matches": 3
+ },
+ "Spezia": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-26",
+  "last_seen": "2026-05-08",
+  "matches": 391
+ },
+ "Sporting Bengal United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-08",
+  "matches": 2
+ },
+ "Sporting CP": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-09-07",
+  "last_seen": "2024-03-14",
+  "matches": 22
+ },
+ "Sporting Gijon": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-12-06",
+  "matches": 6
+ },
+ "Sporting Khalsa": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-16",
+  "matches": 5
+ },
+ "Squires Gate": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "St Albans City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-30",
+  "matches": 4
+ },
+ "St Blazey": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "St Etienne": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2025-05-17",
+  "matches": 252
+ },
+ "St Ives Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "St Neots Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-08-08",
+  "matches": 6
+ },
+ "St Pauli": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2024-08-25",
+  "last_seen": "2026-05-16",
+  "matches": 68
+ },
+ "St. Panteleimon": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 5
+ },
+ "Stafford Rangers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 3
+ },
+ "Stalybridge Celtic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Stamford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Stansfeld": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Stansted": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Stanway Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Stevenage": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 463
+ },
+ "Steyning Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 6
+ },
+ "Stockport": {
+  "competitions": [
+   "E3",
+   "E2"
+  ],
+  "first_seen": "2022-07-30",
+  "last_seen": "2026-05-02",
+  "matches": 184
+ },
+ "Stockport County": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-12-13",
+  "matches": 10
+ },
+ "Stockport Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Stocksbridge Park Steels": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 8
+ },
+ "Stockton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Stoke": {
+  "competitions": [
+   "E0",
+   "E1"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-02",
+  "matches": 444
+ },
+ "Stoke City": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2024-01-06",
+  "matches": 8
+ },
+ "Stone Old Alleynians": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 6
+ },
+ "Stotfold": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-04",
+  "matches": 5
+ },
+ "Stourbridge": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-02",
+  "last_seen": "2023-10-14",
+  "matches": 6
+ },
+ "Stourport Swifts": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 7
+ },
+ "Stowmarket Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Strasbourg": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2017-08-05",
+  "last_seen": "2026-05-17",
+  "matches": 319
+ },
+ "Stratford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Street": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-18",
+  "matches": 3
+ },
+ "Struga": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-07-11",
+  "last_seen": "2023-07-18",
+  "matches": 2
+ },
+ "Studley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-18",
+  "matches": 4
+ },
+ "Sturm Graz": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-08-03",
+  "last_seen": "2023-12-14",
+  "matches": 16
+ },
+ "Stuttgart": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2017-08-19",
+  "last_seen": "2026-05-16",
+  "matches": 272
+ },
+ "Sudtirol": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2022-07-30",
+  "last_seen": "2026-05-08",
+  "matches": 154
+ },
+ "Sunderland": {
+  "competitions": [
+   "E2",
+   "E1",
+   "E0",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-24",
+  "matches": 440
+ },
+ "Sunderland RCA": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Sutjeska": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2022-07-12",
+  "matches": 2
+ },
+ "Sutton": {
+  "competitions": [
+   "E3"
+  ],
+  "first_seen": "2021-08-07",
+  "last_seen": "2024-04-27",
+  "matches": 138
+ },
+ "Sutton Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-06",
+  "matches": 3
+ },
+ "Sutton Coldfield Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Sutton Common Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Sutton Utd": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2024-01-06",
+  "matches": 8
+ },
+ "Swansea": {
+  "competitions": [
+   "E0",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-02",
+  "matches": 451
+ },
+ "Swift Hesperange": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-07-12",
+  "last_seen": "2023-07-19",
+  "matches": 2
+ },
+ "Swindon": {
+  "competitions": [
+   "E3",
+   "E2"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 450
+ },
+ "Swindon Supermarine": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Swindon Town": {
+  "competitions": [
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-08-09",
+  "last_seen": "2023-11-04",
+  "matches": 4
+ },
+ "TSC Backa Topola": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2023-08-08",
+  "last_seen": "2023-12-14",
+  "matches": 8
+ },
+ "Tadcaster Albion": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 6
+ },
+ "Tadley Calleva": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-13",
+  "matches": 4
+ },
+ "Takeley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Tamworth": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-14",
+  "matches": 5
+ },
+ "Tarazona": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Tardienta": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Taunton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-19",
+  "matches": 7
+ },
+ "Tavistock": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Tenerife": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2025-06-01",
+  "matches": 384
+ },
+ "Ternana": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-09-04",
+  "last_seen": "2024-05-10",
+  "matches": 200
+ },
+ "Terrassa": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-12-06",
+  "matches": 2
+ },
+ "Teruel": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Thackley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Thame United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Thatcham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "The New Saints": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-05",
+  "last_seen": "2023-07-18",
+  "matches": 4
+ },
+ "Thetford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-08-04",
+  "matches": 3
+ },
+ "Thornaby": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Thornbury Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "Three Bridges": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 8
+ },
+ "Tilbury": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Tirana": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2022-07-12",
+  "matches": 2
+ },
+ "Tiverton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Tividale": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Tonbridge Angels": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-16",
+  "matches": 2
+ },
+ "Tooting & Mitcham United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 4
+ },
+ "Torino": {
+  "competitions": [
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-24",
+  "matches": 386
+ },
+ "Torpoint Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 5
+ },
+ "Torquay": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-10-14",
+  "matches": 7
+ },
+ "Tottenham": {
+  "competitions": [
+   "E0",
+   "UCL",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-24",
+  "matches": 395
+ },
+ "Toulouse": {
+  "competitions": [
+   "F1",
+   "UEL"
+  ],
+  "first_seen": "2016-08-14",
+  "last_seen": "2026-05-17",
+  "matches": 290
+ },
+ "Tow Law Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Trabzonspor": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-08-16",
+  "last_seen": "2022-11-03",
+  "matches": 8
+ },
+ "Trafford": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Tranmere": {
+  "competitions": [
+   "E3",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2018-08-04",
+  "last_seen": "2026-05-02",
+  "matches": 362
+ },
+ "Trapani": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2016-08-28",
+  "last_seen": "2020-07-31",
+  "matches": 80
+ },
+ "Tre Penne": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-06-27",
+  "last_seen": "2023-06-27",
+  "matches": 1
+ },
+ "Tring Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Troyes": {
+  "competitions": [
+   "F1"
+  ],
+  "first_seen": "2017-08-05",
+  "last_seen": "2023-06-03",
+  "matches": 114
+ },
+ "Truro City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 2
+ },
+ "Tudelano": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-12-06",
+  "matches": 2
+ },
+ "Tuffley Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Tunbridge Wells": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Tur\u00e9gano": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2023-11-01",
+  "matches": 3
+ },
+ "UCAM Murcia": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2016-08-22",
+  "last_seen": "2017-06-10",
+  "matches": 42
+ },
+ "UD Logro\u00f1\u00e9s": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2023-11-02",
+  "matches": 4
+ },
+ "Ucam Murcia": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Uckfield Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-08",
+  "matches": 2
+ },
+ "Udinese": {
+  "competitions": [
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-24",
+  "matches": 384
+ },
+ "Union Berlin": {
+  "competitions": [
+   "D1",
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2019-08-18",
+  "last_seen": "2026-05-16",
+  "matches": 254
+ },
+ "Union St. Gilloise": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-08-02",
+  "last_seen": "2023-12-14",
+  "matches": 20
+ },
+ "Unionistas de Salamanca": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2024-01-18",
+  "matches": 4
+ },
+ "United Services": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "United of Manchester": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Universitario FC": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-10-19",
+  "matches": 1
+ },
+ "Uni\u00f3n Adarve": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Uni\u00f3n Zona Norte": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-10-12",
+  "matches": 1
+ },
+ "Ursaria": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ },
+ "Utebo": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-11-01",
+  "matches": 2
+ },
+ "Utrera": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-12",
+  "last_seen": "2022-11-12",
+  "matches": 1
+ },
+ "Uttoxeter Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Uxbridge": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-03",
+  "matches": 7
+ },
+ "VCD Athletic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Valencia": {
+  "competitions": [
+   "SP1",
+   "CDR"
+  ],
+  "first_seen": "2016-08-22",
+  "last_seen": "2026-05-23",
+  "matches": 387
+ },
+ "Valladolid": {
+  "competitions": [
+   "SP1",
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-21",
+  "last_seen": "2026-05-31",
+  "matches": 405
+ },
+ "Valle Eg\u00fc\u00e9s": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-12-06",
+  "matches": 2
+ },
+ "Vallecano": {
+  "competitions": [
+   "SP1",
+   "SP2"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-23",
+  "matches": 396
+ },
+ "Valmiera / BSS": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2023-07-11",
+  "last_seen": "2023-07-19",
+  "matches": 2
+ },
+ "Varea": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-31",
+  "last_seen": "2023-10-31",
+  "matches": 1
+ },
+ "Varndeanians": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Vauxhall Motors": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Velarde": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-10-19",
+  "last_seen": "2022-11-13",
+  "matches": 2
+ },
+ "Venezia": {
+  "competitions": [
+   "I2",
+   "I1",
+   "COPIT"
+  ],
+  "first_seen": "2017-08-26",
+  "last_seen": "2026-05-08",
+  "matches": 346
+ },
+ "Verona": {
+  "competitions": [
+   "I2",
+   "I1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-24",
+  "matches": 382
+ },
+ "Vicenza": {
+  "competitions": [
+   "I2"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2022-05-06",
+  "matches": 118
+ },
+ "Vicenza Virtus": {
+  "competitions": [
+   "COPIT"
+  ],
+  "first_seen": "2023-08-06",
+  "last_seen": "2023-08-06",
+  "matches": 1
+ },
+ "Vikingur Reykjavik": {
+  "competitions": [
+   "UCL"
+  ],
+  "first_seen": "2022-06-21",
+  "last_seen": "2022-07-12",
+  "matches": 4
+ },
+ "Villanovense": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-02",
+  "last_seen": "2023-12-06",
+  "matches": 2
+ },
+ "Villarreal": {
+  "competitions": [
+   "SP1",
+   "UEL",
+   "CDR"
+  ],
+  "first_seen": "2016-08-20",
+  "last_seen": "2026-05-24",
+  "matches": 395
+ },
+ "Villarreal B": {
+  "competitions": [
+   "SP2"
+  ],
+  "first_seen": "2022-08-14",
+  "last_seen": "2024-06-02",
+  "matches": 84
+ },
+ "Vimenor": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2022-11-13",
+  "matches": 1
+ },
+ "Virginia Water": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-20",
+  "matches": 5
+ },
+ "Virtus Entella": {
+  "competitions": [
+   "I2",
+   "COPIT"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-08",
+  "matches": 199
+ },
+ "Wallingford & Crowmarsh": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Walsall": {
+  "competitions": [
+   "E2",
+   "E3",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 461
+ },
+ "Walsall Wood": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Walsham Le Willows": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-08-04",
+  "matches": 2
+ },
+ "Waltham Abbey": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Walthamstow": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-05",
+  "matches": 4
+ },
+ "Walton & Hersham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 9
+ },
+ "Wantage Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Ware": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-18",
+  "matches": 5
+ },
+ "Warminster Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "Warrington Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-16",
+  "matches": 4
+ },
+ "Watford": {
+  "competitions": [
+   "E0",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-02",
+  "matches": 426
+ },
+ "Wealdstone": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-10-14",
+  "matches": 2
+ },
+ "Welling Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-06",
+  "matches": 2
+ },
+ "Welling United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-10-14",
+  "matches": 7
+ },
+ "Wellingborough Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 3
+ },
+ "Wellington AFC": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Wells City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Welton Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Welwyn Garden City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 3
+ },
+ "Wembley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-08",
+  "matches": 3
+ },
+ "Wendron United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-05",
+  "matches": 1
+ },
+ "Werder Bremen": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-26",
+  "last_seen": "2026-05-16",
+  "matches": 306
+ },
+ "West Allotment Celtic": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "West Auckland Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-05",
+  "matches": 5
+ },
+ "West Brom": {
+  "competitions": [
+   "E0",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-13",
+  "last_seen": "2026-05-02",
+  "matches": 444
+ },
+ "West Didsbury & Chorlton": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "West Essex": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 5
+ },
+ "West Ham": {
+  "competitions": [
+   "E0",
+   "UEL",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-15",
+  "last_seen": "2026-05-24",
+  "matches": 399
+ },
+ "Westbury United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-04",
+  "matches": 4
+ },
+ "Westfield (Surrey)": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 8
+ },
+ "Westfields": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 5
+ },
+ "Weston-super-Mare": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-10-14",
+  "matches": 7
+ },
+ "Weymouth": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-09-30",
+  "matches": 7
+ },
+ "Whickham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-09-03",
+  "matches": 7
+ },
+ "Whitby Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-11-04",
+  "matches": 8
+ },
+ "Whitchurch Alport": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 6
+ },
+ "White Ensign": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Whitehawk": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-30",
+  "matches": 6
+ },
+ "Whitley Bay": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-22",
+  "matches": 4
+ },
+ "Whitstable Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Whitton United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-20",
+  "matches": 2
+ },
+ "Widnes": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-05",
+  "matches": 8
+ },
+ "Wigan": {
+  "competitions": [
+   "E1",
+   "E2",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 467
+ },
+ "Willand Rovers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 5
+ },
+ "Wimborne Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-16",
+  "matches": 7
+ },
+ "Wincanton Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-09-03",
+  "matches": 4
+ },
+ "Winchester City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-02",
+  "last_seen": "2023-09-30",
+  "matches": 6
+ },
+ "Windsor": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-09",
+  "matches": 2
+ },
+ "Wingate & Finchley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-19",
+  "matches": 5
+ },
+ "Winsford United": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-09",
+  "matches": 2
+ },
+ "Winterton Rangers": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 3
+ },
+ "Wisbech Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 4
+ },
+ "Witham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 8
+ },
+ "Witton Albion": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-02",
+  "matches": 4
+ },
+ "Woking": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-11-04",
+  "matches": 5
+ },
+ "Wokingham Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-18",
+  "matches": 3
+ },
+ "Wolfsburg": {
+  "competitions": [
+   "D1"
+  ],
+  "first_seen": "2016-08-27",
+  "last_seen": "2026-05-16",
+  "matches": 340
+ },
+ "Wolverhampton Casuals": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-07",
+  "last_seen": "2023-08-05",
+  "matches": 4
+ },
+ "Wolves": {
+  "competitions": [
+   "E0",
+   "FAC",
+   "EFLC",
+   "E1"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-24",
+  "matches": 409
+ },
+ "Woodbridge Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-05",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Woodford Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Worcester City": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-09-16",
+  "matches": 5
+ },
+ "Worcester Raiders": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-19",
+  "matches": 7
+ },
+ "Workington": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-09-15",
+  "matches": 4
+ },
+ "Worksop Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-20",
+  "last_seen": "2023-11-04",
+  "matches": 11
+ },
+ "Worthing": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-17",
+  "last_seen": "2023-11-04",
+  "matches": 6
+ },
+ "Wrexham": {
+  "competitions": [
+   "E3",
+   "E2",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2026-05-02",
+  "matches": 151
+ },
+ "Wroxham": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-05",
+  "last_seen": "2023-09-19",
+  "matches": 7
+ },
+ "Wycombe": {
+  "competitions": [
+   "E3",
+   "E2",
+   "E1",
+   "FAC",
+   "EFLC"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2026-05-02",
+  "matches": 455
+ },
+ "Wythenshawe Amateurs": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2023-08-08",
+  "last_seen": "2023-08-19",
+  "matches": 2
+ },
+ "Wythenshawe Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Yate Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-09-03",
+  "last_seen": "2023-09-02",
+  "matches": 5
+ },
+ "Yaxley": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2023-08-05",
+  "matches": 2
+ },
+ "Yeclano": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2022-11-13",
+  "last_seen": "2023-12-06",
+  "matches": 3
+ },
+ "Yeovil": {
+  "competitions": [
+   "E3"
+  ],
+  "first_seen": "2016-08-06",
+  "last_seen": "2019-05-04",
+  "matches": 138
+ },
+ "Yeovil Town": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-12-03",
+  "matches": 7
+ },
+ "York": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-10-15",
+  "last_seen": "2023-12-01",
+  "matches": 7
+ },
+ "Yorkshire Amateur": {
+  "competitions": [
+   "FAC"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-09",
+  "matches": 2
+ },
+ "Zamora": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-22",
+  "matches": 2
+ },
+ "Zaragoza": {
+  "competitions": [
+   "SP2",
+   "CDR"
+  ],
+  "first_seen": "2016-08-22",
+  "last_seen": "2026-05-31",
+  "matches": 422
+ },
+ "Zirauki": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-10-12",
+  "last_seen": "2023-10-12",
+  "matches": 1
+ },
+ "Zorya Luhansk": {
+  "competitions": [
+   "UEL"
+  ],
+  "first_seen": "2023-08-24",
+  "last_seen": "2023-08-31",
+  "matches": 2
+ },
+ "Zrinjski": {
+  "competitions": [
+   "UCL",
+   "UEL"
+  ],
+  "first_seen": "2022-07-06",
+  "last_seen": "2023-08-31",
+  "matches": 10
+ },
+ "como": {
+  "competitions": [
+   "COPIT"
+  ],
+  "first_seen": "2022-08-06",
+  "last_seen": "2022-08-06",
+  "matches": 1
+ },
+ "\u00c1guilas": {
+  "competitions": [
+   "CDR"
+  ],
+  "first_seen": "2023-11-01",
+  "last_seen": "2023-11-01",
+  "matches": 1
+ }
+}

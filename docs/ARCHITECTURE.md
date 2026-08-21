@@ -104,6 +104,21 @@ data. Improvement levers, in order: xG features (Understat/StatsBomb),
 lineups/injuries (API-Football), all four GBM members, per-league meta
 weights, longer training windows.
 
+## Data archive (2026-08-21)
+
+`records/sports-archive.jsonl`: 45,850 matches, Aug 2016 → present, across 10
+league divisions (E0-E3, SP1/SP2, I1/I2, D1, F1) + 6 cups (UCL, UEL, FA Cup,
+EFL Cup, Copa del Rey, Coppa Italia); 1,246 teams in
+`records/teams-registry.json`. Rebuilt idempotently by
+`model/src/build_archive.py` after every data refresh.
+`records/injury-history.jsonl`: daily injury snapshots via
+`model/src/snapshot_prematch.py` (cron) - building the pre-match injury
+dataset no free source offers. Current-season snapshots need API-Football Pro.
+
+Temporal prototype (300 StatsBomb matches, 5,400 snapshots): live Brier
+0.6898 vs analytic baseline 0.5472 - gap closing with data volume
+(was 0.8825 at 50 matches); analytic engine stays default until beaten.
+
 ## Phase gates (each needs sign-off before spend)
 
 1. **Phase 2** — temporal Transformer + GNN training: needs paid event-level

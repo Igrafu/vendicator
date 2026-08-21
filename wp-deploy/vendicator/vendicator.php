@@ -62,6 +62,72 @@ function vendicator_infra_items() {
     );
 }
 
+function vendicator_rank($lifetime) {
+    $ladder = array(
+        array('points' => 0, 'name' => 'Rookie', 'icon' => '⚽'),
+        array('points' => 500, 'name' => 'Contender', 'icon' => '🛡️'),
+        array('points' => 2000, 'name' => 'Sharp', 'icon' => '🎯'),
+        array('points' => 5000, 'name' => 'Analyst', 'icon' => '📊'),
+        array('points' => 10000, 'name' => 'Oracle', 'icon' => '🔮'),
+        array('points' => 20000, 'name' => 'Legend', 'icon' => '👑'),
+    );
+    $current = $ladder[0];
+    $next = null;
+    foreach ($ladder as $r) {
+        if ($lifetime >= (int) $r['points']) { $current = $r; }
+        elseif (!$next) { $next = $r; }
+    }
+    return array($current, $next);
+}
+
+function vendicator_league_catalogue() {
+    return array(
+        'E0' => array('Premier League', 'England', 'league'),
+        'E1' => array('Championship', 'England', 'league'),
+        'E2' => array('League One', 'England', 'league'),
+        'E3' => array('League Two', 'England', 'league'),
+        'FAC' => array('FA Cup', 'England', 'cup'),
+        'EFLC' => array('EFL Cup', 'England', 'cup'),
+        'SP1' => array('La Liga', 'Spain', 'league'),
+        'SP2' => array('La Liga 2', 'Spain', 'league'),
+        'CDR' => array('Copa del Rey', 'Spain', 'cup'),
+        'I1' => array('Serie A', 'Italy', 'league'),
+        'I2' => array('Serie B', 'Italy', 'league'),
+        'COPIT' => array('Coppa Italia', 'Italy', 'cup'),
+        'D1' => array('Bundesliga', 'Germany', 'league'),
+        'F1' => array('Ligue 1', 'France', 'league'),
+        'UCL' => array('Champions League', 'Europe', 'cup'),
+        'UEL' => array('Europa League', 'Europe', 'cup'),
+        'SC0' => array('Scottish Premiership', 'Scotland', 'league'),
+        'N1' => array('Eredivisie', 'Netherlands', 'league'),
+        'P1' => array('Primeira Liga', 'Portugal', 'league'),
+        'B1' => array('Pro League', 'Belgium', 'league'),
+        'T1' => array('Super Lig', 'Turkey', 'league'),
+        'G1' => array('Super League', 'Greece', 'league'),
+        'BRA' => array('Serie A (Brazil)', 'Brazil', 'league'),
+        'ARG' => array('Primera Division', 'Argentina', 'league'),
+        'MLS' => array('MLS', 'USA', 'league'),
+        'JPN' => array('J1 League', 'Japan', 'league'),
+    );
+}
+
+function vendicator_leagues() {
+    $enabled = get_option('vendicator_enabled_leagues');
+    if (!is_array($enabled)) {
+        $enabled = array('E0', 'E1', 'E2', 'E3', 'FAC', 'EFLC', 'SP1', 'SP2',
+            'CDR', 'I1', 'I2', 'COPIT', 'D1', 'F1', 'UCL', 'UEL');
+    }
+    $cat = vendicator_league_catalogue();
+    $out = array();
+    foreach ($enabled as $code) {
+        if (isset($cat[$code])) { $out[$code] = $cat[$code][0] . ' (' . $cat[$code][1] . ')'; }
+    }
+    foreach ((array) get_option('vendicator_custom_leagues', array()) as $code => $cfg) {
+        $out[$code] = $cfg[0] . ' (' . $cfg[1] . ')';
+    }
+    return $out;
+}
+
 function vendicator_user_tier($user_id) {
     if (user_can($user_id, 'manage_options')) { return 'gold'; }
     $lifetime = (int) get_user_meta($user_id, 'vendicator_lifetime_points', true);
@@ -126,8 +192,9 @@ function vendicator_css() {
 --white:#F7FAF2;--muted:#9AA3B2;}
 .vd-wrap{color:var(--white);font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
 background:radial-gradient(900px 400px at 85% -10%,rgba(198,255,77,.10),transparent 60%),
-linear-gradient(160deg,var(--bg1),var(--bg0) 60%);min-height:80vh;
+linear-gradient(160deg,var(--bg1),var(--bg0) 60%);min-height:100vh;
 padding:34px 16px;margin:0 -8px;}
+.vendicator-page,.vendicator-page main{background:var(--bg0);}
 .vd-inner{max-width:1060px;margin:0 auto;display:grid;gap:18px;}
 .vd-card{background:var(--glass);border:1px solid var(--edge);border-radius:16px;
 padding:22px 24px;backdrop-filter:blur(14px);
@@ -163,8 +230,10 @@ border-radius:999px;border:1px solid var(--edge);font-size:13px;}
 .vd-pill{display:inline-block;background:rgba(255,255,255,.06);
 border:1px solid var(--edge);border-radius:999px;padding:4px 12px;
 margin:3px 4px 3px 0;font-size:12.5px;color:var(--white);}
-.vd-avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;
-border:2px solid var(--lime);box-shadow:0 0 18px rgba(198,255,77,.4);}';
+.vd-rank{display:flex;align-items:center;gap:14px;font-size:20px;color:var(--white);}
+.vd-rank-icon{font-size:44px;filter:drop-shadow(0 0 14px rgba(198,255,77,.55));}
+.vendicator-page h1.entry-title,.vendicator-page .wp-block-post-title,
+.vendicator-page h1:not([class]),.vendicator-page .entry-header{display:none;}';
 }
 add_action('wp_enqueue_scripts', function () {
     wp_register_style('vendicator', false);
@@ -176,6 +245,12 @@ add_action('admin_enqueue_scripts', function () {
     wp_enqueue_style('vendicator-admin');
     wp_add_inline_style('vendicator-admin',
         '.vd-admin-lock{opacity:.5;} .vd-admin-note{max-width:640px;color:#555;}');
+});
+add_filter('body_class', function ($classes) {
+    if (is_page(array('login', 'dashboard', 'account'))) {
+        $classes[] = 'vendicator-page';
+    }
+    return $classes;
 });
 
 /* --------------------------------------------------------------- shortcodes */
@@ -387,10 +462,7 @@ add_shortcode('vendicator_account', function () {
             . '<form method="post" action="' . esc_url(admin_url('admin-post.php')) . '">'
             . '<input type="hidden" name="action" value="vendicator_leagues">'
             . wp_nonce_field('vendicator_leagues', '_vdnonce', true, false);
-        $leagues = array('E0' => 'Premier League', 'E1' => 'Championship',
-            'E2' => 'League One', 'E3' => 'League Two', 'SP1' => 'La Liga',
-            'D1' => 'Bundesliga', 'I1' => 'Serie A', 'F1' => 'Ligue 1',
-            'UCL' => 'Champions League', 'UEL' => 'Europa League');
+        $leagues = vendicator_leagues();
         foreach ($leagues as $code => $name) {
             $body .= '<label><input type="checkbox" name="vd_leagues[]" value="' . esc_attr($code) . '" '
                 . checked(in_array($code, $mine, true), true, false) . '> '
@@ -426,17 +498,34 @@ add_shortcode('vendicator_account', function () {
             . 'var py=160-(v/mx)*140;i?x.lineTo(px,py):x.moveTo(px,py);});x.stroke();})();</script>'
             . '<p class="vd-muted">Every settled prediction appends to the tally - climb it to rank up.</p></div>';
     } elseif ($tab === 'profile') {
-        $avatar = (int) get_user_meta($uid, 'vendicator_avatar', true);
-        $img = $avatar ? wp_get_attachment_image_url($avatar, 'thumbnail') : '';
-        $body = '<div class="vd-card"><h3>Profile picture</h3>'
-            . ($img ? '<img class="vd-avatar" src="' . esc_url($img) . '" alt="avatar"><br><br>' : '')
-            . '<form method="post" enctype="multipart/form-data" action="'
-            . esc_url(admin_url('admin-post.php')) . '">'
-            . '<input type="hidden" name="action" value="vendicator_avatar">'
-            . wp_nonce_field('vendicator_avatar', '_vdnonce', true, false)
-            . '<input type="file" name="vd_avatar" accept="image/*" required><br><br>'
-            . '<input type="submit" value="Upload picture"></form>'
-            . '<p class="vd-muted">Reward badge pictures unlock with Silver+ customization.</p></div>';
+        list($rank, $nextrank) = vendicator_rank($lifetime);
+        $loc = get_user_meta($uid, 'vendicator_location', true);
+        $fav = get_user_meta($uid, 'vendicator_fav_team', true);
+        $hide = (bool) get_user_meta($uid, 'vendicator_hide_email', true);
+        $body = '<div class="vd-card"><h3>Rank badge</h3>'
+            . '<div class="vd-rank"><span class="vd-rank-icon">' . $rank['icon'] . '</span>'
+            . '<b>' . esc_html($rank['name']) . '</b></div>';
+        if ($nextrank) {
+            $pctv = min(100, round($lifetime / max((int) $nextrank['points'], 1) * 100));
+            $body .= '<p class="vd-muted">' . $lifetime . ' / ' . (int) $nextrank['points']
+                . ' points to ' . esc_html($nextrank['name']) . ' ' . $nextrank['icon'] . '</p>'
+                . '<div style="height:10px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden;">'
+                . '<div style="height:100%;width:' . $pctv . '%;background:linear-gradient(90deg,#9BE81F,#C6FF4D);"></div></div>';
+        } else { $body .= '<p class="vd-muted">Top rank reached.</p>'; }
+        $body .= '<p class="vd-muted">Badges upgrade automatically as your points total grows - your status is earned, not uploaded.</p></div>'
+            . '<div class="vd-card"><h3>Profile</h3>'
+            . '<form method="post" action="' . esc_url(admin_url('admin-post.php')) . '">'
+            . '<input type="hidden" name="action" value="vendicator_profile">'
+            . wp_nonce_field('vendicator_profile', '_vdnonce', true, false)
+            . '<label>Username (display name)</label><input type="text" name="vd_display" value="' . esc_attr($u->display_name) . '">'
+            . '<label>Location</label><input type="text" name="vd_location" value="' . esc_attr($loc) . '">'
+            . '<label>Favourite team (followed in predictions)</label><input type="text" name="vd_fav" value="' . esc_attr($fav) . '">'
+            . '<label><input type="checkbox" name="vd_hide_email" value="1" ' . checked($hide, true, false) . '> Hide my email from leaderboards and public profiles</label><br><br>'
+            . '<label>New password (optional)</label><input type="password" name="vd_pass1" minlength="8">'
+            . '<label>Confirm new password</label><input type="password" name="vd_pass2" minlength="8">'
+            . '<input type="submit" value="Save profile">'
+            . '<p class="vd-muted">Subscription management lives in the Subscriptions tab.</p>'
+            . '</form></div>';
     } else { /* subscriptions */
         $tiers = vendicator_tiers();
         $body = '<div class="vd-card"><h3>Your subscription</h3>'
@@ -488,15 +577,24 @@ add_action('admin_post_vendicator_leagues', function () {
     wp_safe_redirect(vendicator_page_url('account') . '?tab=leagues');
     exit;
 });
-add_action('admin_post_vendicator_avatar', function () {
-    check_admin_referer('vendicator_avatar', '_vdnonce');
+add_action('admin_post_vendicator_profile', function () {
+    check_admin_referer('vendicator_profile', '_vdnonce');
     $uid = get_current_user_id();
-    if ($uid && !empty($_FILES['vd_avatar'])) {
-        require_once ABSPATH . 'wp-admin/includes/image.php';
-        require_once ABSPATH . 'wp-admin/includes/file.php';
-        require_once ABSPATH . 'wp-admin/includes/media.php';
-        $id = media_handle_upload('vd_avatar', 0);
-        if (!is_wp_error($id)) { update_user_meta($uid, 'vendicator_avatar', $id); }
+    if ($uid) {
+        wp_update_user(array('ID' => $uid, 'display_name' =>
+            sanitize_text_field(wp_unslash(isset($_POST['vd_display']) ? $_POST['vd_display'] : ''))));
+        update_user_meta($uid, 'vendicator_location',
+            sanitize_text_field(wp_unslash(isset($_POST['vd_location']) ? $_POST['vd_location'] : '')));
+        update_user_meta($uid, 'vendicator_fav_team',
+            sanitize_text_field(wp_unslash(isset($_POST['vd_fav']) ? $_POST['vd_fav'] : '')));
+        update_user_meta($uid, 'vendicator_hide_email', empty($_POST['vd_hide_email']) ? 0 : 1);
+        $p1 = (string) wp_unslash(isset($_POST['vd_pass1']) ? $_POST['vd_pass1'] : '');
+        $p2 = (string) wp_unslash(isset($_POST['vd_pass2']) ? $_POST['vd_pass2'] : '');
+        if ($p1 !== '' && $p1 === $p2 && strlen($p1) >= 8) {
+            wp_set_password($p1, $uid);
+            wp_set_current_user($uid);
+            wp_set_auth_cookie($uid);
+        }
     }
     wp_safe_redirect(vendicator_page_url('account') . '?tab=profile');
     exit;
@@ -525,6 +623,8 @@ add_action('admin_menu', function () {
         'vendicator_admin_models', 'dashicons-chart-line', 3);
     add_submenu_page('vendicator', 'Model Selectors', 'Model Selectors',
         'manage_options', 'vendicator', 'vendicator_admin_models');
+    add_submenu_page('vendicator', 'Leagues', 'Leagues',
+        'manage_options', 'vendicator-leagues', 'vendicator_admin_leagues');
     add_submenu_page('vendicator', 'Subscriptions', 'Subscriptions',
         'manage_options', 'vendicator-subs', 'vendicator_admin_subs');
     add_submenu_page('vendicator', 'Users', 'Users',
@@ -730,5 +830,73 @@ add_action('admin_post_vendicator_add_section', function () {
         }
     }
     wp_safe_redirect(admin_url('admin.php?page=vendicator-sections'));
+    exit;
+});
+
+function vendicator_admin_leagues() {
+    $cat = vendicator_league_catalogue();
+    $enabled = array_keys(vendicator_leagues());
+    echo '<div class="wrap"><h1>Leagues &amp; Competitions</h1>'
+        . '<p class="vd-admin-note">Separate from the model engines: enable competitions here and the '
+        . 'site and data pipeline pick them up on the next run. Add competitions from any country or '
+        . 'continent as the platform grows.</p>'
+        . '<form method="post" action="' . esc_url(admin_url('admin-post.php')) . '">'
+        . '<input type="hidden" name="action" value="vendicator_save_leagues">';
+    wp_nonce_field('vendicator_save_leagues', '_vdnonce');
+    echo '<table class="widefat striped" style="max-width:720px;"><thead><tr>'
+        . '<th>Enabled</th><th>Competition</th><th>Country</th><th>Type</th></tr></thead><tbody>';
+    foreach ($cat as $code => $cfg) {
+        printf('<tr><td><input type="checkbox" name="lg[]" value="%s" %s></td><td>%s</td><td>%s</td><td>%s</td></tr>',
+            esc_attr($code), checked(in_array($code, $enabled, true), true, false),
+            esc_html($cfg[0]), esc_html($cfg[1]), esc_html($cfg[2]));
+    }
+    echo '</tbody></table><p><input type="submit" class="button button-primary" value="Save leagues"></p></form>'
+        . '<h2>Add a custom competition</h2>'
+        . '<form method="post" action="' . esc_url(admin_url('admin-post.php')) . '">'
+        . '<input type="hidden" name="action" value="vendicator_add_league">';
+    wp_nonce_field('vendicator_add_league', '_vdnonce');
+    echo '<p><input type="text" name="code" placeholder="Code (e.g. MX1)" required> '
+        . '<input type="text" name="name" placeholder="Competition name" required> '
+        . '<input type="text" name="country" placeholder="Country / continent" required> '
+        . '<input type="submit" class="button button-primary" value="Add"></p></form>';
+    $custom = (array) get_option('vendicator_custom_leagues', array());
+    if ($custom) {
+        echo '<table class="widefat striped" style="max-width:500px;"><tbody>';
+        foreach ($custom as $code => $cfg) {
+            printf('<tr><td>%s</td><td>%s</td><td>%s</td></tr>',
+                esc_html($code), esc_html($cfg[0]), esc_html($cfg[1]));
+        }
+        echo '</tbody></table>';
+    }
+    echo '</div>';
+}
+add_action('admin_post_vendicator_save_leagues', function () {
+    check_admin_referer('vendicator_save_leagues', '_vdnonce');
+    if (current_user_can('manage_options')) {
+        $cat = vendicator_league_catalogue();
+        $clean = array();
+        foreach ((array) wp_unslash($_POST['lg'] ?? array()) as $code) {
+            $code = sanitize_text_field($code);
+            if (isset($cat[$code])) { $clean[] = $code; }
+        }
+        update_option('vendicator_enabled_leagues', $clean);
+    }
+    wp_safe_redirect(admin_url('admin.php?page=vendicator-leagues'));
+    exit;
+});
+add_action('admin_post_vendicator_add_league', function () {
+    check_admin_referer('vendicator_add_league', '_vdnonce');
+    if (current_user_can('manage_options')) {
+        $code = strtoupper(sanitize_key(wp_unslash($_POST['code'] ?? '')));
+        if ($code) {
+            $custom = (array) get_option('vendicator_custom_leagues', array());
+            $custom[$code] = array(
+                sanitize_text_field(wp_unslash($_POST['name'] ?? $code)),
+                sanitize_text_field(wp_unslash($_POST['country'] ?? '')),
+                'league');
+            update_option('vendicator_custom_leagues', $custom);
+        }
+    }
+    wp_safe_redirect(admin_url('admin.php?page=vendicator-leagues'));
     exit;
 });
