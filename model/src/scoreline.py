@@ -148,9 +148,37 @@ def odds_style_rating(total):
     return round(max(min(float(total), 100.0), 10.0) / 10.0, 2)
 
 
-def _odds_from(total, edge_prob):
-    """Fair decimal price, widened when the Scoreline is unsure."""
+def market_price(fx, side):
+    """De-vigged best board price for one side, or None.
+
+    The open odds board is the single best-calibrated read available on any
+    fixture - it is thousands of people betting real money. Stripping the
+    overround turns it back into a probability we can price against.
+    """
+    board = fx.get("odds_board") or {}
+    prices = {}
+    for k in ("home", "draw", "away"):
+        row = board.get(k) or []
+        if not row or not row[0].get("odds"):
+            return None
+        prices[k] = float(row[0]["odds"])
+    overround = sum(1.0 / v for v in prices.values())
+    if overround <= 0:
+        return None
+    fair = (1.0 / prices[side]) / overround
+    return round(1.0 / fair, 3) if fair > 0 else None
+
+
+def _odds_from(total, edge_prob, book_price=None):
+    """Fair decimal price, widened when the Scoreline is unsure.
+
+    Where the board carries a price we lean on it: the market is better
+    calibrated than any single model, so the published number sits between
+    our own read and theirs rather than ignoring one of them.
+    """
     p = max(min(float(edge_prob), 0.95), 0.03)
+    if book_price and book_price > 1.0:
+        p = p * 0.5 + (1.0 / book_price) * 0.5
     confidence = max(min(total / 100.0, 1.0), 0.05)
     # low confidence -> shade the price out (longer odds, honest)
     adjusted = p * (0.75 + 0.25 * confidence)
@@ -159,7 +187,7 @@ def _odds_from(total, edge_prob):
 
 
 def team_scoreline(team, table_row=None, model_probs=None, history=None,
-                   bets=None):
+                   bets=None, book_price=None, players=None):
     """-> {'total', 'decimal', 'fractional', 'components', 'note'}"""
     history = history or {}
     bets = bets or {}
@@ -201,11 +229,22 @@ def team_scoreline(team, table_row=None, model_probs=None, history=None,
     else:
         parts["bet_record"] = 10.0
 
+    # 6. squad quality: the players actually available to this side (0-15).
+    #    A table row says how the season has gone; the squad says who is
+    #    going to play, which is the other half of the same question.
+    if players:
+        ratings = sorted((float(p.get("rating", 0)) for p in players),
+                         reverse=True)[:11]
+        if ratings:
+            parts["squad"] = round(
+                min(sum(ratings) / len(ratings) / 100.0, 1.0) * 15, 1)
+    parts.setdefault("squad", 7.5)
+
     total = round(max(min(sum(parts.values()), 100.0), 1.0), 1)
 
     edge = (max(float(v) for v in model_probs.values()) / 100.0
             if model_probs else 0.4)
-    dec, frac = _odds_from(total, edge)
+    dec, frac = _odds_from(total, edge, book_price)
 
     note = []
     if h.get("n"):
@@ -223,10 +262,16 @@ def team_scoreline(team, table_row=None, model_probs=None, history=None,
             "no settled history yet - score is model-derived"}
 
 
-# What share of the board carries each grade. Most cards carry none: a
-# bonus that everything qualifies for is not a bonus, it is just a bigger
-# number. These are the fractions of the board, best value first.
-GRADE_BANDS = (("gold", 0.06), ("silver", 0.14), ("bronze", 0.20))
+# Between 1 and 20 cards carry a value flag on any given board, and no more.
+# Gold is awarded per competition - the single best card in each league, and
+# only when it clears the floor - so a golden ticket means something within
+# its own division rather than being swept up by whichever league happens to
+# be pricing generously that week. Silver and bronze are then taken from
+# what is left, best first.
+GRADE_MIN, GRADE_MAX = 1, 20
+GRADE_FLOOR = 45.0          # value score a card must reach to be graded
+GOLD_FLOOR = 62.0           # a golden ticket has to clear a higher bar
+SILVER_SHARE, BRONZE_SHARE = 0.30, 0.55
 GRADE_BONUS = {"gold": 0.40, "silver": 0.25, "bronze": 0.12}
 
 
@@ -266,21 +311,53 @@ def grade_board(fixtures):
                                    (sl.get("movement") or {}).get("up", 0.0),
                                    calls), fx))
     scored.sort(key=lambda kv: kv[0], reverse=True)
-    n = len(scored)
-    cursor = 0
-    for tier, share in GRADE_BANDS:
-        upto = cursor + max(1 if n >= 12 else 0, int(round(n * share)))
-        for score, fx in scored[cursor:upto]:
-            fx["scoreline"]["grade"] = {"tier": tier, "score": score,
-                                        "bonus": GRADE_BONUS[tier]}
-        cursor = upto
-    for score, fx in scored[cursor:]:
+    for score, fx in scored:
         fx["scoreline"]["grade"] = None
         fx["scoreline"]["value_score"] = score
+
+    # only cards clearing the floor are eligible at all, and never more
+    # than GRADE_MAX of them
+    eligible = [(s, fx) for s, fx in scored if s >= GRADE_FLOOR][:GRADE_MAX]
+    if len(eligible) < GRADE_MIN and scored:
+        eligible = scored[:GRADE_MIN]
+
+    # gold: the best card in each competition, if it clears the higher bar
+    seen_leagues = set()
+    gold = []
+    for s, fx in eligible:
+        lg = fx.get("league")
+        if lg in seen_leagues or s < GOLD_FLOOR:
+            continue
+        seen_leagues.add(lg)
+        gold.append((s, fx))
+    for s, fx in gold:
+        fx["scoreline"]["grade"] = {"tier": "gold", "score": s,
+                                    "bonus": GRADE_BONUS["gold"]}
+
+    rest = [(s, fx) for s, fx in eligible
+            if fx["scoreline"]["grade"] is None]
+    cut = int(round(len(rest) * SILVER_SHARE))
+    for s, fx in rest[:cut]:
+        fx["scoreline"]["grade"] = {"tier": "silver", "score": s,
+                                    "bonus": GRADE_BONUS["silver"]}
+    upto = cut + int(round(len(rest) * BRONZE_SHARE))
+    for s, fx in rest[cut:upto]:
+        fx["scoreline"]["grade"] = {"tier": "bronze", "score": s,
+                                    "bonus": GRADE_BONUS["bronze"]}
     return fixtures
 
 
-def projected_movement(team, history, current_total):
+def _bet_record_points(won, lost):
+    """The platform betting-record component (0-20), priored like accuracy."""
+    n = won + lost
+    if n <= 0:
+        return 10.0
+    rate = (won + ACC_PRIOR_RATE * ACC_PRIOR_N) / (n + ACC_PRIOR_N)
+    return round(rate * 20, 2)
+
+
+def projected_movement(team, history, current_total, bets=None,
+                       selections=1):
     """Where this team's Scoreline lands after the match is settled.
 
     The accuracy component is a running hit rate, so one more settled call
@@ -301,12 +378,25 @@ def projected_movement(team, history, current_total):
     near_now = -(near / (n + ACC_PRIOR_N)) * 12
     near_after = -((near + 1) / (n + 1 + ACC_PRIOR_N)) * 12
     down += near_after - near_now
+
+    # The platform's own betting record on this side moves too, and it moves
+    # by more when the card carried more selections: a Scoreline that
+    # survived an eight-leg builder has been tested harder than one that
+    # survived a single 1X2 call, and is worth more afterwards.
+    b = (bets or {}).get(team, {})
+    won, lost = int(b.get("won", 0)), int(b.get("lost", 0))
+    legs = max(int(selections or 1), 1)
+    rec_now = _bet_record_points(won, lost)
+    up += _bet_record_points(won + legs, lost) - rec_now
+    down += _bet_record_points(won, lost + legs) - rec_now
+
     return {
         "up": round(up, 2),
         "down": round(down, 2),
         "up_rating": odds_style_rating(current_total + up),
         "down_rating": odds_style_rating(current_total + down),
         "settled_calls": n,
+        "selections_counted": legs,
     }
 
 
@@ -339,12 +429,22 @@ def build(payload):
         rows = {r["team"]: r for r in tables.get(fx["league"], [])}
         probs = fx.get("final_calibrated", {})
         home, away = fx.get("home_team"), fx.get("away_team")
+        squads = {}
+        for pl in fx.get("players", []) or []:
+            squads.setdefault(pl.get("team"), []).append(pl)
         hs = team_scoreline(home, rows.get(home),
-                            {"top": probs.get("home", 33)}, history, bets)
+                            {"top": probs.get("home", 33)}, history, bets,
+                            market_price(fx, "home"), squads.get(home))
         as_ = team_scoreline(away, rows.get(away),
-                             {"top": probs.get("away", 33)}, history, bets)
-        hs["movement"] = projected_movement(home, history, hs["total"])
-        as_["movement"] = projected_movement(away, history, as_["total"])
+                             {"top": probs.get("away", 33)}, history, bets,
+                             market_price(fx, "away"), squads.get(away))
+        # how many selections this card actually offers, which is how hard
+        # its Scoreline is about to be tested
+        legs = 3 + len(fx.get("players", []) or []) // 8
+        hs["movement"] = projected_movement(home, history, hs["total"],
+                                            bets, legs)
+        as_["movement"] = projected_movement(away, history, as_["total"],
+                                             bets, legs)
         headline = round((hs["total"] + as_["total"]) / 2, 1)
         move_up = round((hs["movement"]["up"] + as_["movement"]["up"]) / 2, 2)
         move_down = round(

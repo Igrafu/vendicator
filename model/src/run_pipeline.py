@@ -434,7 +434,53 @@ def kickoff_epoch(date_str, time_str):
     return int(local.astimezone(timezone.utc).timestamp())
 
 
-def fixture_extras(home, away, league, raw_rows, table):
+def lower_league_squad(home, away, expected=None):
+    """Player rows for a fixture Understat does not cover.
+
+    Squad names and positions are real; the per-match rates behind the
+    markets are positional estimates, because no free feed publishes player
+    statistics below the top five leagues. Every row carries estimated=True
+    so the site can say so.
+    """
+    from players import market_lines, value_rating
+    from lower_league_players import squad, synthesise_stats
+    exp = expected or {"home": 1.35, "away": 1.15}
+    out = []
+    for team, side in ((home, "home"), (away, "away")):
+        try:
+            rows = squad(team)
+        except Exception as e:
+            print(f"  squad {team}: {str(e)[:60]}")
+            continue
+        for pl in rows:
+            full = synthesise_stats(pl, float(exp.get(side, 1.3)))
+            # market_lines works off Understat's field names
+            probe = {"time": full["minutes"], "games": full["games"],
+                     "goals": full["goals"], "assists": full["assists"],
+                     "shots": full["shots"], "key_passes": full["key_passes"],
+                     "yellow_cards": full["yellow_cards"],
+                     "red_cards": full["red_cards"],
+                     "position": full.get("position_short", "M")}
+            rating = value_rating(probe)
+            full.update({
+                "rating": rating,
+                "markets": market_lines(probe),
+                "weight": round(1.0 + (100.0 - rating) / 110.0, 3),
+                "last5": {"goals": ["dnp"] * 5, "assists": ["dnp"] * 5},
+                "prob": {"score": round(full["goals"] / max(full["games"], 1)
+                                        * 100, 1),
+                         "assist": round(full["assists"]
+                                         / max(full["games"], 1) * 100, 1)},
+                "points": {},
+            })
+            if full.get("status") == "injured":
+                full["availability"] = {"reason": "Injured",
+                                        "returns": None}
+            out.append(full)
+    return out
+
+
+def fixture_extras(home, away, league, raw_rows, table, expected=None):
     """Discipline markets + player markets + team-pick point values."""
     out = {}
     try:
@@ -442,15 +488,20 @@ def fixture_extras(home, away, league, raw_rows, table):
     except Exception as e:
         print(f"  discipline unavailable: {str(e)[:60]}")
     us = UNDERSTAT_LEAGUE.get(league)
+    players = []
     if us:
-        players = []
         for team in (home, away):
             try:
                 players += team_players(team, us, UNDERSTAT_SEASON)
             except Exception as e:
                 print(f"  players {team}: {str(e)[:60]}")
-        if players:
-            out["players"] = players
+    if not players:
+        # Leagues Understat does not reach get squads from the open squad
+        # feed instead, with market rates derived from position. Flagged as
+        # estimates so the site never implies recorded form we do not have.
+        players = lower_league_squad(home, away, expected)
+    if players:
+        out["players"] = players
     rows = {r["team"]: r for r in table or []}
     out["team_points"] = {
         canonical(home): team_points(rows.get(canonical(home))),
@@ -607,7 +658,8 @@ def predict_upcoming(push=True):
             p = fixture_payload(models, stack, stack_nm, tab, draw_head,
                                 df, fx, div)
             p.update(fixture_extras(fx["HomeTeam"], fx["AwayTeam"], div,
-                                    raw_rows, all_tables.get(div)))
+                                    raw_rows, all_tables.get(div),
+                                    p.get("expected_goals")))
             out_fixtures.append(p)
             append_history(
                 {"generated": datetime.now(timezone.utc).isoformat(),

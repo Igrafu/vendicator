@@ -48,15 +48,58 @@ function vendicator_pts($n, $sign = false) {
  * $weight tilts it where the platform wants to reward exploration - backing
  * a lower-rated player, or a fixture the model finds genuinely hard.
  */
-define('VENDICATOR_POINTS_CURVE', 0.6);
-define('VENDICATOR_POINTS_MAX', 4000);   // 40.00 - a hard ceiling per leg
+define('VENDICATOR_POINTS_LINEAR_TO', 10.0);  // 1:1 with the price to here
+define('VENDICATOR_POINTS_CURVE', 0.6);       // then compressed
+define('VENDICATOR_POINTS_MAX', 4000);        // 40.00 - hard ceiling per leg
 
 function vendicator_leg_points($pct, $weight = 1.0) {
-    $p = max(min((float) $pct, 97.0), 1.0) / 100.0;
+    $p = max(min((float) $pct, 97.0), 0.02) / 100.0;
     $price = 1.0 / $p;
-    $raw = 100.0 * pow($price, VENDICATOR_POINTS_CURVE)
-        * max((float) $weight, 0.1);
-    return (int) round(max(min($raw, VENDICATOR_POINTS_MAX), 105));
+    // Below 10.0 the reward IS the price: evens pays 2.00, 5/1 pays 6.00,
+    // exactly as it would on an exchange. Above it the curve takes over so
+    // a 500/1 scoreline cannot buy a season's rank in one go.
+    if ($price <= VENDICATOR_POINTS_LINEAR_TO) {
+        $raw = 100.0 * $price;
+    } else {
+        $raw = 100.0 * (VENDICATOR_POINTS_LINEAR_TO
+            + pow($price - VENDICATOR_POINTS_LINEAR_TO,
+                  VENDICATOR_POINTS_CURVE));
+    }
+    $raw *= max((float) $weight, 0.1);
+    return (int) round(max(min($raw, VENDICATOR_POINTS_MAX), 101));
+}
+
+/**
+ * Where a market has real bookmaker prices, use them.
+ *
+ * The engine's own probability and the market's differ, and the market is
+ * the better-calibrated of the two. Anchoring the reward to the de-vigged
+ * book price keeps the points a member sees in line with what the same
+ * selection is worth anywhere else, instead of paying out on the model's
+ * private opinion.
+ */
+function vendicator_market_price($p, $market) {
+    if (empty($p['odds_board'][$market])) { return null; }
+    $prices = array();
+    foreach (array('home', 'draw', 'away') as $k) {
+        if (empty($p['odds_board'][$k][0]['odds'])) { return null; }
+        $prices[$k] = (float) $p['odds_board'][$k][0]['odds'];
+    }
+    // strip the overround so the three prices sum to one
+    $overround = 0.0;
+    foreach ($prices as $o) { $overround += 1.0 / $o; }
+    if ($overround <= 0) { return null; }
+    return round(1.0 / ((1.0 / $prices[$market]) / $overround), 4);
+}
+
+/** Percentage to use for a 1X2-family selection, market-anchored. */
+function vendicator_anchored_pct($p, $market, $model_pct) {
+    $price = vendicator_market_price($p, $market);
+    if (!$price || $price <= 1.0) { return $model_pct; }
+    $market_pct = 100.0 / $price;
+    // half the model, half the market: the model carries the platform's own
+    // research, the market carries everyone else's
+    return round($model_pct * 0.5 + $market_pct * 0.5, 1);
 }
 
 /** Risk factor 0-1: how exposed a slip is (legs + combined improbability). */
@@ -267,21 +310,27 @@ function vendicator_outcome_options($p) {
     $dc = $p['markets_dixon_coles'];
     $home = isset($p['home_team']) ? $p['home_team'] : 'Home';
     $away = isset($p['away_team']) ? $p['away_team'] : 'Away';
+    // the three straight outcomes are anchored to the market where the
+    // board carries prices; the double chances follow from them
+    $h = vendicator_anchored_pct($p, 'home', $dc['1x2']['home']);
+    $d = vendicator_anchored_pct($p, 'draw', $dc['1x2']['draw']);
+    $a = vendicator_anchored_pct($p, 'away', $dc['1x2']['away']);
     $rows = array(
-        array('home', $home . ' win', $dc['1x2']['home']),
-        array('home_or_draw', $home . ' win or draw', $dc['double_chance']['1x']),
-        array('draw', 'Draw', $dc['1x2']['draw']),
-        array('away_or_draw', $away . ' win or draw', $dc['double_chance']['x2']),
-        array('away', $away . ' win', $dc['1x2']['away']),
+        array('home', $home . ' win', $h),
+        array('home_or_draw', $home . ' win or draw', min($h + $d, 97)),
+        array('draw', 'Draw', $d),
+        array('away_or_draw', $away . ' win or draw', min($a + $d, 97)),
+        array('away', $away . ' win', $a),
     );
     $out = '<div class="vd-card"><h3>Match Result</h3><div class="vd-opts">';
     foreach ($rows as $r) {
-        $out .= vendicator_option('result', $r[0], $r[1], $r[2],
+        $out .= vendicator_option('result', $r[0], $r[1], round($r[2], 1),
             vendicator_leg_points($r[2]));
     }
     return $out . '</div><p class="vd-muted" style="font-size:12px;">'
-        . 'Safer selections pay fewer points &mdash; the double chances are '
-        . 'deliberately modest.</p></div>';
+        . 'Prices blend our own read with the open market. Safer selections '
+        . 'pay less &mdash; the double chances are deliberately modest.'
+        . '</p></div>';
 }
 
 /**
@@ -350,18 +399,23 @@ function vendicator_halves_options($p) {
     $h = $p['markets_halves']['ht_ft'];
     $home = isset($p['home_team']) ? $p['home_team'] : 'Home';
     $away = isset($p['away_team']) ? $p['away_team'] : 'Away';
-    $name = array('home' => $home . ' win', 'draw' => 'Draw',
-        'away' => $away . ' win');
+    $name = array('home' => $home, 'draw' => 'Draw', 'away' => $away);
+    // Ordered so each first-half result is read down with its own three
+    // second-half outcomes, rather than shuffled.
+    $order = array(
+        array('home', 'home'), array('home', 'draw'), array('home', 'away'),
+        array('away', 'away'), array('away', 'draw'), array('away', 'home'),
+        array('draw', 'home'), array('draw', 'draw'), array('draw', 'away'),
+    );
     $opts = '';
-    foreach (array('home', 'draw', 'away') as $first) {
-        foreach (array('home', 'draw', 'away') as $second) {
-            $key = $first . '_' . $second;
-            if (!isset($h[$key])) { continue; }
-            $pct = $h[$key];
-            $opts .= vendicator_option('htft', $key,
-                '1st half: ' . $name[$first] . ' &nbsp;&ndash;&nbsp; 2nd half: '
-                    . $name[$second], $pct, vendicator_leg_points($pct));
-        }
+    foreach ($order as $pair) {
+        list($first, $second) = $pair;
+        $key = $first . '_' . $second;
+        if (!isset($h[$key])) { continue; }
+        $pct = $h[$key];
+        $opts .= vendicator_option('htft', $key,
+            'First half ' . $name[$first] . ' &nbsp;&ndash;&nbsp; second half '
+                . $name[$second], $pct, vendicator_leg_points($pct));
     }
     if (!$opts) { return ''; }
     return '<div class="vd-card"><h3>Both Halves</h3>'
@@ -385,26 +439,16 @@ function vendicator_score_options($p) {
     $board = !empty($dc['exact_score_board'])
         ? $dc['exact_score_board'] : $dc['exact_score_top10'];
     $opts = '';
-    $buckets = array();
     foreach ($board as $pair) {
-        $hg = (int) substr($pair[0], 0, strpos($pair[0], '-'));
-        $buckets[$hg] = true;
-        $opts .= '<span class="vd-scoreopt" data-hg="' . $hg . '">'
-            . vendicator_option('exact', $pair[0], $pair[0], $pair[1],
-                vendicator_leg_points($pair[1])) . '</span>';
+        $opts .= vendicator_option('exact', $pair[0], $pair[0], $pair[1],
+            vendicator_leg_points($pair[1]));
     }
-    ksort($buckets);
-    $filter = '<select class="vd-scorefilter" aria-label="Filter by home goals">'
-        . '<option value="">Every scoreline (' . count($board) . ')</option>';
-    foreach (array_keys($buckets) as $hg) {
-        $filter .= '<option value="' . (int) $hg . '">' . (int) $hg
-            . ' goal' . ($hg === 1 ? '' : 's') . ' for the home side</option>';
-    }
-    $filter .= '</select>';
-    return '<div class="vd-card"><h3>Exact Score</h3>' . $filter
+    return '<div class="vd-card"><h3>Exact Score</h3>'
         . vendicator_scroll_opts($opts, true)
-        . '<p class="vd-muted" style="font-size:12px;">Every scoreline the '
-        . 'model gives a realistic chance, likeliest first.</p></div>';
+        . '<p class="vd-muted" style="font-size:12px;">'
+        . count($board) . ' scorelines, likeliest first &mdash; scroll down '
+        . 'for the wild ones. A 10-0 is on the board and prices like it.'
+        . '</p></div>';
 }
 
 /**

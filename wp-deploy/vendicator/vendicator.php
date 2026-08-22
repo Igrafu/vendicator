@@ -410,7 +410,9 @@ function vendicator_css() {
     return '
 :root{--bg0:#0C0E12;--bg1:#14171D;--glass:rgba(255,255,255,.045);
 --edge:rgba(255,255,255,.10);--lime:#C6FF4D;--lime2:#9BE81F;--mint:#7CFFCB;
---white:#F7FAF2;--muted:#9AA3B2;}
+--white:#F7FAF2;--muted:#9AA3B2;
+/* warm accent, used for scrollbars and value flags */
+--amber:#E9A13B;--amber2:#C97F1E;}
 .vd-wrap{color:var(--white);font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
 background:radial-gradient(900px 400px at 85% -10%,rgba(198,255,77,.10),transparent 60%),
 linear-gradient(160deg,var(--bg1),var(--bg0) 60%);min-height:100vh;
@@ -651,7 +653,7 @@ text-decoration:none;font-size:14px;}
 /* two background layers, comma separated: the chevron sits on top of the
    glass gradient. Without the comma the whole declaration is invalid and
    the browser falls back to a white box with white text on it. */
-.vd-wrap select,.vd-scorefilter{appearance:none;-webkit-appearance:none;
+.vd-wrap select{appearance:none;-webkit-appearance:none;
 background-image:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'8\'><path d=\'M1 1l5 5 5-5\' stroke=\'%23C6FF4D\' stroke-width=\'2\' fill=\'none\' stroke-linecap=\'round\'/></svg>"),
 linear-gradient(160deg,rgba(124,255,203,.12),rgba(255,255,255,.05));
 background-repeat:no-repeat,no-repeat;
@@ -663,11 +665,11 @@ color:var(--white);padding:11px 38px 11px 14px;font-size:14px;width:100%;
 margin:4px 0 12px;cursor:pointer;font-weight:600;letter-spacing:.2px;
 box-shadow:inset 0 1px 0 rgba(255,255,255,.07);
 transition:border-color .14s,box-shadow .14s;}
-.vd-wrap select:hover,.vd-scorefilter:hover{border-color:rgba(198,255,77,.55);
+.vd-wrap select:hover{border-color:rgba(198,255,77,.55);
 box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 0 16px rgba(198,255,77,.15);}
-.vd-wrap select:focus,.vd-scorefilter:focus{outline:none;border-color:var(--lime);
+.vd-wrap select:focus{outline:none;border-color:var(--lime);
 box-shadow:0 0 0 3px rgba(198,255,77,.18);}
-.vd-wrap select option,.vd-scorefilter option{background:#12161C;
+.vd-wrap select option{background:#12161C;
 color:var(--white);font-weight:500;}
 .vd-pickrow{display:flex;gap:10px;flex-wrap:wrap;}
 .vd-pickrow label{flex:1;min-width:92px;text-align:center;cursor:pointer;
@@ -689,13 +691,20 @@ border-top:1px solid rgba(255,255,255,.07);}
 border-bottom:1px solid rgba(198,255,77,.4);}
 .vd-footer a:hover{color:var(--white);}
 /* long option ladders scroll inside the card instead of stretching it */
+/* Warm amber scrollbars, applied everywhere something scrolls. The lime
+   thumb read as another selectable control against lime option rows. */
 .vd-scroll{max-height:210px;overflow-y:auto;padding-right:6px;}
 .vd-scroll.tall{max-height:290px;}
-.vd-scroll::-webkit-scrollbar{width:8px;}
-.vd-scroll::-webkit-scrollbar-thumb{background:rgba(198,255,77,.28);
-border-radius:8px;}
-.vd-scroll::-webkit-scrollbar-track{background:rgba(255,255,255,.04);
-border-radius:8px;}
+.vd-wrap *{scrollbar-width:thin;scrollbar-color:var(--amber) rgba(255,255,255,.05);}
+.vd-wrap ::-webkit-scrollbar{width:9px;height:9px;}
+.vd-wrap ::-webkit-scrollbar-thumb{
+background:linear-gradient(180deg,var(--amber),var(--amber2));
+border-radius:9px;border:2px solid rgba(0,0,0,.25);}
+.vd-wrap ::-webkit-scrollbar-thumb:hover{
+background:linear-gradient(180deg,#FFC978,var(--amber));}
+.vd-wrap ::-webkit-scrollbar-track{background:rgba(255,255,255,.05);
+border-radius:9px;}
+.vd-wrap ::-webkit-scrollbar-corner{background:transparent;}
 /* player markets: one row per player, one chip per threshold */
 .vd-prows{display:grid;gap:8px;}
 .vd-prow{display:grid;grid-template-columns:minmax(180px,1.1fr) 2fr;gap:12px;
@@ -777,8 +786,87 @@ color:var(--white);box-shadow:none;border:1px solid var(--edge);}
 .vd-slip-sl.none{color:var(--muted);}
 .vd-lrow.vd-thisteam td{color:var(--lime);font-weight:800;}
 .vd-ticker.paused{border-color:rgba(198,255,77,.5);}
-.vd-scorefilter{max-width:320px;}
-.vd-scoreopt{display:block;}
+/* the odds and probability line under the bar on each card */
+.vd-priceline{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 0;}
+.vd-priceline span{flex:1;min-width:120px;background:rgba(255,255,255,.05);
+border:1px solid var(--edge);border-radius:11px;padding:8px 12px;
+font-size:15px;font-weight:800;color:var(--lime);
+font-variant-numeric:tabular-nums;}
+.vd-priceline b{display:block;color:var(--white);font-size:11.5px;
+font-weight:600;letter-spacing:.4px;margin-bottom:2px;}
+.vd-priceline i{color:var(--muted);font-style:normal;font-size:11.5px;
+font-weight:600;}
+/* clear + slip panel */
+.vd-slip-clear{position:absolute;top:-9px;right:-7px;width:24px;height:24px;
+line-height:22px;text-align:center;border-radius:50%;font-size:12px;
+background:#1B2029;border:1px solid var(--edge);color:var(--muted);
+text-decoration:none;z-index:3;}
+.vd-slip-clear:hover{color:#FF6B6B;border-color:#FF6B6B;}
+.vd-slip{position:sticky;}
+.vd-slip-count{color:var(--muted);font-size:13px;text-decoration:none;
+border-bottom:1px dashed rgba(255,255,255,.25);}
+.vd-slip-count:hover{color:var(--white);border-bottom-color:var(--lime);}
+.vd-slippanel{position:fixed;right:18px;bottom:18px;z-index:99998;
+width:min(430px,92vw);max-height:72vh;display:flex;flex-direction:column;
+background:linear-gradient(160deg,rgba(24,28,35,.99),rgba(16,19,25,.99));
+border:1px solid rgba(198,255,77,.45);border-radius:16px;
+box-shadow:0 0 42px rgba(198,255,77,.16),0 22px 60px rgba(0,0,0,.72);
+backdrop-filter:blur(14px);}
+.vd-slippanel[hidden]{display:none;}
+.vd-slippanel-head{display:flex;align-items:center;gap:10px;
+padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.08);}
+.vd-slippanel-head b{color:var(--lime);letter-spacing:1.4px;font-size:12px;
+text-transform:uppercase;}
+.vd-slippanel-head .vd-muted{flex:1;font-size:12px;}
+.vd-slippanel-x{color:var(--muted);text-decoration:none;font-size:14px;}
+.vd-slippanel-x:hover{color:#FF6B6B;}
+.vd-sliplist{overflow-y:auto;padding:6px 10px;flex:1;}
+.vd-sliprow{display:grid;grid-template-columns:1fr auto auto auto;gap:9px;
+align-items:center;padding:9px 8px;font-size:12.5px;
+border-bottom:1px solid rgba(255,255,255,.06);}
+.vd-sliprow-label{color:var(--white);}
+.vd-sliprow-pct{color:var(--muted);font-size:11px;
+font-variant-numeric:tabular-nums;}
+.vd-sliprow-pts{color:var(--lime);font-weight:800;
+font-variant-numeric:tabular-nums;}
+.vd-sliprow-x{color:var(--muted);text-decoration:none;font-size:12px;
+padding:0 3px;}
+.vd-sliprow-x:hover{color:#FF6B6B;}
+.vd-slippanel-foot{display:flex;align-items:center;gap:10px;padding:12px 16px;
+border-top:1px solid rgba(255,255,255,.08);}
+.vd-slippanel-total{flex:1;font-size:22px;font-weight:800;color:var(--lime);
+font-variant-numeric:tabular-nums;}
+/* unavailable players */
+.vd-na{display:inline-block;background:rgba(255,92,92,.14);
+border:1px solid rgba(255,92,92,.45);color:#FF8A8A;border-radius:6px;
+padding:1px 7px;font-size:9.5px;font-weight:800;letter-spacing:.8px;
+margin-left:7px;vertical-align:middle;white-space:nowrap;}
+.vd-prow.vd-unavailable{opacity:.5;}
+.vd-prow.vd-unavailable .vd-playerpic{filter:grayscale(1);}
+.vd-chip-off{cursor:not-allowed;opacity:.55;border-style:dashed;}
+.vd-chip-off:hover{border-color:var(--edge);box-shadow:none;}
+/* links on names and headings */
+.vd-inlinelink{color:var(--white);text-decoration:none;
+border-bottom:1px solid rgba(198,255,77,.35);}
+.vd-inlinelink:hover{color:var(--lime);border-bottom-color:var(--lime);}
+.vd-headlink{color:inherit;text-decoration:none;}
+.vd-headlink:hover{color:var(--white);}
+.vd-backbar{display:flex;gap:8px;flex-wrap:wrap;margin:-6px 0 2px;}
+.vd-back{padding:8px 16px;font-size:12.5px;background:rgba(255,255,255,.07);
+color:var(--white);box-shadow:none;border:1px solid var(--edge);}
+.vd-back:hover{border-color:var(--lime);color:var(--lime);}
+.vd-totop{display:inline-block;margin-bottom:10px;color:var(--lime);
+text-decoration:none;font-size:12px;letter-spacing:1px;border:1px solid
+rgba(198,255,77,.35);border-radius:999px;padding:6px 16px;}
+.vd-totop:hover{background:rgba(198,255,77,.1);}
+.vd-leaguelist{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+gap:10px;}
+.vd-leaguebtn{display:inline-flex;align-items:center;gap:9px;justify-content:flex-start;
+background:rgba(255,255,255,.06);color:var(--white);box-shadow:none;
+border:1px solid var(--edge);font-weight:600;font-size:13px;text-align:left;}
+.vd-leaguebtn:hover{border-color:var(--lime);color:var(--lime);}
+.vd-leaguebtn small{color:var(--muted);font-weight:400;}
+.vd-gradetag.locked{text-decoration:none;}
 .vd-reward{display:inline-flex;align-items:center;gap:7px;
 background:rgba(198,255,77,.12);border:1px solid rgba(198,255,77,.42);
 color:var(--lime);border-radius:999px;padding:4px 12px;font-size:11px;
@@ -859,11 +947,28 @@ function vendicator_logo($suffix = '') {
             . esc_html($suffix) . '</span>' : '') . '</a>';
 }
 
-/** Footer shown on every Vendicator page. */
+/** Footer shown on every Vendicator page, with a way back to the top. */
 function vendicator_footer() {
-    return '<div class="vd-footer">&copy; ' . esc_html(gmdate('Y'))
+    return '<div class="vd-footer">'
+        . '<a class="vd-totop" href="#" onclick="window.scrollTo({top:0,'
+        . 'behavior:\'smooth\'});return false;">&#9650; Back to top</a>'
+        . '<div>&copy; ' . esc_html(gmdate('Y'))
         . ' Vendicator <a href="' . esc_url(vendicator_page_url('help'))
-        . '">Contact us</a></div>';
+        . '">Contact us</a></div></div>';
+}
+
+/**
+ * A "back to where you came from" bar, placed directly under the navigation
+ * rather than at the foot of the page - by the time a member has scrolled
+ * to the bottom of a card they have long since decided to go back.
+ */
+function vendicator_backbar($links) {
+    $out = '';
+    foreach ($links as $label => $url) {
+        $out .= '<a class="vd-btn vd-back" href="' . esc_url($url) . '">&larr; '
+            . esc_html($label) . '</a> ';
+    }
+    return $out ? '<div class="vd-backbar">' . $out . '</div>' : '';
 }
 
 /**
@@ -1110,12 +1215,49 @@ form.querySelectorAll(".vd-opt input").forEach(function(i){
 i.addEventListener("change",function(){
 if(i.checked)clearConflicts(i);
 i.closest(".vd-opt").classList.toggle("on",i.checked);recalc();});});
-/* exact-score board filter */
-form.querySelectorAll(".vd-scorefilter").forEach(function(sel){
-sel.addEventListener("change",function(){
-var want=sel.value;
-sel.parentElement.querySelectorAll(".vd-scoreopt").forEach(function(o){
-o.style.display=(!want||o.dataset.hg===want)?"":"none";});});});
+/* the slip panel: every selection listed, each removable on its own */
+var panel=form.querySelector(".vd-slippanel");
+var list=panel&&panel.querySelector(".vd-sliplist");
+var panelTotal=panel&&panel.querySelector(".vd-slippanel-total");
+function uncheck(i){i.checked=false;
+i.closest(".vd-opt").classList.remove("on");recalc();}
+function drawPanel(){
+if(!list)return;
+var on=[].slice.call(form.querySelectorAll(".vd-opt input:checked"));
+list.innerHTML="";
+if(!on.length){list.innerHTML='<p class="vd-muted" style="padding:14px 4px;">'
++'No selections yet. Pick any option on this card and it will appear here.</p>';}
+on.forEach(function(i){
+var o=i.closest(".vd-opt");
+var parts=(i.value||"").split("|");
+var label=parts[2]||o.textContent.trim();
+var row=document.createElement("div");
+row.className="vd-sliprow";
+row.innerHTML='<span class="vd-sliprow-label">'+label
++'</span><span class="vd-sliprow-pct">'+(parts[3]||"")+'%</span>'
++'<span class="vd-sliprow-pts">+'+((parseFloat(parts[4])||0)/100).toFixed(2)+'</span>';
+var x=document.createElement("a");
+x.href="#";x.className="vd-sliprow-x";x.textContent="✕";
+x.title="Remove this selection";
+x.addEventListener("click",function(e){e.preventDefault();uncheck(i);});
+row.appendChild(x);list.appendChild(row);});
+if(panelTotal)panelTotal.textContent=slip.querySelector(".vd-slip-total").textContent;}
+function openPanel(e){if(e)e.preventDefault();
+if(!panel)return;panel.hidden=false;drawPanel();}
+function closePanel(e){if(e)e.preventDefault();if(panel)panel.hidden=true;}
+var openBtn=slip.querySelector(".vd-slip-count");
+if(openBtn)openBtn.addEventListener("click",openPanel);
+var xBtn=panel&&panel.querySelector(".vd-slippanel-x");
+if(xBtn)xBtn.addEventListener("click",closePanel);
+function clearAll(e){if(e)e.preventDefault();
+form.querySelectorAll(".vd-opt input:checked").forEach(function(i){
+i.checked=false;i.closest(".vd-opt").classList.remove("on");});
+recalc();drawPanel();}
+var clearBtn=slip.querySelector(".vd-slip-clear");
+if(clearBtn)clearBtn.addEventListener("click",clearAll);
+var clearBtn2=panel&&panel.querySelector(".vd-slippanel-clear");
+if(clearBtn2)clearBtn2.addEventListener("click",clearAll);
+form.addEventListener("change",function(){if(panel&&!panel.hidden)drawPanel();});
 recalc();});
 var BADGE_ALIAS={"Ath Madrid":"Atletico Madrid","Ath Bilbao":"Athletic Bilbao",
 "Man United":"Manchester United","Man City":"Manchester City",
@@ -1481,9 +1623,14 @@ add_shortcode('vendicator_dashboard', function () {
             ? ' &middot; the &#9733; card is the best value on the board' : '')
         . '</p></div>';
 
+    // Only the single best card on this page is highlighted, and only for
+    // members whose tier reaches that grade. Everyone else sees the same
+    // card as a standard one - the value read is part of what a
+    // subscription buys.
+    $best = vendicator_best_on_page($slice, $tier);
     foreach ($slice as $i => $fx) {
-        $star = ($sort === 'default' && $page === 1 && $i === 0);
-        $out .= vendicator_render_fixture($fx, $allowed, $sel, $star);
+        $out .= vendicator_render_fixture($fx, $allowed, $sel,
+            $best !== null && $best === $i);
     }
     if (!$total) {
         $out .= '<div class="vd-card"><h3>All caught up</h3><p class="vd-muted">'
@@ -1509,6 +1656,41 @@ add_shortcode('vendicator_dashboard', function () {
         . vendicator_dashboard_js($p);
     return $out;
 });
+
+/**
+ * Which grades a tier is allowed to see.
+ *
+ * The value read is part of what a subscription buys, so a Gold card is
+ * only flagged as one to a Gold member; a Silver member sees Silver and
+ * below; free and Bronze members see the board without value flags. The
+ * card itself is identical either way - only the badge is gated, so nobody
+ * is ever shown a market they cannot then bet.
+ */
+function vendicator_visible_grades($tier) {
+    $map = array(
+        'free' => array(),
+        'bronze' => array('bronze'),
+        'silver' => array('bronze', 'silver'),
+        'gold' => array('bronze', 'silver', 'gold'),
+    );
+    return isset($map[$tier]) ? $map[$tier] : array();
+}
+
+/** Index of the one card on this page worth highlighting, or null. */
+function vendicator_best_on_page($slice, $tier) {
+    $allowed = vendicator_visible_grades($tier);
+    if (!$allowed) { return null; }
+    $rank = array('bronze' => 1, 'silver' => 2, 'gold' => 3);
+    $best = null;
+    $bestRank = 0;
+    foreach ($slice as $i => $fx) {
+        $g = isset($fx['scoreline']['grade']['tier'])
+            ? $fx['scoreline']['grade']['tier'] : null;
+        if (!$g || !in_array($g, $allowed, true)) { continue; }
+        if ($rank[$g] > $bestRank) { $bestRank = $rank[$g]; $best = $i; }
+    }
+    return $best;
+}
 
 /** The orders a member can put the prediction board into. */
 function vendicator_sort_modes() {
@@ -1590,6 +1772,42 @@ function vendicator_dot_row($states) {
     return $out . '</span>';
 }
 
+/**
+ * Player availability.
+ *
+ * No free source publishes current-season injury or suspension data - the
+ * open feeds we run on stop at 2024, and guessing from missing minutes
+ * would put "injured" next to a name on no evidence. So availability is
+ * explicit: it comes from the payload when a source we trust supplies it,
+ * and from an admin-maintained list otherwise. A player is only ever shown
+ * as unavailable when something actually said so.
+ *
+ * -> null (available) or ['reason' => string, 'returns' => 'YYYY-MM-DD'|null]
+ */
+function vendicator_availability($pl) {
+    if (!empty($pl['availability']) && is_array($pl['availability'])) {
+        return $pl['availability'];
+    }
+    $manual = (array) get_option('vendicator_unavailable', array());
+    $key = (string) $pl['id'];
+    if (isset($manual[$key])) { return (array) $manual[$key]; }
+    $byname = isset($manual[$pl['name']]) ? (array) $manual[$pl['name']] : null;
+    return $byname ?: null;
+}
+
+/** The n/a badge shown beside an unavailable player. */
+function vendicator_availability_tag($pl) {
+    $a = vendicator_availability($pl);
+    if (!$a) { return ''; }
+    $reason = isset($a['reason']) ? $a['reason'] : 'unavailable';
+    $back = !empty($a['returns'])
+        ? ' &middot; back ' . date_i18n('j M', strtotime($a['returns'])) : '';
+    return '<span class="vd-na" title="' . esc_attr($reason)
+        . (!empty($a['returns'])
+            ? ' - expected back ' . esc_attr($a['returns']) : '')
+        . '">N/A' . $back . '</span>';
+}
+
 /** Name / position / team block used wherever a player is listed. */
 function vendicator_player_identity($pl, $compact = false) {
     $pos = !empty($pl['position_short']) ? $pl['position_short']
@@ -1629,6 +1847,7 @@ function vendicator_player_market($p) {
     $cats = array(
         array('score', 'Goals', 'goals', 'goals'),
         array('assist', 'Assists', 'assists', 'assists'),
+        array('shots_on_target', 'Shots on target (est.)', 'shots', null),
         array('key_passes', 'Key passes', 'key_passes', null),
         array('tackles', 'Tackles (est.)', 'tackles', null),
         array('yellow_card', 'Cards', 'yellow_cards', null),
@@ -1668,8 +1887,17 @@ function vendicator_player_market($p) {
                 : array();
             if (!$lines) { continue; }
             $weight = isset($pl['weight']) ? (float) $pl['weight'] : 1.0;
+            $out_of = vendicator_availability($pl);
             $chips = '';
             foreach ($lines as $ln) {
+                if ($out_of) {
+                    // shown, so the member can see the market exists, but
+                    // not selectable while the player cannot play
+                    $chips .= '<span class="vd-opt vd-chip vd-chip-off">'
+                        . '<span class="vd-chip-label">'
+                        . esc_html($ln['label']) . '</span></span>';
+                    continue;
+                }
                 $chips .= vendicator_chip_option(
                     'player', $pl['id'] . '_' . $market . '_' . $ln['line'],
                     $pl['name'] . ' - ' . $ln['label'], $ln['pct'],
@@ -1680,8 +1908,9 @@ function vendicator_player_market($p) {
             if ($tally && !empty($pl['last5'][$tally])) {
                 $dots = vendicator_dot_row($pl['last5'][$tally]);
             }
-            $rows .= '<div class="vd-prow">'
+            $rows .= '<div class="vd-prow' . ($out_of ? ' vd-unavailable' : '') . '">'
                 . '<span class="vd-pwho">' . vendicator_player_identity($pl)
+                . vendicator_availability_tag($pl)
                 . '<small class="vd-pstat">' . esc_html(isset($pl[$stat]) ? $pl[$stat] : 0)
                 . ' this season' . ($dots ? ' ' . $dots : '') . '</small></span>'
                 . '<span class="vd-plines">' . $chips . '</span></div>';
@@ -1721,9 +1950,7 @@ function vendicator_render_fixture($p, $allowed, $sel, $star = false) {
         . '<div class="vd-h" style="flex:' . floatval($f['home']) . '">' . floatval($f['home']) . '%</div>'
         . '<div class="vd-d" style="flex:' . floatval($f['draw']) . '">' . floatval($f['draw']) . '%</div>'
         . '<div class="vd-a" style="flex:' . floatval($f['away']) . '">' . floatval($f['away']) . '%</div>'
-        . '</div><p class="vd-muted">Calibrated ensemble - 90% band on home win: '
-        . esc_html(implode('-', (array) $p['uncertainty_band_home_pct'])) . '%'
-        . ' - difficulty x' . esc_html($p['reward_difficulty_multiplier']) . '</p>'
+        . '</div>' . vendicator_price_line($p)
         . vendicator_scoreline_row($p)
         . '<details class="vd-details"><summary>Build your slip &mdash; markets, players &amp; odds</summary>'
         . '<form class="vd-slipform" method="post" action="'
@@ -1751,6 +1978,45 @@ function vendicator_render_fixture($p, $allowed, $sel, $star = false) {
         $out .= vendicator_player_market($p);
     }
     return $out . '</div>' . vendicator_slip_bar($p) . '</details></div>';
+}
+
+/**
+ * The line under the win-probability bar.
+ *
+ * It used to read "Calibrated ensemble - 90% band on home win: 38.3-40.9% -
+ * difficulty x1.98", which is the language of the workshop, not the game.
+ * A member wants the price. This gives each outcome as a decimal price
+ * beside its percentage, and states how confident the read is and how hard
+ * the fixture is to call in plain words.
+ */
+function vendicator_price_line($p) {
+    $f = $p['final_calibrated'];
+    $home = isset($p['home_team']) ? $p['home_team'] : 'Home';
+    $away = isset($p['away_team']) ? $p['away_team'] : 'Away';
+    $price = function ($pct) {
+        $pct = max((float) $pct, 0.1);
+        return number_format(100.0 / $pct, 2);
+    };
+    $band = (array) $p['uncertainty_band_home_pct'];
+    $spread = count($band) === 2 ? abs((float) $band[1] - (float) $band[0]) : null;
+    $confidence = $spread === null ? '' :
+        ($spread <= 4 ? 'a tight read' :
+            ($spread <= 9 ? 'a fair read' : 'a wide read &mdash; treat with care'));
+    $d = isset($p['reward_difficulty_multiplier'])
+        ? (float) $p['reward_difficulty_multiplier'] : 1.0;
+    $hard = $d >= 1.9 ? 'one of the harder calls on the board'
+        : ($d >= 1.6 ? 'a moderately tricky call' : 'a relatively clear call');
+    return '<p class="vd-priceline">'
+        . '<span><b>' . esc_html($home) . '</b> ' . $price($f['home'])
+        . ' <i>' . esc_html($f['home']) . '%</i></span>'
+        . '<span><b>Draw</b> ' . $price($f['draw'])
+        . ' <i>' . esc_html($f['draw']) . '%</i></span>'
+        . '<span><b>' . esc_html($away) . '</b> ' . $price($f['away'])
+        . ' <i>' . esc_html($f['away']) . '%</i></span>'
+        . '</p><p class="vd-muted" style="font-size:12px;margin:2px 0 0;">'
+        . 'Our price on each outcome, with the chance we give it. '
+        . ($confidence ? ucfirst($confidence) . ' &middot; ' : '')
+        . $hard . ' &mdash; harder calls carry a bigger reward.</p>';
 }
 
 /**
@@ -1828,18 +2094,24 @@ function vendicator_card_corner($p) {
             . '<i class="down">&#9660;</i>' . number_format(abs($down), 2) . '-'
             . '</span>';
     }
+    // the grade badge is only rendered for members whose tier reaches it
     $gradehtml = '';
-    if (!empty($s['grade']['tier'])) {
+    $t = isset($s['grade']['tier']) ? $s['grade']['tier'] : null;
+    $visible = vendicator_visible_grades(
+        vendicator_user_tier(get_current_user_id()));
+    if ($t && in_array($t, $visible, true)) {
         $rules = vendicator_grade_rules();
-        $t = $s['grade']['tier'];
         $gradehtml = '<span class="vd-gradetag ' . esc_attr($t) . '" title="'
             . esc_attr($rules[$t]['label']) . ' - a winning slip on this card '
             . 'earns a bonus of up to x' . $rules[$t]['cap'] . '">'
             . esc_html(strtoupper($t)) . ' VALUE</span>';
-    } else {
-        $gradehtml = '<span class="vd-gradetag none" title="This card is not '
-            . 'graded for value, so a winning slip pays its selection values '
-            . 'with no bonus on top.">NO BONUS</span>';
+    } elseif ($t) {
+        $gradehtml = '<a class="vd-gradetag locked" href="'
+            . esc_url(add_query_arg('tab', 'subscriptions',
+                vendicator_page_url('account')))
+            . '" title="This card carries a value grade. Seeing which grade, '
+            . 'and earning the bonus that comes with it, is part of the paid '
+            . 'tiers.">&#128274; VALUE</a>';
     }
     $vs = '';
     if (!empty($p['vscore'])) {
@@ -1889,27 +2161,9 @@ function vendicator_scoreline_row($p) {
             . esc_html($sl['fractional']) . '</small></span>';
     };
     $gw = !empty($p['gameweek']) ? ' &middot; GW' . (int) $p['gameweek'] : '';
-    // the reward value sitting next to the Scoreline: what this card's
-    // headline selection actually pays, in the same decimal-odds shape
-    $reward = '';
-    if (!empty($p['final_calibrated'])) {
-        $f = $p['final_calibrated'];
-        $best = max((float) $f['home'], (float) $f['draw'], (float) $f['away']);
-        $side = $best == $f['home'] ? 'home win'
-            : ($best == $f['away'] ? 'away win' : 'draw');
-        $pts = vendicator_leg_points($best,
-            isset($p['reward_difficulty_multiplier'])
-                ? (float) $p['reward_difficulty_multiplier'] : 1.0);
-        $reward = '<span class="vd-reward" title="Reward points for the model'
-            . '&rsquo;s headline selection (' . esc_attr($side) . ' at '
-            . esc_attr($best) . '%), scaled by this fixture&rsquo;s difficulty. '
-            . 'Points total towards your rank.">REWARD <b>'
-            . esc_html(vendicator_pts($pts)) . '</b></span>';
-    }
     return '<div class="vd-slrow">'
         . '<span class="vd-slhead">Vendicator Scoreline <b>'
         . esc_html(vendicator_scoreline_rating($s, $s['headline'])) . '</b></span>'
-        . $reward
         . $row(isset($p['home_team']) ? $p['home_team'] : 'Home', $s['home'])
         . $row(isset($p['away_team']) ? $p['away_team'] : 'Away', $s['away'])
         . '<span class="vd-muted" style="font-size:11.5px;">'
@@ -1925,7 +2179,11 @@ function vendicator_slip_bar($p) {
     return '<div class="vd-slip" data-grade="' . esc_attr($tier) . '"'
         . ' data-gradebonus="' . esc_attr($tier ? $rules[$tier]['bonus'] : 0)
         . '" data-gradecap="' . esc_attr($tier ? $rules[$tier]['cap'] : 1) . '">'
-        . '<div class="vd-slip-main"><span class="vd-slip-count">0 selections</span>'
+        . '<a class="vd-slip-clear" href="#" title="Clear every selection on '
+        . 'this card">&#10005;</a>'
+        . '<div class="vd-slip-main">'
+        . '<a class="vd-slip-count" href="#" title="Open the slip to review '
+        . 'or remove selections">0 selections</a>'
         . '<span class="vd-slip-total">+0.00</span></div>'
         . '<div class="vd-slip-meta"><span class="vd-slip-risk">risk 0%</span>'
         . '<span class="vd-slip-bonus"></span>'
@@ -1939,7 +2197,19 @@ function vendicator_slip_bar($p) {
         . esc_attr($sl ? $sl['headline'] : 50) . '">'
         . '<input type="hidden" name="vd_grade" value="' . esc_attr($tier) . '">'
         . '<button type="submit" class="vd-btn vd-slip-go">Place slip</button>'
-        . '</div></form>';
+        . '</div>'
+        // the slip itself, as a panel a member can open and edit
+        . '<div class="vd-slippanel" hidden>'
+        . '<div class="vd-slippanel-head"><b>Your slip</b>'
+        . '<span class="vd-muted">' . esc_html($p['fixture']) . '</span>'
+        . '<a class="vd-slippanel-x" href="#" title="Close">&#10005;</a></div>'
+        . '<div class="vd-sliplist"></div>'
+        . '<div class="vd-slippanel-foot">'
+        . '<span class="vd-slippanel-total">+0.00</span>'
+        . '<a class="vd-btn vd-clear vd-slippanel-clear" href="#">Clear all</a>'
+        . '<button type="submit" class="vd-btn">Place slip</button>'
+        . '</div></div>'
+        . '</form>';
 }
 
 function vendicator_render_fixture_legacy($p, $allowed, $sel) {
@@ -2224,10 +2494,9 @@ function vendicator_team_compare($a, $b, $lg, $p) {
             . 'against ' . $n($ts['ppg']) . ', and score ' . $n($ls['gf90'])
             . ' per game while conceding ' . $n($ls['ga90']) . ' &mdash; '
             . esc_html($trail) . ' manage ' . $n($ts['gf90']) . ' and ship '
-            . $n($ts['ga90']) . '. Those season rates are exactly what the '
-            . 'Dixon-Coles attack and defence strengths are fitted on, so a '
-            . 'fixture between them would open with ' . esc_html($lead)
-            . ' favoured.';
+            . $n($ts['ga90']) . '. Those are the rates our attack and defence '
+            . 'ratings are built on, so a fixture between them would open '
+            . 'with ' . esc_html($lead) . ' favoured.';
     $out .= '<div class="vd-card"><h3>The model&rsquo;s read</h3>'
         . '<p style="font-size:13.5px;">' . $text . '</p>'
         . ($played < 5 ? '<p class="vd-muted" style="font-size:12.5px;">'
@@ -2266,9 +2535,10 @@ add_shortcode('vendicator_compare', function () {
     $sel = get_option('vendicator_model_selectors', array());
 
     if ($ta && $tb) {
-        $body = '<div class="vd-card"><a class="vd-btn" href="'
-            . esc_url(add_query_arg('lg', $lg, vendicator_page_url('leagues')))
-            . '">&larr; Back to the table</a></div>'
+        $body = vendicator_backbar(array(
+                'Back to the table' => add_query_arg('lg', $lg,
+                    vendicator_page_url('leagues')),
+                'Predictions' => vendicator_page_url('dashboard')))
             . vendicator_team_compare($ta, $tb, $lg, (array) $p);
         return vendicator_shell('leagues', $body)
             . vendicator_dashboard_js($p ? $p : array());
@@ -2278,8 +2548,9 @@ add_shortcode('vendicator_compare', function () {
     foreach ((array) (isset($p['fixtures']) ? $p['fixtures'] : array()) as $fx) {
         if ($fx['fixture'] === $want) { $found = $fx; break; }
     }
-    $body = '<div class="vd-card"><a class="vd-btn" href="'
-        . esc_url(vendicator_page_url('dashboard')) . '">&larr; Back to predictions</a></div>';
+    $body = vendicator_backbar(array(
+        'Back to predictions' => vendicator_page_url('dashboard'),
+        'CardGrid' => vendicator_page_url('cardgrid')));
     if (!$found) {
         $body .= '<div class="vd-card"><h3>Card not found</h3><p class="vd-muted">'
             . esc_html($want ? $want : 'No fixture selected')
@@ -2502,24 +2773,40 @@ add_shortcode('vendicator_leagues', function () {
     $sel = isset($_GET['lg']) ? sanitize_text_field(wp_unslash($_GET['lg'])) : '';
     $ctry = isset($_GET['ctry']) ? sanitize_text_field(wp_unslash($_GET['ctry'])) : '';
     $q = isset($_GET['q']) ? sanitize_text_field(wp_unslash($_GET['q'])) : '';
-    if (!$sel) { $sel = $tables ? array_keys($tables)[0] : 'E0'; }
+    // no default competition: the country picker drives this page, and
+    // defaulting to one would make the first dropdown look decorative
+    if ($sel && !isset($cat[$sel])) { $sel = ''; }
 
+    // Country first, then competition. The competition list is empty until a
+    // country is chosen, so a member is never scrolling twenty-six leagues
+    // from nine countries to find one table.
     $countries = array();
     foreach ($cat as $code => $cfg) { $countries[$cfg[1]] = true; }
+    if ($sel && !$ctry && isset($cat[$sel])) { $ctry = $cat[$sel][1]; }
     $out = '<div class="vd-wrap"><div class="vd-inner">'
         . vendicator_nav('leagues')
         . '<div class="vd-card">' . vendicator_logo('league tables')
         . '<form method="get" class="vd-filters" style="margin-top:14px;">'
-        . '<div><label>Country</label><select name="ctry"><option value="">All countries</option>';
+        . '<div><label>Country</label>'
+        . '<select name="ctry" onchange="this.form.lg.value=\'\';this.form.submit()">'
+        . '<option value="">Choose a country&hellip;</option>';
     foreach (array_keys($countries) as $c) {
         $out .= '<option value="' . esc_attr($c) . '" ' . selected($ctry, $c, false)
             . '>' . esc_html($c) . '</option>';
     }
-    $out .= '</select></div><div><label>Competition</label><select name="lg">';
-    foreach ($cat as $code => $cfg) {
-        if ($ctry && $cfg[1] !== $ctry) { continue; }
-        $out .= '<option value="' . esc_attr($code) . '" ' . selected($sel, $code, false)
-            . '>' . esc_html($cfg[0]) . '</option>';
+    $out .= '</select></div><div><label>Competition</label>'
+        . '<select name="lg" onchange="this.form.submit()"'
+        . ($ctry ? '' : ' disabled') . '>';
+    if (!$ctry) {
+        $out .= '<option value="">Pick a country first</option>';
+    } else {
+        $out .= '<option value="">All ' . esc_html($ctry) . ' competitions</option>';
+        foreach ($cat as $code => $cfg) {
+            if ($cfg[1] !== $ctry) { continue; }
+            $out .= '<option value="' . esc_attr($code) . '" '
+                . selected($sel, $code, false) . '>' . esc_html($cfg[0])
+                . '</option>';
+        }
     }
     $out .= '</select></div><div><label>Search players</label>'
         . '<input type="text" name="q" value="' . esc_attr($q) . '" placeholder="e.g. Haaland"></div>'
@@ -2554,10 +2841,33 @@ add_shortcode('vendicator_leagues', function () {
         $out .= '</div>';
     }
 
-    $table = isset($tables[$sel]) ? $tables[$sel] : array();
-    $label = isset($cat[$sel]) ? $cat[$sel][0] : $sel;
-    $season = isset($p['table_seasons'][$sel]) ? $p['table_seasons'][$sel] : null;
-    $out .= vendicator_league_table_card($table, $sel, $label, $season);
+    if (!$ctry) {
+        $out .= '<div class="vd-card"><h3>Pick a country</h3>'
+            . '<p class="vd-muted">Choose a country above and its competitions '
+            . 'will load. Every table is live and every club links through to '
+            . 'its own page.</p></div>';
+    } elseif (!$sel) {
+        // country chosen but no single competition: list that country's
+        $out .= '<div class="vd-card"><h3>' . esc_html($ctry)
+            . ' &mdash; competitions</h3><div class="vd-leaguelist">';
+        foreach ($cat as $code => $cfg) {
+            if ($cfg[1] !== $ctry) { continue; }
+            $n = isset($tables[$code]) ? count($tables[$code]) : 0;
+            $out .= '<a class="vd-btn vd-leaguebtn" href="'
+                . esc_url(add_query_arg(array('ctry' => $ctry, 'lg' => $code),
+                    vendicator_page_url('leagues'))) . '">'
+                . '<img class="vd-leaguebadge" data-league="'
+                . esc_attr($cfg[0]) . '" alt="">' . esc_html($cfg[0])
+                . ($n ? ' <small>' . (int) $n . ' clubs</small>' : '')
+                . '</a>';
+        }
+        $out .= '</div></div>';
+    } else {
+        $table = isset($tables[$sel]) ? $tables[$sel] : array();
+        $label = isset($cat[$sel]) ? $cat[$sel][0] : $sel;
+        $season = isset($p['table_seasons'][$sel]) ? $p['table_seasons'][$sel] : null;
+        $out .= vendicator_league_table_card($table, $sel, $label, $season);
+    }
     return $out . vendicator_footer() . '</div></div>'
         . vendicator_dashboard_js($p ? $p : array());
 });
@@ -2662,6 +2972,8 @@ add_shortcode('vendicator_player', function () {
         }
     }
     $out = '<div class="vd-wrap"><div class="vd-inner">' . vendicator_nav('')
+        . vendicator_backbar(array(
+            'Back to predictions' => vendicator_page_url('dashboard')))
         . '<div class="vd-card">' . vendicator_logo();
     if (!$pl) {
         return $out . '<h2 style="margin-top:10px;">' . esc_html($pname) . '</h2>'
@@ -2679,9 +2991,11 @@ add_shortcode('vendicator_player', function () {
         . '<span class="vd-shirt" data-number="' . esc_attr($pl['name'])
         . '"></span>' . esc_html($pl['name'])
         . ($short ? ' <i class="vd-pos">' . esc_html($short) . '</i>' : '')
+        . vendicator_availability_tag($pl)
         . '</h2><p class="vd-muted" style="margin:2px 0 0;">'
         . '<b style="color:#7CFFCB;">' . esc_html($long) . '</b> &middot; '
-        . esc_html($pl['team'])
+        // the club is a link through to its own page
+        . vendicator_team_name_link($pl['team'], vendicator_player_league($pl))
         . ' &middot; value rating <b style="color:#C6FF4D;">' . esc_html($pl['rating'])
         . '</b></p></div></div></div>';
 
@@ -2724,8 +3038,6 @@ add_shortcode('vendicator_player', function () {
         . vendicator_pts($pl['points']['score_or_assist'], true) . '</b>.</p>'
         . '<p class="vd-muted" style="font-size:12px;">Historic seasons build up in the '
         . 'archive as the engine logs each matchday.</p></div></div>'
-        . '<p style="margin-top:16px;"><a class="vd-btn" href="'
-        . esc_url(vendicator_page_url('dashboard')) . '">Back to predictions</a></p>'
         . vendicator_footer() . '</div></div>'
         . vendicator_dashboard_js($p ? $p : array());
     return $out;
@@ -2747,6 +3059,70 @@ add_action('admin_post_vendicator_ack', function () {
     exit;
 });
 
+/** Which competition a player's club sits in, for team-page links. */
+function vendicator_player_league($pl) {
+    $p = get_option('vendicator_predictions');
+    foreach ((array) (isset($p['fixtures']) ? $p['fixtures'] : array()) as $fx) {
+        if ((isset($fx['home_team']) && $fx['home_team'] === $pl['team'])
+            || (isset($fx['away_team']) && $fx['away_team'] === $pl['team'])) {
+            return $fx['league'];
+        }
+    }
+    return '';
+}
+
+/** Link to a team's own page, used wherever a club is named on the site. */
+function vendicator_team_name_link($team, $league = '', $class = 'vd-inlinelink') {
+    if (!$team) { return ''; }
+    $url = add_query_arg(array('vd_team' => rawurlencode($team),
+        'vd_league' => rawurlencode($league)), vendicator_page_url('team'));
+    return '<a class="' . esc_attr($class) . '" href="' . esc_url($url) . '">'
+        . esc_html($team) . '</a>';
+}
+
+/** Link to a player's own page, used wherever a player is named. */
+function vendicator_player_name_link($id, $name, $class = 'vd-inlinelink') {
+    if (!$name) { return ''; }
+    $url = add_query_arg(array('vd_player' => rawurlencode((string) $id),
+        'vd_pname' => rawurlencode($name)), vendicator_page_url('player'));
+    return '<a class="' . esc_attr($class) . '" href="' . esc_url($url) . '">'
+        . esc_html($name) . '</a>';
+}
+
+/** Squad table for a team page - every player we hold, each one a link. */
+function vendicator_team_squad($team) {
+    $p = get_option('vendicator_predictions');
+    $squad = array();
+    foreach ((array) (isset($p['fixtures']) ? $p['fixtures'] : array()) as $fx) {
+        foreach ((array) (isset($fx['players']) ? $fx['players'] : array()) as $pl) {
+            if ($pl['team'] === $team) { $squad[$pl['id']] = $pl; }
+        }
+    }
+    if (!$squad) {
+        return '<p class="vd-muted" style="font-size:12px;">No squad loaded for '
+            . 'this club yet. Player numbers arrive with the next card this '
+            . 'side appears in.</p>';
+    }
+    usort($squad, function ($a, $b) {
+        return ((float) $b['goals'] + (float) $b['assists'])
+            <=> ((float) $a['goals'] + (float) $a['assists']);
+    });
+    $out = '<div class="vd-tablewrap"><table class="vd-table"><tr>'
+        . '<td><b>Player</b></td><td><b>Pos</b></td><td><b>Apps</b></td>'
+        . '<td><b>G</b></td><td><b>A</b></td><td><b>Rating</b></td></tr>';
+    foreach ($squad as $pl) {
+        $out .= '<tr><td>'
+            . vendicator_player_name_link($pl['id'], $pl['name'])
+            . vendicator_availability_tag($pl) . '</td><td>'
+            . esc_html(!empty($pl['position_short']) ? $pl['position_short'] : '')
+            . '</td><td>' . (int) $pl['games'] . '</td><td>' . (int) $pl['goals']
+            . '</td><td>' . (int) $pl['assists'] . '</td><td>'
+            . '<span class="vd-value">' . esc_html($pl['rating']) . '</span>'
+            . '</td></tr>';
+    }
+    return $out . '</table></div>';
+}
+
 add_shortcode('vendicator_team', function () {
     if (!is_user_logged_in()) {
         return vendicator_shell('', '<div class="vd-card"><p>Please '
@@ -2760,6 +3136,10 @@ add_shortcode('vendicator_team', function () {
     $table = isset($tables[$league]) ? $tables[$league] : array();
 
     $out = '<div class="vd-wrap"><div class="vd-inner">' . vendicator_nav('')
+        . vendicator_backbar(array(
+            'Back to predictions' => vendicator_page_url('dashboard'),
+            'League table' => add_query_arg('lg', $league,
+                vendicator_page_url('leagues'))))
         . '<div class="vd-card">' . vendicator_logo()
         . '<h2 style="margin-top:10px;">' . vendicator_team_link($team, $league) . '</h2>'
         . '<p class="vd-muted">' . esc_html($league) . ' &middot; live season data, '
@@ -2787,12 +3167,12 @@ add_shortcode('vendicator_team', function () {
         $form = $row['p'] >= 3 && $ppg >= 2 ? 'in strong form' : ($ppg >= 1.3 ? 'holding steady' : 'struggling for points');
         $att = (int) $row['gf'] > (int) $row['ga'] ? 'outscoring opponents' : 'leaking more than they score';
         $out .= '<div class="vd-card" style="margin-top:12px;background:rgba(198,255,77,.06);">'
-            . '<h3>Model read</h3><p style="font-size:13.5px;">'
+            . '<h3>Our read</h3><p style="font-size:13.5px;">'
             . esc_html($team) . ' sit ' . (int) $pos . ' on ' . (int) $row['pts']
             . ' points from ' . (int) $row['p'] . ' games, ' . $form . ' at ' . $ppg
             . ' points per game and ' . $att . ' (' . (int) $row['gf'] . ':' . (int) $row['ga']
-            . '). These season rates feed the Dixon-Coles attack/defence strengths and the '
-            . 'Bayesian uncertainty band behind every prediction shown for this side.</p></div>';
+            . '). These are the rates behind their attack and defence ratings, '
+            . 'and behind the price we put on every card they appear in.</p></div>';
     } else {
         $out .= '<p class="vd-muted">No current-season rows yet for this team &mdash; '
             . 'the table fills as results publish.</p>';
@@ -2802,7 +3182,11 @@ add_shortcode('vendicator_team', function () {
     // every team in every table on the site is a link to its own page
     list($up, $playoff, $down) = vendicator_league_zones($league);
     $n = count($table);
-    $out .= '<div class="vd-card"><h3>League table &mdash; ' . esc_html($league) . '</h3>'
+    $cat = vendicator_league_catalogue();
+    $lname = isset($cat[$league]) ? $cat[$league][0] : $league;
+    $out .= '<div class="vd-card"><h3><a class="vd-headlink" href="'
+        . esc_url(add_query_arg('lg', $league, vendicator_page_url('leagues')))
+        . '">League table &mdash; ' . esc_html($lname) . ' &rarr;</a></h3>'
         . '<table class="vd-table"><tr><td><b>#</b> Team</td><td><b>Pts</b></td></tr>';
     foreach (array_slice($table, 0, 24) as $i => $r) {
         $pos = $i + 1;
@@ -2821,15 +3205,12 @@ add_shortcode('vendicator_team', function () {
     $out .= '</table></div>';
 
     $out .= '<div class="vd-card"><h3>Player statistics</h3>'
-        . '<p class="vd-muted">Squad and player-level stats (appearances, goals, assists, '
-        . 'xG, xA, minutes) attach here from the open data layer as the player module '
-        . 'lands &mdash; the same numbers drive top-scorer and assist markets.</p>'
-        . '<p class="vd-muted" style="font-size:12px;">Free sources in the pipeline: '
-        . 'Understat player xG/xA, TheSportsDB squad art, StatsBomb open events.</p></div>';
+        . '<p class="vd-muted">Appearances, goals, assists, chances created and '
+        . 'minutes for every player in this squad. The same numbers set the '
+        . 'prices in the player markets on this side&rsquo;s cards.</p>'
+        . vendicator_team_squad($team);
 
-    $out .= '</div><p style="margin-top:16px;"><a class="vd-btn" href="'
-        . esc_url(vendicator_page_url('dashboard')) . '">Back to predictions</a></p>'
-        . vendicator_footer() . '</div></div>'
+    $out .= '</div>' . vendicator_footer() . '</div></div>'
         . vendicator_dashboard_js($p ? $p : array());
     return $out;
 });

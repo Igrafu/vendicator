@@ -148,6 +148,10 @@ def position_detail(raw):
 # meant to be hard to farm rather than hard to believe.
 LIVE_BAND = (1.6, 95.0)
 
+# Share of shots that hit the target across the open data. Understat records
+# total shots only, so the on-target market is derived from this.
+SHOTS_ON_TARGET_RATE = 0.34
+
 
 def _tail(lmbda, k):
     """P(at least k) for a Poisson rate, as a percentage."""
@@ -170,21 +174,38 @@ def market_lines(p):
 
     goals, assists = rate("goals"), rate("assists")
     keyp = rate("key_passes")
+    shots = rate("shots")
+    # Understat carries total shots, not shots on target. Across the open
+    # data roughly a third of shots hit the target, so the on-target rate is
+    # derived from shot volume and labelled as a model estimate on the site.
+    on_target = shots * SHOTS_ON_TARGET_RATE
     tackles = _defensive_actions(p) / max(games, 1.0) * share
     yellow, red = rate("yellow_cards"), rate("red_cards")
+
+    def ladder(lmbda, fmt, upto, zero_label=None):
+        """0 / 1+ / 2+ ... up to a sensible ceiling for this player."""
+        rows = []
+        if zero_label:
+            rows.append({"line": 0, "label": zero_label,
+                         "pct": round(100 - _tail(lmbda, 1), 1)})
+        for k in range(1, upto + 1):
+            rows.append({"line": k, "label": fmt(k), "pct": _tail(lmbda, k)})
+        return rows
+
     out = {
-        "score": [{"line": k, "label": f"{k}+ goal" + ("s" if k > 1 else ""),
-                   "pct": _tail(goals, k)} for k in (1, 2, 3, 4)],
-        "assist": [{"line": k, "label": f"{k}+ assist" + ("s" if k > 1 else ""),
-                    "pct": _tail(assists, k)} for k in (1, 2, 3)],
+        "score": ladder(goals, lambda k: f"{k}+ goal" + ("s" if k > 1 else ""),
+                        8, "No goal"),
+        "assist": ladder(assists,
+                         lambda k: f"{k}+ assist" + ("s" if k > 1 else ""),
+                         5, "No assist"),
         "score_or_assist": [{"line": 1, "label": "Goal or assist",
                              "pct": _tail(goals + assists, 1)},
                             {"line": 2, "label": "2+ goals or assists",
                              "pct": _tail(goals + assists, 2)}],
-        "key_passes": [{"line": k, "label": f"{k}+ key passes",
-                        "pct": _tail(keyp, k)} for k in range(1, 8)],
-        "tackles": [{"line": k, "label": f"{k}+ tackles",
-                     "pct": _tail(tackles, k)} for k in range(1, 8)],
+        "shots_on_target": ladder(
+            on_target, lambda k: f"{k}+ on target", 8, "None on target"),
+        "key_passes": ladder(keyp, lambda k: f"{k}+ key passes", 9),
+        "tackles": ladder(tackles, lambda k: f"{k}+ tackles", 9),
         "yellow_card": [{"line": 1, "label": "To be booked",
                          "pct": _tail(yellow, 1)},
                         {"line": 0, "label": "Not booked",
@@ -195,8 +216,18 @@ def market_lines(p):
     # Drop dead lines. The floor is deliberately not near-zero: a 0.3% line
     # is not a selection a bookmaker would print, and offering it only
     # invites members to farm the longest price on the board.
-    return {m: [ln for ln in lines if LIVE_BAND[0] <= ln["pct"] <= LIVE_BAND[1]]
-            or lines[:1] for m, lines in out.items()}
+    #
+    # The "none" lines (0 goals, no assist, none on target) are exempt from
+    # the ceiling. They are short by nature - backing a defender not to
+    # score is meant to be near-certain and pay accordingly - but they are a
+    # real selection a member asked for, so they stay on the board.
+    def keep(ln):
+        if ln["line"] == 0:
+            return ln["pct"] >= LIVE_BAND[0]
+        return LIVE_BAND[0] <= ln["pct"] <= LIVE_BAND[1]
+
+    return {m: [ln for ln in lines if keep(ln)] or lines[:1]
+            for m, lines in out.items()}
 
 
 def _defensive_actions(p):

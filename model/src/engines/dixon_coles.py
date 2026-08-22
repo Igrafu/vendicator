@@ -10,7 +10,11 @@ import numpy as np
 from scipy.optimize import minimize
 from scipy.stats import poisson
 
-MAX_GOALS = 10
+# The grid runs deep enough that the long-shot scorelines a builder wants
+# to reach - 8-6, 10-0, and beyond - are actually on it. Cells this far out
+# carry vanishing probability, which is the point: they price as the wild
+# calls they are.
+MAX_GOALS = 15
 
 
 def _tau(hg, ag, lam, mu, rho):
@@ -104,7 +108,7 @@ def markets_from_grid(grid):
     btts_yes = float(grid[1:, 1:].sum())
     ranked = sorted(
         ((f"{i}-{j}", float(grid[i, j]))
-         for i in range(7) for j in range(7)),
+         for i in range(grid.shape[0]) for j in range(grid.shape[1])),
         key=lambda kv: kv[1], reverse=True)
     # a clean sheet is simply the opponent failing to score
     home_cs = float(grid[:, 0].sum())
@@ -117,9 +121,11 @@ def markets_from_grid(grid):
         "clean_sheet": {"home": home_cs, "away": away_cs},
         "totals": totals,
         "exact_score_top10": ranked[:10],
-        # a deeper board so the exact-score market offers a real range
-        # rather than ten near-identical favourites
-        "exact_score_board": [kv for kv in ranked[:28] if kv[1] > 0.004],
+        # The full board, not a shortlist. Anything the model gives at least
+        # a one-in-fifty-thousand chance is offered, which reaches 8-6 and
+        # 10-0 while stopping short of scorelines that are arithmetically
+        # possible but meaningless.
+        "exact_score_board": [kv for kv in ranked if kv[1] >= 0.00002],
     }
 
 

@@ -1,3119 +1,18 @@
 {
  "teams": {
   "Hull City": {
-   "total": 38.4,
-   "rating": 3.84,
-   "decimal": 6.95,
-   "fractional": "6/1",
+   "total": 45.9,
+   "rating": 4.59,
+   "decimal": 8.46,
+   "fractional": "15/2",
    "components": {
     "form": 10.0,
     "goal_difference": 5.0,
     "model_conviction": 3.4,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.04,
-    "down_rating": 3.4,
-    "settled_calls": 0
-   }
-  },
-  "Manchester United": {
-   "total": 52.3,
-   "rating": 5.23,
-   "decimal": 1.67,
-   "fractional": "2/3",
-   "components": {
-    "form": 12.5,
-    "goal_difference": 6.2,
-    "model_conviction": 13.6,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.43,
-    "down_rating": 4.79,
-    "settled_calls": 0
-   }
-  },
-  "Everton": {
-   "total": 42.3,
-   "rating": 4.23,
-   "decimal": 2.63,
-   "fractional": "13/8",
-   "components": {
-    "form": 8.6,
-    "goal_difference": 4.8,
-    "model_conviction": 8.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.43,
-    "down_rating": 3.79,
-    "settled_calls": 0
-   }
-  },
-  "Crystal Palace": {
-   "total": 38.4,
-   "rating": 3.84,
-   "decimal": 3.8,
-   "fractional": "11/4",
-   "components": {
-    "form": 7.9,
-    "goal_difference": 4.3,
-    "model_conviction": 6.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.04,
-    "down_rating": 3.4,
-    "settled_calls": 0
-   }
-  },
-  "Ipswich Town": {
-   "total": 42.9,
-   "rating": 4.29,
-   "decimal": 2.97,
-   "fractional": "2/1",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 7.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.49,
-    "down_rating": 3.85,
-    "settled_calls": 0
-   }
-  },
-  "Sunderland": {
-   "total": 42.3,
-   "rating": 4.23,
-   "decimal": 2.84,
-   "fractional": "15/8",
-   "components": {
-    "form": 9.5,
-    "goal_difference": 4.6,
-    "model_conviction": 8.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.43,
-    "down_rating": 3.79,
-    "settled_calls": 0
-   }
-  },
-  "Nottingham Forest": {
-   "total": 41.4,
-   "rating": 4.14,
-   "decimal": 2.64,
-   "fractional": "13/8",
-   "components": {
-    "form": 7.7,
-    "goal_difference": 4.8,
-    "model_conviction": 8.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.34,
-    "down_rating": 3.7,
-    "settled_calls": 0
-   }
-  },
-  "Leeds United": {
-   "total": 38.9,
-   "rating": 3.89,
-   "decimal": 3.8,
-   "fractional": "11/4",
-   "components": {
-    "form": 8.2,
-    "goal_difference": 4.5,
-    "model_conviction": 6.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.09,
-    "down_rating": 3.45,
-    "settled_calls": 0
-   }
-  },
-  "Brentford": {
-   "total": 43.2,
-   "rating": 4.32,
-   "decimal": 2.68,
-   "fractional": "13/8",
-   "components": {
-    "form": 9.3,
-    "goal_difference": 5.2,
-    "model_conviction": 8.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.52,
-    "down_rating": 3.88,
-    "settled_calls": 0
-   }
-  },
-  "Tottenham Hotspur": {
-   "total": 37.7,
-   "rating": 3.77,
-   "decimal": 3.88,
-   "fractional": "3/1",
-   "components": {
-    "form": 7.2,
-    "goal_difference": 4.4,
-    "model_conviction": 6.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.97,
-    "down_rating": 3.33,
-    "settled_calls": 0
-   }
-  },
-  "Brighton & Hove Albion": {
-   "total": 43.6,
-   "rating": 4.36,
-   "decimal": 2.6,
-   "fractional": "13/8",
-   "components": {
-    "form": 9.3,
-    "goal_difference": 5.4,
-    "model_conviction": 8.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.56,
-    "down_rating": 3.92,
-    "settled_calls": 0
-   }
-  },
-  "Aston Villa": {
-   "total": 43.2,
-   "rating": 4.32,
-   "decimal": 3.72,
-   "fractional": "11/4",
-   "components": {
-    "form": 11.4,
-    "goal_difference": 5.5,
-    "model_conviction": 6.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.52,
-    "down_rating": 3.88,
-    "settled_calls": 0
-   }
-  },
-  "Manchester City": {
-   "total": 53.3,
-   "rating": 5.33,
-   "decimal": 1.91,
-   "fractional": "10/11",
-   "components": {
-    "form": 13.7,
-    "goal_difference": 7.8,
-    "model_conviction": 11.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.53,
-    "down_rating": 4.89,
-    "settled_calls": 0
-   }
-  },
-  "Bournemouth": {
-   "total": 39.4,
-   "rating": 3.94,
-   "decimal": 5.72,
-   "fractional": "9/2",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.3,
-    "model_conviction": 4.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.14,
-    "down_rating": 3.5,
-    "settled_calls": 0
-   }
-  },
-  "Newcastle United": {
-   "total": 39.8,
-   "rating": 3.98,
-   "decimal": 3.73,
-   "fractional": "11/4",
-   "components": {
-    "form": 8.6,
-    "goal_difference": 4.9,
-    "model_conviction": 6.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.18,
-    "down_rating": 3.54,
-    "settled_calls": 0
-   }
-  },
-  "Liverpool": {
-   "total": 45.5,
-   "rating": 4.55,
-   "decimal": 2.49,
-   "fractional": "3/2",
-   "components": {
-    "form": 10.5,
-    "goal_difference": 5.7,
-    "model_conviction": 9.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.75,
-    "down_rating": 4.11,
-    "settled_calls": 0
-   }
-  },
-  "Fulham": {
-   "total": 40.1,
-   "rating": 4.01,
-   "decimal": 3.72,
-   "fractional": "11/4",
-   "components": {
-    "form": 9.1,
-    "goal_difference": 4.7,
-    "model_conviction": 6.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.21,
-    "down_rating": 3.57,
-    "settled_calls": 0
-   }
-  },
-  "Chelsea": {
-   "total": 43.8,
-   "rating": 4.38,
-   "decimal": 2.5,
-   "fractional": "3/2",
-   "components": {
-    "form": 9.1,
-    "goal_difference": 5.4,
-    "model_conviction": 9.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.58,
-    "down_rating": 3.94,
-    "settled_calls": 0
-   }
-  },
-  "Birmingham City": {
-   "total": 43.1,
-   "rating": 4.31,
-   "decimal": 2.05,
-   "fractional": "evens",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 11.4,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.51,
-    "down_rating": 3.87,
-    "settled_calls": 0
-   }
-  },
-  "Bristol City": {
-   "total": 23.5,
-   "rating": 2.35,
-   "decimal": 7.11,
-   "fractional": "6/1",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 3.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.55,
-    "down_rating": 1.91,
-    "settled_calls": 0
-   }
-  },
-  "Millwall": {
-   "total": 58.1,
-   "rating": 5.81,
-   "decimal": 2.76,
-   "fractional": "7/4",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 10.0,
-    "model_conviction": 8.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 6.01,
-    "down_rating": 5.37,
-    "settled_calls": 0
-   }
-  },
-  "Norwich City": {
-   "total": 28.4,
-   "rating": 2.84,
-   "decimal": 4.16,
-   "fractional": "3/1",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 5.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.04,
-    "down_rating": 2.4,
-    "settled_calls": 0
-   }
-  },
-  "Blackburn Rovers": {
-   "total": 36.4,
-   "rating": 3.64,
-   "decimal": 5.04,
-   "fractional": "4/1",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 4.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.84,
-    "down_rating": 3.2,
-    "settled_calls": 0
-   }
-  },
-  "Middlesbrough": {
-   "total": 55.0,
-   "rating": 5.5,
-   "decimal": 3.02,
-   "fractional": "2/1",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 7.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.7,
-    "down_rating": 5.06,
-    "settled_calls": 0
-   }
-  },
-  "Derby County": {
-   "total": 31.2,
-   "rating": 3.12,
-   "decimal": 2.76,
-   "fractional": "7/4",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 8.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.32,
-    "down_rating": 2.68,
-    "settled_calls": 0
-   }
-  },
-  "Cardiff City": {
-   "total": 37.7,
-   "rating": 3.77,
-   "decimal": 3.96,
-   "fractional": "3/1",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 6.0,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.97,
-    "down_rating": 3.33,
-    "settled_calls": 0
-   }
-  },
-  "Preston North End": {
-   "total": 26.3,
-   "rating": 2.63,
-   "decimal": 6.42,
-   "fractional": "11/2",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 3.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.83,
-    "down_rating": 2.19,
-    "settled_calls": 0
-   }
-  },
-  "Wolverhampton Wanderers": {
-   "total": 39.6,
-   "rating": 3.96,
-   "decimal": 2.99,
-   "fractional": "2/1",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 7.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.16,
-    "down_rating": 3.52,
-    "settled_calls": 0
-   }
-  },
-  "Queens Park Rangers": {
-   "total": 60.0,
-   "rating": 6.0,
-   "decimal": 2.21,
-   "fractional": "6/5",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 10.0,
-    "model_conviction": 10.0,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 6.2,
-    "down_rating": 5.56,
-    "settled_calls": 0
-   }
-  },
-  "Bolton": {
-   "total": 52.8,
-   "rating": 5.28,
-   "decimal": 4.29,
-   "fractional": "10/3",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 5.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.48,
-    "down_rating": 4.84,
-    "settled_calls": 0
-   }
-  },
-  "Southampton": {
-   "total": 34.9,
-   "rating": 3.49,
-   "decimal": 1.93,
-   "fractional": "10/11",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 12.4,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.69,
-    "down_rating": 3.05,
-    "settled_calls": 0
-   }
-  },
-  "Stoke City": {
-   "total": 26.1,
-   "rating": 2.61,
-   "decimal": 6.89,
-   "fractional": "6/1",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 3.6,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.81,
-    "down_rating": 2.17,
-    "settled_calls": 0
-   }
-  },
-  "Swansea City": {
-   "total": 54.6,
-   "rating": 5.46,
-   "decimal": 3.2,
-   "fractional": "9/4",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 7.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.66,
-    "down_rating": 5.02,
-    "settled_calls": 0
-   }
-  },
-  "Sheffield United": {
-   "total": 38.5,
-   "rating": 3.85,
-   "decimal": 3.48,
-   "fractional": "5/2",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 6.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.05,
-    "down_rating": 3.41,
-    "settled_calls": 0
-   }
-  },
-  "Wrexham": {
-   "total": 40.9,
-   "rating": 4.09,
-   "decimal": 2.55,
-   "fractional": "3/2",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 9.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.29,
-    "down_rating": 3.65,
-    "settled_calls": 0
-   }
-  },
-  "Watford": {
-   "total": 53.2,
-   "rating": 5.32,
-   "decimal": 3.95,
-   "fractional": "3/1",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 5.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.52,
-    "down_rating": 4.88,
-    "settled_calls": 0
-   }
-  },
-  "West Bromwich Albion": {
-   "total": 54.5,
-   "rating": 5.45,
-   "decimal": 3.22,
-   "fractional": "9/4",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 7.0,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.65,
-    "down_rating": 5.01,
-    "settled_calls": 0
-   }
-  },
-  "Burnley": {
-   "total": 36.9,
-   "rating": 3.69,
-   "decimal": 4.6,
-   "fractional": "7/2",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 5.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.89,
-    "down_rating": 3.25,
-    "settled_calls": 0
-   }
-  },
-  "Doncaster": {
-   "total": 31.8,
-   "rating": 3.18,
-   "decimal": 2.59,
-   "fractional": "13/8",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 9.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.38,
-    "down_rating": 2.74,
-    "settled_calls": 0
-   }
-  },
-  "Barnsley": {
-   "total": 28.7,
-   "rating": 2.87,
-   "decimal": 3.94,
-   "fractional": "3/1",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 6.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.07,
-    "down_rating": 2.43,
-    "settled_calls": 0
-   }
-  },
-  "AFC Wimbledon": {
-   "total": 27.0,
-   "rating": 2.7,
-   "decimal": 3.52,
-   "fractional": "5/2",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 7.0,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.9,
-    "down_rating": 2.26,
-    "settled_calls": 0
-   }
-  },
-  "Reading": {
-   "total": 30.2,
-   "rating": 3.02,
-   "decimal": 3.15,
-   "fractional": "85/40",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 7.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.22,
-    "down_rating": 2.58,
-    "settled_calls": 0
-   }
-  },
-  "Milton Keynes Dons": {
-   "total": 40.0,
-   "rating": 4.0,
-   "decimal": 2.85,
-   "fractional": "15/8",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 8.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.2,
-    "down_rating": 3.56,
-    "settled_calls": 0
-   }
-  },
-  "Huddersfield": {
-   "total": 57.1,
-   "rating": 5.71,
-   "decimal": 3.14,
-   "fractional": "85/40",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 10.0,
-    "model_conviction": 7.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.91,
-    "down_rating": 5.27,
-    "settled_calls": 0
-   }
-  },
-  "Peterboro": {
-   "total": 26.7,
-   "rating": 2.67,
-   "decimal": 3.64,
-   "fractional": "11/4",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 6.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.87,
-    "down_rating": 2.23,
-    "settled_calls": 0
-   }
-  },
-  "Mansfield": {
-   "total": 54.7,
-   "rating": 5.47,
-   "decimal": 3.12,
-   "fractional": "85/40",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 7.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.67,
-    "down_rating": 5.03,
-    "settled_calls": 0
-   }
-  },
-  "Stevenage": {
-   "total": 40.4,
-   "rating": 4.04,
-   "decimal": 2.69,
-   "fractional": "7/4",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 8.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.24,
-    "down_rating": 3.6,
-    "settled_calls": 0
-   }
-  },
-  "Oxford United": {
-   "total": 38.2,
-   "rating": 3.82,
-   "decimal": 3.64,
-   "fractional": "11/4",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 6.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.02,
-    "down_rating": 3.38,
-    "settled_calls": 0
-   }
-  },
-  "Stockport": {
-   "total": 60.8,
-   "rating": 6.08,
-   "decimal": 2.05,
-   "fractional": "evens",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 10.0,
-    "model_conviction": 10.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 6.28,
-    "down_rating": 5.64,
-    "settled_calls": 0
-   }
-  },
-  "Blackpool": {
-   "total": 35.7,
-   "rating": 3.57,
-   "decimal": 5.9,
-   "fractional": "5/1",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 4.0,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.77,
-    "down_rating": 3.13,
-    "settled_calls": 0
-   }
-  },
-  "Wigan": {
-   "total": 31.8,
-   "rating": 3.18,
-   "decimal": 2.59,
-   "fractional": "13/8",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 9.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.38,
-    "down_rating": 2.74,
-    "settled_calls": 0
-   }
-  },
-  "Leyton Orient": {
-   "total": 28.7,
-   "rating": 2.87,
-   "decimal": 3.94,
-   "fractional": "3/1",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 6.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.07,
-    "down_rating": 2.43,
-    "settled_calls": 0
-   }
-  },
-  "Wycombe": {
-   "total": 39.8,
-   "rating": 3.98,
-   "decimal": 2.92,
-   "fractional": "15/8",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 8.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.18,
-    "down_rating": 3.54,
-    "settled_calls": 0
-   }
-  },
-  "Plymouth": {
-   "total": 26.1,
-   "rating": 2.61,
-   "decimal": 4.0,
-   "fractional": "3/1",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 6.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.81,
-    "down_rating": 2.17,
-    "settled_calls": 0
-   }
-  },
-  "Bristol Rvs": {
-   "total": 31.8,
-   "rating": 3.18,
-   "decimal": 2.58,
-   "fractional": "13/8",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 9.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.38,
-    "down_rating": 2.74,
-    "settled_calls": 0
-   }
-  },
-  "Newport County": {
-   "total": 54.7,
-   "rating": 5.47,
-   "decimal": 4.78,
-   "fractional": "4/1",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 10.0,
-    "model_conviction": 4.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.67,
-    "down_rating": 5.03,
-    "settled_calls": 0
-   }
-  },
-  "Salford": {
-   "total": 27.0,
-   "rating": 2.7,
-   "decimal": 3.52,
-   "fractional": "5/2",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 7.0,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.9,
-    "down_rating": 2.26,
-    "settled_calls": 0
-   }
-  },
-  "Chesterfield": {
-   "total": 29.3,
-   "rating": 2.93,
-   "decimal": 3.58,
-   "fractional": "5/2",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 6.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.13,
-    "down_rating": 2.49,
-    "settled_calls": 0
-   }
-  },
-  "Walsall": {
-   "total": 55.3,
-   "rating": 5.53,
-   "decimal": 4.23,
-   "fractional": "10/3",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 10.0,
-    "model_conviction": 5.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.73,
-    "down_rating": 5.09,
-    "settled_calls": 0
-   }
-  },
-  "Grimsby": {
-   "total": 56.1,
-   "rating": 5.61,
-   "decimal": 2.62,
-   "fractional": "13/8",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 8.6,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.81,
-    "down_rating": 5.17,
-    "settled_calls": 0
-   }
-  },
-  "Colchester": {
-   "total": 38.4,
-   "rating": 3.84,
-   "decimal": 3.53,
-   "fractional": "5/2",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 6.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.04,
-    "down_rating": 3.4,
-    "settled_calls": 0
-   }
-  },
-  "Oldham": {
-   "total": 57.2,
-   "rating": 5.72,
-   "decimal": 3.09,
-   "fractional": "85/40",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 10.0,
-    "model_conviction": 7.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.92,
-    "down_rating": 5.28,
-    "settled_calls": 0
-   }
-  },
-  "Crewe": {
-   "total": 54.5,
-   "rating": 5.45,
-   "decimal": 3.24,
-   "fractional": "9/4",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 7.0,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.65,
-    "down_rating": 5.01,
-    "settled_calls": 0
-   }
-  },
-  "Northampton": {
-   "total": 38.5,
-   "rating": 3.85,
-   "decimal": 3.49,
-   "fractional": "5/2",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 6.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.05,
-    "down_rating": 3.41,
-    "settled_calls": 0
-   }
-  },
-  "Exeter": {
-   "total": 31.2,
-   "rating": 3.12,
-   "decimal": 2.79,
-   "fractional": "7/4",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 8.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.32,
-    "down_rating": 2.68,
-    "settled_calls": 0
-   }
-  },
-  "Accrington": {
-   "total": 36.8,
-   "rating": 3.68,
-   "decimal": 4.64,
-   "fractional": "7/2",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 5.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.88,
-    "down_rating": 3.24,
-    "settled_calls": 0
-   }
-  },
-  "Fleetwood Town": {
-   "total": 55.3,
-   "rating": 5.53,
-   "decimal": 2.88,
-   "fractional": "15/8",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 7.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.73,
-    "down_rating": 5.09,
-    "settled_calls": 0
-   }
-  },
-  "Gillingham": {
-   "total": 26.2,
-   "rating": 2.62,
-   "decimal": 3.93,
-   "fractional": "3/1",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 6.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.82,
-    "down_rating": 2.18,
-    "settled_calls": 0
-   }
-  },
-  "Port Vale": {
-   "total": 30.6,
-   "rating": 3.06,
-   "decimal": 2.28,
-   "fractional": "5/4",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 10.6,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.26,
-    "down_rating": 2.62,
-    "settled_calls": 0
-   }
-  },
-  "Tranmere": {
-   "total": 53.3,
-   "rating": 5.33,
-   "decimal": 6.78,
-   "fractional": "6/1",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 10.0,
-    "model_conviction": 3.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.53,
-    "down_rating": 4.89,
-    "settled_calls": 0
-   }
-  },
-  "Rochdale": {
-   "total": 27.8,
-   "rating": 2.78,
-   "decimal": 3.12,
-   "fractional": "85/40",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 7.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.98,
-    "down_rating": 2.34,
-    "settled_calls": 0
-   }
-  },
-  "Crawley Town": {
-   "total": 28.7,
-   "rating": 2.87,
-   "decimal": 3.9,
-   "fractional": "3/1",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 6.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.07,
-    "down_rating": 2.43,
-    "settled_calls": 0
-   }
-  },
-  "Shrewsbury": {
-   "total": 25.0,
-   "rating": 2.5,
-   "decimal": 4.96,
-   "fractional": "4/1",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 5.0,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.7,
-    "down_rating": 2.06,
-    "settled_calls": 0
-   }
-  },
-  "Barnet": {
-   "total": 58.3,
-   "rating": 5.83,
-   "decimal": 2.69,
-   "fractional": "7/4",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 10.0,
-    "model_conviction": 8.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 6.03,
-    "down_rating": 5.39,
-    "settled_calls": 0
-   }
-  },
-  "Swindon": {
-   "total": 39.6,
-   "rating": 3.96,
-   "decimal": 2.97,
-   "fractional": "2/1",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 7.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.16,
-    "down_rating": 3.52,
-    "settled_calls": 0
-   }
-  },
-  "Cheltenham": {
-   "total": 53.7,
-   "rating": 5.37,
-   "decimal": 3.65,
-   "fractional": "11/4",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 6.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.57,
-    "down_rating": 4.93,
-    "settled_calls": 0
-   }
-  },
-  "Marseille": {
-   "total": 47.3,
-   "rating": 4.73,
-   "decimal": 2.46,
-   "fractional": "3/2",
-   "components": {
-    "form": 11.6,
-    "goal_difference": 6.3,
-    "model_conviction": 9.4,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.93,
-    "down_rating": 4.29,
-    "settled_calls": 0
-   }
-  },
-  "Strasbourg": {
-   "total": 41.8,
-   "rating": 4.18,
-   "decimal": 4.18,
-   "fractional": "10/3",
-   "components": {
-    "form": 10.4,
-    "goal_difference": 5.8,
-    "model_conviction": 5.6,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.38,
-    "down_rating": 3.74,
-    "settled_calls": 0
-   }
-  },
-  "Lens": {
-   "total": 53.2,
-   "rating": 5.32,
-   "decimal": 1.85,
-   "fractional": "5/6",
-   "components": {
-    "form": 13.7,
-    "goal_difference": 7.3,
-    "model_conviction": 12.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.52,
-    "down_rating": 4.88,
-    "settled_calls": 0
-   }
-  },
-  "Auxerre": {
-   "total": 35.1,
-   "rating": 3.51,
-   "decimal": 5.88,
-   "fractional": "5/1",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 4.3,
-    "model_conviction": 4.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.71,
-    "down_rating": 3.07,
-    "settled_calls": 0
-   }
-  },
-  "Nice": {
-   "total": 38.2,
-   "rating": 3.82,
-   "decimal": 2.76,
-   "fractional": "7/4",
-   "components": {
-    "form": 6.3,
-    "goal_difference": 3.3,
-    "model_conviction": 8.6,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.02,
-    "down_rating": 3.38,
-    "settled_calls": 0
-   }
-  },
-  "Lorient": {
-   "total": 38.8,
-   "rating": 3.88,
-   "decimal": 4.51,
-   "fractional": "7/2",
-   "components": {
-    "form": 8.8,
-    "goal_difference": 4.8,
-    "model_conviction": 5.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.08,
-    "down_rating": 3.44,
-    "settled_calls": 0
-   }
-  },
-  "Toulouse": {
-   "total": 39.6,
-   "rating": 3.96,
-   "decimal": 4.12,
-   "fractional": "3/1",
-   "components": {
-    "form": 8.8,
-    "goal_difference": 5.1,
-    "model_conviction": 5.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.16,
-    "down_rating": 3.52,
-    "settled_calls": 0
-   }
-  },
-  "Lyon": {
-   "total": 47.0,
-   "rating": 4.7,
-   "decimal": 2.51,
-   "fractional": "3/2",
-   "components": {
-    "form": 11.8,
-    "goal_difference": 6.0,
-    "model_conviction": 9.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.9,
-    "down_rating": 4.26,
-    "settled_calls": 0
-   }
-  },
-  "Troyes": {
-   "total": 39.9,
-   "rating": 3.99,
-   "decimal": 4.82,
-   "fractional": "4/1",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 4.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.19,
-    "down_rating": 3.55,
-    "settled_calls": 0
-   }
-  },
-  "Paris FC": {
-   "total": 42.2,
-   "rating": 4.22,
-   "decimal": 2.65,
-   "fractional": "13/8",
-   "components": {
-    "form": 8.6,
-    "goal_difference": 4.8,
-    "model_conviction": 8.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.42,
-    "down_rating": 3.78,
-    "settled_calls": 0
-   }
-  },
-  "Angers": {
-   "total": 34.4,
-   "rating": 3.44,
-   "decimal": 6.4,
-   "fractional": "11/2",
-   "components": {
-    "form": 7.1,
-    "goal_difference": 3.6,
-    "model_conviction": 3.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.64,
-    "down_rating": 3.0,
-    "settled_calls": 0
-   }
-  },
-  "Lille": {
-   "total": 48.0,
-   "rating": 4.8,
-   "decimal": 2.32,
-   "fractional": "11/8",
-   "components": {
-    "form": 12.0,
-    "goal_difference": 6.1,
-    "model_conviction": 9.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.0,
-    "down_rating": 4.36,
-    "settled_calls": 0
-   }
-  },
-  "Le Havre": {
-   "total": 35.1,
-   "rating": 3.51,
-   "decimal": 5.85,
-   "fractional": "5/1",
-   "components": {
-    "form": 6.9,
-    "goal_difference": 4.1,
-    "model_conviction": 4.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.71,
-    "down_rating": 3.07,
-    "settled_calls": 0
-   }
-  },
-  "Monaco": {
-   "total": 46.8,
-   "rating": 4.68,
-   "decimal": 2.13,
-   "fractional": "11/10",
-   "components": {
-    "form": 10.6,
-    "goal_difference": 5.4,
-    "model_conviction": 10.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.88,
-    "down_rating": 4.24,
-    "settled_calls": 0
-   }
-  },
-  "Paris Saint-Germain": {
-   "total": 55.7,
-   "rating": 5.57,
-   "decimal": 1.8,
-   "fractional": "4/5",
-   "components": {
-    "form": 14.9,
-    "goal_difference": 8.3,
-    "model_conviction": 12.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.77,
-    "down_rating": 5.13,
-    "settled_calls": 0
-   }
-  },
-  "Rennes": {
-   "total": 41.4,
-   "rating": 4.14,
-   "decimal": 5.66,
-   "fractional": "9/2",
-   "components": {
-    "form": 11.6,
-    "goal_difference": 5.7,
-    "model_conviction": 4.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.34,
-    "down_rating": 3.7,
-    "settled_calls": 0
-   }
-  },
-  "Inter Milan": {
-   "total": 62.4,
-   "rating": 6.24,
-   "decimal": 1.19,
-   "fractional": "1/5",
-   "components": {
-    "form": 15.3,
-    "goal_difference": 8.6,
-    "model_conviction": 18.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 6.44,
-    "down_rating": 5.8,
-    "settled_calls": 0
-   }
-  },
-  "Monza": {
-   "total": 36.5,
-   "rating": 3.65,
-   "decimal": 16.28,
-   "fractional": "16/1",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 1.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.85,
-    "down_rating": 3.21,
-    "settled_calls": 0
-   }
-  },
-  "Udinese": {
-   "total": 37.9,
-   "rating": 3.79,
-   "decimal": 5.56,
-   "fractional": "9/2",
-   "components": {
-    "form": 8.8,
-    "goal_difference": 4.8,
-    "model_conviction": 4.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.99,
-    "down_rating": 3.35,
-    "settled_calls": 0
-   }
-  },
-  "Como": {
-   "total": 49.7,
-   "rating": 4.97,
-   "decimal": 2.34,
-   "fractional": "11/8",
-   "components": {
-    "form": 12.5,
-    "goal_difference": 7.4,
-    "model_conviction": 9.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.17,
-    "down_rating": 4.53,
-    "settled_calls": 0
-   }
-  },
-  "Genoa": {
-   "total": 36.0,
-   "rating": 3.6,
-   "decimal": 5.27,
-   "fractional": "9/2",
-   "components": {
-    "form": 7.2,
-    "goal_difference": 4.3,
-    "model_conviction": 4.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.8,
-    "down_rating": 3.16,
-    "settled_calls": 0
-   }
-  },
-  "Napoli": {
-   "total": 50.0,
-   "rating": 5.0,
-   "decimal": 2.21,
-   "fractional": "6/5",
-   "components": {
-    "form": 13.3,
-    "goal_difference": 6.4,
-    "model_conviction": 10.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.2,
-    "down_rating": 4.56,
-    "settled_calls": 0
-   }
-  },
-  "Parma": {
-   "total": 40.0,
-   "rating": 4.0,
-   "decimal": 2.83,
-   "fractional": "15/8",
-   "components": {
-    "form": 7.9,
-    "goal_difference": 3.8,
-    "model_conviction": 8.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.2,
-    "down_rating": 3.56,
-    "settled_calls": 0
-   }
-  },
-  "Cagliari": {
-   "total": 36.7,
-   "rating": 3.67,
-   "decimal": 4.64,
-   "fractional": "7/2",
-   "components": {
-    "form": 7.5,
-    "goal_difference": 4.1,
-    "model_conviction": 5.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.87,
-    "down_rating": 3.23,
-    "settled_calls": 0
-   }
-  },
-  "Frosinone": {
-   "total": 36.2,
-   "rating": 3.62,
-   "decimal": 19.5,
-   "fractional": "18/1",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 1.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.82,
-    "down_rating": 3.18,
-    "settled_calls": 0
-   }
-  },
-  "Juventus": {
-   "total": 51.7,
-   "rating": 5.17,
-   "decimal": 1.78,
-   "fractional": "4/5",
-   "components": {
-    "form": 12.1,
-    "goal_difference": 6.8,
-    "model_conviction": 12.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.37,
-    "down_rating": 4.73,
-    "settled_calls": 0
-   }
-  },
-  "Venezia": {
-   "total": 43.4,
-   "rating": 4.34,
-   "decimal": 2.78,
-   "fractional": "7/4",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 8.4,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.54,
-    "down_rating": 3.9,
-    "settled_calls": 0
-   }
-  },
-  "Lecce": {
-   "total": 35.5,
-   "rating": 3.55,
-   "decimal": 4.6,
-   "fractional": "7/2",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 3.6,
-    "model_conviction": 5.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.75,
-    "down_rating": 3.11,
-    "settled_calls": 0
-   }
-  },
-  "Atalanta": {
-   "total": 51.0,
-   "rating": 5.1,
-   "decimal": 1.56,
-   "fractional": "4/7",
-   "components": {
-    "form": 10.4,
-    "goal_difference": 6.0,
-    "model_conviction": 14.6,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.3,
-    "down_rating": 4.66,
-    "settled_calls": 0
-   }
-  },
-  "Sassuolo": {
-   "total": 35.4,
-   "rating": 3.54,
-   "decimal": 11.36,
-   "fractional": "10/1",
-   "components": {
-    "form": 8.6,
-    "goal_difference": 4.7,
-    "model_conviction": 2.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.74,
-    "down_rating": 3.1,
-    "settled_calls": 0
-   }
-  },
-  "Torino": {
-   "total": 36.0,
-   "rating": 3.6,
-   "decimal": 5.59,
-   "fractional": "9/2",
-   "components": {
-    "form": 7.9,
-    "goal_difference": 3.8,
-    "model_conviction": 4.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.8,
-    "down_rating": 3.16,
-    "settled_calls": 0
-   }
-  },
-  "AC Milan": {
-   "total": 48.3,
-   "rating": 4.83,
-   "decimal": 2.35,
-   "fractional": "11/8",
-   "components": {
-    "form": 12.3,
-    "goal_difference": 6.2,
-    "model_conviction": 9.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.03,
-    "down_rating": 4.39,
-    "settled_calls": 0
-   }
-  },
-  "Bologna": {
-   "total": 43.7,
-   "rating": 4.37,
-   "decimal": 2.67,
-   "fractional": "13/8",
-   "components": {
-    "form": 9.8,
-    "goal_difference": 5.2,
-    "model_conviction": 8.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.57,
-    "down_rating": 3.93,
-    "settled_calls": 0
-   }
-  },
-  "Lazio": {
-   "total": 39.6,
-   "rating": 3.96,
-   "decimal": 4.69,
-   "fractional": "7/2",
-   "components": {
-    "form": 9.5,
-    "goal_difference": 5.1,
-    "model_conviction": 5.0,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.16,
-    "down_rating": 3.52,
-    "settled_calls": 0
-   }
-  },
-  "AS Roma": {
-   "total": 53.1,
-   "rating": 5.31,
-   "decimal": 1.68,
-   "fractional": "2/3",
-   "components": {
-    "form": 12.8,
-    "goal_difference": 6.8,
-    "model_conviction": 13.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.51,
-    "down_rating": 4.87,
-    "settled_calls": 0
-   }
-  },
-  "Fiorentina": {
-   "total": 33.7,
-   "rating": 3.37,
-   "decimal": 12.36,
-   "fractional": "11/1",
-   "components": {
-    "form": 7.4,
-    "goal_difference": 4.4,
-    "model_conviction": 1.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.57,
-    "down_rating": 2.93,
-    "settled_calls": 0
-   }
-  },
-  "Vicenza": {
-   "total": 41.2,
-   "rating": 4.12,
-   "decimal": 3.78,
-   "fractional": "11/4",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 6.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.32,
-    "down_rating": 3.68,
-    "settled_calls": 0
-   }
-  },
-  "Catanzaro": {
-   "total": 42.9,
-   "rating": 4.29,
-   "decimal": 3.44,
-   "fractional": "5/2",
-   "components": {
-    "form": 10.4,
-    "goal_difference": 5.7,
-    "model_conviction": 6.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.49,
-    "down_rating": 3.85,
-    "settled_calls": 0
-   }
-  },
-  "Carrarese": {
-   "total": 39.6,
-   "rating": 3.96,
-   "decimal": 3.28,
-   "fractional": "9/4",
-   "components": {
-    "form": 7.7,
-    "goal_difference": 4.7,
-    "model_conviction": 7.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.16,
-    "down_rating": 3.52,
-    "settled_calls": 0
-   }
-  },
-  "Mantova": {
-   "total": 40.2,
-   "rating": 4.02,
-   "decimal": 2.99,
-   "fractional": "2/1",
-   "components": {
-    "form": 8.1,
-    "goal_difference": 4.2,
-    "model_conviction": 7.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.22,
-    "down_rating": 3.58,
-    "settled_calls": 0
-   }
-  },
-  "Sudtirol": {
-   "total": 39.5,
-   "rating": 3.95,
-   "decimal": 2.96,
-   "fractional": "2/1",
-   "components": {
-    "form": 7.2,
-    "goal_difference": 4.3,
-    "model_conviction": 8.0,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.15,
-    "down_rating": 3.51,
-    "settled_calls": 0
-   }
-  },
-  "Virtus Entella": {
-   "total": 38.7,
-   "rating": 3.87,
-   "decimal": 3.24,
-   "fractional": "9/4",
-   "components": {
-    "form": 7.4,
-    "goal_difference": 4.0,
-    "model_conviction": 7.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.07,
-    "down_rating": 3.43,
-    "settled_calls": 0
-   }
-  },
-  "Benevento": {
-   "total": 42.5,
-   "rating": 4.25,
-   "decimal": 3.1,
-   "fractional": "85/40",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 7.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.45,
-    "down_rating": 3.81,
-    "settled_calls": 0
-   }
-  },
-  "Modena": {
-   "total": 43.1,
-   "rating": 4.31,
-   "decimal": 3.05,
-   "fractional": "2/1",
-   "components": {
-    "form": 9.6,
-    "goal_difference": 5.9,
-    "model_conviction": 7.6,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.51,
-    "down_rating": 3.87,
-    "settled_calls": 0
-   }
-  },
-  "Empoli": {
-   "total": 38.5,
-   "rating": 3.85,
-   "decimal": 3.46,
-   "fractional": "5/2",
-   "components": {
-    "form": 7.2,
-    "goal_difference": 4.5,
-    "model_conviction": 6.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.05,
-    "down_rating": 3.41,
-    "settled_calls": 0
-   }
-  },
-  "Cremonese": {
-   "total": 43.5,
-   "rating": 4.35,
-   "decimal": 2.75,
-   "fractional": "7/4",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 8.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.55,
-    "down_rating": 3.91,
-    "settled_calls": 0
-   }
-  },
-  "Pisa": {
-   "total": 46.9,
-   "rating": 4.69,
-   "decimal": 1.94,
-   "fractional": "10/11",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 11.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.89,
-    "down_rating": 4.25,
-    "settled_calls": 0
-   }
-  },
-  "Padova": {
-   "total": 37.5,
-   "rating": 3.75,
-   "decimal": 4.61,
-   "fractional": "7/2",
-   "components": {
-    "form": 8.1,
-    "goal_difference": 4.3,
-    "model_conviction": 5.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.95,
-    "down_rating": 3.31,
-    "settled_calls": 0
-   }
-  },
-  "Verona": {
-   "total": 47.5,
-   "rating": 4.75,
-   "decimal": 1.84,
-   "fractional": "5/6",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 12.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.95,
-    "down_rating": 4.31,
-    "settled_calls": 0
-   }
-  },
-  "Ascoli": {
-   "total": 39.3,
-   "rating": 3.93,
-   "decimal": 5.46,
-   "fractional": "9/2",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 4.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.13,
-    "down_rating": 3.49,
-    "settled_calls": 0
-   }
-  },
-  "Cesena": {
-   "total": 39.6,
-   "rating": 3.96,
-   "decimal": 3.28,
-   "fractional": "9/4",
-   "components": {
-    "form": 8.1,
-    "goal_difference": 4.3,
-    "model_conviction": 7.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.16,
-    "down_rating": 3.52,
-    "settled_calls": 0
-   }
-  },
-  "Sampdoria": {
-   "total": 39.7,
-   "rating": 3.97,
-   "decimal": 3.0,
-   "fractional": "2/1",
-   "components": {
-    "form": 7.7,
-    "goal_difference": 4.1,
-    "model_conviction": 7.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.17,
-    "down_rating": 3.53,
-    "settled_calls": 0
-   }
-  },
-  "Palermo": {
-   "total": 51.9,
-   "rating": 5.19,
-   "decimal": 1.82,
-   "fractional": "5/6",
-   "components": {
-    "form": 12.6,
-    "goal_difference": 6.8,
-    "model_conviction": 12.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.39,
-    "down_rating": 4.75,
-    "settled_calls": 0
-   }
-  },
-  "Juve Stabia": {
-   "total": 38.1,
-   "rating": 3.81,
-   "decimal": 5.48,
-   "fractional": "9/2",
-   "components": {
-    "form": 8.9,
-    "goal_difference": 4.9,
-    "model_conviction": 4.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.01,
-    "down_rating": 3.37,
-    "settled_calls": 0
-   }
-  },
-  "Real Betis": {
-   "total": 45.4,
-   "rating": 4.54,
-   "decimal": 2.22,
-   "fractional": "6/5",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 10.4,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.74,
-    "down_rating": 4.1,
-    "settled_calls": 0
-   }
-  },
-  "Real Sociedad": {
-   "total": 39.1,
-   "rating": 3.91,
-   "decimal": 5.75,
-   "fractional": "9/2",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 4.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.11,
-    "down_rating": 3.47,
-    "settled_calls": 0
-   }
-  },
-  "Athletic Bilbao": {
-   "total": 46.2,
-   "rating": 4.62,
-   "decimal": 2.07,
-   "fractional": "11/10",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 11.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.82,
-    "down_rating": 4.18,
-    "settled_calls": 0
-   }
-  },
-  "Sevilla": {
-   "total": 51.3,
-   "rating": 5.13,
-   "decimal": 6.02,
-   "fractional": "5/1",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 3.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.33,
-    "down_rating": 4.69,
-    "settled_calls": 0
-   }
-  },
-  "Valencia": {
-   "total": 44.4,
-   "rating": 4.44,
-   "decimal": 2.48,
-   "fractional": "3/2",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 9.4,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.64,
-    "down_rating": 4.0,
-    "settled_calls": 0
-   }
-  },
-  "Celta Vigo": {
-   "total": 38.8,
-   "rating": 3.88,
-   "decimal": 6.21,
-   "fractional": "5/1",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 3.8,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.08,
-    "down_rating": 3.44,
-    "settled_calls": 0
-   }
-  },
-  "Espanyol": {
-   "total": 52.7,
-   "rating": 5.27,
-   "decimal": 8.34,
-   "fractional": "15/2",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 10.0,
-    "model_conviction": 2.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 5.47,
-    "down_rating": 4.83,
-    "settled_calls": 0
-   }
-  },
-  "Real Madrid": {
-   "total": 44.5,
-   "rating": 4.45,
-   "decimal": 2.45,
-   "fractional": "3/2",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 9.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.65,
-    "down_rating": 4.01,
-    "settled_calls": 0
-   }
-  },
-  "Atletico Madrid": {
-   "total": 45.4,
-   "rating": 4.54,
-   "decimal": 2.22,
-   "fractional": "6/5",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 10.4,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 4.74,
-    "down_rating": 4.1,
-    "settled_calls": 0
-   }
-  },
-  "Villarreal": {
-   "total": 35.8,
-   "rating": 3.58,
-   "decimal": 5.84,
-   "fractional": "5/1",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 4.1,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.78,
-    "down_rating": 3.14,
-    "settled_calls": 0
-   }
-  },
-  "Elche": {
-   "total": 34.6,
-   "rating": 3.46,
-   "decimal": 8.13,
-   "fractional": "7/1",
-   "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 2.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.66,
-    "down_rating": 3.02,
-    "settled_calls": 0
-   }
-  },
-  "Barcelona": {
-   "total": 45.9,
-   "rating": 4.59,
-   "decimal": 2.11,
-   "fractional": "11/10",
-   "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 10.9,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.5
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
@@ -3124,304 +23,893 @@
     "settled_calls": 0
    }
   },
-  "Osasuna": {
-   "total": 44.6,
-   "rating": 4.46,
-   "decimal": 2.43,
-   "fractional": "11/8",
+  "Manchester United": {
+   "total": 57.5,
+   "rating": 5.75,
+   "decimal": 1.61,
+   "fractional": "8/13",
    "components": {
-    "form": 10.0,
-    "goal_difference": 5.0,
-    "model_conviction": 9.6,
+    "form": 12.5,
+    "goal_difference": 6.2,
+    "model_conviction": 13.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 5.2
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 4.66,
-    "down_rating": 4.02,
+    "up_rating": 5.95,
+    "down_rating": 5.31,
     "settled_calls": 0
    }
   },
-  "Levante": {
-   "total": 23.7,
-   "rating": 2.37,
-   "decimal": 6.61,
-   "fractional": "11/2",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 3.7,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.57,
-    "down_rating": 1.93,
-    "settled_calls": 0
-   }
-  },
-  "Malaga": {
-   "total": 28.4,
-   "rating": 2.84,
-   "decimal": 2.91,
+  "Everton": {
+   "total": 47.0,
+   "rating": 4.7,
+   "decimal": 2.89,
    "fractional": "15/8",
    "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 8.4,
+    "form": 8.6,
+    "goal_difference": 4.8,
+    "model_conviction": 8.9,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 4.7
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 3.04,
-    "down_rating": 2.4,
+    "up_rating": 4.9,
+    "down_rating": 4.26,
     "settled_calls": 0
    }
   },
-  "La Coruna": {
-   "total": 40.3,
-   "rating": 4.03,
-   "decimal": 4.4,
-   "fractional": "10/3",
+  "Crystal Palace": {
+   "total": 44.5,
+   "rating": 4.45,
+   "decimal": 3.65,
+   "fractional": "11/4",
+   "components": {
+    "form": 7.9,
+    "goal_difference": 4.3,
+    "model_conviction": 6.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 6.1
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.65,
+    "down_rating": 4.01,
+    "settled_calls": 0
+   }
+  },
+  "Ipswich Town": {
+   "total": 47.7,
+   "rating": 4.77,
+   "decimal": 3.12,
+   "fractional": "85/40",
    "components": {
     "form": 10.0,
     "goal_difference": 5.0,
-    "model_conviction": 5.3,
+    "model_conviction": 7.9,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 4.8
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 4.23,
-    "down_rating": 3.59,
+    "up_rating": 4.97,
+    "down_rating": 4.33,
     "settled_calls": 0
    }
   },
-  "Cordoba": {
-   "total": 26.8,
-   "rating": 2.68,
-   "decimal": 5.67,
-   "fractional": "9/2",
+  "Sunderland": {
+   "total": 49.8,
+   "rating": 4.98,
+   "decimal": 2.95,
+   "fractional": "2/1",
    "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 4.3,
+    "form": 9.5,
+    "goal_difference": 4.6,
+    "model_conviction": 8.2,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.5
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 2.88,
-    "down_rating": 2.24,
+    "up_rating": 5.18,
+    "down_rating": 4.54,
     "settled_calls": 0
    }
   },
-  "Girona": {
-   "total": 38.8,
-   "rating": 3.88,
-   "decimal": 3.31,
+  "Nottingham Forest": {
+   "total": 47.8,
+   "rating": 4.78,
+   "decimal": 2.67,
+   "fractional": "13/8",
+   "components": {
+    "form": 7.7,
+    "goal_difference": 4.8,
+    "model_conviction": 8.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 6.4
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.98,
+    "down_rating": 4.34,
+    "settled_calls": 0
+   }
+  },
+  "Leeds United": {
+   "total": 46.4,
+   "rating": 4.64,
+   "decimal": 3.81,
+   "fractional": "11/4",
+   "components": {
+    "form": 8.2,
+    "goal_difference": 4.5,
+    "model_conviction": 6.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.84,
+    "down_rating": 4.2,
+    "settled_calls": 0
+   }
+  },
+  "Brentford": {
+   "total": 49.5,
+   "rating": 4.95,
+   "decimal": 3.01,
+   "fractional": "2/1",
+   "components": {
+    "form": 9.3,
+    "goal_difference": 5.2,
+    "model_conviction": 8.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 6.3
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.15,
+    "down_rating": 4.51,
+    "settled_calls": 0
+   }
+  },
+  "Tottenham Hotspur": {
+   "total": 45.1,
+   "rating": 4.51,
+   "decimal": 3.37,
    "fractional": "9/4",
    "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 7.1,
+    "form": 7.2,
+    "goal_difference": 4.4,
+    "model_conviction": 6.1,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.4
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 4.08,
-    "down_rating": 3.44,
+    "up_rating": 4.71,
+    "down_rating": 4.07,
     "settled_calls": 0
    }
   },
-  "Oviedo": {
-   "total": 43.2,
-   "rating": 4.32,
-   "decimal": 2.03,
-   "fractional": "evens",
+  "Brighton & Hove Albion": {
+   "total": 51.0,
+   "rating": 5.1,
+   "decimal": 2.58,
+   "fractional": "13/8",
    "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 11.5,
+    "form": 9.3,
+    "goal_difference": 5.4,
+    "model_conviction": 8.9,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.4
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 4.52,
-    "down_rating": 3.88,
+    "up_rating": 5.3,
+    "down_rating": 4.66,
     "settled_calls": 0
    }
   },
-  "Leganes": {
-   "total": 35.1,
-   "rating": 3.51,
-   "decimal": 7.02,
-   "fractional": "6/1",
+  "Aston Villa": {
+   "total": 50.4,
+   "rating": 5.04,
+   "decimal": 3.72,
+   "fractional": "11/4",
    "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 3.4,
+    "form": 11.4,
+    "goal_difference": 5.5,
+    "model_conviction": 6.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.2
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 3.71,
-    "down_rating": 3.07,
+    "up_rating": 5.24,
+    "down_rating": 4.6,
     "settled_calls": 0
    }
   },
-  "Albacete": {
-   "total": 34.0,
-   "rating": 3.4,
-   "decimal": 2.09,
-   "fractional": "11/10",
+  "Manchester City": {
+   "total": 61.1,
+   "rating": 6.11,
+   "decimal": 1.78,
+   "fractional": "4/5",
    "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 11.5,
+    "form": 13.7,
+    "goal_difference": 7.8,
+    "model_conviction": 11.8,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.8
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 3.6,
-    "down_rating": 2.96,
+    "up_rating": 6.31,
+    "down_rating": 5.67,
     "settled_calls": 0
    }
   },
-  "Sociedad B": {
-   "total": 25.9,
-   "rating": 2.59,
-   "decimal": 7.22,
-   "fractional": "6/1",
+  "Bournemouth": {
+   "total": 46.8,
+   "rating": 4.68,
+   "decimal": 6.47,
+   "fractional": "11/2",
    "components": {
-    "form": 0.0,
-    "goal_difference": 2.5,
-    "model_conviction": 3.4,
+    "form": 10.0,
+    "goal_difference": 5.3,
+    "model_conviction": 4.1,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.4
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 2.79,
-    "down_rating": 2.15,
+    "up_rating": 4.88,
+    "down_rating": 4.24,
     "settled_calls": 0
    }
   },
-  "Ceuta": {
-   "total": 23.6,
-   "rating": 2.36,
-   "decimal": 6.91,
-   "fractional": "6/1",
+  "Newcastle United": {
+   "total": 46.7,
+   "rating": 4.67,
+   "decimal": 3.92,
+   "fractional": "3/1",
    "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 3.6,
+    "form": 8.6,
+    "goal_difference": 4.9,
+    "model_conviction": 6.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 6.9
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 2.56,
-    "down_rating": 1.92,
+    "up_rating": 4.87,
+    "down_rating": 4.23,
     "settled_calls": 0
    }
   },
-  "Las Palmas": {
-   "total": 56.8,
-   "rating": 5.68,
-   "decimal": 2.4,
-   "fractional": "11/8",
+  "Liverpool": {
+   "total": 54.2,
+   "rating": 5.42,
+   "decimal": 2.48,
+   "fractional": "3/2",
    "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
+    "form": 10.5,
+    "goal_difference": 5.7,
     "model_conviction": 9.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 8.7
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 5.88,
-    "down_rating": 5.24,
+    "up_rating": 5.62,
+    "down_rating": 4.98,
     "settled_calls": 0
    }
   },
-  "Eldense": {
-   "total": 28.3,
-   "rating": 2.83,
-   "decimal": 2.94,
-   "fractional": "2/1",
+  "Fulham": {
+   "total": 47.8,
+   "rating": 4.78,
+   "decimal": 4.12,
+   "fractional": "3/1",
    "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 8.3,
+    "form": 9.1,
+    "goal_difference": 4.7,
+    "model_conviction": 6.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.7
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 3.03,
-    "down_rating": 2.39,
+    "up_rating": 4.98,
+    "down_rating": 4.34,
     "settled_calls": 0
    }
   },
-  "Cadiz": {
-   "total": 36.2,
-   "rating": 3.62,
-   "decimal": 5.31,
-   "fractional": "9/2",
+  "Chelsea": {
+   "total": 51.4,
+   "rating": 5.14,
+   "decimal": 2.34,
+   "fractional": "11/8",
+   "components": {
+    "form": 9.1,
+    "goal_difference": 5.4,
+    "model_conviction": 9.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.6
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.34,
+    "down_rating": 4.7,
+    "settled_calls": 0
+   }
+  },
+  "Birmingham City": {
+   "total": 50.6,
+   "rating": 5.06,
+   "decimal": 2.08,
+   "fractional": "11/10",
    "components": {
     "form": 6.7,
     "goal_difference": 5.0,
-    "model_conviction": 4.5,
+    "model_conviction": 11.4,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.26,
+    "down_rating": 4.62,
+    "settled_calls": 0
+   }
+  },
+  "Bristol City": {
+   "total": 31.0,
+   "rating": 3.1,
+   "decimal": 6.18,
+   "fractional": "5/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 3.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.3,
+    "down_rating": 2.66,
+    "settled_calls": 0
+   }
+  },
+  "Millwall": {
+   "total": 65.6,
+   "rating": 6.56,
+   "decimal": 2.62,
+   "fractional": "13/8",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 10.0,
+    "model_conviction": 8.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.76,
+    "down_rating": 6.12,
+    "settled_calls": 0
+   }
+  },
+  "Norwich City": {
+   "total": 35.9,
+   "rating": 3.59,
+   "decimal": 4.07,
+   "fractional": "3/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 5.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.79,
+    "down_rating": 3.15,
+    "settled_calls": 0
+   }
+  },
+  "Blackburn Rovers": {
+   "total": 43.9,
+   "rating": 4.39,
+   "decimal": 4.61,
+   "fractional": "7/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 4.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.59,
+    "down_rating": 3.95,
+    "settled_calls": 0
+   }
+  },
+  "Middlesbrough": {
+   "total": 62.5,
+   "rating": 6.25,
+   "decimal": 2.68,
+   "fractional": "13/8",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 7.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.45,
+    "down_rating": 5.81,
+    "settled_calls": 0
+   }
+  },
+  "Derby County": {
+   "total": 38.7,
+   "rating": 3.87,
+   "decimal": 2.57,
+   "fractional": "13/8",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 8.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.07,
+    "down_rating": 3.43,
+    "settled_calls": 0
+   }
+  },
+  "Cardiff City": {
+   "total": 45.2,
+   "rating": 4.52,
+   "decimal": 4.25,
+   "fractional": "10/3",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 6.0,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.72,
+    "down_rating": 4.08,
+    "settled_calls": 0
+   }
+  },
+  "Preston North End": {
+   "total": 33.8,
+   "rating": 3.38,
+   "decimal": 5.75,
+   "fractional": "9/2",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 3.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.58,
+    "down_rating": 2.94,
+    "settled_calls": 0
+   }
+  },
+  "Wolverhampton Wanderers": {
+   "total": 47.1,
+   "rating": 4.71,
+   "decimal": 2.55,
+   "fractional": "3/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 7.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.91,
+    "down_rating": 4.27,
+    "settled_calls": 0
+   }
+  },
+  "Queens Park Rangers": {
+   "total": 67.5,
+   "rating": 6.75,
+   "decimal": 2.17,
+   "fractional": "6/5",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 10.0,
+    "model_conviction": 10.0,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.95,
+    "down_rating": 6.31,
+    "settled_calls": 0
+   }
+  },
+  "Bolton": {
+   "total": 60.3,
+   "rating": 6.03,
+   "decimal": 4.44,
+   "fractional": "7/2",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 5.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.23,
+    "down_rating": 5.59,
+    "settled_calls": 0
+   }
+  },
+  "Southampton": {
+   "total": 42.4,
+   "rating": 4.24,
+   "decimal": 1.91,
+   "fractional": "10/11",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 12.4,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.44,
+    "down_rating": 3.8,
+    "settled_calls": 0
+   }
+  },
+  "Stoke City": {
+   "total": 33.6,
+   "rating": 3.36,
+   "decimal": 6.79,
+   "fractional": "6/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 3.6,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.56,
+    "down_rating": 2.92,
+    "settled_calls": 0
+   }
+  },
+  "Swansea City": {
+   "total": 62.1,
+   "rating": 6.21,
+   "decimal": 2.92,
+   "fractional": "15/8",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 7.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.41,
+    "down_rating": 5.77,
+    "settled_calls": 0
+   }
+  },
+  "Sheffield United": {
+   "total": 46.0,
+   "rating": 4.6,
+   "decimal": 3.53,
+   "fractional": "5/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 6.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.8,
+    "down_rating": 4.16,
+    "settled_calls": 0
+   }
+  },
+  "Wrexham": {
+   "total": 48.4,
+   "rating": 4.84,
+   "decimal": 2.37,
+   "fractional": "11/8",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 9.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.04,
+    "down_rating": 4.4,
+    "settled_calls": 0
+   }
+  },
+  "Watford": {
+   "total": 60.7,
+   "rating": 6.07,
+   "decimal": 4.28,
+   "fractional": "10/3",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 5.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.27,
+    "down_rating": 5.63,
+    "settled_calls": 0
+   }
+  },
+  "West Bromwich Albion": {
+   "total": 62.0,
+   "rating": 6.2,
+   "decimal": 3.21,
+   "fractional": "9/4",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 7.0,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.4,
+    "down_rating": 5.76,
+    "settled_calls": 0
+   }
+  },
+  "Burnley": {
+   "total": 44.4,
+   "rating": 4.44,
+   "decimal": 3.68,
+   "fractional": "11/4",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 5.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.64,
+    "down_rating": 4.0,
+    "settled_calls": 0
+   }
+  },
+  "Doncaster": {
+   "total": 39.3,
+   "rating": 3.93,
+   "decimal": 2.5,
+   "fractional": "3/2",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 9.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.13,
+    "down_rating": 3.49,
+    "settled_calls": 0
+   }
+  },
+  "Barnsley": {
+   "total": 36.2,
+   "rating": 3.62,
+   "decimal": 4.16,
+   "fractional": "3/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 6.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
@@ -3432,84 +920,19 @@
     "settled_calls": 0
    }
   },
-  "Eibar": {
-   "total": 30.5,
-   "rating": 3.05,
-   "decimal": 2.31,
-   "fractional": "5/4",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 10.5,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 3.25,
-    "down_rating": 2.61,
-    "settled_calls": 0
-   }
-  },
-  "Valladolid": {
-   "total": 24.2,
-   "rating": 2.42,
-   "decimal": 5.85,
-   "fractional": "5/1",
-   "components": {
-    "form": 0.0,
-    "goal_difference": 0.0,
-    "model_conviction": 4.2,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 2.62,
-    "down_rating": 1.98,
-    "settled_calls": 0
-   }
-  },
-  "Castellon": {
-   "total": 60.8,
-   "rating": 6.08,
-   "decimal": 1.67,
-   "fractional": "2/3",
-   "components": {
-    "form": 20.0,
-    "goal_difference": 7.5,
-    "model_conviction": 13.3,
-    "model_accuracy": 10.0,
-    "near_miss_penalty": -0.0,
-    "bet_record": 10.0
-   },
-   "note": "no settled history yet - score is model-derived",
-   "movement": {
-    "up": 2.0,
-    "down": -4.4,
-    "up_rating": 6.28,
-    "down_rating": 5.64,
-    "settled_calls": 0
-   }
-  },
-  "Sabadell": {
+  "AFC Wimbledon": {
    "total": 34.5,
    "rating": 3.45,
-   "decimal": 8.67,
-   "fractional": "15/2",
+   "decimal": 3.4,
+   "fractional": "5/2",
    "components": {
-    "form": 6.7,
-    "goal_difference": 5.0,
-    "model_conviction": 2.8,
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 7.0,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.5
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
@@ -3520,97 +943,2838 @@
     "settled_calls": 0
    }
   },
-  "Sp Gijon": {
-   "total": 40.3,
-   "rating": 4.03,
-   "decimal": 2.74,
+  "Reading": {
+   "total": 37.7,
+   "rating": 3.77,
+   "decimal": 3.18,
+   "fractional": "85/40",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 7.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.97,
+    "down_rating": 3.33,
+    "settled_calls": 0
+   }
+  },
+  "Milton Keynes Dons": {
+   "total": 47.5,
+   "rating": 4.75,
+   "decimal": 2.99,
+   "fractional": "2/1",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 8.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.95,
+    "down_rating": 4.31,
+    "settled_calls": 0
+   }
+  },
+  "Huddersfield": {
+   "total": 64.6,
+   "rating": 6.46,
+   "decimal": 3.03,
+   "fractional": "2/1",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 10.0,
+    "model_conviction": 7.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.66,
+    "down_rating": 6.02,
+    "settled_calls": 0
+   }
+  },
+  "Peterboro": {
+   "total": 34.2,
+   "rating": 3.42,
+   "decimal": 3.5,
+   "fractional": "5/2",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 6.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.62,
+    "down_rating": 2.98,
+    "settled_calls": 0
+   }
+  },
+  "Mansfield": {
+   "total": 62.2,
+   "rating": 6.22,
+   "decimal": 2.88,
+   "fractional": "15/8",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 7.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.42,
+    "down_rating": 5.78,
+    "settled_calls": 0
+   }
+  },
+  "Stevenage": {
+   "total": 47.9,
+   "rating": 4.79,
+   "decimal": 2.77,
    "fractional": "7/4",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 8.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.99,
+    "down_rating": 4.35,
+    "settled_calls": 0
+   }
+  },
+  "Oxford United": {
+   "total": 45.7,
+   "rating": 4.57,
+   "decimal": 3.62,
+   "fractional": "5/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 6.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.77,
+    "down_rating": 4.13,
+    "settled_calls": 0
+   }
+  },
+  "Stockport": {
+   "total": 68.3,
+   "rating": 6.83,
+   "decimal": 1.91,
+   "fractional": "10/11",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 10.0,
+    "model_conviction": 10.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 7.03,
+    "down_rating": 6.39,
+    "settled_calls": 0
+   }
+  },
+  "Blackpool": {
+   "total": 43.2,
+   "rating": 4.32,
+   "decimal": 6.34,
+   "fractional": "11/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 4.0,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.52,
+    "down_rating": 3.88,
+    "settled_calls": 0
+   }
+  },
+  "Wigan": {
+   "total": 39.3,
+   "rating": 3.93,
+   "decimal": 2.63,
+   "fractional": "13/8",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 9.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.13,
+    "down_rating": 3.49,
+    "settled_calls": 0
+   }
+  },
+  "Leyton Orient": {
+   "total": 36.2,
+   "rating": 3.62,
+   "decimal": 4.04,
+   "fractional": "3/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 6.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.82,
+    "down_rating": 3.18,
+    "settled_calls": 0
+   }
+  },
+  "Wycombe": {
+   "total": 47.3,
+   "rating": 4.73,
+   "decimal": 2.93,
+   "fractional": "15/8",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 8.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.93,
+    "down_rating": 4.29,
+    "settled_calls": 0
+   }
+  },
+  "Plymouth": {
+   "total": 33.6,
+   "rating": 3.36,
+   "decimal": 3.67,
+   "fractional": "11/4",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 6.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.56,
+    "down_rating": 2.92,
+    "settled_calls": 0
+   }
+  },
+  "Bristol Rvs": {
+   "total": 39.3,
+   "rating": 3.93,
+   "decimal": 2.24,
+   "fractional": "5/4",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 9.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.13,
+    "down_rating": 3.49,
+    "settled_calls": 0
+   }
+  },
+  "Newport County": {
+   "total": 62.2,
+   "rating": 6.22,
+   "decimal": 5.31,
+   "fractional": "9/2",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 10.0,
+    "model_conviction": 4.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.42,
+    "down_rating": 5.78,
+    "settled_calls": 0
+   }
+  },
+  "Salford": {
+   "total": 34.5,
+   "rating": 3.45,
+   "decimal": 2.95,
+   "fractional": "2/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 7.0,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.65,
+    "down_rating": 3.01,
+    "settled_calls": 0
+   }
+  },
+  "Chesterfield": {
+   "total": 36.8,
+   "rating": 3.68,
+   "decimal": 3.98,
+   "fractional": "3/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 6.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.88,
+    "down_rating": 3.24,
+    "settled_calls": 0
+   }
+  },
+  "Walsall": {
+   "total": 62.8,
+   "rating": 6.28,
+   "decimal": 3.7,
+   "fractional": "11/4",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 10.0,
+    "model_conviction": 5.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.48,
+    "down_rating": 5.84,
+    "settled_calls": 0
+   }
+  },
+  "Grimsby": {
+   "total": 63.6,
+   "rating": 6.36,
+   "decimal": 2.72,
+   "fractional": "7/4",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 8.6,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.56,
+    "down_rating": 5.92,
+    "settled_calls": 0
+   }
+  },
+  "Colchester": {
+   "total": 45.9,
+   "rating": 4.59,
+   "decimal": 3.31,
+   "fractional": "9/4",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 6.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.79,
+    "down_rating": 4.15,
+    "settled_calls": 0
+   }
+  },
+  "Oldham": {
+   "total": 64.7,
+   "rating": 6.47,
+   "decimal": 3.05,
+   "fractional": "2/1",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 10.0,
+    "model_conviction": 7.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.67,
+    "down_rating": 6.03,
+    "settled_calls": 0
+   }
+  },
+  "Crewe": {
+   "total": 62.0,
+   "rating": 6.2,
+   "decimal": 2.81,
+   "fractional": "7/4",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 7.0,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.4,
+    "down_rating": 5.76,
+    "settled_calls": 0
+   }
+  },
+  "Northampton": {
+   "total": 46.0,
+   "rating": 4.6,
+   "decimal": 3.69,
+   "fractional": "11/4",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 6.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.8,
+    "down_rating": 4.16,
+    "settled_calls": 0
+   }
+  },
+  "Exeter": {
+   "total": 38.7,
+   "rating": 3.87,
+   "decimal": 2.63,
+   "fractional": "13/8",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 8.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.07,
+    "down_rating": 3.43,
+    "settled_calls": 0
+   }
+  },
+  "Accrington": {
+   "total": 44.3,
+   "rating": 4.43,
+   "decimal": 4.55,
+   "fractional": "7/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 5.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.63,
+    "down_rating": 3.99,
+    "settled_calls": 0
+   }
+  },
+  "Fleetwood Town": {
+   "total": 62.8,
+   "rating": 6.28,
+   "decimal": 2.46,
+   "fractional": "3/2",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 7.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.48,
+    "down_rating": 5.84,
+    "settled_calls": 0
+   }
+  },
+  "Gillingham": {
+   "total": 33.7,
+   "rating": 3.37,
+   "decimal": 4.38,
+   "fractional": "10/3",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 6.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.57,
+    "down_rating": 2.93,
+    "settled_calls": 0
+   }
+  },
+  "Port Vale": {
+   "total": 38.1,
+   "rating": 3.81,
+   "decimal": 2.21,
+   "fractional": "6/5",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 10.6,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.01,
+    "down_rating": 3.37,
+    "settled_calls": 0
+   }
+  },
+  "Tranmere": {
+   "total": 60.8,
+   "rating": 6.08,
+   "decimal": 6.19,
+   "fractional": "5/1",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 10.0,
+    "model_conviction": 3.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.28,
+    "down_rating": 5.64,
+    "settled_calls": 0
+   }
+  },
+  "Rochdale": {
+   "total": 35.3,
+   "rating": 3.53,
+   "decimal": 2.71,
+   "fractional": "7/4",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 7.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.73,
+    "down_rating": 3.09,
+    "settled_calls": 0
+   }
+  },
+  "Crawley Town": {
+   "total": 36.2,
+   "rating": 3.62,
+   "decimal": 4.27,
+   "fractional": "10/3",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 6.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.82,
+    "down_rating": 3.18,
+    "settled_calls": 0
+   }
+  },
+  "Shrewsbury": {
+   "total": 32.5,
+   "rating": 3.25,
+   "decimal": 4.92,
+   "fractional": "4/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 5.0,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.45,
+    "down_rating": 2.81,
+    "settled_calls": 0
+   }
+  },
+  "Barnet": {
+   "total": 65.8,
+   "rating": 6.58,
+   "decimal": 2.44,
+   "fractional": "3/2",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 10.0,
+    "model_conviction": 8.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.78,
+    "down_rating": 6.14,
+    "settled_calls": 0
+   }
+  },
+  "Swindon": {
+   "total": 47.1,
+   "rating": 4.71,
+   "decimal": 2.54,
+   "fractional": "3/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 7.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.91,
+    "down_rating": 4.27,
+    "settled_calls": 0
+   }
+  },
+  "Cheltenham": {
+   "total": 61.2,
+   "rating": 6.12,
+   "decimal": 4.16,
+   "fractional": "3/1",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 6.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.32,
+    "down_rating": 5.68,
+    "settled_calls": 0
+   }
+  },
+  "Marseille": {
+   "total": 55.6,
+   "rating": 5.56,
+   "decimal": 2.19,
+   "fractional": "6/5",
+   "components": {
+    "form": 11.6,
+    "goal_difference": 6.3,
+    "model_conviction": 9.4,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 8.3
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.76,
+    "down_rating": 5.12,
+    "settled_calls": 0
+   }
+  },
+  "Strasbourg": {
+   "total": 48.4,
+   "rating": 4.84,
+   "decimal": 4.67,
+   "fractional": "7/2",
+   "components": {
+    "form": 10.4,
+    "goal_difference": 5.8,
+    "model_conviction": 5.6,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 6.6
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.04,
+    "down_rating": 4.4,
+    "settled_calls": 0
+   }
+  },
+  "Lens": {
+   "total": 58.9,
+   "rating": 5.89,
+   "decimal": 1.81,
+   "fractional": "4/5",
+   "components": {
+    "form": 13.7,
+    "goal_difference": 7.3,
+    "model_conviction": 12.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 5.7
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.09,
+    "down_rating": 5.45,
+    "settled_calls": 0
+   }
+  },
+  "Auxerre": {
+   "total": 41.1,
+   "rating": 4.11,
+   "decimal": 6.4,
+   "fractional": "11/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 4.3,
+    "model_conviction": 4.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 6.0
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.31,
+    "down_rating": 3.67,
+    "settled_calls": 0
+   }
+  },
+  "Nice": {
+   "total": 46.5,
+   "rating": 4.65,
+   "decimal": 2.63,
+   "fractional": "13/8",
+   "components": {
+    "form": 6.3,
+    "goal_difference": 3.3,
+    "model_conviction": 8.6,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 8.3
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.85,
+    "down_rating": 4.21,
+    "settled_calls": 0
+   }
+  },
+  "Lorient": {
+   "total": 46.3,
+   "rating": 4.63,
+   "decimal": 4.3,
+   "fractional": "10/3",
+   "components": {
+    "form": 8.8,
+    "goal_difference": 4.8,
+    "model_conviction": 5.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.83,
+    "down_rating": 4.19,
+    "settled_calls": 0
+   }
+  },
+  "Toulouse": {
+   "total": 45.3,
+   "rating": 4.53,
+   "decimal": 3.71,
+   "fractional": "11/4",
+   "components": {
+    "form": 8.8,
+    "goal_difference": 5.1,
+    "model_conviction": 5.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 5.7
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.73,
+    "down_rating": 4.09,
+    "settled_calls": 0
+   }
+  },
+  "Lyon": {
+   "total": 55.0,
+   "rating": 5.5,
+   "decimal": 2.68,
+   "fractional": "13/8",
+   "components": {
+    "form": 11.8,
+    "goal_difference": 6.0,
+    "model_conviction": 9.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 8.0
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.7,
+    "down_rating": 5.06,
+    "settled_calls": 0
+   }
+  },
+  "Troyes": {
+   "total": 47.4,
+   "rating": 4.74,
+   "decimal": 4.19,
+   "fractional": "10/3",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 4.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.94,
+    "down_rating": 4.3,
+    "settled_calls": 0
+   }
+  },
+  "Paris FC": {
+   "total": 49.7,
+   "rating": 4.97,
+   "decimal": 2.65,
+   "fractional": "13/8",
+   "components": {
+    "form": 8.6,
+    "goal_difference": 4.8,
+    "model_conviction": 8.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.17,
+    "down_rating": 4.53,
+    "settled_calls": 0
+   }
+  },
+  "Angers": {
+   "total": 39.1,
+   "rating": 3.91,
+   "decimal": 6.19,
+   "fractional": "5/1",
+   "components": {
+    "form": 7.1,
+    "goal_difference": 3.6,
+    "model_conviction": 3.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 4.7
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.11,
+    "down_rating": 3.47,
+    "settled_calls": 0
+   }
+  },
+  "Lille": {
+   "total": 55.0,
+   "rating": 5.5,
+   "decimal": 2.15,
+   "fractional": "11/10",
+   "components": {
+    "form": 12.0,
+    "goal_difference": 6.1,
+    "model_conviction": 9.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.0
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.7,
+    "down_rating": 5.06,
+    "settled_calls": 0
+   }
+  },
+  "Le Havre": {
+   "total": 40.0,
+   "rating": 4.0,
+   "decimal": 5.12,
+   "fractional": "4/1",
+   "components": {
+    "form": 6.9,
+    "goal_difference": 4.1,
+    "model_conviction": 4.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 4.9
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.2,
+    "down_rating": 3.56,
+    "settled_calls": 0
+   }
+  },
+  "Monaco": {
+   "total": 54.4,
+   "rating": 5.44,
+   "decimal": 2.17,
+   "fractional": "6/5",
+   "components": {
+    "form": 10.6,
+    "goal_difference": 5.4,
+    "model_conviction": 10.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.6
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.64,
+    "down_rating": 5.0,
+    "settled_calls": 0
+   }
+  },
+  "Paris Saint-Germain": {
+   "total": 63.2,
+   "rating": 6.32,
+   "decimal": 1.75,
+   "fractional": "8/11",
+   "components": {
+    "form": 14.9,
+    "goal_difference": 8.3,
+    "model_conviction": 12.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.52,
+    "down_rating": 5.88,
+    "settled_calls": 0
+   }
+  },
+  "Rennes": {
+   "total": 47.8,
+   "rating": 4.78,
+   "decimal": 6.18,
+   "fractional": "5/1",
+   "components": {
+    "form": 11.6,
+    "goal_difference": 5.7,
+    "model_conviction": 4.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 6.4
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.98,
+    "down_rating": 4.34,
+    "settled_calls": 0
+   }
+  },
+  "Inter Milan": {
+   "total": 70.2,
+   "rating": 7.02,
+   "decimal": 1.24,
+   "fractional": "1/4",
+   "components": {
+    "form": 15.3,
+    "goal_difference": 8.6,
+    "model_conviction": 18.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.8
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 7.22,
+    "down_rating": 6.58,
+    "settled_calls": 0
+   }
+  },
+  "Monza": {
+   "total": 40.9,
+   "rating": 4.09,
+   "decimal": 17.88,
+   "fractional": "16/1",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 1.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 4.4
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.29,
+    "down_rating": 3.65,
+    "settled_calls": 0
+   }
+  },
+  "Udinese": {
+   "total": 43.7,
+   "rating": 4.37,
+   "decimal": 5.65,
+   "fractional": "9/2",
+   "components": {
+    "form": 8.8,
+    "goal_difference": 4.8,
+    "model_conviction": 4.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 5.8
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.57,
+    "down_rating": 3.93,
+    "settled_calls": 0
+   }
+  },
+  "Como": {
+   "total": 57.5,
+   "rating": 5.75,
+   "decimal": 2.19,
+   "fractional": "6/5",
+   "components": {
+    "form": 12.5,
+    "goal_difference": 7.4,
+    "model_conviction": 9.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.8
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.95,
+    "down_rating": 5.31,
+    "settled_calls": 0
+   }
+  },
+  "Genoa": {
+   "total": 42.7,
+   "rating": 4.27,
+   "decimal": 5.45,
+   "fractional": "9/2",
+   "components": {
+    "form": 7.2,
+    "goal_difference": 4.3,
+    "model_conviction": 4.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 6.7
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.47,
+    "down_rating": 3.83,
+    "settled_calls": 0
+   }
+  },
+  "Napoli": {
+   "total": 57.2,
+   "rating": 5.72,
+   "decimal": 2.18,
+   "fractional": "6/5",
+   "components": {
+    "form": 13.3,
+    "goal_difference": 6.4,
+    "model_conviction": 10.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.2
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.92,
+    "down_rating": 5.28,
+    "settled_calls": 0
+   }
+  },
+  "Parma": {
+   "total": 47.5,
+   "rating": 4.75,
+   "decimal": 2.93,
+   "fractional": "15/8",
+   "components": {
+    "form": 7.9,
+    "goal_difference": 3.8,
+    "model_conviction": 8.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.95,
+    "down_rating": 4.31,
+    "settled_calls": 0
+   }
+  },
+  "Cagliari": {
+   "total": 42.2,
+   "rating": 4.22,
+   "decimal": 4.15,
+   "fractional": "3/1",
+   "components": {
+    "form": 7.5,
+    "goal_difference": 4.1,
+    "model_conviction": 5.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 5.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.42,
+    "down_rating": 3.78,
+    "settled_calls": 0
+   }
+  },
+  "Frosinone": {
+   "total": 43.7,
+   "rating": 4.37,
+   "decimal": 13.06,
+   "fractional": "12/1",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 1.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.57,
+    "down_rating": 3.93,
+    "settled_calls": 0
+   }
+  },
+  "Juventus": {
+   "total": 59.1,
+   "rating": 5.91,
+   "decimal": 1.69,
+   "fractional": "2/3",
+   "components": {
+    "form": 12.1,
+    "goal_difference": 6.8,
+    "model_conviction": 12.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.4
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.11,
+    "down_rating": 5.47,
+    "settled_calls": 0
+   }
+  },
+  "Venezia": {
+   "total": 47.9,
+   "rating": 4.79,
+   "decimal": 2.72,
+   "fractional": "7/4",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 8.4,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 4.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.99,
+    "down_rating": 4.35,
+    "settled_calls": 0
+   }
+  },
+  "Lecce": {
+   "total": 40.2,
+   "rating": 4.02,
+   "decimal": 4.46,
+   "fractional": "7/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 3.6,
+    "model_conviction": 5.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 4.7
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.22,
+    "down_rating": 3.58,
+    "settled_calls": 0
+   }
+  },
+  "Atalanta": {
+   "total": 58.6,
+   "rating": 5.86,
+   "decimal": 1.64,
+   "fractional": "8/13",
+   "components": {
+    "form": 10.4,
+    "goal_difference": 6.0,
+    "model_conviction": 14.6,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.6
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.06,
+    "down_rating": 5.42,
+    "settled_calls": 0
+   }
+  },
+  "Sassuolo": {
+   "total": 42.9,
+   "rating": 4.29,
+   "decimal": 9.13,
+   "fractional": "8/1",
+   "components": {
+    "form": 8.6,
+    "goal_difference": 4.7,
+    "model_conviction": 2.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.49,
+    "down_rating": 3.85,
+    "settled_calls": 0
+   }
+  },
+  "Torino": {
+   "total": 41.1,
+   "rating": 4.11,
+   "decimal": 5.64,
+   "fractional": "9/2",
+   "components": {
+    "form": 7.9,
+    "goal_difference": 3.8,
+    "model_conviction": 4.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 5.1
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.31,
+    "down_rating": 3.67,
+    "settled_calls": 0
+   }
+  },
+  "AC Milan": {
+   "total": 55.6,
+   "rating": 5.56,
+   "decimal": 2.19,
+   "fractional": "6/5",
+   "components": {
+    "form": 12.3,
+    "goal_difference": 6.2,
+    "model_conviction": 9.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.3
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.76,
+    "down_rating": 5.12,
+    "settled_calls": 0
+   }
+  },
+  "Bologna": {
+   "total": 50.8,
+   "rating": 5.08,
+   "decimal": 2.62,
+   "fractional": "13/8",
+   "components": {
+    "form": 9.8,
+    "goal_difference": 5.2,
+    "model_conviction": 8.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.1
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.28,
+    "down_rating": 4.64,
+    "settled_calls": 0
+   }
+  },
+  "Lazio": {
+   "total": 46.9,
+   "rating": 4.69,
+   "decimal": 4.45,
+   "fractional": "7/2",
+   "components": {
+    "form": 9.5,
+    "goal_difference": 5.1,
+    "model_conviction": 5.0,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.3
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.89,
+    "down_rating": 4.25,
+    "settled_calls": 0
+   }
+  },
+  "AS Roma": {
+   "total": 59.6,
+   "rating": 5.96,
+   "decimal": 1.74,
+   "fractional": "8/11",
+   "components": {
+    "form": 12.8,
+    "goal_difference": 6.8,
+    "model_conviction": 13.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 6.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.16,
+    "down_rating": 5.52,
+    "settled_calls": 0
+   }
+  },
+  "Fiorentina": {
+   "total": 40.2,
+   "rating": 4.02,
+   "decimal": 9.29,
+   "fractional": "8/1",
+   "components": {
+    "form": 7.4,
+    "goal_difference": 4.4,
+    "model_conviction": 1.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 6.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.22,
+    "down_rating": 3.58,
+    "settled_calls": 0
+   }
+  },
+  "Vicenza": {
+   "total": 48.7,
+   "rating": 4.87,
+   "decimal": 3.36,
+   "fractional": "9/4",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 6.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.07,
+    "down_rating": 4.43,
+    "settled_calls": 0
+   }
+  },
+  "Catanzaro": {
+   "total": 50.4,
+   "rating": 5.04,
+   "decimal": 3.47,
+   "fractional": "5/2",
+   "components": {
+    "form": 10.4,
+    "goal_difference": 5.7,
+    "model_conviction": 6.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.24,
+    "down_rating": 4.6,
+    "settled_calls": 0
+   }
+  },
+  "Carrarese": {
+   "total": 47.1,
+   "rating": 4.71,
+   "decimal": 3.05,
+   "fractional": "2/1",
+   "components": {
+    "form": 7.7,
+    "goal_difference": 4.7,
+    "model_conviction": 7.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.91,
+    "down_rating": 4.27,
+    "settled_calls": 0
+   }
+  },
+  "Mantova": {
+   "total": 47.7,
+   "rating": 4.77,
+   "decimal": 3.31,
+   "fractional": "9/4",
+   "components": {
+    "form": 8.1,
+    "goal_difference": 4.2,
+    "model_conviction": 7.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.97,
+    "down_rating": 4.33,
+    "settled_calls": 0
+   }
+  },
+  "Sudtirol": {
+   "total": 47.0,
+   "rating": 4.7,
+   "decimal": 2.71,
+   "fractional": "7/4",
+   "components": {
+    "form": 7.2,
+    "goal_difference": 4.3,
+    "model_conviction": 8.0,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.9,
+    "down_rating": 4.26,
+    "settled_calls": 0
+   }
+  },
+  "Virtus Entella": {
+   "total": 46.2,
+   "rating": 4.62,
+   "decimal": 3.82,
+   "fractional": "11/4",
+   "components": {
+    "form": 7.4,
+    "goal_difference": 4.0,
+    "model_conviction": 7.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.82,
+    "down_rating": 4.18,
+    "settled_calls": 0
+   }
+  },
+  "Benevento": {
+   "total": 50.0,
+   "rating": 5.0,
+   "decimal": 2.97,
+   "fractional": "2/1",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 7.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.2,
+    "down_rating": 4.56,
+    "settled_calls": 0
+   }
+  },
+  "Modena": {
+   "total": 50.6,
+   "rating": 5.06,
+   "decimal": 3.28,
+   "fractional": "9/4",
+   "components": {
+    "form": 9.6,
+    "goal_difference": 5.9,
+    "model_conviction": 7.6,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.26,
+    "down_rating": 4.62,
+    "settled_calls": 0
+   }
+  },
+  "Empoli": {
+   "total": 46.0,
+   "rating": 4.6,
+   "decimal": 3.43,
+   "fractional": "5/2",
+   "components": {
+    "form": 7.2,
+    "goal_difference": 4.5,
+    "model_conviction": 6.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.8,
+    "down_rating": 4.16,
+    "settled_calls": 0
+   }
+  },
+  "Cremonese": {
+   "total": 51.0,
+   "rating": 5.1,
+   "decimal": 2.91,
+   "fractional": "15/8",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 8.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.3,
+    "down_rating": 4.66,
+    "settled_calls": 0
+   }
+  },
+  "Pisa": {
+   "total": 54.4,
+   "rating": 5.44,
+   "decimal": 1.99,
+   "fractional": "evens",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 11.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.64,
+    "down_rating": 5.0,
+    "settled_calls": 0
+   }
+  },
+  "Padova": {
+   "total": 45.0,
+   "rating": 4.5,
+   "decimal": 5.25,
+   "fractional": "4/1",
+   "components": {
+    "form": 8.1,
+    "goal_difference": 4.3,
+    "model_conviction": 5.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.7,
+    "down_rating": 4.06,
+    "settled_calls": 0
+   }
+  },
+  "Verona": {
+   "total": 55.0,
+   "rating": 5.5,
+   "decimal": 1.85,
+   "fractional": "5/6",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 12.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.7,
+    "down_rating": 5.06,
+    "settled_calls": 0
+   }
+  },
+  "Ascoli": {
+   "total": 46.8,
+   "rating": 4.68,
+   "decimal": 6.3,
+   "fractional": "11/2",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 4.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.88,
+    "down_rating": 4.24,
+    "settled_calls": 0
+   }
+  },
+  "Cesena": {
+   "total": 47.1,
+   "rating": 4.71,
+   "decimal": 3.19,
+   "fractional": "9/4",
+   "components": {
+    "form": 8.1,
+    "goal_difference": 4.3,
+    "model_conviction": 7.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.91,
+    "down_rating": 4.27,
+    "settled_calls": 0
+   }
+  },
+  "Sampdoria": {
+   "total": 47.2,
+   "rating": 4.72,
+   "decimal": 3.18,
+   "fractional": "85/40",
+   "components": {
+    "form": 7.7,
+    "goal_difference": 4.1,
+    "model_conviction": 7.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.92,
+    "down_rating": 4.28,
+    "settled_calls": 0
+   }
+  },
+  "Palermo": {
+   "total": 59.4,
+   "rating": 5.94,
+   "decimal": 1.84,
+   "fractional": "5/6",
+   "components": {
+    "form": 12.6,
+    "goal_difference": 6.8,
+    "model_conviction": 12.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.14,
+    "down_rating": 5.5,
+    "settled_calls": 0
+   }
+  },
+  "Juve Stabia": {
+   "total": 45.6,
+   "rating": 4.56,
+   "decimal": 6.31,
+   "fractional": "11/2",
+   "components": {
+    "form": 8.9,
+    "goal_difference": 4.9,
+    "model_conviction": 4.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.76,
+    "down_rating": 4.12,
+    "settled_calls": 0
+   }
+  },
+  "Real Betis": {
+   "total": 53.0,
+   "rating": 5.3,
+   "decimal": 2.29,
+   "fractional": "5/4",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 10.4,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.6
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.5,
+    "down_rating": 4.86,
+    "settled_calls": 0
+   }
+  },
+  "Real Sociedad": {
+   "total": 44.2,
+   "rating": 4.42,
+   "decimal": 5.04,
+   "fractional": "4/1",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 4.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 5.1
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.62,
+    "down_rating": 3.98,
+    "settled_calls": 0
+   }
+  },
+  "Athletic Bilbao": {
+   "total": 52.6,
+   "rating": 5.26,
+   "decimal": 2.03,
+   "fractional": "evens",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 11.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 6.4
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.46,
+    "down_rating": 4.82,
+    "settled_calls": 0
+   }
+  },
+  "Sevilla": {
+   "total": 56.9,
+   "rating": 5.69,
+   "decimal": 6.17,
+   "fractional": "5/1",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 3.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 5.6
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.89,
+    "down_rating": 5.25,
+    "settled_calls": 0
+   }
+  },
+  "Valencia": {
+   "total": 49.5,
+   "rating": 4.95,
+   "decimal": 2.62,
+   "fractional": "13/8",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 9.4,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 5.1
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.15,
+    "down_rating": 4.51,
+    "settled_calls": 0
+   }
+  },
+  "Celta Vigo": {
+   "total": 46.1,
+   "rating": 4.61,
+   "decimal": 4.74,
+   "fractional": "7/2",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 3.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.3
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.81,
+    "down_rating": 4.17,
+    "settled_calls": 0
+   }
+  },
+  "Espanyol": {
+   "total": 58.4,
+   "rating": 5.84,
+   "decimal": 8.78,
+   "fractional": "8/1",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 10.0,
+    "model_conviction": 2.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 5.7
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.04,
+    "down_rating": 5.4,
+    "settled_calls": 0
+   }
+  },
+  "Real Madrid": {
+   "total": 52.0,
+   "rating": 5.2,
+   "decimal": 1.97,
+   "fractional": "evens",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 9.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.4,
+    "down_rating": 4.76,
+    "settled_calls": 0
+   }
+  },
+  "Atletico Madrid": {
+   "total": 52.4,
+   "rating": 5.24,
+   "decimal": 2.2,
+   "fractional": "6/5",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 10.4,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.0
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.44,
+    "down_rating": 4.8,
+    "settled_calls": 0
+   }
+  },
+  "Villarreal": {
+   "total": 43.7,
+   "rating": 4.37,
+   "decimal": 5.36,
+   "fractional": "9/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 4.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.9
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.57,
+    "down_rating": 3.93,
+    "settled_calls": 0
+   }
+  },
+  "Elche": {
+   "total": 42.1,
+   "rating": 4.21,
+   "decimal": 9.56,
+   "fractional": "9/1",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 2.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.41,
+    "down_rating": 3.77,
+    "settled_calls": 0
+   }
+  },
+  "Barcelona": {
+   "total": 54.8,
+   "rating": 5.48,
+   "decimal": 1.75,
+   "fractional": "8/11",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 10.9,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 8.9
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.68,
+    "down_rating": 5.04,
+    "settled_calls": 0
+   }
+  },
+  "Osasuna": {
+   "total": 50.1,
+   "rating": 5.01,
+   "decimal": 2.27,
+   "fractional": "5/4",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 9.6,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 5.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.21,
+    "down_rating": 4.57,
+    "settled_calls": 0
+   }
+  },
+  "Levante": {
+   "total": 31.2,
+   "rating": 3.12,
+   "decimal": 6.16,
+   "fractional": "5/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 3.7,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.32,
+    "down_rating": 2.68,
+    "settled_calls": 0
+   }
+  },
+  "Malaga": {
+   "total": 35.9,
+   "rating": 3.59,
+   "decimal": 2.99,
+   "fractional": "2/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 8.4,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.79,
+    "down_rating": 3.15,
+    "settled_calls": 0
+   }
+  },
+  "La Coruna": {
+   "total": 47.8,
+   "rating": 4.78,
+   "decimal": 4.04,
+   "fractional": "3/1",
+   "components": {
+    "form": 10.0,
+    "goal_difference": 5.0,
+    "model_conviction": 5.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.98,
+    "down_rating": 4.34,
+    "settled_calls": 0
+   }
+  },
+  "Cordoba": {
+   "total": 34.3,
+   "rating": 3.43,
+   "decimal": 4.25,
+   "fractional": "10/3",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 4.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.63,
+    "down_rating": 2.99,
+    "settled_calls": 0
+   }
+  },
+  "Girona": {
+   "total": 46.3,
+   "rating": 4.63,
+   "decimal": 3.15,
+   "fractional": "85/40",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 7.1,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.83,
+    "down_rating": 4.19,
+    "settled_calls": 0
+   }
+  },
+  "Oviedo": {
+   "total": 50.7,
+   "rating": 5.07,
+   "decimal": 2.13,
+   "fractional": "11/10",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 11.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 5.27,
+    "down_rating": 4.63,
+    "settled_calls": 0
+   }
+  },
+  "Leganes": {
+   "total": 42.6,
+   "rating": 4.26,
+   "decimal": 6.22,
+   "fractional": "5/1",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 3.4,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.46,
+    "down_rating": 3.82,
+    "settled_calls": 0
+   }
+  },
+  "Albacete": {
+   "total": 41.5,
+   "rating": 4.15,
+   "decimal": 2.12,
+   "fractional": "11/10",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 11.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.35,
+    "down_rating": 3.71,
+    "settled_calls": 0
+   }
+  },
+  "Sociedad B": {
+   "total": 33.4,
+   "rating": 3.34,
+   "decimal": 6.33,
+   "fractional": "11/2",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 2.5,
+    "model_conviction": 3.4,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.54,
+    "down_rating": 2.9,
+    "settled_calls": 0
+   }
+  },
+  "Ceuta": {
+   "total": 31.1,
+   "rating": 3.11,
+   "decimal": 4.75,
+   "fractional": "7/2",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 3.6,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.31,
+    "down_rating": 2.67,
+    "settled_calls": 0
+   }
+  },
+  "Las Palmas": {
+   "total": 64.3,
+   "rating": 6.43,
+   "decimal": 2.57,
+   "fractional": "13/8",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 9.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 6.63,
+    "down_rating": 5.99,
+    "settled_calls": 0
+   }
+  },
+  "Eldense": {
+   "total": 35.8,
+   "rating": 3.58,
+   "decimal": 2.89,
+   "fractional": "15/8",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 8.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.78,
+    "down_rating": 3.14,
+    "settled_calls": 0
+   }
+  },
+  "Cadiz": {
+   "total": 43.7,
+   "rating": 4.37,
+   "decimal": 4.56,
+   "fractional": "7/2",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 4.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.57,
+    "down_rating": 3.93,
+    "settled_calls": 0
+   }
+  },
+  "Eibar": {
+   "total": 38.0,
+   "rating": 3.8,
+   "decimal": 2.48,
+   "fractional": "3/2",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 10.5,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.0,
+    "down_rating": 3.36,
+    "settled_calls": 0
+   }
+  },
+  "Valladolid": {
+   "total": 31.7,
+   "rating": 3.17,
+   "decimal": 5.1,
+   "fractional": "4/1",
+   "components": {
+    "form": 0.0,
+    "goal_difference": 0.0,
+    "model_conviction": 4.2,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 3.37,
+    "down_rating": 2.73,
+    "settled_calls": 0
+   }
+  },
+  "Castellon": {
+   "total": 68.3,
+   "rating": 6.83,
+   "decimal": 1.7,
+   "fractional": "8/11",
+   "components": {
+    "form": 20.0,
+    "goal_difference": 7.5,
+    "model_conviction": 13.3,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 7.03,
+    "down_rating": 6.39,
+    "settled_calls": 0
+   }
+  },
+  "Sabadell": {
+   "total": 42.0,
+   "rating": 4.2,
+   "decimal": 7.87,
+   "fractional": "7/1",
+   "components": {
+    "form": 6.7,
+    "goal_difference": 5.0,
+    "model_conviction": 2.8,
+    "model_accuracy": 10.0,
+    "near_miss_penalty": -0.0,
+    "bet_record": 10.0,
+    "squad": 7.5
+   },
+   "note": "no settled history yet - score is model-derived",
+   "movement": {
+    "up": 2.0,
+    "down": -4.4,
+    "up_rating": 4.4,
+    "down_rating": 3.76,
+    "settled_calls": 0
+   }
+  },
+  "Sp Gijon": {
+   "total": 47.8,
+   "rating": 4.78,
+   "decimal": 2.85,
+   "fractional": "15/8",
    "components": {
     "form": 6.7,
     "goal_difference": 5.0,
     "model_conviction": 8.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.5
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 4.23,
-    "down_rating": 3.59,
+    "up_rating": 4.98,
+    "down_rating": 4.34,
     "settled_calls": 0
    }
   },
   "Burgos": {
-   "total": 52.1,
-   "rating": 5.21,
-   "decimal": 4.9,
-   "fractional": "4/1",
+   "total": 59.6,
+   "rating": 5.96,
+   "decimal": 4.08,
+   "fractional": "3/1",
    "components": {
     "form": 20.0,
     "goal_difference": 7.5,
     "model_conviction": 4.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.5
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 5.41,
-    "down_rating": 4.77,
+    "up_rating": 6.16,
+    "down_rating": 5.52,
     "settled_calls": 0
    }
   },
   "Tenerife": {
-   "total": 53.5,
-   "rating": 5.35,
-   "decimal": 6.39,
-   "fractional": "11/2",
+   "total": 61.0,
+   "rating": 6.1,
+   "decimal": 4.72,
+   "fractional": "7/2",
    "components": {
     "form": 20.0,
     "goal_difference": 10.0,
     "model_conviction": 3.5,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.5
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 5.55,
-    "down_rating": 4.91,
+    "up_rating": 6.3,
+    "down_rating": 5.66,
     "settled_calls": 0
    }
   },
   "Almeria": {
-   "total": 59.9,
-   "rating": 5.99,
-   "decimal": 2.25,
-   "fractional": "5/4",
+   "total": 67.4,
+   "rating": 6.74,
+   "decimal": 2.4,
+   "fractional": "11/8",
    "components": {
     "form": 20.0,
     "goal_difference": 10.0,
     "model_conviction": 9.9,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.5
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 6.19,
-    "down_rating": 5.55,
+    "up_rating": 6.94,
+    "down_rating": 6.3,
     "settled_calls": 0
    }
   },
   "Granada": {
-   "total": 38.3,
-   "rating": 3.83,
+   "total": 45.8,
+   "rating": 4.58,
    "decimal": 3.56,
    "fractional": "5/2",
    "components": {
@@ -3619,36 +3783,38 @@
     "model_conviction": 6.6,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.5
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 4.03,
-    "down_rating": 3.39,
+    "up_rating": 4.78,
+    "down_rating": 4.14,
     "settled_calls": 0
    }
   },
   "Mallorca": {
-   "total": 56.3,
-   "rating": 5.63,
-   "decimal": 3.56,
-   "fractional": "5/2",
+   "total": 63.8,
+   "rating": 6.38,
+   "decimal": 3.19,
+   "fractional": "9/4",
    "components": {
     "form": 20.0,
     "goal_difference": 10.0,
     "model_conviction": 6.3,
     "model_accuracy": 10.0,
     "near_miss_penalty": -0.0,
-    "bet_record": 10.0
+    "bet_record": 10.0,
+    "squad": 7.5
    },
    "note": "no settled history yet - score is model-derived",
    "movement": {
     "up": 2.0,
     "down": -4.4,
-    "up_rating": 5.83,
-    "down_rating": 5.19,
+    "up_rating": 6.58,
+    "down_rating": 5.94,
     "settled_calls": 0
    }
   }
