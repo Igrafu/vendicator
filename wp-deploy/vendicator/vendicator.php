@@ -534,6 +534,14 @@ background:rgba(124,255,203,.12);border:1px solid rgba(124,255,203,.4);
 color:var(--mint);border-radius:999px;padding:4px 12px;font-size:12.5px;
 font-weight:700;}
 .vd-sl-badge small{color:var(--muted);font-weight:400;}
+/* the last five results, shown beside the rating they feed */
+.vd-run{display:inline-flex;gap:2px;margin-left:6px;}
+.vd-run i{font-style:normal;font-size:8.5px;font-weight:800;width:12px;
+height:12px;line-height:12px;text-align:center;border-radius:3px;
+color:#0C0E12;}
+.vd-run i.w{background:#9BE81F;}
+.vd-run i.d{background:#6B7280;color:#F7FAF2;}
+.vd-run i.l{background:#FF5C5C;color:#F7FAF2;}
 .vd-slrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
 margin:10px 0 2px;padding-top:10px;border-top:1px solid rgba(255,255,255,.07);}
 .vd-slhead{color:var(--muted);font-size:12px;letter-spacing:1px;
@@ -734,6 +742,11 @@ box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 0 30px rgba(255,196,84,.2),
 .vd-starflag{display:inline-block;background:linear-gradient(120deg,#FFC454,#FFA51F);
 color:#2B1B00;font-weight:800;font-size:11px;letter-spacing:1.4px;
 text-transform:uppercase;border-radius:999px;padding:4px 13px;margin-bottom:10px;}
+.vd-starflag.bronze{background:linear-gradient(120deg,#E9A13B,#C97F1E);
+color:#2B1B00;}
+.vd-starflag.silver{background:linear-gradient(120deg,#E4EAF2,#B7C2D0);
+color:#1A1F27;}
+.vd-star{border-color:rgba(255,196,84,.6);}
 .vd-countdown{color:var(--lime);font-variant-numeric:tabular-nums;}
 .vd-live{color:#FF6B6B;}
 .vd-card.vd-started{opacity:.6;}
@@ -845,6 +858,11 @@ margin-left:7px;vertical-align:middle;white-space:nowrap;}
 .vd-prow.vd-unavailable .vd-playerpic{filter:grayscale(1);}
 .vd-chip-off{cursor:not-allowed;opacity:.55;border-style:dashed;}
 .vd-chip-off:hover{border-color:var(--edge);box-shadow:none;}
+/* a price derived from position rather than recorded form */
+.vd-est{display:inline-block;background:rgba(233,161,59,.16);
+border:1px solid rgba(233,161,59,.5);color:var(--amber);border-radius:5px;
+padding:0 6px;font-size:9px;font-weight:800;letter-spacing:.8px;
+margin-right:6px;vertical-align:middle;}
 /* links on names and headings */
 .vd-inlinelink{color:var(--white);text-decoration:none;
 border-bottom:1px solid rgba(198,255,77,.35);}
@@ -1126,15 +1144,23 @@ function fmt(f){var odds=f.odds_board?["home","draw","away"].map(function(k){
 var o=f.odds_board[k]&&f.odds_board[k][0];return o?o.odds:"-";}).join(" | "):"";
 return '<span class="vd-tick-code">'+(f.short||f.fixture)+'</span> '+tag(f)
 +' <span class="vd-tick-odds">'+odds+'</span>';}
+/* price a probability the way the card does */
+function pr(pct){return (100/Math.max(+pct||0.1,0.1)).toFixed(2);}
 function hover(f){var fc=f.final_calibrated;if(!fc)return "";
-var fav=fc.home>=fc.draw&&fc.home>=fc.away?["home win",fc.home]:(fc.away>=fc.draw&&fc.away>=fc.home?["away win",fc.away]:["draw",fc.draw]);
+var fav=fc.home>=fc.draw&&fc.home>=fc.away
+?[(f.home_team||"the home side")+" to win",fc.home]
+:(fc.away>=fc.draw&&fc.away>=fc.home?[(f.away_team||"the away side")+" to win",fc.away]
+:["the draw",fc.draw]);
 var top=f.markets_dixon_coles.exact_score_top10[0];
-return "<b>"+f.fixture+"</b><br>The model favours the "+fav[0]+" at <b>"+fav[1]
-+"%</b>, driven by expected goals "+f.expected_goals.home+" - "+f.expected_goals.away
-+". Most likely scoreline <b>"+top[0]+"</b> ("+top[1]+"%). 90% band on the home win: "
-+f.uncertainty_band_home_pct.join("-")+"%. Reward difficulty x"+f.reward_difficulty_multiplier+".";}
+var d=+f.reward_difficulty_multiplier||1;
+var hard=d>=1.9?"one of the harder calls on the board"
+:(d>=1.6?"a moderately tricky call":"a relatively clear call");
+return "<b>"+f.fixture+"</b><br>We make it <b>"+fav[0]+"</b> at "+pr(fav[1])
++" <span style=\'color:#9AA3B2;\'>("+fav[1]+"%)</span>, with goals expected at "
++f.expected_goals.home+" - "+f.expected_goals.away
++". Likeliest scoreline <b>"+top[0]+"</b> at "+pr(top[1])+". "
++hard.charAt(0).toUpperCase()+hard.slice(1)+" - harder calls pay more.";}
 var VD_COMPARE=(window.VD&&VD.compareUrl)||"";
-/* header Vendicator Scoreline follows the ticker's current fixture */
 function tick(){if(!fx.length)return;var f=fx[idx%fx.length];
 var it=document.getElementById("vd-tick-item");var hv=document.getElementById("vd-hover");
 if(it)it.innerHTML=fmt(f);
@@ -1219,8 +1245,10 @@ i.closest(".vd-opt").classList.toggle("on",i.checked);recalc();});});
 var panel=form.querySelector(".vd-slippanel");
 var list=panel&&panel.querySelector(".vd-sliplist");
 var panelTotal=panel&&panel.querySelector(".vd-slippanel-total");
+/* setting .checked in code fires no change event, so the panel has to be
+   redrawn explicitly - without this the row stays listed after removal */
 function uncheck(i){i.checked=false;
-i.closest(".vd-opt").classList.remove("on");recalc();}
+i.closest(".vd-opt").classList.remove("on");recalc();drawPanel();}
 function drawPanel(){
 if(!list)return;
 var on=[].slice.call(form.querySelectorAll(".vd-opt input:checked"));
@@ -1904,15 +1932,28 @@ function vendicator_player_market($p) {
                     vendicator_leg_points($ln['pct'], $weight),
                     $excl($market, $pl['id']));
             }
+            // A squad-only player has no recorded per-match history, so the
+            // last-five row is suppressed rather than drawn as five "did
+            // not play" dots, which would read as a fact about them.
+            $estimated = !empty($pl['estimated']);
             $dots = '';
-            if ($tally && !empty($pl['last5'][$tally])) {
+            if (!$estimated && $tally && !empty($pl['last5'][$tally])) {
                 $dots = vendicator_dot_row($pl['last5'][$tally]);
             }
-            $rows .= '<div class="vd-prow' . ($out_of ? ' vd-unavailable' : '') . '">'
+            $rows .= '<div class="vd-prow' . ($out_of ? ' vd-unavailable' : '')
+                . ($estimated ? ' vd-estimated' : '') . '">'
                 . '<span class="vd-pwho">' . vendicator_player_identity($pl)
                 . vendicator_availability_tag($pl)
-                . '<small class="vd-pstat">' . esc_html(isset($pl[$stat]) ? $pl[$stat] : 0)
-                . ' this season' . ($dots ? ' ' . $dots : '') . '</small></span>'
+                . '<small class="vd-pstat">'
+                . ($estimated
+                    ? '<span class="vd-est" title="No free source publishes '
+                        . 'per-player statistics for this division. These '
+                        . 'prices come from the player&rsquo;s position and '
+                        . 'what this fixture is expected to produce, not from '
+                        . 'their recorded form.">EST</span> priced by position'
+                    : esc_html(isset($pl[$stat]) ? $pl[$stat] : 0)
+                        . ' this season' . ($dots ? ' ' . $dots : ''))
+                . '</small></span>'
                 . '<span class="vd-plines">' . $chips . '</span></div>';
         }
         if (!$rows) { continue; }
@@ -1920,6 +1961,21 @@ function vendicator_player_market($p) {
             . '><summary>' . esc_html($label) . '</summary>'
             . '<div class="vd-prows vd-scroll tall">' . $rows . '</div></details>';
         $first = false;
+    }
+    $anyest = false;
+    foreach ($players as $pl) {
+        if (!empty($pl['estimated'])) { $anyest = true; break; }
+    }
+    if ($anyest) {
+        $out .= '<p class="vd-muted" style="font-size:12px;">'
+            . '<span class="vd-est">EST</span> These squads are real, but no '
+            . 'free source publishes per-player statistics below the top five '
+            . 'leagues. Prices marked EST come from each player&rsquo;s '
+            . 'position and what this fixture is expected to produce &mdash; '
+            . 'they are not a record of that player&rsquo;s form. Two players '
+            . 'in the same position will therefore price the same: we know '
+            . 'nothing that separates them, and would rather show that than '
+            . 'invent a difference.</p>';
     }
     return $out . '<p class="vd-muted" style="font-size:12px;">'
         . '<i class="vd-dot goal"></i> scored &nbsp; <i class="vd-dot assist"></i> assisted '
@@ -1936,9 +1992,13 @@ function vendicator_render_fixture($p, $allowed, $sel, $star = false) {
     $grade = isset($p['scoreline']['grade']) ? $p['scoreline']['grade'] : null;
     $tier = is_array($grade) && isset($grade['tier']) ? $grade['tier'] : '';
     $out = '<div class="vd-card vd-fixture' . ($star ? ' vd-star' : '')
-        . ($tier ? ' vd-grade-' . $tier : '') . '">'
-        . vendicator_card_corner($p)
-        . ($star ? '<div class="vd-starflag">&#9733; Best value on the board</div>' : '')
+        . ($star && $tier ? ' vd-grade-' . $tier : '') . '">'
+        . vendicator_card_corner($p, $star)
+        . ($star && $tier
+            ? '<div class="vd-starflag ' . esc_attr($tier) . '">&#9733; '
+                . esc_html(strtoupper($tier)) . ' &mdash; best value on this page'
+                . '</div>'
+            : '')
         . '<h2>' . vendicator_fixture_heading($p) . '</h2>'
         . '<p class="vd-muted">' . esc_html($p['league'])
         . (empty($p['kickoff']) ? '' : ' - kickoff ' . esc_html($p['kickoff']))
@@ -2076,7 +2136,7 @@ function vendicator_can_see_vscore($user_id = null) {
  * judgement about one fixture. The header carries reward points, which
  * belong to the member and are the same on every page.
  */
-function vendicator_card_corner($p) {
+function vendicator_card_corner($p, $flagged = false) {
     if (empty($p['scoreline'])) { return ''; }
     $s = $p['scoreline'];
     $rating = vendicator_scoreline_rating($s, $s['headline']);
@@ -2094,9 +2154,11 @@ function vendicator_card_corner($p) {
             . '<i class="down">&#9660;</i>' . number_format(abs($down), 2) . '-'
             . '</span>';
     }
-    // the grade badge is only rendered for members whose tier reaches it
+    // Only the best card on the page wears its value icon, and only for
+    // members whose tier reaches that grade. Badging every graded card made
+    // the flag meaningless - the point is to single one out.
     $gradehtml = '';
-    $t = isset($s['grade']['tier']) ? $s['grade']['tier'] : null;
+    $t = $flagged && isset($s['grade']['tier']) ? $s['grade']['tier'] : null;
     $visible = vendicator_visible_grades(
         vendicator_user_tier(get_current_user_id()));
     if ($t && in_array($t, $visible, true)) {
@@ -2152,20 +2214,31 @@ function vendicator_scoreline_rating($sl, $fallback) {
 function vendicator_scoreline_row($p) {
     if (empty($p['scoreline'])) { return ''; }
     $s = $p['scoreline'];
-    $row = function ($team, $sl) {
+    $form = isset($p['recent_form']) ? $p['recent_form'] : array();
+    $row = function ($team, $sl, $side) use ($form) {
+        // the recent run is part of the rating, so it is shown beside it
+        $run = '';
+        if (!empty($form[$side]['form'])) {
+            $run = '<span class="vd-run">';
+            foreach (str_split($form[$side]['form']) as $r) {
+                $run .= '<i class="' . esc_attr(strtolower($r)) . '">'
+                    . esc_html($r) . '</i>';
+            }
+            $run .= '</span>';
+        }
         return '<span class="vd-sl-badge" title="' . esc_attr($sl['note'])
             . ' (composite ' . esc_attr($sl['total']) . '/100)">'
             . esc_html($team) . ' <b>'
             . esc_html(vendicator_scoreline_rating($sl, $sl['total'])) . '</b> '
             . '<small>' . esc_html($sl['decimal']) . ' / '
-            . esc_html($sl['fractional']) . '</small></span>';
+            . esc_html($sl['fractional']) . '</small>' . $run . '</span>';
     };
     $gw = !empty($p['gameweek']) ? ' &middot; GW' . (int) $p['gameweek'] : '';
     return '<div class="vd-slrow">'
         . '<span class="vd-slhead">Vendicator Scoreline <b>'
         . esc_html(vendicator_scoreline_rating($s, $s['headline'])) . '</b></span>'
-        . $row(isset($p['home_team']) ? $p['home_team'] : 'Home', $s['home'])
-        . $row(isset($p['away_team']) ? $p['away_team'] : 'Away', $s['away'])
+        . $row(isset($p['home_team']) ? $p['home_team'] : 'Home', $s['home'], 'home')
+        . $row(isset($p['away_team']) ? $p['away_team'] : 'Away', $s['away'], 'away')
         . '<span class="vd-muted" style="font-size:11.5px;">'
         . esc_html(isset($p['season_label']) ? $p['season_label'] : '') . $gw
         . '</span></div>';
@@ -3645,6 +3718,9 @@ add_action('admin_menu', function () {
         'manage_options', 'vendicator-mail', 'vendicator_admin_mail');
     add_submenu_page('vendicator', 'Reward Perks', 'Reward Perks',
         'manage_options', 'vendicator-perks', 'vendicator_admin_perks');
+    add_submenu_page('vendicator', 'Player Availability', 'Player Availability',
+        'manage_options', 'vendicator-availability',
+        'vendicator_admin_availability');
     add_submenu_page('vendicator', 'Subscriptions', 'Subscriptions',
         'manage_options', 'vendicator-subs', 'vendicator_admin_subs');
     add_submenu_page('vendicator', 'Users', 'Users',
@@ -3768,6 +3844,104 @@ add_action('admin_post_vendicator_ban', function () {
         }
     }
     wp_safe_redirect(admin_url('admin.php?page=vendicator-users'));
+    exit;
+});
+
+/**
+ * Player availability.
+ *
+ * No free feed publishes current-season injuries or suspensions - the open
+ * ones stop at 2024 - so anything the squad feed does not flag has to be
+ * entered here. A player listed on this page shows an N/A badge on every
+ * card they appear in, with their return date if one is known, and their
+ * selections are greyed out rather than silently priced as if they were
+ * playing.
+ */
+function vendicator_admin_availability() {
+    $list = (array) get_option('vendicator_unavailable', array());
+    $p = get_option('vendicator_predictions');
+    $players = array();
+    foreach ((array) (isset($p['fixtures']) ? $p['fixtures'] : array()) as $fx) {
+        foreach ((array) (isset($fx['players']) ? $fx['players'] : array()) as $pl) {
+            $players[(string) $pl['id']] = $pl['name'] . ' (' . $pl['team'] . ')';
+        }
+    }
+    asort($players);
+    echo '<div class="wrap"><h1>Player Availability</h1>'
+        . '<p class="vd-admin-note">Mark a player unavailable and every card '
+        . 'they appear in shows an N/A badge and greys out their selections. '
+        . 'Nothing here is guessed: no free source publishes current injuries, '
+        . 'so this list and the squad feed&rsquo;s own status flag are the '
+        . 'only things that ever mark a player out.</p>';
+
+    echo '<h2>Currently unavailable (' . count($list) . ')</h2>'
+        . '<form method="post" action="' . esc_url(admin_url('admin-post.php')) . '">'
+        . '<input type="hidden" name="action" value="vendicator_save_availability">';
+    wp_nonce_field('vendicator_save_availability', '_vdnonce');
+    echo '<table class="widefat striped" style="max-width:900px;"><thead><tr>'
+        . '<th>Player</th><th>Reason</th><th>Expected back</th><th>Remove</th>'
+        . '</tr></thead><tbody>';
+    foreach ($list as $key => $cfg) {
+        $cfg = (array) $cfg;
+        printf('<tr><td><code>%s</code>%s</td>'
+            . '<td><input type="text" name="reason[%s]" value="%s"></td>'
+            . '<td><input type="date" name="returns[%s]" value="%s"></td>'
+            . '<td><label><input type="checkbox" name="drop[%s]" value="1"> '
+            . 'Remove</label></td></tr>',
+            esc_html($key),
+            isset($players[$key]) ? ' &mdash; ' . esc_html($players[$key]) : '',
+            esc_attr($key), esc_attr(isset($cfg['reason']) ? $cfg['reason'] : ''),
+            esc_attr($key), esc_attr(isset($cfg['returns']) ? $cfg['returns'] : ''),
+            esc_attr($key));
+    }
+    if (!$list) {
+        echo '<tr><td colspan="4">Nobody is currently marked unavailable.</td></tr>';
+    }
+    echo '</tbody></table>';
+
+    echo '<h2>Add a player</h2><table class="form-table">'
+        . '<tr><th>Player</th><td><select name="add_id">'
+        . '<option value="">Choose a player&hellip;</option>';
+    foreach ($players as $id => $label) {
+        if (isset($list[$id])) { continue; }
+        echo '<option value="' . esc_attr($id) . '">' . esc_html($label)
+            . '</option>';
+    }
+    echo '</select><p class="description">Only players in the current '
+        . 'prediction set are listed.</p></td></tr>'
+        . '<tr><th>Reason</th><td><input type="text" name="add_reason" '
+        . 'class="regular-text" placeholder="Injured / Suspended / International duty"></td></tr>'
+        . '<tr><th>Expected back</th><td><input type="date" name="add_returns">'
+        . '<p class="description">Optional. Shown on the badge when set.</p>'
+        . '</td></tr></table>'
+        . '<p><input type="submit" class="button button-primary" '
+        . 'value="Save availability"></p></form></div>';
+}
+
+add_action('admin_post_vendicator_save_availability', function () {
+    check_admin_referer('vendicator_save_availability', '_vdnonce');
+    if (!current_user_can('manage_options')) { wp_die('Denied'); }
+    $list = (array) get_option('vendicator_unavailable', array());
+    foreach (array_keys($list) as $key) {
+        if (!empty($_POST['drop'][$key])) {
+            unset($list[$key]);
+            continue;
+        }
+        $list[$key] = array(
+            'reason' => sanitize_text_field(wp_unslash($_POST['reason'][$key] ?? '')),
+            'returns' => sanitize_text_field(wp_unslash($_POST['returns'][$key] ?? '')),
+        );
+    }
+    $add = sanitize_text_field(wp_unslash($_POST['add_id'] ?? ''));
+    if ($add) {
+        $list[$add] = array(
+            'reason' => sanitize_text_field(wp_unslash($_POST['add_reason'] ?? ''))
+                ?: 'Unavailable',
+            'returns' => sanitize_text_field(wp_unslash($_POST['add_returns'] ?? '')),
+        );
+    }
+    update_option('vendicator_unavailable', $list);
+    wp_safe_redirect(admin_url('admin.php?page=vendicator-availability'));
     exit;
 });
 

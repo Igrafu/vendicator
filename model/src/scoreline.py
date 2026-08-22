@@ -44,6 +44,62 @@ def _load_history():
     return out
 
 
+SEASON_LOG = ROOT / "records" / "season-log.jsonl"
+
+
+def recent_form(n=5):
+    """Points per game over each club's last n completed matches.
+
+    Season averages are slow to move: a side that has won four straight
+    still reads as mid-table in March. This is the short-run signal, taken
+    from the season log rather than any extra fetch.
+
+    -> {team: {'ppg': float, 'played': int, 'form': 'WWDLW', 'gd': int}}
+    """
+    if not SEASON_LOG.exists():
+        return {}
+    played = []
+    for line in SEASON_LOG.read_text().splitlines():
+        if not line.strip():
+            continue
+        try:
+            m = json.loads(line)
+        except ValueError:
+            continue
+        if m.get("status") != "played" or not m.get("score"):
+            continue
+        try:
+            hg, ag = (int(x) for x in str(m["score"]).split("-"))
+        except (ValueError, TypeError):
+            continue
+        played.append((m.get("date", ""), m.get("home"), m.get("away"),
+                       hg, ag))
+    played.sort(key=lambda r: r[0])
+
+    per_team = {}
+    for date, home, away, hg, ag in played:
+        for team, gf, ga in ((home, hg, ag), (away, ag, hg)):
+            if not team:
+                continue
+            per_team.setdefault(team, []).append((gf, ga))
+
+    out = {}
+    for team, games in per_team.items():
+        last = games[-n:]
+        if not last:
+            continue
+        pts = sum(3 if gf > ga else 1 if gf == ga else 0 for gf, ga in last)
+        letters = "".join("W" if gf > ga else "D" if gf == ga else "L"
+                          for gf, ga in last)
+        out[team] = {
+            "ppg": round(pts / len(last), 2),
+            "played": len(last),
+            "form": letters,
+            "gd": sum(gf - ga for gf, ga in last),
+        }
+    return out
+
+
 def _load_bets():
     if not BETS.exists():
         return {}
@@ -187,7 +243,7 @@ def _odds_from(total, edge_prob, book_price=None):
 
 
 def team_scoreline(team, table_row=None, model_probs=None, history=None,
-                   bets=None, book_price=None, players=None):
+                   bets=None, book_price=None, players=None, form=None):
     """-> {'total', 'decimal', 'fractional', 'components', 'note'}"""
     history = history or {}
     bets = bets or {}
@@ -240,6 +296,19 @@ def team_scoreline(team, table_row=None, model_probs=None, history=None,
                 min(sum(ratings) / len(ratings) / 100.0, 1.0) * 15, 1)
     parts.setdefault("squad", 7.5)
 
+    # 7. the last five games (-6 to +6). A season average is slow to move;
+    #    this is the short-run correction, positive for a side on a run and
+    #    negative for one falling away.
+    #    Scaled by how many of those five games we actually have: in August
+    #    a side has played once, and one result is not a run.
+    f = (form or {}).get(team)
+    if f and f.get("played"):
+        confidence = min(int(f["played"]), 5) / 5.0
+        parts["recent_form"] = round(
+            (f["ppg"] - 1.35) / 1.65 * 6 * confidence, 1)
+    else:
+        parts["recent_form"] = 0.0
+
     total = round(max(min(sum(parts.values()), 100.0), 1.0), 1)
 
     edge = (max(float(v) for v in model_probs.values()) / 100.0
@@ -247,6 +316,8 @@ def team_scoreline(team, table_row=None, model_probs=None, history=None,
     dec, frac = _odds_from(total, edge, book_price)
 
     note = []
+    if f and f.get("form"):
+        note.append(f"last {f['played']}: {f['form']}")
     if h.get("n"):
         note.append(f"{h['hits']}/{h['n']} settled calls correct")
     if h.get("near"):
@@ -422,6 +493,7 @@ def build(payload):
     """Attach scorelines to every fixture in a predictions payload."""
     history = near_miss_analysis(_load_history())
     bets = _load_bets()
+    form = recent_form()
     tables = payload.get("tables", {})
     store = {"teams": {}, "players": {}}
 
@@ -434,10 +506,14 @@ def build(payload):
             squads.setdefault(pl.get("team"), []).append(pl)
         hs = team_scoreline(home, rows.get(home),
                             {"top": probs.get("home", 33)}, history, bets,
-                            market_price(fx, "home"), squads.get(home))
+                            market_price(fx, "home"), squads.get(home), form)
         as_ = team_scoreline(away, rows.get(away),
                              {"top": probs.get("away", 33)}, history, bets,
-                             market_price(fx, "away"), squads.get(away))
+                             market_price(fx, "away"), squads.get(away), form)
+        # surface the run itself so the card can show it
+        for side, team in (("home", home), ("away", away)):
+            if form.get(team):
+                fx.setdefault("recent_form", {})[side] = form[team]
         # how many selections this card actually offers, which is how hard
         # its Scoreline is about to be tested
         legs = 3 + len(fx.get("players", []) or []) // 8
